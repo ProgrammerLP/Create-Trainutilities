@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "create:framed_glass"
+    }
+  ],
+  "result": {
+    "item": "trainutilities:frameless_glass",
+    "count": 1
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "trainutilities:block/empty_platform_block"
+    },
+    "facing=east": {
+      "model": "trainutilities:block/empty_platform_block",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "trainutilities:block/empty_platform_block",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "trainutilities:block/empty_platform_block",
+      "y": 270
+    }
+  }
+}

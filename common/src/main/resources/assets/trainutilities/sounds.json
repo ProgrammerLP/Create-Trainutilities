@@ -1,0 +1,10 @@
+{
+  "door_ice_open": {
+    "subtitle": "sound.trainutilities.door_ice_open",
+    "sounds": [ "trainutilities:door_ice_open" ]
+  },
+  "door_ice_close": {
+    "subtitle": "sound.trainutilities.door_ice_close",
+    "sounds": [ "trainutilities:door_ice_close" ]
+  }
+}

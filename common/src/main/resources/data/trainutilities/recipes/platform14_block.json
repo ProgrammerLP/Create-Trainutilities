@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "trainutilities:empty_platform_block"
+  },
+  "result": "trainutilities:platform14_block",
+  "count": 1
+}
