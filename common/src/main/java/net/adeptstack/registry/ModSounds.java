@@ -11,7 +11,7 @@ import static net.adeptstack.Main.MOD_ID;
 
 public class ModSounds {
 
-    private static final DeferredRegister<SoundEvent> SOUND_EVENTS = DeferredRegister.create(MOD_ID, Registries.SOUND_EVENT);
+    public static final DeferredRegister<SoundEvent> SOUND_EVENTS = DeferredRegister.create(MOD_ID, Registries.SOUND_EVENT);
 
     public static final RegistrySupplier<SoundEvent> DOOR_ICE_OPEN = registerSoundEvents("door_ice_open");
     public static final RegistrySupplier<SoundEvent> DOOR_ICE_CLOSE = registerSoundEvents("door_ice_close");
