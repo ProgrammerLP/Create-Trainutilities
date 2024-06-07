@@ -13,5 +13,7 @@ public final class MainFabric implements ModInitializer {
 
         // Run our common setup.
         Main.init();
+
+        Main.REGISTRATE.register();
     }
 }
