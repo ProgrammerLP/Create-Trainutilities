@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "trainutilities:platform13_block"
+          "name": "trainutilities:de_platform_block"
         }
       ],
       "conditions": [
