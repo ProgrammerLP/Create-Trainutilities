@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "trainutilities:platform1_block"
+      "item": "trainutilities:de_platform_block"
     },
     "title": {
       "translate": "advancement.trainutilities.platform_block"

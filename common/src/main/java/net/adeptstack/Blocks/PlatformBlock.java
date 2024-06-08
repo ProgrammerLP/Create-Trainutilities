@@ -17,9 +17,6 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 
 public class PlatformBlock extends Block {
 
-    private static int max;
-    private static int min;
-
     public static final IntegerProperty SIGN_BLOCKS = IntegerProperty.create("signblock", 0, 23);
     public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
     private static final VoxelShape SHAPE_SN = Block.box(0, 0, 7, 16, 16, 9);
