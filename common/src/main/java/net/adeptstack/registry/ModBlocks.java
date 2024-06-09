@@ -2,7 +2,8 @@ package net.adeptstack.registry;
 
 import com.tterrag.registrate.util.entry.BlockEntry;
 import net.adeptstack.Blocks.Doors.TrainSlidingDoorBlock;
-import net.adeptstack.Blocks.PlatformBlock;
+import net.adeptstack.Blocks.PlatformBlocks.PlatformBlockDE;
+import net.adeptstack.Blocks.PlatformBlocks.PlatformBlockNL;
 import net.adeptstack.Blocks.RedLineBlock;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.GlassBlock;
@@ -15,8 +16,8 @@ import static net.adeptstack.registry.ModTabs.TRAINUTILS_TAB;
 public class ModBlocks {
 
     //===PLATFORM BLOCKS===
-    public static final BlockEntry<PlatformBlock> DE_PLATFORM_BLOCK = REGISTRATE
-            .block("de_platform_block", PlatformBlock::new)
+    public static final BlockEntry<PlatformBlockDE> DE_PLATFORM_BLOCK = REGISTRATE
+            .block("de_platform_block", PlatformBlockDE::new)
             .initialProperties(() -> Blocks.IRON_BARS)
             .properties(p -> p.mapColor(MapColor.NONE)
                     .sound(SoundType.METAL))
@@ -25,8 +26,8 @@ public class ModBlocks {
             .build()
             .register();
 
-    public static final BlockEntry<PlatformBlock> NL_PLATFORM_BLOCK = REGISTRATE
-            .block("nl_platform_block", PlatformBlock::new)
+    public static final BlockEntry<PlatformBlockNL> NL_PLATFORM_BLOCK = REGISTRATE
+            .block("nl_platform_block", PlatformBlockNL::new)
             .initialProperties(() -> Blocks.IRON_BARS)
             .properties(p -> p.mapColor(MapColor.NONE)
                     .sound(SoundType.METAL))

@@ -6,5 +6,29 @@
   "door_ice_close": {
     "subtitle": "sound.trainutilities.door_ice_close",
     "sounds": [ "trainutilities:door_ice_close" ]
+  },
+  "door_rrx_open": {
+    "subtitle": "sound.trainutilities.door_rrx_open",
+    "sounds": [ "trainutilities:door_rrx_open" ]
+  },
+  "door_rrx_close": {
+    "subtitle": "sound.trainutilities.door_rrx_close",
+    "sounds": [ "trainutilities:door_rrx_close" ]
+  },
+  "door_ic2_open": {
+    "subtitle": "sound.trainutilities.door_ic2_open",
+    "sounds": [ "trainutilities:door_ic2_open" ]
+  },
+  "door_ic2_close": {
+    "subtitle": "sound.trainutilities.door_ic2_close",
+    "sounds": [ "trainutilities:door_ic2_close" ]
+  },
+  "door_flirt_open": {
+    "subtitle": "sound.trainutilities.door_flirt_open",
+    "sounds": [ "trainutilities:door_flirt_open" ]
+  },
+  "door_flirt_close": {
+    "subtitle": "sound.trainutilities.door_flirt_close",
+    "sounds": [ "trainutilities:door_flirt_close" ]
   }
 }

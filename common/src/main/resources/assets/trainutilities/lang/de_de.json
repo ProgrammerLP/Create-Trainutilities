@@ -13,6 +13,15 @@
   "block.trainutilities.de_platform_block": "Deutscher Gleisblock",
   "block.trainutilities.nl_platform_block": "Niederländischer Gleisblock",
 
+  "sound.trainutilities.door_ice_open": "ICE Tür öffnet",
+  "sound.trainutilities.door_ice_close": "ICE Tür schließt",
+  "sound.trainutilities.door_rrx_open": "RRX Tür öffnet",
+  "sound.trainutilities.door_rrx_close": "RRX Tür schließt",
+  "sound.trainutilities.door_ic2_open": "IC2 Tür öffnet",
+  "sound.trainutilities.door_ic2_close": "IC2 Tür schließt",
+  "sound.trainutilities.door_flirt_open": "Stadler Flirt Tür öffnet ",
+  "sound.trainutilities.door_flirt_close": "Stadler Flirt Tür schließt",
+
   "advancement.trainutilities.platform_block": "Modernes Zeitalter",
   "advancement.trainutilities.platform_block.description": "Bekomme einen Plattformblock",
   "advancement.trainutilities.doors": "Ist das die Realität?",

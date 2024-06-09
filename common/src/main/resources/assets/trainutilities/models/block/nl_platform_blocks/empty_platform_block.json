@@ -2,9 +2,9 @@
   "credit": "Made with Blockbench",
   "texture_size": [64, 64],
   "textures": {
-    "0": "trainutilities:block/nl_platformblocks/platform0_block",
+    "0": "trainutilities:block/nl_platformblocks/empty_platform_block",
     "1": "trainutilities:block/nl_platformblocks/platform_block_side",
-    "particle": "trainutilities:block/nl_platformblocks/platform0_block"
+    "particle": "trainutilities:block/nl_platformblocks/empty_platform_block"
   },
   "elements": [
     {

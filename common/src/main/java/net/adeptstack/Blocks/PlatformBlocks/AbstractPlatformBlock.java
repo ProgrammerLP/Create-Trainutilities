@@ -1,4 +1,4 @@
-package net.adeptstack.Blocks;
+package net.adeptstack.Blocks.PlatformBlocks;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -8,26 +8,24 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 import net.minecraft.world.level.block.Mirror;
 import net.minecraft.world.level.block.Rotation;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
-import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-public class PlatformBlock extends Block {
+public class AbstractPlatformBlock extends Block {
 
-    public static final IntegerProperty SIGN_BLOCKS = IntegerProperty.create("signblock", 0, 23);
     public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
     private static final VoxelShape SHAPE_SN = Block.box(0, 0, 7, 16, 16, 9);
     private static final VoxelShape SHAPE_EW = Block.box(7, 0, 0, 9, 16, 16);
 
-    public PlatformBlock(Properties p_49795_) {
+    public AbstractPlatformBlock(BlockBehaviour.Properties p_49795_) {
         super(p_49795_);
 
         this.registerDefaultState(this.stateDefinition.any()
                 .setValue(FACING, Direction.NORTH)
-                .setValue(SIGN_BLOCKS, 0)
         );
     }
 
@@ -44,7 +42,7 @@ public class PlatformBlock extends Block {
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> pBuilder) {
         super.createBlockStateDefinition(pBuilder);
-        pBuilder.add(FACING, SIGN_BLOCKS);
+        pBuilder.add(FACING);
     }
 
     @Override

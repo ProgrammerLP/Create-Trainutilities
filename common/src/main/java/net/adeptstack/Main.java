@@ -16,10 +16,5 @@ public final class Main {
         ModBlocks.register();
         ModTabs.CREATIVE_MODE_TABS.register();
         ModSounds.SOUND_EVENTS.register();
-
-        //TODOS:
-        //- NL_SIGNS Texture adden
-        //- abstrackte Platformblock Klasse
-        //- Platformblock Block Klassen erben davon (wegen signblock blockstate)
     }
 }
