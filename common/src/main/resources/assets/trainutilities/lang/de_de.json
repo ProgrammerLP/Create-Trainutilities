@@ -27,5 +27,8 @@
   "advancement.trainutilities.doors": "Ist das die Realität?",
   "advancement.trainutilities.doors.description": "Bekomme eine der neuen TrainUtilities Türen",
 
-  "itemGroup.trainutilities.trainutils_tab": "TrainUtilities"
+  "itemGroup.trainutilities.trainutils_tab": "TrainUtilities",
+
+  "screen.trainutilities.blockplacementscreende": "Deutsche Gleisblöcke",
+  "screen.trainutilities.blockplacementscreennl": "Niederländische Gleisblöcke"
 }

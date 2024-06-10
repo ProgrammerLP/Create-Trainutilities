@@ -27,5 +27,8 @@
   "advancement.trainutilities.doors": "Is this the reality?",
   "advancement.trainutilities.doors.description": "Receive one of the new trainutilities doors",
 
-  "itemGroup.trainutilities.trainutils_tab": "TrainUtilities"
+  "itemGroup.trainutilities.trainutils_tab": "TrainUtilities",
+
+  "screen.trainutilities.blockplacementscreende": "german platform blocks",
+  "screen.trainutilities.blockplacementscreennl": "dutch platform blocks"
 }
