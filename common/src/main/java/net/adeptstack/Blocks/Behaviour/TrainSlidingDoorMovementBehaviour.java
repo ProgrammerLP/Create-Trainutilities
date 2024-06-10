@@ -30,6 +30,8 @@ import net.minecraft.world.phys.Vec3;
 
 import java.lang.ref.WeakReference;
 import java.util.Map;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class TrainSlidingDoorMovementBehaviour implements MovementBehaviour {
 
@@ -72,13 +74,28 @@ public class TrainSlidingDoorMovementBehaviour implements MovementBehaviour {
         sdbe.animation.chase(open ? 1 : 0, tsdp.GetSpeed(), LerpedFloat.Chaser.LINEAR);
         sdbe.animation.tickChaser();
 
-        if (wasSettled && !sdbe.animation.settled() && !open)
+        TimerTask closeTask = new TimerTask() {
+            @Override
+            public void run() {
+                BlockPos pos = context.localPos;
+                Contraption contraption = context.contraption;
+                StructureTemplate.StructureBlockInfo info = contraption.getBlocks().get(pos);
+
+                closeDoor(pos, contraption, info);
+            }
+        };
+
+        if (wasSettled && !sdbe.animation.settled() && !open) {
             context.world.playLocalSound(context.position.x, context.position.y, context.position.z,
                     tsdp.GetClose(), SoundSource.BLOCKS, 1f, 1, false);
+        }
 
-        if (wasSettled && !sdbe.animation.settled() && open)
+        if (wasSettled && !sdbe.animation.settled() && open) {
             context.world.playLocalSound(context.position.x, context.position.y, context.position.z,
                     tsdp.GetOpen(), SoundSource.BLOCKS, 1f, 1, false);
+            Timer t = new Timer();
+            t.schedule(closeTask, 6000);
+        }
     }
 
     protected void tickOpen(MovementContext context, boolean currentlyOpen) {
@@ -101,6 +118,20 @@ public class TrainSlidingDoorMovementBehaviour implements MovementBehaviour {
 //        if (shouldOpen)
 //            context.world.playSound(null, BlockPos.containing(context.position), SoundInit.DOOR_ICE_OPEN.get(),
 //                    SoundSource.BLOCKS, 1f, 1);
+    }
+
+    private void closeDoor(BlockPos pos, Contraption contraption, StructureTemplate.StructureBlockInfo info) {
+        BlockState newState = info.state().cycle(DoorBlock.OPEN);
+        contraption.entity.setBlock(pos, new StructureTemplate.StructureBlockInfo(info.pos(), newState, info.nbt()));
+
+        BlockPos otherPos = newState.getValue(DoorBlock.HALF) == DoubleBlockHalf.LOWER ? pos.above() : pos.below();
+        info = contraption.getBlocks()
+                .get(otherPos);
+        if (info != null && info.state().hasProperty(DoorBlock.OPEN)) {
+            newState = info.state().cycle(DoorBlock.OPEN);
+            contraption.entity.setBlock(otherPos, new StructureTemplate.StructureBlockInfo(info.pos(), newState, info.nbt()));
+            contraption.invalidateColliders();
+        }
     }
 
     private void toggleDoor(BlockPos pos, Contraption contraption, StructureTemplate.StructureBlockInfo info) {
