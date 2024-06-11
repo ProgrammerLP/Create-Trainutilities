@@ -1,7 +1,7 @@
 package net.adeptstack.Core.UI.Screens;
 
 import net.adeptstack.Core.Network.ModNetwork;
-import net.adeptstack.Core.Network.Packages.PackagePlatformBlockNL;
+import net.adeptstack.Core.Network.Packages.PackagePlatformBlock;
 import net.adeptstack.Core.UI.Controls.BlockButton;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.Screen;
@@ -31,13 +31,33 @@ public class PlatformBlockNLPlacementScreen extends Screen {
         int top = 100; // y-Koordinate auf dem Screen von oben, wo das Grid anfängt
         int left = width / 2 - (buttonsPerRow * 20 / 2);
 
+        int signCount = 0;
         for (int i = 0, count = 0; count < variantsCount; i++) {
             for (int k = 0; k < buttonsPerRow && count < variantsCount; k++, count++) {
                 int finalCount = count;
+                String name = "";
+                if (count == 0) {
+                    name = "empty_platform_block.png";
+                } else if (count % 5 == 1) {
+                    name = "platform" + signCount + "_block.png";
+                } else if (count % 5 == 2) {
+                    name = "platform" + signCount + "a_block.png";
+                } else if (count % 5 == 3) {
+                    name = "platform" + signCount + "b_block.png";
+                } else if (count % 5 == 4) {
+                    name = "platform" + signCount + "c_block.png";
+                } else if (count % 5 == 0) {
+                    name = "platform" + signCount + "d_block.png";
+                }
+
                 addRenderableWidget(new BlockButton(left + k * 20, top + i * 20, (b) -> {
                     signblock = finalCount;
                     onClose();
-                }, new ResourceLocation(MOD_ID, "textures/block/nl_platformblocks/platform_block.png"), 1000, 1000));
+                }, new ResourceLocation(MOD_ID, "textures/block/nl_platformblocks/" + name), 1000, 1000));
+
+                if ((count % 5) == 0) {
+                    signCount++;
+                }
             }
         }
     }
@@ -50,7 +70,7 @@ public class PlatformBlockNLPlacementScreen extends Screen {
 
     @Override
     public void onClose() {
-        ModNetwork.CHANNEL.sendToServer(new PackagePlatformBlockNL(pos, signblock));
+        ModNetwork.CHANNEL.sendToServer(new PackagePlatformBlock(pos, signblock));
         super.onClose();
     }
 }
