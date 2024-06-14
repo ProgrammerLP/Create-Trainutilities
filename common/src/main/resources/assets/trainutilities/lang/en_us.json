@@ -29,6 +29,6 @@
 
   "itemGroup.trainutilities.trainutils_tab": "TrainUtilities",
 
-  "screen.trainutilities.blockplacementscreende": "german platform blocks",
-  "screen.trainutilities.blockplacementscreennl": "dutch platform blocks"
+  "gui.trainutilities.selection_screen.blockplacementscreen_de": "german platform blocks",
+  "gui.trainutilities.selection_screen.blockplacementscreen_nl": "dutch platform blocks"
 }

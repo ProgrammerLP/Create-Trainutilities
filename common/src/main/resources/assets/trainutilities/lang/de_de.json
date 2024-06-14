@@ -29,6 +29,6 @@
 
   "itemGroup.trainutilities.trainutils_tab": "TrainUtilities",
 
-  "screen.trainutilities.blockplacementscreende": "Deutsche Gleisblöcke",
-  "screen.trainutilities.blockplacementscreennl": "Niederländische Gleisblöcke"
+  "gui.trainutilities.selection_screen.blockplacementscreen_de": "Deutsche Gleisblöcke",
+  "gui.trainutilities.selection_screen.blockplacementscreen_nl": "Niederländische Gleisblöcke"
 }

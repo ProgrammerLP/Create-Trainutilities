@@ -93,8 +93,8 @@ public class TrainSlidingDoorMovementBehaviour implements MovementBehaviour {
         if (wasSettled && !sdbe.animation.settled() && open) {
             context.world.playLocalSound(context.position.x, context.position.y, context.position.z,
                     tsdp.GetOpen(), SoundSource.BLOCKS, 1f, 1, false);
-            Timer t = new Timer();
-            t.schedule(closeTask, 6000);
+//            Timer t = new Timer();
+//            t.schedule(closeTask, 6000);
         }
     }
 
