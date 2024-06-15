@@ -13,6 +13,8 @@ Mod that adds custom sliding doors with sounds and station blocks, and also buil
 
 ### Platform blocks:
 ![Platform blocks](https://cdn.modrinth.com/data/cached_images/66dcc56b4662d3f1e43335655659a9e168ce97bb.png)
+- Left: Dutch signs (Textures by OneLink)
+- Right: German signs
 
 and a few other things.
 
