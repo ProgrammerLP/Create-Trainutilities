@@ -33,7 +33,7 @@ public class PackagePlatformBlock {
         contextSupplier.get().queue(() -> {
             // LOGIC
             BlockState state = contextSupplier.get().getPlayer().level().getBlockState(pos);
-            if (signblock != 0) {
+            if (signblock >= 0) {
                 if (state.getBlock() instanceof PlatformBlockNL) {
                     state = state.setValue(PlatformBlockNL.SIGN_BLOCKS, signblock);
                 } else if (state.getBlock() instanceof PlatformBlockDE) {

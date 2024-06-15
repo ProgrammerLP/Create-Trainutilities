@@ -32,7 +32,7 @@ public class PlatformBlockNL extends AbstractPlatformBlock{
     @Override
     public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
         if (level.isClientSide) {
-            ClientWrapper.openPlatformBlockNLScreen(pos);
+            ClientWrapper.openPlatformBlockNLScreen(pos, state);
         }
         return InteractionResult.SUCCESS;
     }
