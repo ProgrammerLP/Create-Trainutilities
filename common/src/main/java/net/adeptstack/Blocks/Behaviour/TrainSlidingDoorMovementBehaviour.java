@@ -1,5 +1,6 @@
 package net.adeptstack.Blocks.Behaviour;
 
+import com.mojang.authlib.minecraft.client.MinecraftClient;
 import com.simibubi.create.content.contraptions.Contraption;
 import com.simibubi.create.content.contraptions.behaviour.MovementBehaviour;
 import com.simibubi.create.content.contraptions.behaviour.MovementContext;
@@ -43,16 +44,6 @@ public class TrainSlidingDoorMovementBehaviour implements MovementBehaviour {
     }
 
     @Override
-    public boolean renderAsNormalBlockEntity() {
-        return true;
-    }
-
-    @Override
-    public boolean mustTickWhileDisabled() {
-        return true;
-    }
-
-    @Override
     public void tick(MovementContext context) {
         StructureTemplate.StructureBlockInfo structureBlockInfo = context.contraption.getBlocks()
                 .get(context.localPos);
@@ -81,7 +72,9 @@ public class TrainSlidingDoorMovementBehaviour implements MovementBehaviour {
                 Contraption contraption = context.contraption;
                 StructureTemplate.StructureBlockInfo info = contraption.getBlocks().get(pos);
 
-                closeDoor(pos, contraption, info);
+                if (context.world.isClientSide()) {
+                    tickClose(context, open);
+                }
             }
         };
 
@@ -93,8 +86,8 @@ public class TrainSlidingDoorMovementBehaviour implements MovementBehaviour {
         if (wasSettled && !sdbe.animation.settled() && open) {
             context.world.playLocalSound(context.position.x, context.position.y, context.position.z,
                     tsdp.GetOpen(), SoundSource.BLOCKS, 1f, 1, false);
-//            Timer t = new Timer();
-//            t.schedule(closeTask, 6000);
+            //Timer t = new Timer();
+            //t.schedule(closeTask, 6000);
         }
     }
 
@@ -114,22 +107,42 @@ public class TrainSlidingDoorMovementBehaviour implements MovementBehaviour {
             return;
 
         toggleDoor(pos, contraption, info);
+    }
 
-//        if (shouldOpen)
-//            context.world.playSound(null, BlockPos.containing(context.position), SoundInit.DOOR_ICE_OPEN.get(),
-//                    SoundSource.BLOCKS, 1f, 1);
+    protected void tickClose(MovementContext context, boolean currentlyClose) {
+        boolean shouldClose = !shouldOpen(context);
+        if (shouldUpdate(context, shouldClose)) {
+            System.out.println("1");
+            return;
+        }
+        if (currentlyClose != shouldClose) {
+            System.out.println("2");
+            return;
+        }
+
+        BlockPos pos = context.localPos;
+        Contraption contraption = context.contraption;
+
+        StructureTemplate.StructureBlockInfo info = contraption.getBlocks()
+                .get(pos);
+        if (info == null || !info.state().hasProperty(DoorBlock.OPEN))
+            return;
+
+        closeDoor(pos, contraption, info);
     }
 
     private void closeDoor(BlockPos pos, Contraption contraption, StructureTemplate.StructureBlockInfo info) {
-        BlockState newState = info.state().cycle(DoorBlock.OPEN);
+        BlockState newState = info.state().setValue(DoorBlock.OPEN, false);
         contraption.entity.setBlock(pos, new StructureTemplate.StructureBlockInfo(info.pos(), newState, info.nbt()));
 
         BlockPos otherPos = newState.getValue(DoorBlock.HALF) == DoubleBlockHalf.LOWER ? pos.above() : pos.below();
         info = contraption.getBlocks()
                 .get(otherPos);
         if (info != null && info.state().hasProperty(DoorBlock.OPEN)) {
-            newState = info.state().cycle(DoorBlock.OPEN);
+            newState = info.state().setValue(DoorBlock.OPEN, false);
+            //newState = info.state().setValue(DoorBlock.OPEN, false);
             contraption.entity.setBlock(otherPos, new StructureTemplate.StructureBlockInfo(info.pos(), newState, info.nbt()));
+            System.out.println("moin");
             contraption.invalidateColliders();
         }
     }
@@ -247,5 +260,15 @@ public class TrainSlidingDoorMovementBehaviour implements MovementBehaviour {
         Vec3 directionVec = Vec3.atLowerCornerOf(originalFacing.getNormal());
         directionVec = context.rotation.apply(directionVec);
         return Direction.getNearest(directionVec.x, directionVec.y, directionVec.z);
+    }
+
+    @Override
+    public boolean renderAsNormalBlockEntity() {
+        return true;
+    }
+
+    @Override
+    public boolean mustTickWhileDisabled() {
+        return true;
     }
 }

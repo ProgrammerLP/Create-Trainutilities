@@ -12,6 +12,10 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.DoorHingeSide;
 import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
 import net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate;
+import org.jetbrains.annotations.NotNull;
+
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class TrainSlidingDoorMovingInteraction extends SimpleBlockMovingInteraction {
 
@@ -21,8 +25,6 @@ public class TrainSlidingDoorMovingInteraction extends SimpleBlockMovingInteract
             return currentState;
 
         boolean trainDoor = currentState.getBlock() instanceof TrainSlidingDoorBlock;
-//        SoundEvent sound = currentState.getValue(DoorBlock.OPEN) ? trainDoor ? null : SoundInit.DOOR_ICE_CLOSE.get()
-//                : trainDoor ? SoundEvents.IRON_DOOR_OPEN : SoundEvents.WOODEN_DOOR_OPEN;
 
         BlockPos otherPos = currentState.getValue(DoorBlock.HALF) == DoubleBlockHalf.LOWER ? pos.above() : pos.below();
         StructureTemplate.StructureBlockInfo info = contraption.getBlocks()
@@ -43,13 +45,10 @@ public class TrainSlidingDoorMovingInteraction extends SimpleBlockMovingInteract
                         pos.relative(hinge == DoorHingeSide.LEFT ? facing.getClockWise() : facing.getCounterClockWise());
                 StructureTemplate.StructureBlockInfo doubleInfo = contraption.getBlocks()
                         .get(doublePos);
-                if (doubleInfo != null && TrainSlidingDoorBlock.isDoubleDoor(currentState, hinge, facing, doubleInfo.state()))
+                if (doubleInfo != null && TrainSlidingDoorBlock.isDoubleDoor(currentState, hinge, facing, doubleInfo.state())) {
                     handlePlayerInteraction(null, InteractionHand.MAIN_HAND, doublePos, contraption.entity);
+                }
             }
-
-            float pitch = player.level().random.nextFloat() * 0.1F + 0.9F;
-//            if (sound != null)
-//                playSound(player, sound, pitch);
         }
 
         return currentState;
