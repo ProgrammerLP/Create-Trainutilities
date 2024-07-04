@@ -112,11 +112,9 @@ public class TrainSlidingDoorMovementBehaviour implements MovementBehaviour {
     protected void tickClose(MovementContext context, boolean currentlyClose) {
         boolean shouldClose = !shouldOpen(context);
         if (shouldUpdate(context, shouldClose)) {
-            System.out.println("1");
             return;
         }
         if (currentlyClose != shouldClose) {
-            System.out.println("2");
             return;
         }
 
@@ -142,7 +140,6 @@ public class TrainSlidingDoorMovementBehaviour implements MovementBehaviour {
             newState = info.state().setValue(DoorBlock.OPEN, false);
             //newState = info.state().setValue(DoorBlock.OPEN, false);
             contraption.entity.setBlock(otherPos, new StructureTemplate.StructureBlockInfo(info.pos(), newState, info.nbt()));
-            System.out.println("moin");
             contraption.invalidateColliders();
         }
     }
