@@ -1,14 +1,17 @@
 package net.adeptstack.Core.UI.Screens;
 
+import com.mojang.blaze3d.systems.RenderSystem;
+import com.mojang.blaze3d.vertex.PoseStack;
 import net.adeptstack.Core.Network.ModNetwork;
 import net.adeptstack.Core.Network.Packages.PackagePlatformBlock;
 import net.adeptstack.Core.UI.Controls.BlockButton;
-import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.CommonComponents;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
@@ -52,7 +55,7 @@ public class PlatformBlockDEPlacementScreen extends Screen {
     private int selectedVariant = NO_VARIANT_SELECTED;
 
     public <T extends IntegerProperty> PlatformBlockDEPlacementScreen(int variant, T property, Function<Integer, PlatformBlockDEPlacementScreen.TextureResult> textureGetter, Consumer<Integer> onDone) {
-        super(Component.translatable("gui." + MOD_ID + ".selection_screen.blockplacementscreen_de"));
+        super(new TranslatableComponent("gui." + MOD_ID + ".selection_screen.blockplacementscreen_de"));
         this.maxValues = property.getPossibleValues().size();
         this.startValue = property.getAllValues().mapToInt(x -> x.value()).min().orElse(0);
         this.maxRows = (int)Math.ceil((double)maxValues / (double)MAX_BUTTONS_PER_ROW);
@@ -95,36 +98,37 @@ public class PlatformBlockDEPlacementScreen extends Screen {
         }
 
 
-        addRenderableWidget(new Button.Builder(CommonComponents.GUI_CANCEL, (btn) -> onClose())
-                .pos(guiLeft + WINDOW_WIDTH - MARGIN_RIGHT - DEFAULT_BUTTON_WIDTH, guiTop + WINDOW_TOP_PART_HEIGHT + maxRows * BlockButton.DEFAULT_HEIGHT + WINDOW_BOTTOM_PART_HEIGHT - 28)
-                .size(DEFAULT_BUTTON_WIDTH, 20)
-                .build()
+        addRenderableWidget(new Button(guiLeft + WINDOW_WIDTH - MARGIN_RIGHT - DEFAULT_BUTTON_WIDTH,
+                guiTop + WINDOW_TOP_PART_HEIGHT + maxRows * BlockButton.DEFAULT_HEIGHT + WINDOW_BOTTOM_PART_HEIGHT - 28, DEFAULT_BUTTON_WIDTH,
+                20, CommonComponents.GUI_CANCEL, (btn) -> onClose())
         );
 
-        addRenderableWidget(new Button.Builder(CommonComponents.GUI_DONE, (btn) -> {
+        addRenderableWidget(new Button(guiLeft + WINDOW_WIDTH - MARGIN_RIGHT - DEFAULT_BUTTON_WIDTH * 2 - 4,
+                guiTop + WINDOW_TOP_PART_HEIGHT + maxRows * BlockButton.DEFAULT_HEIGHT + WINDOW_BOTTOM_PART_HEIGHT - 28, DEFAULT_BUTTON_WIDTH,
+                20, CommonComponents.GUI_DONE,
+                (btn) -> {
                     onDone();
                     onClose();
                 })
-                        .pos(guiLeft + WINDOW_WIDTH - MARGIN_RIGHT - DEFAULT_BUTTON_WIDTH * 2 - 4, guiTop + WINDOW_TOP_PART_HEIGHT + maxRows * BlockButton.DEFAULT_HEIGHT + WINDOW_BOTTOM_PART_HEIGHT - 28)
-                        .size(DEFAULT_BUTTON_WIDTH, 20)
-                        .build()
         );
     }
 
     @Override
-    public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTick) {
-        renderBackground(guiGraphics);
-        guiGraphics.blit(texture, guiLeft, guiTop, WINDOW_WIDTH, WINDOW_TOP_PART_HEIGHT, 0, 0, WINDOW_WIDTH, WINDOW_TOP_PART_HEIGHT, TEXTURE_WIDTH, TEXTURE_HEIGHT); // Window Top
+    public void render(PoseStack poseStack, int mouseX, int mouseY, float partialTick) {
+        renderBackground(poseStack);
+        RenderSystem.setShaderTexture(0, texture);
+        blit(poseStack, guiLeft, guiTop, WINDOW_WIDTH, WINDOW_TOP_PART_HEIGHT, 0, 0, WINDOW_WIDTH, WINDOW_TOP_PART_HEIGHT, TEXTURE_WIDTH, TEXTURE_HEIGHT); // Window Top
         for (int i = 0; i < maxRows; i++) {
-            guiGraphics.blit(texture, guiLeft, guiTop + WINDOW_TOP_PART_HEIGHT + i * BlockButton.DEFAULT_HEIGHT, WINDOW_WIDTH, BlockButton.DEFAULT_HEIGHT, 0, WINDOW_BUTTON_AREA_Y, WINDOW_WIDTH, BlockButton.DEFAULT_HEIGHT, TEXTURE_WIDTH, TEXTURE_HEIGHT); // Window Body
+            blit(poseStack, guiLeft, guiTop + WINDOW_TOP_PART_HEIGHT + i * BlockButton.DEFAULT_HEIGHT, WINDOW_WIDTH, BlockButton.DEFAULT_HEIGHT, 0, WINDOW_BUTTON_AREA_Y, WINDOW_WIDTH, BlockButton.DEFAULT_HEIGHT, TEXTURE_WIDTH, TEXTURE_HEIGHT); // Window Body
         }
-        guiGraphics.blit(texture, guiLeft, guiTop + WINDOW_TOP_PART_HEIGHT + maxRows * BlockButton.DEFAULT_HEIGHT, WINDOW_WIDTH, WINDOW_BOTTOM_PART_HEIGHT, 0, WINDOW_BOTTOM_PART_Y, WINDOW_WIDTH, WINDOW_BOTTOM_PART_HEIGHT, TEXTURE_WIDTH, TEXTURE_HEIGHT); // Window Bottom
+        blit(poseStack, guiLeft, guiTop + WINDOW_TOP_PART_HEIGHT + maxRows * BlockButton.DEFAULT_HEIGHT, WINDOW_WIDTH, WINDOW_BOTTOM_PART_HEIGHT, 0, WINDOW_BOTTOM_PART_Y, WINDOW_WIDTH, WINDOW_BOTTOM_PART_HEIGHT, TEXTURE_WIDTH, TEXTURE_HEIGHT); // Window Bottom
 
         if (preview != null) {
-            guiGraphics.blit(preview.location(), guiLeft + MARGIN_LEFT, guiTop + WINDOW_TOP_PART_HEIGHT + maxRows * BlockButton.DEFAULT_HEIGHT + 4, PREVIEW_ICON_SIZE, PREVIEW_ICON_SIZE, 0, 0, preview.textureWidth(), preview.textureHeight(), preview.textureWidth(), preview.textureHeight()); // Preview Icon
+            RenderSystem.setShaderTexture(0, preview.location());
+            blit(poseStack, guiLeft + MARGIN_LEFT, guiTop + WINDOW_TOP_PART_HEIGHT + maxRows * BlockButton.DEFAULT_HEIGHT + 4, PREVIEW_ICON_SIZE, PREVIEW_ICON_SIZE, 0, 0, preview.textureWidth(), preview.textureHeight(), preview.textureWidth(), preview.textureHeight()); // Preview Icon
         }
-        super.render(guiGraphics, mouseX, mouseY, partialTick); // Buttons, etc.
-        guiGraphics.drawString(font, title, width / 2 - font.width(title) / 2, guiTop + 6, 0xFF404040, false);
+        super.render(poseStack, mouseX, mouseY, partialTick); // Buttons, etc.
+        font.draw(poseStack, title, width / 2 - font.width(title) / 2, guiTop + 6, 0xFF404040);
     }
 
     public static final record TextureResult(ResourceLocation location, int textureWidth, int textureHeight) {}

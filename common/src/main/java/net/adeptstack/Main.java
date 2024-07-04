@@ -15,7 +15,7 @@ public final class Main {
         // Write common init code here.
         ModBlockEntities.register();
         ModBlocks.register();
-        ModTabs.CREATIVE_MODE_TABS.register();
+        ModTabs.setup();
         ModSounds.SOUND_EVENTS.register();
         ModNetwork.init();
     }
