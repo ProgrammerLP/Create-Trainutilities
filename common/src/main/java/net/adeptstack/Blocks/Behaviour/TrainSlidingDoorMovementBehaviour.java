@@ -49,7 +49,7 @@ public class TrainSlidingDoorMovementBehaviour implements MovementBehaviour {
                 .get(context.localPos);
         if (structureBlockInfo == null)
             return;
-        boolean open = TrainSlidingDoorBlockEntity.isOpen(structureBlockInfo.state());
+        boolean open = TrainSlidingDoorBlockEntity.isOpen(structureBlockInfo.state);
 
         if (!context.world.isClientSide())
             tickOpen(context, open);
@@ -103,7 +103,7 @@ public class TrainSlidingDoorMovementBehaviour implements MovementBehaviour {
 
         StructureTemplate.StructureBlockInfo info = contraption.getBlocks()
                 .get(pos);
-        if (info == null || !info.state().hasProperty(DoorBlock.OPEN))
+        if (info == null || !info.state.hasProperty(DoorBlock.OPEN))
             return;
 
         toggleDoor(pos, contraption, info);
@@ -123,37 +123,37 @@ public class TrainSlidingDoorMovementBehaviour implements MovementBehaviour {
 
         StructureTemplate.StructureBlockInfo info = contraption.getBlocks()
                 .get(pos);
-        if (info == null || !info.state().hasProperty(DoorBlock.OPEN))
+        if (info == null || !info.state.hasProperty(DoorBlock.OPEN))
             return;
 
         closeDoor(pos, contraption, info);
     }
 
     private void closeDoor(BlockPos pos, Contraption contraption, StructureTemplate.StructureBlockInfo info) {
-        BlockState newState = info.state().setValue(DoorBlock.OPEN, false);
-        contraption.entity.setBlock(pos, new StructureTemplate.StructureBlockInfo(info.pos(), newState, info.nbt()));
+        BlockState newState = info.state.setValue(DoorBlock.OPEN, false);
+        contraption.entity.setBlock(pos, new StructureTemplate.StructureBlockInfo(info.pos, newState, info.nbt));
 
         BlockPos otherPos = newState.getValue(DoorBlock.HALF) == DoubleBlockHalf.LOWER ? pos.above() : pos.below();
         info = contraption.getBlocks()
                 .get(otherPos);
-        if (info != null && info.state().hasProperty(DoorBlock.OPEN)) {
-            newState = info.state().setValue(DoorBlock.OPEN, false);
+        if (info != null && info.state.hasProperty(DoorBlock.OPEN)) {
+            newState = info.state.setValue(DoorBlock.OPEN, false);
             //newState = info.state().setValue(DoorBlock.OPEN, false);
-            contraption.entity.setBlock(otherPos, new StructureTemplate.StructureBlockInfo(info.pos(), newState, info.nbt()));
+            contraption.entity.setBlock(otherPos, new StructureTemplate.StructureBlockInfo(info.pos, newState, info.nbt));
             contraption.invalidateColliders();
         }
     }
 
     private void toggleDoor(BlockPos pos, Contraption contraption, StructureTemplate.StructureBlockInfo info) {
-        BlockState newState = info.state().cycle(DoorBlock.OPEN);
-        contraption.entity.setBlock(pos, new StructureTemplate.StructureBlockInfo(info.pos(), newState, info.nbt()));
+        BlockState newState = info.state.cycle(DoorBlock.OPEN);
+        contraption.entity.setBlock(pos, new StructureTemplate.StructureBlockInfo(info.pos, newState, info.nbt));
 
         BlockPos otherPos = newState.getValue(DoorBlock.HALF) == DoubleBlockHalf.LOWER ? pos.above() : pos.below();
         info = contraption.getBlocks()
                 .get(otherPos);
-        if (info != null && info.state().hasProperty(DoorBlock.OPEN)) {
-            newState = info.state().cycle(DoorBlock.OPEN);
-            contraption.entity.setBlock(otherPos, new StructureTemplate.StructureBlockInfo(info.pos(), newState, info.nbt()));
+        if (info != null && info.state.hasProperty(DoorBlock.OPEN)) {
+            newState = info.state.cycle(DoorBlock.OPEN);
+            contraption.entity.setBlock(otherPos, new StructureTemplate.StructureBlockInfo(info.pos, newState, info.nbt));
             contraption.invalidateColliders();
         }
     }

@@ -7,7 +7,7 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 public class TrainSlidingDoorBlock extends SlidingDoorBlock {
 
     public TrainSlidingDoorBlock(Properties properties) {
-        super(properties, GLASS_SET_TYPE.get(), false);
+        super(properties, false);
     }
 
     @Override

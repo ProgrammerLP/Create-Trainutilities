@@ -1,5 +1,5 @@
 modLoader = "javafml"
-loaderVersion = "[47,)"
+loaderVersion = "[40,)"
 issueTrackerURL = "https://github.com/ProgrammerLP/TrainUtilitiesMod/issues"
 license = "AGPL v3"
 displayURL="https://modrinth.com/mod/create-trainutilities/"
@@ -17,21 +17,21 @@ logoFile = "mod_icon.png"
 [[dependencies.trainutilities]]
 modId = "forge"
 mandatory = true
-versionRange = "[47,)"
+versionRange = "[40,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.trainutilities]]
 modId = "minecraft"
 mandatory = true
-versionRange = "[1.20.1,)"
+versionRange = "[1.18.2,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.trainutilities]]
 modId = "architectury"
 mandatory = true
-versionRange = "[9.2.14,)"
+versionRange = "[4.11.93,)"
 ordering = "AFTER"
 side = "BOTH"
 

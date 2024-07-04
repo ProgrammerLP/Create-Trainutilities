@@ -1,44 +1,42 @@
 package net.adeptstack.Core.UI.Controls;
 
 import com.mojang.blaze3d.systems.RenderSystem;
-import net.minecraft.client.gui.GuiGraphics;
+import com.mojang.blaze3d.vertex.PoseStack;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.TextComponent;
 import net.minecraft.resources.ResourceLocation;
 
 import java.util.function.Consumer;
 
 public class BlockButton extends Button {
 
+    public static final int DEFAULT_HEIGHT = 20;
     private final ResourceLocation location;
     private final int textureWidth;
     private final int textureHeight;
 
     public BlockButton(int x, int y, Consumer<BlockButton> onPress, ResourceLocation textureLocation, int textureWidth, int textureHeight) {
-        super(x, y, 20, 20, Component.empty(), (b) -> onPress.accept((BlockButton)b), DEFAULT_NARRATION);
+        super(x, y, 20, 20, new TextComponent(""), (b) -> onPress.accept((BlockButton)b), NO_TOOLTIP);
         this.location = textureLocation;
         this.textureWidth = textureWidth;
         this.textureHeight = textureHeight;
     }
 
     @Override
-    protected void renderWidget(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTick) {
-        guiGraphics.setColor(1.0F, 1.0F, 1.0F, this.alpha);
+    public void renderButton(PoseStack poseStack, int mouseX, int mouseY, float partialTick) {
+        RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, this.alpha);
         RenderSystem.enableBlend();
         RenderSystem.enableDepthTest();
-        guiGraphics.blitNineSliced(WIDGETS_LOCATION, this.getX(), this.getY(), this.getWidth(), this.getHeight(), 20, 4, 200, 20, 0, this.getYTexture());
-        guiGraphics.setColor(1.0F, 1.0F, 1.0F, 1.0F);
 
-        guiGraphics.blit(location, getX() + 2, getY() + 2, 16, 16, 0, 0, textureWidth, textureHeight, textureWidth, textureHeight);
-    }
+        RenderSystem.setShaderTexture(0, WIDGETS_LOCATION);
+        int i = this.getYImage(this.isHoveredOrFocused());
+        this.blit(poseStack, this.x, this.y, 0, 46 + i * 20, this.width / 2, this.height);
+        this.blit(poseStack, this.x + this.width / 2, this.y, 200 - this.width / 2, 46 + i * 20, this.width / 2, this.height);
 
-    private int getYTexture() {
-        int i = 1;
-        if (!this.active) {
-            i = 0;
-        } else if (this.isHoveredOrFocused()) {
-            i = 2;
-        }
-        return 46 + i * 20;
+        RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
+
+        RenderSystem.setShaderTexture(0, location);
+        blit(poseStack, x + 2, y + 2, 16, 16, 0, 0, textureWidth, textureHeight, textureWidth, textureHeight);
     }
 }

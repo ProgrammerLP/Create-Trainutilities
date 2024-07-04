@@ -26,10 +26,10 @@
     "trainutilities.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.15.11",
-    "minecraft": "~1.20.1",
+    "fabricloader": ">=0.14.23",
+    "minecraft": "~1.18.2",
     "java": ">=17",
-    "architectury": ">=9.2.14",
+    "architectury": ">=4.11.93",
     "fabric-api": "*"
   },
   "suggests": {

@@ -15,7 +15,7 @@ import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.material.MaterialColor;
 
 import static com.simibubi.create.AllInteractionBehaviours.interactionBehaviour;
 import static com.simibubi.create.AllMovementBehaviours.movementBehaviour;
@@ -31,14 +31,14 @@ public class TrainUtilitiesBuilderTransformers {
                 .onRegister(interactionBehaviour(new TrainSlidingDoorMovingInteraction()))
                 .onRegister(movementBehaviour(new TrainSlidingDoorMovementBehaviour(type)))
                 .item()
-                .tab(ModTabs.TRAINUTILS_TAB.getKey())
+                .tab(() -> ModTabs.TRAINUTILS_TAB)
                 .build();
     }
 
-    public static BlockEntry<TrainSlidingDoorBlock> TrainSlidingDoor(String type, MapColor colour) {
+    public static BlockEntry<TrainSlidingDoorBlock> TrainSlidingDoor(String type, MaterialColor colour) {
         return REGISTRATE.block("door_" + type, TrainSlidingDoorBlock::new)
                 .initialProperties(AllBlocks.FRAMED_GLASS_DOOR)
-                .properties(p -> p.sound(SoundType.GLASS).mapColor(colour))
+                .properties(p -> p.sound(SoundType.GLASS).color(colour))
                 .transform(TrainUtilitiesBuilderTransformers.slidingDoor(type))
                 .properties(BlockBehaviour.Properties::noOcclusion)
                 .register();
