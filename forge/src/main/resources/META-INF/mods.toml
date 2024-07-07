@@ -1,18 +1,17 @@
 modLoader = "javafml"
 loaderVersion = "[40,)"
-issueTrackerURL = "https://github.com/ProgrammerLP/TrainUtilitiesMod/issues"
-license = "AGPL v3"
-displayURL="https://modrinth.com/mod/create-trainutilities/"
+#issueTrackerURL = ""
+license = "Insert License Here"
 
 [[mods]]
 modId = "trainutilities"
 version = "${version}"
 displayName = "Create: TrainUtilities"
-authors = "Adeptstack"
+authors = "Me!"
 description = '''
-Mod that adds custom sliding doors with sounds and station blocks, and also building blocks for stations and trains.
+This is an example description! Tell everyone what your mod is about!
 '''
-logoFile = "mod_icon.png"
+#logoFile = ""
 
 [[dependencies.trainutilities]]
 modId = "forge"
@@ -31,13 +30,6 @@ side = "BOTH"
 [[dependencies.trainutilities]]
 modId = "architectury"
 mandatory = true
-versionRange = "[4.11.93,)"
+versionRange = "[4.12.94,)"
 ordering = "AFTER"
 side = "BOTH"
-
-[[dependencies.trainutilities]]
-modId="create"
-mandatory=true
-versionRange="[0.5.1.e-318,]"
-ordering="NONE"
-side="BOTH"
