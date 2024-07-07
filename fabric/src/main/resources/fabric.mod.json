@@ -3,7 +3,7 @@
   "id": "trainutilities",
   "version": "${version}",
   "name": "Create: TrainUtilities",
-  "description": "---",
+  "description": "This is an example description! Tell everyone what your mod is about!",
   "authors": [
     "Me!"
   ],
@@ -16,7 +16,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.adeptstack.fabric.MainFabric"
+      "net.adeptstack.fabric.ExampleModFabric"
     ],
     "client": [
       "net.adeptstack.fabric.client.ExampleModFabricClient"
