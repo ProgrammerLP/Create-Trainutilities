@@ -1,6 +1,6 @@
 modLoader = "javafml"
 loaderVersion = "[47,)"
-#issueTrackerURL = ""
+issueTrackerURL = "https://github.com/ProgrammerLP/TrainUtilitiesMod/issues"
 license = "Insert License Here"
 
 [[mods]]
@@ -11,7 +11,7 @@ authors = "Me!"
 description = '''
 This is an example description! Tell everyone what your mod is about!
 '''
-#logoFile = ""
+logoFile = "mod_icon.png"
 
 [[dependencies.trainutilities]]
 modId = "forge"
@@ -33,3 +33,10 @@ mandatory = true
 versionRange = "[9.2.14,)"
 ordering = "AFTER"
 side = "BOTH"
+
+[[dependencies.trainutilities]]
+modId="create"
+mandatory=true
+versionRange="[0.5.1.f,]"
+ordering="NONE"
+side="BOTH"
