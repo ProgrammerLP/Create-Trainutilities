@@ -1,17 +1,17 @@
 modLoader = "javafml"
 loaderVersion = "[43,)"
-#issueTrackerURL = ""
-license = "Insert License Here"
+issueTrackerURL = "https://github.com/ProgrammerLP/TrainUtilitiesMod/issues"
+license = "AGPL-3"
 
 [[mods]]
 modId = "trainutilities"
 version = "${version}"
 displayName = "Create: TrainUtilities"
-authors = "Me!"
+authors = "ProgrammerLP"
 description = '''
-This is an example description! Tell everyone what your mod is about!
+Mod that adds custom sliding doors with realistic opening & closing sounds and station blocks, and also building blocks for stations and trains.
 '''
-#logoFile = ""
+logoFile = "mod_icon.png"
 
 [[dependencies.trainutilities]]
 modId = "forge"
