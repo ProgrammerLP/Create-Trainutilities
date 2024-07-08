@@ -1,0 +1,34 @@
+{
+  "block.trainutilities.frameless_glass": "frameless glass",
+  "block.trainutilities.top_redline_block": "top redline block",
+  "block.trainutilities.bottom_redline_block": "bottom redline block",
+  "block.trainutilities.leftsloped_redline_block": "left sloped redline block",
+  "block.trainutilities.rightsloped_redline_block": "right sloped redline block",
+
+  "block.trainutilities.door_ice": "ICE door",
+  "block.trainutilities.door_ic2": "IC2 door",
+  "block.trainutilities.door_rrx": "RRX door",
+  "block.trainutilities.door_flirt": "Stadler Flirt 3 XL door",
+
+  "block.trainutilities.de_platform_block": "german platform block",
+  "block.trainutilities.nl_platform_block": "dutch platform block",
+
+  "sound.trainutilities.door_ice_open": "ICE door opens",
+  "sound.trainutilities.door_ice_close": "ICE door closes",
+  "sound.trainutilities.door_rrx_open": "RRX door opens",
+  "sound.trainutilities.door_rrx_close": "RRX door closes",
+  "sound.trainutilities.door_ic2_open": "IC2 door opens",
+  "sound.trainutilities.door_ic2_close": "IC2 door closes",
+  "sound.trainutilities.door_flirt_open": "Stadler Flirt door opens",
+  "sound.trainutilities.door_flirt_close": "Stadler Flirt door closes",
+
+  "advancement.trainutilities.platform_block": "Modern Age",
+  "advancement.trainutilities.platform_block.description": "Receive a platform block",
+  "advancement.trainutilities.doors": "Is this the reality?",
+  "advancement.trainutilities.doors.description": "Receive one of the new trainutilities doors",
+
+  "itemGroup.trainutilities.trainutils_tab": "TrainUtilities",
+
+  "gui.trainutilities.selection_screen.blockplacementscreen_de": "german platform blocks",
+  "gui.trainutilities.selection_screen.blockplacementscreen_nl": "dutch platform blocks"
+}

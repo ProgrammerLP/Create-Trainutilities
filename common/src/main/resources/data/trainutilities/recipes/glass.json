@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#T#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:iron_nugget"
+    },
+    "T": {
+      "item": "trainutilities:frameless_glass"
+    }
+  },
+  "result": {
+    "item": "minecraft:glass",
+    "count": 1
+  }
+}
