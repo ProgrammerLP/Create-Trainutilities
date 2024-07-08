@@ -16,7 +16,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.adeptstack.fabric.ExampleModFabric"
+      "net.adeptstack.fabric.MainFabric"
     ],
     "client": [
       "net.adeptstack.fabric.client.ExampleModFabricClient"

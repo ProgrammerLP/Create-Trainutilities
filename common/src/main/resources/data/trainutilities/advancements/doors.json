@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "trainutilities:door_ic2"
+    },
+    "title": {
+      "translate": "advancement.trainutilities.doors"
+    },
+    "description": {
+      "color": "#DBA213",
+      "translate": "advancement.trainutilities.doors.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "create:conductor",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "trainutilities:doors"
+          }
+        ]
+      }
+    }
+  }
+}
