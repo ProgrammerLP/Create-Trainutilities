@@ -9,10 +9,15 @@ import net.adeptstack.Blocks.Behaviour.TrainSlidingDoorMovementBehaviour;
 import net.adeptstack.Blocks.Behaviour.TrainSlidingDoorMovingInteraction;
 import net.adeptstack.Blocks.Behaviour.TrainSlidingDoorProperties;
 import net.adeptstack.Blocks.Doors.TrainSlidingDoorBlock;
+import net.adeptstack.Blocks.LineBlock;
+import net.adeptstack.Blocks.PlatformBlocks.PlatformBlockDE;
+import net.adeptstack.Blocks.PlatformBlocks.PlatformBlockNL;
 import net.adeptstack.Main;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.sounds.SoundEvents;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.GlassBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
@@ -20,9 +25,56 @@ import net.minecraft.world.level.material.MapColor;
 import static com.simibubi.create.AllInteractionBehaviours.interactionBehaviour;
 import static com.simibubi.create.AllMovementBehaviours.movementBehaviour;
 import static net.adeptstack.Main.REGISTRATE;
+import static net.adeptstack.registry.ModTabs.TRAINUTILS_TAB;
 
 @SuppressWarnings({"unused","removal"})
 public class TrainUtilitiesBuilderTransformers {
+
+    public static BlockEntry<PlatformBlockDE> DEPlatformBlock(String id, MapColor color) {
+        return REGISTRATE
+                .block(id, PlatformBlockDE::new)
+                .initialProperties(() -> Blocks.IRON_BARS)
+                .properties(p -> p.mapColor(color)
+                        .sound(SoundType.METAL))
+                .item()
+                .tab(TRAINUTILS_TAB.getKey())
+                .build()
+                .register();
+    }
+
+    public static BlockEntry<PlatformBlockNL> NLPlatformBlock(String id, MapColor color) {
+        return REGISTRATE
+                .block(id, PlatformBlockNL::new)
+                .initialProperties(() -> Blocks.IRON_BARS)
+                .properties(p -> p.mapColor(color)
+                        .sound(SoundType.METAL))
+                .item()
+                .tab(TRAINUTILS_TAB.getKey())
+                .build()
+                .register();
+    }
+
+    public static BlockEntry<GlassBlock> GlassBlock(String id, MapColor color) {
+        return REGISTRATE
+                .block(id, GlassBlock::new)
+                .initialProperties(() -> Blocks.GLASS)
+                .properties(p -> p.sound(SoundType.GLASS).mapColor(color))
+                .item()
+                .tab(TRAINUTILS_TAB.getKey())
+                .build()
+                .register();
+    }
+
+    public static BlockEntry<LineBlock> RedLineBlock(String id, MapColor color) {
+        return REGISTRATE
+                .block(id, LineBlock::new)
+                .initialProperties(() -> Blocks.WHITE_CONCRETE)
+                .properties(p -> p.mapColor(color))
+                .item()
+                .tab(TRAINUTILS_TAB.getKey())
+                .build()
+                .register();
+    }
 
     public static <B extends TrainSlidingDoorBlock, P> NonNullUnaryOperator<BlockBuilder<B, P>> slidingDoor(String type) {
         return b -> b.initialProperties(() -> Blocks.OAK_DOOR) // for villager AI..

@@ -4,7 +4,7 @@ import com.tterrag.registrate.util.entry.BlockEntry;
 import net.adeptstack.Blocks.Doors.TrainSlidingDoorBlock;
 import net.adeptstack.Blocks.PlatformBlocks.PlatformBlockDE;
 import net.adeptstack.Blocks.PlatformBlocks.PlatformBlockNL;
-import net.adeptstack.Blocks.RedLineBlock;
+import net.adeptstack.Blocks.LineBlock;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.GlassBlock;
 import net.minecraft.world.level.block.SoundType;
@@ -16,71 +16,27 @@ import static net.adeptstack.registry.ModTabs.TRAINUTILS_TAB;
 public class ModBlocks {
 
     //===PLATFORM BLOCKS===
-    public static final BlockEntry<PlatformBlockDE> DE_PLATFORM_BLOCK = REGISTRATE
-            .block("de_platform_block", PlatformBlockDE::new)
-            .initialProperties(() -> Blocks.IRON_BARS)
-            .properties(p -> p.mapColor(MapColor.NONE)
-                    .sound(SoundType.METAL))
-            .item()
-            .tab(TRAINUTILS_TAB.getKey())
-            .build()
-            .register();
+    public static final BlockEntry<PlatformBlockDE> DE_PLATFORM_BLOCK =
+            TrainUtilitiesBuilderTransformers.DEPlatformBlock("de_platform_block", MapColor.NONE);
 
-    public static final BlockEntry<PlatformBlockNL> NL_PLATFORM_BLOCK = REGISTRATE
-            .block("nl_platform_block", PlatformBlockNL::new)
-            .initialProperties(() -> Blocks.IRON_BARS)
-            .properties(p -> p.mapColor(MapColor.NONE)
-                    .sound(SoundType.METAL))
-            .item()
-            .tab(TRAINUTILS_TAB.getKey())
-            .build()
-            .register();
+    public static final BlockEntry<PlatformBlockNL> NL_PLATFORM_BLOCK =
+            TrainUtilitiesBuilderTransformers.NLPlatformBlock("nl_platform_block", MapColor.NONE);
 
     //===BUILDING BLOCKS===
-    public static final BlockEntry<GlassBlock> FRAMELESS_GLASS = REGISTRATE
-            .block("frameless_glass", GlassBlock::new)
-            .initialProperties(() -> Blocks.GLASS)
-            .properties(p -> p.sound(SoundType.GLASS))
-            .item()
-            .tab(TRAINUTILS_TAB.getKey())
-            .build()
-            .register();
+    public static final BlockEntry<GlassBlock> FRAMELESS_GLASS =
+            TrainUtilitiesBuilderTransformers.GlassBlock("frameless_glass", MapColor.NONE);
 
-    public static final BlockEntry<RedLineBlock> TOP_REDLINE_BLOCK = REGISTRATE
-            .block("top_redline_block", RedLineBlock::new)
-            .initialProperties(() -> Blocks.WHITE_CONCRETE)
-            .properties(p -> p.mapColor(MapColor.TERRACOTTA_WHITE))
-            .item()
-            .tab(TRAINUTILS_TAB.getKey())
-            .build()
-            .register();
+    public static final BlockEntry<LineBlock> TOP_REDLINE_BLOCK =
+            TrainUtilitiesBuilderTransformers.RedLineBlock("top_redline_block", MapColor.TERRACOTTA_WHITE);
 
-    public static final BlockEntry<RedLineBlock> BOTTOM_REDLINE_BLOCK = REGISTRATE
-            .block("bottom_redline_block", RedLineBlock::new)
-            .initialProperties(() -> Blocks.WHITE_CONCRETE)
-            .properties(p -> p.mapColor(MapColor.TERRACOTTA_WHITE))
-            .item()
-            .tab(TRAINUTILS_TAB.getKey())
-            .build()
-            .register();
+    public static final BlockEntry<LineBlock> BOTTOM_REDLINE_BLOCK =
+            TrainUtilitiesBuilderTransformers.RedLineBlock("bottom_redline_block", MapColor.TERRACOTTA_WHITE);
 
-    public static final BlockEntry<RedLineBlock> LEFTSLOPED_REDLINE_BLOCK = REGISTRATE
-            .block("leftsloped_redline_block", RedLineBlock::new)
-            .initialProperties(() -> Blocks.WHITE_CONCRETE)
-            .properties(p -> p.mapColor(MapColor.TERRACOTTA_WHITE))
-            .item()
-            .tab(TRAINUTILS_TAB.getKey())
-            .build()
-            .register();
+    public static final BlockEntry<LineBlock> LEFTSLOPED_REDLINE_BLOCK =
+            TrainUtilitiesBuilderTransformers.RedLineBlock("leftsloped_redline_block", MapColor.TERRACOTTA_WHITE);
 
-    public static final BlockEntry<RedLineBlock> RIGHTSLOPED_REDLINE_BLOCK = REGISTRATE
-            .block("rightsloped_redline_block", RedLineBlock::new)
-            .initialProperties(() -> Blocks.WHITE_CONCRETE)
-            .properties(p -> p.mapColor(MapColor.TERRACOTTA_WHITE))
-            .item()
-            .tab(TRAINUTILS_TAB.getKey())
-            .build()
-            .register();
+    public static final BlockEntry<LineBlock> RIGHTSLOPED_REDLINE_BLOCK =
+            TrainUtilitiesBuilderTransformers.RedLineBlock("rightsloped_redline_block", MapColor.TERRACOTTA_WHITE);
 
     //===DOORS===
     public static final BlockEntry<TrainSlidingDoorBlock> DOOR_ICE =
