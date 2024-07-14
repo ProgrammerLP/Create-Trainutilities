@@ -38,5 +38,13 @@
   "door_sw_nyc_close": {
   "subtitle": "sound.trainutilities.door_sw_nyc_close",
   "sounds": [ "trainutilities:door_sw_nyc_close" ]
+  },
+  "door_pkp_ic_open": {
+    "subtitle": "sound.trainutilities.door_pkp_ic_open",
+    "sounds": [ "trainutilities:door_pkp_ic_open" ]
+  },
+  "door_pkp_ic_close": {
+    "subtitle": "sound.trainutilities.door_pkp_ic_close",
+    "sounds": [ "trainutilities:door_pkp_ic_close" ]
   }
 }

@@ -10,6 +10,8 @@
   "block.trainutilities.door_rrx": "RRX Tür",
   "block.trainutilities.door_flirt": "Stadler Flirt 3 XL Tür",
   "block.trainutilities.door_sw_nyc": "NYC U-Bahn Tür",
+  "block.trainutilities.door_pkp_ic_white": "PKP Intercity Tür (weiß)",
+  "block.trainutilities.door_pkp_ic_blue": "PKP Intercity Tür (blau)",
 
   "block.trainutilities.de_platform_block": "Deutscher Gleisblock",
   "block.trainutilities.nl_platform_block": "Niederländischer Gleisblock",
@@ -24,6 +26,8 @@
   "sound.trainutilities.door_flirt_close": "Stadler Flirt Tür schließt",
   "sound.trainutilities.door_sw_nyc_open": "NYC U-Bahn Tür öffnet",
   "sound.trainutilities.door_sw_nyc_close": "NYC U-Bahn Tür schließt",
+  "sound.trainutilities.door_pkp_ic_open": "PKP Intercity Tür öffnet",
+  "sound.trainutilities.door_pkp_ic_close": "PKP Intercity Tür schließt",
 
   "advancement.trainutilities.platform_block": "Modernes Zeitalter",
   "advancement.trainutilities.platform_block.description": "Bekomme einen Plattformblock",

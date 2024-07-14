@@ -28,6 +28,9 @@ public class ModSounds {
     public static final RegistrySupplier<SoundEvent> DOOR_SW_NYC_OPEN = registerSoundEvents("door_sw_nyc_open");
     public static final RegistrySupplier<SoundEvent> DOOR_SW_NYC_CLOSE = registerSoundEvents("door_sw_nyc_close");
 
+    public static final RegistrySupplier<SoundEvent> DOOR_PKP_IC_OPEN = registerSoundEvents("door_pkp_ic_open");
+    public static final RegistrySupplier<SoundEvent> DOOR_PKP_IC_CLOSE = registerSoundEvents("door_pkp_ic_close");
+
     private static RegistrySupplier<SoundEvent> registerSoundEvents(String name) {
         return SOUND_EVENTS.register(new ResourceLocation(MOD_ID, name), () -> SoundEvent.createVariableRangeEvent(new ResourceLocation(MOD_ID, name)));
     }

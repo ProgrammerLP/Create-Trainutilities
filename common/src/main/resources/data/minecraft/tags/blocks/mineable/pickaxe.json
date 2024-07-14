@@ -11,6 +11,8 @@
     "trainutilities:door_rrx",
     "trainutilities:door_flirt",
     "trainutilities:door_sw_nyc",
+    "trainutilities:door_pkp_ic_white",
+    "trainutilities:door_pkp_ic_blue",
     "trainutilities:de_platform_block",
     "trainutilities:nl_platform_block"
   ]

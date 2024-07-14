@@ -10,6 +10,8 @@
   "block.trainutilities.door_rrx": "RRX door",
   "block.trainutilities.door_flirt": "Stadler Flirt 3 XL door",
   "block.trainutilities.door_sw_nyc": "NYC subway door",
+  "block.trainutilities.door_pkp_ic_white": "PKP intercity door (white)",
+  "block.trainutilities.door_pkp_ic_blue": "PKP intercity door (blue)",
 
   "block.trainutilities.de_platform_block": "german platform block",
   "block.trainutilities.nl_platform_block": "dutch platform block",
@@ -24,6 +26,8 @@
   "sound.trainutilities.door_flirt_close": "Stadler Flirt door closes",
   "sound.trainutilities.door_sw_nyc_open": "NYC subway door opens",
   "sound.trainutilities.door_sw_nyc_close": "NYC subway door closes",
+  "sound.trainutilities.door_pkp_ic_open": "PKP intercity door opens",
+  "sound.trainutilities.door_pkp_ic_close": "PKP intercity door closes",
 
   "advancement.trainutilities.platform_block": "Modern Age",
   "advancement.trainutilities.platform_block.description": "Receive a platform block",

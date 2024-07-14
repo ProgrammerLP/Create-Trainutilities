@@ -112,6 +112,9 @@ public class TrainUtilitiesBuilderTransformers {
         else if (type == "sw_nyc") {
             return new TrainSlidingDoorProperties(ModSounds.DOOR_SW_NYC_OPEN.get(), ModSounds.DOOR_SW_NYC_CLOSE.get(), .035f);
         }
+        else if (type == "pkp_ic_white" || type == "pkp_ic_blue") {
+            return new TrainSlidingDoorProperties(ModSounds.DOOR_PKP_IC_OPEN.get(), ModSounds.DOOR_PKP_IC_CLOSE.get(), .025f);
+        }
         else {
             return new TrainSlidingDoorProperties(SoundEvents.IRON_DOOR_OPEN, SoundEvents.IRON_DOOR_CLOSE, .15f);
         }
