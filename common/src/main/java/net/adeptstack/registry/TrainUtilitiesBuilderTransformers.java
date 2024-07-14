@@ -1,7 +1,6 @@
 package net.adeptstack.registry;
 
 import com.simibubi.create.AllBlocks;
-import com.simibubi.create.foundation.data.CreateRegistrate;
 import com.tterrag.registrate.builders.BlockBuilder;
 import com.tterrag.registrate.util.entry.BlockEntry;
 import com.tterrag.registrate.util.nullness.NonNullUnaryOperator;
@@ -12,10 +11,8 @@ import net.adeptstack.Blocks.Doors.TrainSlidingDoorBlock;
 import net.adeptstack.Blocks.LineBlock;
 import net.adeptstack.Blocks.PlatformBlocks.PlatformBlockDE;
 import net.adeptstack.Blocks.PlatformBlocks.PlatformBlockNL;
-import net.adeptstack.Main;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.sounds.SoundEvents;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.GlassBlock;
 import net.minecraft.world.level.block.SoundType;
@@ -65,7 +62,7 @@ public class TrainUtilitiesBuilderTransformers {
                 .register();
     }
 
-    public static BlockEntry<LineBlock> RedLineBlock(String id, MapColor color) {
+    public static BlockEntry<LineBlock> LineBlock(String id, MapColor color) {
         return REGISTRATE
                 .block(id, LineBlock::new)
                 .initialProperties(() -> Blocks.WHITE_CONCRETE)

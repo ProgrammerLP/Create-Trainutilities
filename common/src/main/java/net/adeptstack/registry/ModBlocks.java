@@ -5,13 +5,8 @@ import net.adeptstack.Blocks.Doors.TrainSlidingDoorBlock;
 import net.adeptstack.Blocks.PlatformBlocks.PlatformBlockDE;
 import net.adeptstack.Blocks.PlatformBlocks.PlatformBlockNL;
 import net.adeptstack.Blocks.LineBlock;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.GlassBlock;
-import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.material.MapColor;
-
-import static net.adeptstack.Main.REGISTRATE;
-import static net.adeptstack.registry.ModTabs.TRAINUTILS_TAB;
 
 public class ModBlocks {
 
@@ -23,20 +18,41 @@ public class ModBlocks {
             TrainUtilitiesBuilderTransformers.NLPlatformBlock("nl_platform_block", MapColor.NONE);
 
     //===BUILDING BLOCKS===
+    //glass
     public static final BlockEntry<GlassBlock> FRAMELESS_GLASS =
             TrainUtilitiesBuilderTransformers.GlassBlock("frameless_glass", MapColor.NONE);
 
+    //ic(e) line blocks
     public static final BlockEntry<LineBlock> TOP_REDLINE_BLOCK =
-            TrainUtilitiesBuilderTransformers.RedLineBlock("top_redline_block", MapColor.TERRACOTTA_WHITE);
+            TrainUtilitiesBuilderTransformers.LineBlock("top_redline_block", MapColor.TERRACOTTA_WHITE);
 
     public static final BlockEntry<LineBlock> BOTTOM_REDLINE_BLOCK =
-            TrainUtilitiesBuilderTransformers.RedLineBlock("bottom_redline_block", MapColor.TERRACOTTA_WHITE);
+            TrainUtilitiesBuilderTransformers.LineBlock("bottom_redline_block", MapColor.TERRACOTTA_WHITE);
 
     public static final BlockEntry<LineBlock> LEFTSLOPED_REDLINE_BLOCK =
-            TrainUtilitiesBuilderTransformers.RedLineBlock("leftsloped_redline_block", MapColor.TERRACOTTA_WHITE);
+            TrainUtilitiesBuilderTransformers.LineBlock("leftsloped_redline_block", MapColor.TERRACOTTA_WHITE);
 
     public static final BlockEntry<LineBlock> RIGHTSLOPED_REDLINE_BLOCK =
-            TrainUtilitiesBuilderTransformers.RedLineBlock("rightsloped_redline_block", MapColor.TERRACOTTA_WHITE);
+            TrainUtilitiesBuilderTransformers.LineBlock("rightsloped_redline_block", MapColor.TERRACOTTA_WHITE);
+
+    //pkp ic doors
+    public static final BlockEntry<LineBlock> PKP_IC_TOP_GREEN_LINE_BLOCK =
+            TrainUtilitiesBuilderTransformers.LineBlock("pkp_ic_top_green_line_block", MapColor.TERRACOTTA_WHITE);
+
+    public static final BlockEntry<LineBlock> PKP_IC_TOP_YELLOW_LINE_BLOCK =
+            TrainUtilitiesBuilderTransformers.LineBlock("pkp_ic_top_yellow_line_block", MapColor.TERRACOTTA_WHITE);
+
+    public static final BlockEntry<LineBlock> PKP_IC_TOP_BLUE_LINE_BLOCK =
+            TrainUtilitiesBuilderTransformers.LineBlock("pkp_ic_top_blue_line_block", MapColor.TERRACOTTA_WHITE);
+
+    public static final BlockEntry<LineBlock> PKP_IC_BOTTOM_GREEN_LINE_BLOCK =
+            TrainUtilitiesBuilderTransformers.LineBlock("pkp_ic_bottom_green_line_block", MapColor.TERRACOTTA_WHITE);
+
+    public static final BlockEntry<LineBlock> PKP_IC_BOTTOM_YELLOW_LINE_BLOCK =
+            TrainUtilitiesBuilderTransformers.LineBlock("pkp_ic_bottom_yellow_line_block", MapColor.TERRACOTTA_WHITE);
+
+    public static final BlockEntry<LineBlock> PKP_IC_BOTTOM_BLUE_LINE_BLOCK =
+            TrainUtilitiesBuilderTransformers.LineBlock("pkp_ic_bottom_blue_line_block", MapColor.TERRACOTTA_WHITE);
 
     //===DOORS===
     public static final BlockEntry<TrainSlidingDoorBlock> DOOR_ICE =
