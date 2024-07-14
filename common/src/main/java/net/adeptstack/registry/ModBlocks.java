@@ -54,5 +54,11 @@ public class ModBlocks {
     public static final BlockEntry<TrainSlidingDoorBlock> DOOR_SW_NYC =
             TrainUtilitiesBuilderTransformers.TrainSlidingDoor("sw_nyc", MapColor.METAL);
 
+    public static final BlockEntry<TrainSlidingDoorBlock> DOOR_PKP_IC_WHITE =
+            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("pkp_ic_white", MapColor.TERRACOTTA_WHITE);
+
+    public static final BlockEntry<TrainSlidingDoorBlock> DOOR_PKP_IC_BLUE =
+            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("pkp_ic_blue", MapColor.TERRACOTTA_BLUE);
+
     public static void register() { }
 }
