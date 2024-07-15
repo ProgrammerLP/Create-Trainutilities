@@ -13,11 +13,12 @@
 
   "block.trainutilities.door_ice": "DB ICE Tür",
   "block.trainutilities.door_ic2": "DB IC2 Tür",
-  "block.trainutilities.door_rrx": "RRX Tür",
-  "block.trainutilities.door_flirt": "Stadler Flirt 3 XL Tür",
+  "block.trainutilities.door_rrx": "Desiro HC Tür (RRX Design)",
+  "block.trainutilities.door_flirt": "Stadler Flirt 3 XL Tür (VVR Design)",
   "block.trainutilities.door_sw_nyc": "NYC U-Bahn Tür",
   "block.trainutilities.door_pkp_ic_white": "PKP Intercity Tür (weiß)",
   "block.trainutilities.door_pkp_ic_blue": "PKP Intercity Tür (blau)",
+  "block.trainutilities.door_goahead_desiro": "Desiro HC Tür (GoAhead Design)",
 
   "block.trainutilities.de_platform_block": "Deutscher Gleisblock",
   "block.trainutilities.nl_platform_block": "Niederländischer Gleisblock",
