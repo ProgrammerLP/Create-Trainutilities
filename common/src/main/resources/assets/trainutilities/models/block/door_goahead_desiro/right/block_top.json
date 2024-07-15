@@ -2,12 +2,12 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"2": "trainutilities:block/door_rrx/block_bottom_2",
-		"3": "trainutilities:block/door_rrx/block_bottom_3",
-		"4": "trainutilities:block/door_rrx/block_top",
-		"5": "trainutilities:block/door_rrx/block_window",
-		"6": "trainutilities:block/door_rrx/block_corner",
-		"particle": "trainutilities:block/door_rrx/block_top"
+		"2": "trainutilities:block/door_goahead_desiro/block_bottom_2",
+		"3": "trainutilities:block/door_goahead_desiro/block_bottom_3",
+		"4": "trainutilities:block/door_goahead_desiro/block_top",
+		"5": "trainutilities:block/door_goahead_desiro/block_window",
+		"6": "trainutilities:block/door_goahead_desiro/block_corner",
+		"particle": "trainutilities:block/door_goahead_desiro/block_top"
 	},
 	"elements": [
 		{
