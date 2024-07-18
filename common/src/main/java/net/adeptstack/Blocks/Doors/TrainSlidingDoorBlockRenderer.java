@@ -55,7 +55,7 @@ public class TrainSlidingDoorBlockRenderer extends SlidingDoorRenderer {
 
         if (((SlidingDoorBlock) blockState.getBlock()).isFoldingDoor()) {
             Couple<PartialModel> partials =
-                    AllPartialModels.FOLDING_DOORS.get(blockState.getBlock().arch$registryName());
+                    AllPartialModels.FOLDING_DOORS.get(blockState.getBlock().getRegistryName());
 
             boolean flip = blockState.getValue(DoorBlock.HINGE) == DoorHingeSide.RIGHT;
             for (boolean left : Iterate.trueAndFalse) {
