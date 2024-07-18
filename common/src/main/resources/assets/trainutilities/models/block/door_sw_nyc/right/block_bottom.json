@@ -1,0 +1,23 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "trainutilities:block/door_sw_nyc/texture_block_buttom",
+		"1": "trainutilities:block/door_sw_nyc/texture_front_back",
+		"particle": "trainutilities:block/door_sw_nyc/texture_block_buttom"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [3, 16, 16],
+			"faces": {
+				"north": {"uv": [8, 0, 9.5, 8], "texture": "#0"},
+				"east": {"uv": [16, 15.96624, 0, 0], "texture": "#1"},
+				"south": {"uv": [8, 8, 9.5, 16], "texture": "#0"},
+				"west": {"uv": [0, 16, 16, 0], "texture": "#1"},
+				"up": {"uv": [10.76793, 11.40928, 9.5, 0], "texture": "#1"},
+				"down": {"uv": [11, 8, 9.5, 16], "texture": "#0"}
+			}
+		}
+	]
+}

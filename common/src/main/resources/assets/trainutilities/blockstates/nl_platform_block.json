@@ -1,1300 +1,3892 @@
 {
   "variants": {
-    "signblock=0,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/empty_platform_block",
+    "signblock=0,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/empty_platform_block",
       "y": 0
     },
-    "signblock=0,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/empty_platform_block",
+    "signblock=0,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/empty_platform_block",
+      "y": 0
+    },
+    "signblock=0,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/empty_platform_block",
+      "y": 0
+    },
+    "signblock=0,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/empty_platform_block",
+      "y": 180
+    },
+    "signblock=0,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/empty_platform_block",
+      "y": 180
+    },
+    "signblock=0,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/empty_platform_block",
+      "y": 180
+    },
+    "signblock=0,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/empty_platform_block",
+      "y": 270
+    },
+    "signblock=0,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/empty_platform_block",
+      "y": 270
+    },
+    "signblock=0,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/empty_platform_block",
+      "y": 270
+    },
+    "signblock=0,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/empty_platform_block",
+      "y": 90
+    },
+    "signblock=0,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/empty_platform_block",
+      "y": 90
+    },
+    "signblock=0,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/empty_platform_block",
+      "y": 90
+    },
+    "signblock=1,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform1_block",
+      "y": 0
+    },
+    "signblock=1,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform1_block",
+      "y": 0
+    },
+    "signblock=1,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform1_block",
+      "y": 0
+    },
+    "signblock=1,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform1_block",
+      "y": 180
+    },
+    "signblock=1,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform1_block",
+      "y": 180
+    },
+    "signblock=1,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform1_block",
+      "y": 180
+    },
+    "signblock=1,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform1_block",
+      "y": 270
+    },
+    "signblock=1,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform1_block",
+      "y": 270
+    },
+    "signblock=1,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform1_block",
+      "y": 270
+    },
+    "signblock=1,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform1_block",
+      "y": 90
+    },
+    "signblock=1,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform1_block",
+      "y": 90
+    },
+    "signblock=1,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform1_block",
+      "y": 90
+    },
+    "signblock=2,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform1a_block",
+      "y": 0
+    },
+    "signblock=2,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform1a_block",
+      "y": 0
+    },
+    "signblock=2,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform1a_block",
+      "y": 0
+    },
+    "signblock=2,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform1a_block",
+      "y": 180
+    },
+    "signblock=2,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform1a_block",
+      "y": 180
+    },
+    "signblock=2,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform1a_block",
+      "y": 180
+    },
+    "signblock=2,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform1a_block",
+      "y": 270
+    },
+    "signblock=2,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform1a_block",
+      "y": 270
+    },
+    "signblock=2,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform1a_block",
+      "y": 270
+    },
+    "signblock=2,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform1a_block",
+      "y": 90
+    },
+    "signblock=2,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform1a_block",
+      "y": 90
+    },
+    "signblock=2,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform1a_block",
+      "y": 90
+    },
+    "signblock=3,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform1b_block",
+      "y": 0
+    },
+    "signblock=3,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform1b_block",
+      "y": 0
+    },
+    "signblock=3,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform1b_block",
+      "y": 0
+    },
+    "signblock=3,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform1b_block",
+      "y": 180
+    },
+    "signblock=3,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform1b_block",
+      "y": 180
+    },
+    "signblock=3,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform1b_block",
+      "y": 180
+    },
+    "signblock=3,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform1b_block",
+      "y": 270
+    },
+    "signblock=3,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform1b_block",
+      "y": 270
+    },
+    "signblock=3,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform1b_block",
+      "y": 270
+    },
+    "signblock=3,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform1b_block",
+      "y": 90
+    },
+    "signblock=3,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform1b_block",
+      "y": 90
+    },
+    "signblock=3,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform1b_block",
+      "y": 90
+    },
+    "signblock=4,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform1c_block",
+      "y": 0
+    },
+    "signblock=4,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform1c_block",
+      "y": 0
+    },
+    "signblock=4,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform1c_block",
+      "y": 0
+    },
+    "signblock=4,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform1c_block",
+      "y": 180
+    },
+    "signblock=4,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform1c_block",
+      "y": 180
+    },
+    "signblock=4,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform1c_block",
+      "y": 180
+    },
+    "signblock=4,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform1c_block",
+      "y": 270
+    },
+    "signblock=4,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform1c_block",
+      "y": 270
+    },
+    "signblock=4,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform1c_block",
+      "y": 270
+    },
+    "signblock=4,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform1c_block",
+      "y": 90
+    },
+    "signblock=4,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform1c_block",
+      "y": 90
+    },
+    "signblock=4,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform1c_block",
+      "y": 90
+    },
+    "signblock=5,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform1d_block",
+      "y": 0
+    },
+    "signblock=5,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform1d_block",
+      "y": 0
+    },
+    "signblock=5,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform1d_block",
+      "y": 0
+    },
+    "signblock=5,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform1d_block",
+      "y": 180
+    },
+    "signblock=5,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform1d_block",
+      "y": 180
+    },
+    "signblock=5,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform1d_block",
+      "y": 180
+    },
+    "signblock=5,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform1d_block",
+      "y": 270
+    },
+    "signblock=5,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform1d_block",
+      "y": 270
+    },
+    "signblock=5,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform1d_block",
+      "y": 270
+    },
+    "signblock=5,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform1d_block",
+      "y": 90
+    },
+    "signblock=5,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform1d_block",
+      "y": 90
+    },
+    "signblock=5,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform1d_block",
+      "y": 90
+    },
+    "signblock=6,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform2_block",
+      "y": 0
+    },
+    "signblock=6,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform2_block",
+      "y": 0
+    },
+    "signblock=6,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform2_block",
+      "y": 0
+    },
+    "signblock=6,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform2_block",
+      "y": 180
+    },
+    "signblock=6,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform2_block",
+      "y": 180
+    },
+    "signblock=6,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform2_block",
+      "y": 180
+    },
+    "signblock=6,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform2_block",
+      "y": 270
+    },
+    "signblock=6,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform2_block",
+      "y": 270
+    },
+    "signblock=6,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform2_block",
+      "y": 270
+    },
+    "signblock=6,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform2_block",
+      "y": 90
+    },
+    "signblock=6,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform2_block",
+      "y": 90
+    },
+    "signblock=6,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform2_block",
+      "y": 90
+    },
+    "signblock=7,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform2a_block",
+      "y": 0
+    },
+    "signblock=7,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform2a_block",
+      "y": 0
+    },
+    "signblock=7,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform2a_block",
+      "y": 0
+    },
+    "signblock=7,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform2a_block",
+      "y": 180
+    },
+    "signblock=7,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform2a_block",
+      "y": 180
+    },
+    "signblock=7,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform2a_block",
+      "y": 180
+    },
+    "signblock=7,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform2a_block",
+      "y": 270
+    },
+    "signblock=7,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform2a_block",
+      "y": 270
+    },
+    "signblock=7,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform2a_block",
+      "y": 270
+    },
+    "signblock=7,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform2a_block",
+      "y": 90
+    },
+    "signblock=7,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform2a_block",
+      "y": 90
+    },
+    "signblock=7,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform2a_block",
+      "y": 90
+    },
+    "signblock=8,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform2b_block",
+      "y": 0
+    },
+    "signblock=8,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform2b_block",
+      "y": 0
+    },
+    "signblock=8,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform2b_block",
+      "y": 0
+    },
+    "signblock=8,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform2b_block",
+      "y": 180
+    },
+    "signblock=8,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform2b_block",
+      "y": 180
+    },
+    "signblock=8,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform2b_block",
+      "y": 180
+    },
+    "signblock=8,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform2b_block",
+      "y": 270
+    },
+    "signblock=8,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform2b_block",
+      "y": 270
+    },
+    "signblock=8,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform2b_block",
+      "y": 270
+    },
+    "signblock=8,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform2b_block",
+      "y": 90
+    },
+    "signblock=8,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform2b_block",
+      "y": 90
+    },
+    "signblock=8,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform2b_block",
+      "y": 90
+    },
+    "signblock=9,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform2c_block",
+      "y": 0
+    },
+    "signblock=9,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform2c_block",
+      "y": 0
+    },
+    "signblock=9,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform2c_block",
+      "y": 0
+    },
+    "signblock=9,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform2c_block",
+      "y": 180
+    },
+    "signblock=9,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform2c_block",
+      "y": 180
+    },
+    "signblock=9,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform2c_block",
+      "y": 180
+    },
+    "signblock=9,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform2c_block",
+      "y": 270
+    },
+    "signblock=9,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform2c_block",
+      "y": 270
+    },
+    "signblock=9,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform2c_block",
+      "y": 270
+    },
+    "signblock=9,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform2c_block",
+      "y": 90
+    },
+    "signblock=9,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform2c_block",
+      "y": 90
+    },
+    "signblock=9,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform2c_block",
+      "y": 90
+    },
+    "signblock=10,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform2d_block",
+      "y": 0
+    },
+    "signblock=10,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform2d_block",
+      "y": 0
+    },
+    "signblock=10,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform2d_block",
+      "y": 0
+    },
+    "signblock=10,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform2d_block",
+      "y": 180
+    },
+    "signblock=10,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform2d_block",
+      "y": 180
+    },
+    "signblock=10,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform2d_block",
+      "y": 180
+    },
+    "signblock=10,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform2d_block",
+      "y": 270
+    },
+    "signblock=10,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform2d_block",
+      "y": 270
+    },
+    "signblock=10,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform2d_block",
+      "y": 270
+    },
+    "signblock=10,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform2d_block",
+      "y": 90
+    },
+    "signblock=10,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform2d_block",
+      "y": 90
+    },
+    "signblock=10,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform2d_block",
+      "y": 90
+    },
+    "signblock=11,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform3_block",
+      "y": 0
+    },
+    "signblock=11,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform3_block",
+      "y": 0
+    },
+    "signblock=11,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform3_block",
+      "y": 0
+    },
+    "signblock=11,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform3_block",
+      "y": 180
+    },
+    "signblock=11,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform3_block",
+      "y": 180
+    },
+    "signblock=11,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform3_block",
+      "y": 180
+    },
+    "signblock=11,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform3_block",
+      "y": 270
+    },
+    "signblock=11,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform3_block",
+      "y": 270
+    },
+    "signblock=11,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform3_block",
+      "y": 270
+    },
+    "signblock=11,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform3_block",
+      "y": 90
+    },
+    "signblock=11,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform3_block",
+      "y": 90
+    },
+    "signblock=11,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform3_block",
+      "y": 90
+    },
+    "signblock=12,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform3a_block",
+      "y": 0
+    },
+    "signblock=12,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform3a_block",
+      "y": 0
+    },
+    "signblock=12,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform3a_block",
+      "y": 0
+    },
+    "signblock=12,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform3a_block",
+      "y": 180
+    },
+    "signblock=12,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform3a_block",
+      "y": 180
+    },
+    "signblock=12,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform3a_block",
+      "y": 180
+    },
+    "signblock=12,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform3a_block",
+      "y": 270
+    },
+    "signblock=12,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform3a_block",
+      "y": 270
+    },
+    "signblock=12,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform3a_block",
+      "y": 270
+    },
+    "signblock=12,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform3a_block",
+      "y": 90
+    },
+    "signblock=12,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform3a_block",
+      "y": 90
+    },
+    "signblock=12,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform3a_block",
+      "y": 90
+    },
+    "signblock=13,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform3b_block",
+      "y": 0
+    },
+    "signblock=13,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform3b_block",
+      "y": 0
+    },
+    "signblock=13,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform3b_block",
+      "y": 0
+    },
+    "signblock=13,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform3b_block",
+      "y": 180
+    },
+    "signblock=13,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform3b_block",
+      "y": 180
+    },
+    "signblock=13,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform3b_block",
+      "y": 180
+    },
+    "signblock=13,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform3b_block",
+      "y": 270
+    },
+    "signblock=13,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform3b_block",
+      "y": 270
+    },
+    "signblock=13,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform3b_block",
+      "y": 270
+    },
+    "signblock=13,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform3b_block",
+      "y": 90
+    },
+    "signblock=13,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform3b_block",
+      "y": 90
+    },
+    "signblock=13,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform3b_block",
+      "y": 90
+    },
+    "signblock=14,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform3c_block",
+      "y": 0
+    },
+    "signblock=14,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform3c_block",
+      "y": 0
+    },
+    "signblock=14,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform3c_block",
+      "y": 0
+    },
+    "signblock=14,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform3c_block",
+      "y": 180
+    },
+    "signblock=14,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform3c_block",
+      "y": 180
+    },
+    "signblock=14,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform3c_block",
+      "y": 180
+    },
+    "signblock=14,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform3c_block",
+      "y": 270
+    },
+    "signblock=14,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform3c_block",
+      "y": 270
+    },
+    "signblock=14,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform3c_block",
+      "y": 270
+    },
+    "signblock=14,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform3c_block",
+      "y": 90
+    },
+    "signblock=14,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform3c_block",
+      "y": 90
+    },
+    "signblock=14,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform3c_block",
+      "y": 90
+    },
+    "signblock=15,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform3d_block",
+      "y": 0
+    },
+    "signblock=15,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform3d_block",
+      "y": 0
+    },
+    "signblock=15,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform3d_block",
+      "y": 0
+    },
+    "signblock=15,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform3d_block",
+      "y": 180
+    },
+    "signblock=15,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform3d_block",
+      "y": 180
+    },
+    "signblock=15,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform3d_block",
+      "y": 180
+    },
+    "signblock=15,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform3d_block",
+      "y": 270
+    },
+    "signblock=15,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform3d_block",
+      "y": 270
+    },
+    "signblock=15,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform3d_block",
+      "y": 270
+    },
+    "signblock=15,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform3d_block",
+      "y": 90
+    },
+    "signblock=15,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform3d_block",
+      "y": 90
+    },
+    "signblock=15,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform3d_block",
+      "y": 90
+    },
+    "signblock=16,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform4_block",
+      "y": 0
+    },
+    "signblock=16,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform4_block",
+      "y": 0
+    },
+    "signblock=16,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform4_block",
+      "y": 0
+    },
+    "signblock=16,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform4_block",
+      "y": 180
+    },
+    "signblock=16,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform4_block",
+      "y": 180
+    },
+    "signblock=16,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform4_block",
+      "y": 180
+    },
+    "signblock=16,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform4_block",
+      "y": 270
+    },
+    "signblock=16,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform4_block",
+      "y": 270
+    },
+    "signblock=16,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform4_block",
+      "y": 270
+    },
+    "signblock=16,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform4_block",
+      "y": 90
+    },
+    "signblock=16,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform4_block",
+      "y": 90
+    },
+    "signblock=16,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform4_block",
+      "y": 90
+    },
+    "signblock=17,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform4a_block",
+      "y": 0
+    },
+    "signblock=17,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform4a_block",
+      "y": 0
+    },
+    "signblock=17,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform4a_block",
+      "y": 0
+    },
+    "signblock=17,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform4a_block",
+      "y": 180
+    },
+    "signblock=17,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform4a_block",
+      "y": 180
+    },
+    "signblock=17,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform4a_block",
+      "y": 180
+    },
+    "signblock=17,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform4a_block",
+      "y": 270
+    },
+    "signblock=17,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform4a_block",
+      "y": 270
+    },
+    "signblock=17,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform4a_block",
+      "y": 270
+    },
+    "signblock=17,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform4a_block",
+      "y": 90
+    },
+    "signblock=17,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform4a_block",
+      "y": 90
+    },
+    "signblock=17,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform4a_block",
+      "y": 90
+    },
+    "signblock=18,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform4b_block",
+      "y": 0
+    },
+    "signblock=18,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform4b_block",
+      "y": 0
+    },
+    "signblock=18,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform4b_block",
+      "y": 0
+    },
+    "signblock=18,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform4b_block",
+      "y": 180
+    },
+    "signblock=18,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform4b_block",
+      "y": 180
+    },
+    "signblock=18,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform4b_block",
+      "y": 180
+    },
+    "signblock=18,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform4b_block",
+      "y": 270
+    },
+    "signblock=18,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform4b_block",
+      "y": 270
+    },
+    "signblock=18,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform4b_block",
+      "y": 270
+    },
+    "signblock=18,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform4b_block",
+      "y": 90
+    },
+    "signblock=18,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform4b_block",
+      "y": 90
+    },
+    "signblock=18,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform4b_block",
+      "y": 90
+    },
+    "signblock=19,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform4c_block",
+      "y": 0
+    },
+    "signblock=19,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform4c_block",
+      "y": 0
+    },
+    "signblock=19,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform4c_block",
+      "y": 0
+    },
+    "signblock=19,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform4c_block",
+      "y": 180
+    },
+    "signblock=19,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform4c_block",
+      "y": 180
+    },
+    "signblock=19,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform4c_block",
+      "y": 180
+    },
+    "signblock=19,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform4c_block",
+      "y": 270
+    },
+    "signblock=19,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform4c_block",
+      "y": 270
+    },
+    "signblock=19,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform4c_block",
+      "y": 270
+    },
+    "signblock=19,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform4c_block",
+      "y": 90
+    },
+    "signblock=19,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform4c_block",
+      "y": 90
+    },
+    "signblock=19,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform4c_block",
+      "y": 90
+    },
+    "signblock=20,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform4d_block",
+      "y": 0
+    },
+    "signblock=20,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform4d_block",
+      "y": 0
+    },
+    "signblock=20,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform4d_block",
+      "y": 0
+    },
+    "signblock=20,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform4d_block",
+      "y": 180
+    },
+    "signblock=20,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform4d_block",
+      "y": 180
+    },
+    "signblock=20,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform4d_block",
+      "y": 180
+    },
+    "signblock=20,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform4d_block",
+      "y": 270
+    },
+    "signblock=20,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform4d_block",
+      "y": 270
+    },
+    "signblock=20,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform4d_block",
+      "y": 270
+    },
+    "signblock=20,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform4d_block",
+      "y": 90
+    },
+    "signblock=20,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform4d_block",
+      "y": 90
+    },
+    "signblock=20,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform4d_block",
+      "y": 90
+    },
+    "signblock=21,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform5_block",
+      "y": 0
+    },
+    "signblock=21,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform5_block",
+      "y": 0
+    },
+    "signblock=21,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform5_block",
+      "y": 0
+    },
+    "signblock=21,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform5_block",
+      "y": 180
+    },
+    "signblock=21,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform5_block",
+      "y": 180
+    },
+    "signblock=21,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform5_block",
+      "y": 180
+    },
+    "signblock=21,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform5_block",
+      "y": 270
+    },
+    "signblock=21,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform5_block",
+      "y": 270
+    },
+    "signblock=21,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform5_block",
+      "y": 270
+    },
+    "signblock=21,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform5_block",
+      "y": 90
+    },
+    "signblock=21,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform5_block",
+      "y": 90
+    },
+    "signblock=21,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform5_block",
+      "y": 90
+    },
+    "signblock=22,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform5a_block",
+      "y": 0
+    },
+    "signblock=22,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform5a_block",
+      "y": 0
+    },
+    "signblock=22,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform5a_block",
+      "y": 0
+    },
+    "signblock=22,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform5a_block",
+      "y": 180
+    },
+    "signblock=22,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform5a_block",
+      "y": 180
+    },
+    "signblock=22,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform5a_block",
+      "y": 180
+    },
+    "signblock=22,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform5a_block",
+      "y": 270
+    },
+    "signblock=22,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform5a_block",
+      "y": 270
+    },
+    "signblock=22,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform5a_block",
+      "y": 270
+    },
+    "signblock=22,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform5a_block",
+      "y": 90
+    },
+    "signblock=22,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform5a_block",
+      "y": 90
+    },
+    "signblock=22,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform5a_block",
+      "y": 90
+    },
+    "signblock=23,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform5b_block",
+      "y": 0
+    },
+    "signblock=23,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform5b_block",
+      "y": 0
+    },
+    "signblock=23,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform5b_block",
+      "y": 0
+    },
+    "signblock=23,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform5b_block",
+      "y": 180
+    },
+    "signblock=23,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform5b_block",
+      "y": 180
+    },
+    "signblock=23,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform5b_block",
+      "y": 180
+    },
+    "signblock=23,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform5b_block",
+      "y": 270
+    },
+    "signblock=23,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform5b_block",
+      "y": 270
+    },
+    "signblock=23,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform5b_block",
+      "y": 270
+    },
+    "signblock=23,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform5b_block",
+      "y": 90
+    },
+    "signblock=23,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform5b_block",
+      "y": 90
+    },
+    "signblock=23,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform5b_block",
+      "y": 90
+    },
+    "signblock=24,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform5c_block",
+      "y": 0
+    },
+    "signblock=24,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform5c_block",
+      "y": 0
+    },
+    "signblock=24,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform5c_block",
+      "y": 0
+    },
+    "signblock=24,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform5c_block",
+      "y": 180
+    },
+    "signblock=24,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform5c_block",
+      "y": 180
+    },
+    "signblock=24,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform5c_block",
+      "y": 180
+    },
+    "signblock=24,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform5c_block",
+      "y": 270
+    },
+    "signblock=24,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform5c_block",
+      "y": 270
+    },
+    "signblock=24,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform5c_block",
+      "y": 270
+    },
+    "signblock=24,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform5c_block",
+      "y": 90
+    },
+    "signblock=24,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform5c_block",
+      "y": 90
+    },
+    "signblock=24,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform5c_block",
+      "y": 90
+    },
+    "signblock=25,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform5d_block",
+      "y": 0
+    },
+    "signblock=25,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform5d_block",
+      "y": 0
+    },
+    "signblock=25,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform5d_block",
+      "y": 0
+    },
+    "signblock=25,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform5d_block",
+      "y": 180
+    },
+    "signblock=25,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform5d_block",
+      "y": 180
+    },
+    "signblock=25,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform5d_block",
+      "y": 180
+    },
+    "signblock=25,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform5d_block",
+      "y": 270
+    },
+    "signblock=25,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform5d_block",
+      "y": 270
+    },
+    "signblock=25,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform5d_block",
+      "y": 270
+    },
+    "signblock=25,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform5d_block",
+      "y": 90
+    },
+    "signblock=25,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform5d_block",
+      "y": 90
+    },
+    "signblock=25,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform5d_block",
+      "y": 90
+    },
+    "signblock=26,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform6_block",
+      "y": 0
+    },
+    "signblock=26,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform6_block",
+      "y": 0
+    },
+    "signblock=26,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform6_block",
+      "y": 0
+    },
+    "signblock=26,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform6_block",
+      "y": 180
+    },
+    "signblock=26,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform6_block",
+      "y": 180
+    },
+    "signblock=26,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform6_block",
+      "y": 180
+    },
+    "signblock=26,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform6_block",
+      "y": 270
+    },
+    "signblock=26,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform6_block",
+      "y": 270
+    },
+    "signblock=26,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform6_block",
+      "y": 270
+    },
+    "signblock=26,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform6_block",
+      "y": 90
+    },
+    "signblock=26,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform6_block",
+      "y": 90
+    },
+    "signblock=26,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform6_block",
+      "y": 90
+    },
+    "signblock=27,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform6a_block",
+      "y": 0
+    },
+    "signblock=27,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform6a_block",
+      "y": 0
+    },
+    "signblock=27,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform6a_block",
+      "y": 0
+    },
+    "signblock=27,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform6a_block",
+      "y": 180
+    },
+    "signblock=27,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform6a_block",
+      "y": 180
+    },
+    "signblock=27,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform6a_block",
+      "y": 180
+    },
+    "signblock=27,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform6a_block",
+      "y": 270
+    },
+    "signblock=27,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform6a_block",
+      "y": 270
+    },
+    "signblock=27,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform6a_block",
+      "y": 270
+    },
+    "signblock=27,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform6a_block",
+      "y": 90
+    },
+    "signblock=27,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform6a_block",
+      "y": 90
+    },
+    "signblock=27,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform6a_block",
+      "y": 90
+    },
+    "signblock=28,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform6b_block",
+      "y": 0
+    },
+    "signblock=28,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform6b_block",
+      "y": 0
+    },
+    "signblock=28,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform6b_block",
+      "y": 0
+    },
+    "signblock=28,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform6b_block",
+      "y": 180
+    },
+    "signblock=28,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform6b_block",
+      "y": 180
+    },
+    "signblock=28,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform6b_block",
+      "y": 180
+    },
+    "signblock=28,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform6b_block",
+      "y": 270
+    },
+    "signblock=28,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform6b_block",
+      "y": 270
+    },
+    "signblock=28,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform6b_block",
+      "y": 270
+    },
+    "signblock=28,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform6b_block",
+      "y": 90
+    },
+    "signblock=28,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform6b_block",
+      "y": 90
+    },
+    "signblock=28,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform6b_block",
+      "y": 90
+    },
+    "signblock=29,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform6c_block",
+      "y": 0
+    },
+    "signblock=29,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform6c_block",
+      "y": 0
+    },
+    "signblock=29,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform6c_block",
+      "y": 0
+    },
+    "signblock=29,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform6c_block",
+      "y": 180
+    },
+    "signblock=29,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform6c_block",
+      "y": 180
+    },
+    "signblock=29,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform6c_block",
+      "y": 180
+    },
+    "signblock=29,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform6c_block",
+      "y": 270
+    },
+    "signblock=29,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform6c_block",
+      "y": 270
+    },
+    "signblock=29,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform6c_block",
+      "y": 270
+    },
+    "signblock=29,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform6c_block",
+      "y": 90
+    },
+    "signblock=29,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform6c_block",
+      "y": 90
+    },
+    "signblock=29,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform6c_block",
+      "y": 90
+    },
+    "signblock=30,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform6d_block",
+      "y": 0
+    },
+    "signblock=30,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform6d_block",
+      "y": 0
+    },
+    "signblock=30,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform6d_block",
+      "y": 0
+    },
+    "signblock=30,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform6d_block",
+      "y": 180
+    },
+    "signblock=30,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform6d_block",
+      "y": 180
+    },
+    "signblock=30,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform6d_block",
+      "y": 180
+    },
+    "signblock=30,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform6d_block",
+      "y": 270
+    },
+    "signblock=30,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform6d_block",
+      "y": 270
+    },
+    "signblock=30,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform6d_block",
+      "y": 270
+    },
+    "signblock=30,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform6d_block",
+      "y": 90
+    },
+    "signblock=30,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform6d_block",
+      "y": 90
+    },
+    "signblock=30,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform6d_block",
+      "y": 90
+    },
+    "signblock=31,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform7_block",
+      "y": 0
+    },
+    "signblock=31,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform7_block",
+      "y": 0
+    },
+    "signblock=31,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform7_block",
+      "y": 0
+    },
+    "signblock=31,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform7_block",
+      "y": 180
+    },
+    "signblock=31,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform7_block",
+      "y": 180
+    },
+    "signblock=31,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform7_block",
+      "y": 180
+    },
+    "signblock=31,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform7_block",
+      "y": 270
+    },
+    "signblock=31,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform7_block",
+      "y": 270
+    },
+    "signblock=31,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform7_block",
+      "y": 270
+    },
+    "signblock=31,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform7_block",
+      "y": 90
+    },
+    "signblock=31,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform7_block",
+      "y": 90
+    },
+    "signblock=31,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform7_block",
+      "y": 90
+    },
+    "signblock=32,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform7a_block",
+      "y": 0
+    },
+    "signblock=32,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform7a_block",
+      "y": 0
+    },
+    "signblock=32,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform7a_block",
+      "y": 0
+    },
+    "signblock=32,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform7a_block",
+      "y": 180
+    },
+    "signblock=32,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform7a_block",
+      "y": 180
+    },
+    "signblock=32,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform7a_block",
+      "y": 180
+    },
+    "signblock=32,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform7a_block",
+      "y": 270
+    },
+    "signblock=32,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform7a_block",
+      "y": 270
+    },
+    "signblock=32,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform7a_block",
+      "y": 270
+    },
+    "signblock=32,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform7a_block",
+      "y": 90
+    },
+    "signblock=32,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform7a_block",
+      "y": 90
+    },
+    "signblock=32,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform7a_block",
+      "y": 90
+    },
+    "signblock=33,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform7b_block",
+      "y": 0
+    },
+    "signblock=33,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform7b_block",
+      "y": 0
+    },
+    "signblock=33,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform7b_block",
+      "y": 0
+    },
+    "signblock=33,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform7b_block",
+      "y": 180
+    },
+    "signblock=33,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform7b_block",
+      "y": 180
+    },
+    "signblock=33,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform7b_block",
+      "y": 180
+    },
+    "signblock=33,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform7b_block",
+      "y": 270
+    },
+    "signblock=33,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform7b_block",
+      "y": 270
+    },
+    "signblock=33,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform7b_block",
+      "y": 270
+    },
+    "signblock=33,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform7b_block",
+      "y": 90
+    },
+    "signblock=33,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform7b_block",
+      "y": 90
+    },
+    "signblock=33,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform7b_block",
+      "y": 90
+    },
+    "signblock=34,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform7c_block",
+      "y": 0
+    },
+    "signblock=34,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform7c_block",
+      "y": 0
+    },
+    "signblock=34,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform7c_block",
+      "y": 0
+    },
+    "signblock=34,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform7c_block",
+      "y": 180
+    },
+    "signblock=34,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform7c_block",
+      "y": 180
+    },
+    "signblock=34,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform7c_block",
+      "y": 180
+    },
+    "signblock=34,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform7c_block",
+      "y": 270
+    },
+    "signblock=34,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform7c_block",
+      "y": 270
+    },
+    "signblock=34,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform7c_block",
+      "y": 270
+    },
+    "signblock=34,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform7c_block",
+      "y": 90
+    },
+    "signblock=34,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform7c_block",
+      "y": 90
+    },
+    "signblock=34,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform7c_block",
+      "y": 90
+    },
+    "signblock=35,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform7d_block",
+      "y": 0
+    },
+    "signblock=35,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform7d_block",
+      "y": 0
+    },
+    "signblock=35,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform7d_block",
+      "y": 0
+    },
+    "signblock=35,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform7d_block",
+      "y": 180
+    },
+    "signblock=35,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform7d_block",
+      "y": 180
+    },
+    "signblock=35,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform7d_block",
+      "y": 180
+    },
+    "signblock=35,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform7d_block",
+      "y": 270
+    },
+    "signblock=35,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform7d_block",
+      "y": 270
+    },
+    "signblock=35,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform7d_block",
+      "y": 270
+    },
+    "signblock=35,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform7d_block",
+      "y": 90
+    },
+    "signblock=35,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform7d_block",
+      "y": 90
+    },
+    "signblock=35,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform7d_block",
+      "y": 90
+    },
+    "signblock=36,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform8_block",
+      "y": 0
+    },
+    "signblock=36,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform8_block",
+      "y": 0
+    },
+    "signblock=36,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform8_block",
+      "y": 0
+    },
+    "signblock=36,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform8_block",
+      "y": 180
+    },
+    "signblock=36,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform8_block",
+      "y": 180
+    },
+    "signblock=36,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform8_block",
+      "y": 180
+    },
+    "signblock=36,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform8_block",
+      "y": 270
+    },
+    "signblock=36,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform8_block",
+      "y": 270
+    },
+    "signblock=36,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform8_block",
+      "y": 270
+    },
+    "signblock=36,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform8_block",
+      "y": 90
+    },
+    "signblock=36,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform8_block",
+      "y": 90
+    },
+    "signblock=36,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform8_block",
+      "y": 90
+    },
+    "signblock=37,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform8a_block",
+      "y": 0
+    },
+    "signblock=37,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform8a_block",
+      "y": 0
+    },
+    "signblock=37,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform8a_block",
+      "y": 0
+    },
+    "signblock=37,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform8a_block",
+      "y": 180
+    },
+    "signblock=37,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform8a_block",
+      "y": 180
+    },
+    "signblock=37,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform8a_block",
+      "y": 180
+    },
+    "signblock=37,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform8a_block",
+      "y": 270
+    },
+    "signblock=37,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform8a_block",
+      "y": 270
+    },
+    "signblock=37,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform8a_block",
+      "y": 270
+    },
+    "signblock=37,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform8a_block",
+      "y": 90
+    },
+    "signblock=37,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform8a_block",
+      "y": 90
+    },
+    "signblock=37,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform8a_block",
+      "y": 90
+    },
+    "signblock=38,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform8b_block",
+      "y": 0
+    },
+    "signblock=38,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform8b_block",
+      "y": 0
+    },
+    "signblock=38,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform8b_block",
+      "y": 0
+    },
+    "signblock=38,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform8b_block",
+      "y": 180
+    },
+    "signblock=38,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform8b_block",
+      "y": 180
+    },
+    "signblock=38,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform8b_block",
+      "y": 180
+    },
+    "signblock=38,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform8b_block",
+      "y": 270
+    },
+    "signblock=38,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform8b_block",
+      "y": 270
+    },
+    "signblock=38,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform8b_block",
+      "y": 270
+    },
+    "signblock=38,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform8b_block",
+      "y": 90
+    },
+    "signblock=38,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform8b_block",
+      "y": 90
+    },
+    "signblock=38,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform8b_block",
+      "y": 90
+    },
+    "signblock=39,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform8c_block",
+      "y": 0
+    },
+    "signblock=39,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform8c_block",
+      "y": 0
+    },
+    "signblock=39,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform8c_block",
+      "y": 0
+    },
+    "signblock=39,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform8c_block",
+      "y": 180
+    },
+    "signblock=39,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform8c_block",
+      "y": 180
+    },
+    "signblock=39,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform8c_block",
+      "y": 180
+    },
+    "signblock=39,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform8c_block",
+      "y": 270
+    },
+    "signblock=39,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform8c_block",
+      "y": 270
+    },
+    "signblock=39,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform8c_block",
+      "y": 270
+    },
+    "signblock=39,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform8c_block",
+      "y": 90
+    },
+    "signblock=39,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform8c_block",
+      "y": 90
+    },
+    "signblock=39,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform8c_block",
+      "y": 90
+    },
+    "signblock=40,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform8d_block",
+      "y": 0
+    },
+    "signblock=40,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform8d_block",
+      "y": 0
+    },
+    "signblock=40,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform8d_block",
+      "y": 0
+    },
+    "signblock=40,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform8d_block",
+      "y": 180
+    },
+    "signblock=40,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform8d_block",
+      "y": 180
+    },
+    "signblock=40,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform8d_block",
+      "y": 180
+    },
+    "signblock=40,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform8d_block",
+      "y": 270
+    },
+    "signblock=40,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform8d_block",
+      "y": 270
+    },
+    "signblock=40,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform8d_block",
+      "y": 270
+    },
+    "signblock=40,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform8d_block",
+      "y": 90
+    },
+    "signblock=40,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform8d_block",
+      "y": 90
+    },
+    "signblock=40,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform8d_block",
+      "y": 90
+    },
+    "signblock=41,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform9_block",
+      "y": 0
+    },
+    "signblock=41,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform9_block",
+      "y": 0
+    },
+    "signblock=41,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform9_block",
+      "y": 0
+    },
+    "signblock=41,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform9_block",
+      "y": 180
+    },
+    "signblock=41,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform9_block",
+      "y": 180
+    },
+    "signblock=41,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform9_block",
+      "y": 180
+    },
+    "signblock=41,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform9_block",
+      "y": 270
+    },
+    "signblock=41,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform9_block",
+      "y": 270
+    },
+    "signblock=41,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform9_block",
+      "y": 270
+    },
+    "signblock=41,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform9_block",
+      "y": 90
+    },
+    "signblock=41,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform9_block",
+      "y": 90
+    },
+    "signblock=41,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform9_block",
+      "y": 90
+    },
+    "signblock=42,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform9a_block",
+      "y": 0
+    },
+    "signblock=42,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform9a_block",
+      "y": 0
+    },
+    "signblock=42,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform9a_block",
+      "y": 0
+    },
+    "signblock=42,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform9a_block",
+      "y": 180
+    },
+    "signblock=42,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform9a_block",
+      "y": 180
+    },
+    "signblock=42,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform9a_block",
+      "y": 180
+    },
+    "signblock=42,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform9a_block",
+      "y": 270
+    },
+    "signblock=42,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform9a_block",
+      "y": 270
+    },
+    "signblock=42,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform9a_block",
+      "y": 270
+    },
+    "signblock=42,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform9a_block",
+      "y": 90
+    },
+    "signblock=42,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform9a_block",
+      "y": 90
+    },
+    "signblock=42,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform9a_block",
+      "y": 90
+    },
+    "signblock=43,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform9b_block",
+      "y": 0
+    },
+    "signblock=43,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform9b_block",
+      "y": 0
+    },
+    "signblock=43,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform9b_block",
+      "y": 0
+    },
+    "signblock=43,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform9b_block",
+      "y": 180
+    },
+    "signblock=43,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform9b_block",
+      "y": 180
+    },
+    "signblock=43,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform9b_block",
+      "y": 180
+    },
+    "signblock=43,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform9b_block",
+      "y": 270
+    },
+    "signblock=43,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform9b_block",
+      "y": 270
+    },
+    "signblock=43,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform9b_block",
+      "y": 270
+    },
+    "signblock=43,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform9b_block",
+      "y": 90
+    },
+    "signblock=43,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform9b_block",
+      "y": 90
+    },
+    "signblock=43,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform9b_block",
+      "y": 90
+    },
+    "signblock=44,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform9c_block",
+      "y": 0
+    },
+    "signblock=44,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform9c_block",
+      "y": 0
+    },
+    "signblock=44,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform9c_block",
+      "y": 0
+    },
+    "signblock=44,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform9c_block",
+      "y": 180
+    },
+    "signblock=44,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform9c_block",
+      "y": 180
+    },
+    "signblock=44,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform9c_block",
+      "y": 180
+    },
+    "signblock=44,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform9c_block",
+      "y": 270
+    },
+    "signblock=44,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform9c_block",
+      "y": 270
+    },
+    "signblock=44,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform9c_block",
+      "y": 270
+    },
+    "signblock=44,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform9c_block",
+      "y": 90
+    },
+    "signblock=44,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform9c_block",
+      "y": 90
+    },
+    "signblock=44,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform9c_block",
+      "y": 90
+    },
+    "signblock=45,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform9d_block",
+      "y": 0
+    },
+    "signblock=45,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform9d_block",
+      "y": 0
+    },
+    "signblock=45,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform9d_block",
+      "y": 0
+    },
+    "signblock=45,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform9d_block",
+      "y": 180
+    },
+    "signblock=45,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform9d_block",
+      "y": 180
+    },
+    "signblock=45,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform9d_block",
+      "y": 180
+    },
+    "signblock=45,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform9d_block",
+      "y": 270
+    },
+    "signblock=45,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform9d_block",
+      "y": 270
+    },
+    "signblock=45,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform9d_block",
+      "y": 270
+    },
+    "signblock=45,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform9d_block",
+      "y": 90
+    },
+    "signblock=45,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform9d_block",
+      "y": 90
+    },
+    "signblock=45,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform9d_block",
+      "y": 90
+    },
+    "signblock=46,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform10_block",
+      "y": 0
+    },
+    "signblock=46,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform10_block",
+      "y": 0
+    },
+    "signblock=46,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform10_block",
+      "y": 0
+    },
+    "signblock=46,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform10_block",
+      "y": 180
+    },
+    "signblock=46,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform10_block",
+      "y": 180
+    },
+    "signblock=46,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform10_block",
+      "y": 180
+    },
+    "signblock=46,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform10_block",
+      "y": 270
+    },
+    "signblock=46,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform10_block",
+      "y": 270
+    },
+    "signblock=46,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform10_block",
+      "y": 270
+    },
+    "signblock=46,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform10_block",
+      "y": 90
+    },
+    "signblock=46,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform10_block",
+      "y": 90
+    },
+    "signblock=46,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform10_block",
+      "y": 90
+    },
+    "signblock=47,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform10a_block",
+      "y": 0
+    },
+    "signblock=47,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform10a_block",
+      "y": 0
+    },
+    "signblock=47,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform10a_block",
+      "y": 0
+    },
+    "signblock=47,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform10a_block",
+      "y": 180
+    },
+    "signblock=47,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform10a_block",
+      "y": 180
+    },
+    "signblock=47,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform10a_block",
+      "y": 180
+    },
+    "signblock=47,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform10a_block",
+      "y": 270
+    },
+    "signblock=47,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform10a_block",
+      "y": 270
+    },
+    "signblock=47,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform10a_block",
+      "y": 270
+    },
+    "signblock=47,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform10a_block",
+      "y": 90
+    },
+    "signblock=47,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform10a_block",
+      "y": 90
+    },
+    "signblock=47,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform10a_block",
+      "y": 90
+    },
+    "signblock=48,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform10b_block",
+      "y": 0
+    },
+    "signblock=48,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform10b_block",
+      "y": 0
+    },
+    "signblock=48,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform10b_block",
+      "y": 0
+    },
+    "signblock=48,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform10b_block",
+      "y": 180
+    },
+    "signblock=48,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform10b_block",
+      "y": 180
+    },
+    "signblock=48,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform10b_block",
+      "y": 180
+    },
+    "signblock=48,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform10b_block",
+      "y": 270
+    },
+    "signblock=48,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform10b_block",
+      "y": 270
+    },
+    "signblock=48,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform10b_block",
+      "y": 270
+    },
+    "signblock=48,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform10b_block",
+      "y": 90
+    },
+    "signblock=48,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform10b_block",
+      "y": 90
+    },
+    "signblock=48,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform10b_block",
       "y": 90
     },
-    "signblock=0,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/empty_platform_block",
-      "y": 180
+    "signblock=49,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform10c_block",
+      "y": 0
     },
-    "signblock=0,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/empty_platform_block",
-      "y": 270
+    "signblock=49,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform10c_block",
+      "y": 0
     },
-    "signblock=1,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform1_block",
+    "signblock=49,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform10c_block",
       "y": 0
     },
-    "signblock=1,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform1_block",
-      "y": 90
+    "signblock=49,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform10c_block",
+      "y": 180
+    },
+    "signblock=49,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform10c_block",
+      "y": 180
     },
-    "signblock=1,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform1_block",
+    "signblock=49,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform10c_block",
       "y": 180
     },
-    "signblock=1,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform1_block",
+    "signblock=49,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform10c_block",
       "y": 270
     },
-    "signblock=2,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform1a_block",
-      "y": 0
+    "signblock=49,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform10c_block",
+      "y": 270
+    },
+    "signblock=49,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform10c_block",
+      "y": 270
     },
-    "signblock=2,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform1a_block",
+    "signblock=49,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform10c_block",
       "y": 90
     },
-    "signblock=2,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform1a_block",
-      "y": 180
+    "signblock=49,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform10c_block",
+      "y": 90
     },
-    "signblock=2,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform1a_block",
-      "y": 270
+    "signblock=49,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform10c_block",
+      "y": 90
     },
-    "signblock=3,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform1b_block",
+    "signblock=50,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform10d_block",
       "y": 0
     },
-    "signblock=3,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform1b_block",
-      "y": 90
+    "signblock=50,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform10d_block",
+      "y": 0
+    },
+    "signblock=50,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform10d_block",
+      "y": 0
+    },
+    "signblock=50,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform10d_block",
+      "y": 180
+    },
+    "signblock=50,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform10d_block",
+      "y": 180
     },
-    "signblock=3,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform1b_block",
+    "signblock=50,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform10d_block",
       "y": 180
     },
-    "signblock=3,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform1b_block",
+    "signblock=50,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform10d_block",
       "y": 270
     },
-    "signblock=4,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform1c_block",
-      "y": 0
+    "signblock=50,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform10d_block",
+      "y": 270
+    },
+    "signblock=50,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform10d_block",
+      "y": 270
     },
-    "signblock=4,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform1c_block",
+    "signblock=50,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform10d_block",
       "y": 90
     },
-    "signblock=4,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform1c_block",
-      "y": 180
+    "signblock=50,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform10d_block",
+      "y": 90
     },
-    "signblock=4,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform1c_block",
-      "y": 270
+    "signblock=50,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform10d_block",
+      "y": 90
     },
-    "signblock=5,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform1d_block",
+    "signblock=51,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform11_block",
       "y": 0
     },
-    "signblock=5,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform1d_block",
-      "y": 90
+    "signblock=51,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform11_block",
+      "y": 0
+    },
+    "signblock=51,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform11_block",
+      "y": 0
+    },
+    "signblock=51,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform11_block",
+      "y": 180
+    },
+    "signblock=51,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform11_block",
+      "y": 180
     },
-    "signblock=5,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform1d_block",
+    "signblock=51,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform11_block",
       "y": 180
     },
-    "signblock=5,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform1d_block",
+    "signblock=51,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform11_block",
       "y": 270
     },
-    "signblock=6,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform2_block",
-      "y": 0
+    "signblock=51,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform11_block",
+      "y": 270
+    },
+    "signblock=51,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform11_block",
+      "y": 270
     },
-    "signblock=6,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform2_block",
+    "signblock=51,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform11_block",
       "y": 90
     },
-    "signblock=6,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform2_block",
-      "y": 180
+    "signblock=51,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform11_block",
+      "y": 90
     },
-    "signblock=6,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform2_block",
-      "y": 270
+    "signblock=51,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform11_block",
+      "y": 90
     },
-    "signblock=7,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform2a_block",
+    "signblock=52,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform11a_block",
       "y": 0
     },
-    "signblock=7,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform2a_block",
-      "y": 90
+    "signblock=52,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform11a_block",
+      "y": 0
+    },
+    "signblock=52,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform11a_block",
+      "y": 0
+    },
+    "signblock=52,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform11a_block",
+      "y": 180
+    },
+    "signblock=52,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform11a_block",
+      "y": 180
     },
-    "signblock=7,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform2a_block",
+    "signblock=52,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform11a_block",
       "y": 180
     },
-    "signblock=7,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform2a_block",
+    "signblock=52,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform11a_block",
       "y": 270
     },
-    "signblock=8,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform2b_block",
-      "y": 0
+    "signblock=52,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform11a_block",
+      "y": 270
+    },
+    "signblock=52,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform11a_block",
+      "y": 270
     },
-    "signblock=8,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform2b_block",
+    "signblock=52,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform11a_block",
       "y": 90
     },
-    "signblock=8,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform2b_block",
-      "y": 180
+    "signblock=52,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform11a_block",
+      "y": 90
     },
-    "signblock=8,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform2b_block",
-      "y": 270
+    "signblock=52,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform11a_block",
+      "y": 90
     },
-    "signblock=9,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform2c_block",
+    "signblock=53,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform11b_block",
       "y": 0
     },
-    "signblock=9,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform2c_block",
-      "y": 90
+    "signblock=53,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform11b_block",
+      "y": 0
+    },
+    "signblock=53,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform11b_block",
+      "y": 0
+    },
+    "signblock=53,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform11b_block",
+      "y": 180
+    },
+    "signblock=53,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform11b_block",
+      "y": 180
     },
-    "signblock=9,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform2c_block",
+    "signblock=53,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform11b_block",
       "y": 180
     },
-    "signblock=9,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform2c_block",
+    "signblock=53,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform11b_block",
       "y": 270
     },
-    "signblock=10,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform2d_block",
-      "y": 0
+    "signblock=53,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform11b_block",
+      "y": 270
+    },
+    "signblock=53,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform11b_block",
+      "y": 270
     },
-    "signblock=10,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform2d_block",
+    "signblock=53,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform11b_block",
       "y": 90
     },
-    "signblock=10,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform2d_block",
-      "y": 180
+    "signblock=53,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform11b_block",
+      "y": 90
     },
-    "signblock=10,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform2d_block",
-      "y": 270
+    "signblock=53,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform11b_block",
+      "y": 90
     },
-    "signblock=11,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform3_block",
+    "signblock=54,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform11c_block",
       "y": 0
     },
-    "signblock=11,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform3_block",
-      "y": 90
+    "signblock=54,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform11c_block",
+      "y": 0
+    },
+    "signblock=54,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform11c_block",
+      "y": 0
+    },
+    "signblock=54,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform11c_block",
+      "y": 180
+    },
+    "signblock=54,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform11c_block",
+      "y": 180
     },
-    "signblock=11,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform3_block",
+    "signblock=54,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform11c_block",
       "y": 180
     },
-    "signblock=11,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform3_block",
+    "signblock=54,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform11c_block",
       "y": 270
     },
-    "signblock=12,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform3a_block",
-      "y": 0
+    "signblock=54,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform11c_block",
+      "y": 270
+    },
+    "signblock=54,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform11c_block",
+      "y": 270
     },
-    "signblock=12,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform3a_block",
+    "signblock=54,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform11c_block",
       "y": 90
     },
-    "signblock=12,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform3a_block",
-      "y": 180
+    "signblock=54,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform11c_block",
+      "y": 90
     },
-    "signblock=12,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform3a_block",
-      "y": 270
+    "signblock=54,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform11c_block",
+      "y": 90
     },
-    "signblock=13,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform3b_block",
+    "signblock=55,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform11d_block",
       "y": 0
     },
-    "signblock=13,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform3b_block",
-      "y": 90
+    "signblock=55,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform11d_block",
+      "y": 0
+    },
+    "signblock=55,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform11d_block",
+      "y": 0
+    },
+    "signblock=55,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform11d_block",
+      "y": 180
+    },
+    "signblock=55,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform11d_block",
+      "y": 180
     },
-    "signblock=13,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform3b_block",
+    "signblock=55,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform11d_block",
       "y": 180
     },
-    "signblock=13,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform3b_block",
+    "signblock=55,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform11d_block",
       "y": 270
     },
-    "signblock=14,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform3c_block",
-      "y": 0
+    "signblock=55,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform11d_block",
+      "y": 270
+    },
+    "signblock=55,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform11d_block",
+      "y": 270
     },
-    "signblock=14,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform3c_block",
+    "signblock=55,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform11d_block",
       "y": 90
     },
-    "signblock=14,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform3c_block",
-      "y": 180
+    "signblock=55,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform11d_block",
+      "y": 90
     },
-    "signblock=14,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform3c_block",
-      "y": 270
+    "signblock=55,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform11d_block",
+      "y": 90
     },
-    "signblock=15,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform3d_block",
+    "signblock=56,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform12_block",
       "y": 0
     },
-    "signblock=15,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform3d_block",
-      "y": 90
+    "signblock=56,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform12_block",
+      "y": 0
+    },
+    "signblock=56,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform12_block",
+      "y": 0
+    },
+    "signblock=56,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform12_block",
+      "y": 180
+    },
+    "signblock=56,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform12_block",
+      "y": 180
     },
-    "signblock=15,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform3d_block",
+    "signblock=56,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform12_block",
       "y": 180
     },
-    "signblock=15,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform3d_block",
+    "signblock=56,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform12_block",
       "y": 270
     },
-    "signblock=16,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform4_block",
-      "y": 0
+    "signblock=56,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform12_block",
+      "y": 270
+    },
+    "signblock=56,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform12_block",
+      "y": 270
     },
-    "signblock=16,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform4_block",
+    "signblock=56,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform12_block",
       "y": 90
     },
-    "signblock=16,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform4_block",
-      "y": 180
+    "signblock=56,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform12_block",
+      "y": 90
     },
-    "signblock=16,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform4_block",
-      "y": 270
+    "signblock=56,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform12_block",
+      "y": 90
     },
-    "signblock=17,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform4a_block",
+    "signblock=57,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform12a_block",
       "y": 0
     },
-    "signblock=17,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform4a_block",
-      "y": 90
+    "signblock=57,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform12a_block",
+      "y": 0
+    },
+    "signblock=57,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform12a_block",
+      "y": 0
+    },
+    "signblock=57,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform12a_block",
+      "y": 180
+    },
+    "signblock=57,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform12a_block",
+      "y": 180
     },
-    "signblock=17,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform4a_block",
+    "signblock=57,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform12a_block",
       "y": 180
     },
-    "signblock=17,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform4a_block",
+    "signblock=57,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform12a_block",
       "y": 270
     },
-    "signblock=18,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform4b_block",
-      "y": 0
+    "signblock=57,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform12a_block",
+      "y": 270
+    },
+    "signblock=57,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform12a_block",
+      "y": 270
     },
-    "signblock=18,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform4b_block",
+    "signblock=57,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform12a_block",
       "y": 90
     },
-    "signblock=18,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform4b_block",
-      "y": 180
+    "signblock=57,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform12a_block",
+      "y": 90
     },
-    "signblock=18,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform4b_block",
-      "y": 270
+    "signblock=57,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform12a_block",
+      "y": 90
     },
-    "signblock=19,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform4c_block",
+    "signblock=58,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform12b_block",
       "y": 0
     },
-    "signblock=19,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform4c_block",
-      "y": 90
+    "signblock=58,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform12b_block",
+      "y": 0
+    },
+    "signblock=58,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform12b_block",
+      "y": 0
+    },
+    "signblock=58,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform12b_block",
+      "y": 180
+    },
+    "signblock=58,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform12b_block",
+      "y": 180
     },
-    "signblock=19,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform4c_block",
+    "signblock=58,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform12b_block",
       "y": 180
     },
-    "signblock=19,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform4c_block",
+    "signblock=58,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform12b_block",
       "y": 270
     },
-    "signblock=20,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform4d_block",
-      "y": 0
+    "signblock=58,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform12b_block",
+      "y": 270
+    },
+    "signblock=58,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform12b_block",
+      "y": 270
     },
-    "signblock=20,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform4d_block",
+    "signblock=58,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform12b_block",
       "y": 90
     },
-    "signblock=20,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform4d_block",
-      "y": 180
+    "signblock=58,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform12b_block",
+      "y": 90
     },
-    "signblock=20,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform4d_block",
-      "y": 270
+    "signblock=58,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform12b_block",
+      "y": 90
     },
-    "signblock=21,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform5_block",
+    "signblock=59,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform12c_block",
       "y": 0
     },
-    "signblock=21,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform5_block",
-      "y": 90
+    "signblock=59,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform12c_block",
+      "y": 0
+    },
+    "signblock=59,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform12c_block",
+      "y": 0
+    },
+    "signblock=59,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform12c_block",
+      "y": 180
+    },
+    "signblock=59,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform12c_block",
+      "y": 180
     },
-    "signblock=21,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform5_block",
+    "signblock=59,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform12c_block",
       "y": 180
     },
-    "signblock=21,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform5_block",
+    "signblock=59,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform12c_block",
       "y": 270
     },
-    "signblock=22,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform5a_block",
-      "y": 0
+    "signblock=59,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform12c_block",
+      "y": 270
+    },
+    "signblock=59,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform12c_block",
+      "y": 270
     },
-    "signblock=22,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform5a_block",
+    "signblock=59,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform12c_block",
       "y": 90
     },
-    "signblock=22,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform5a_block",
-      "y": 180
+    "signblock=59,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform12c_block",
+      "y": 90
     },
-    "signblock=22,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform5a_block",
-      "y": 270
+    "signblock=59,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform12c_block",
+      "y": 90
     },
-    "signblock=23,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform5b_block",
+    "signblock=60,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform12d_block",
       "y": 0
     },
-    "signblock=23,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform5b_block",
-      "y": 90
+    "signblock=60,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform12d_block",
+      "y": 0
+    },
+    "signblock=60,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform12d_block",
+      "y": 0
+    },
+    "signblock=60,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform12d_block",
+      "y": 180
+    },
+    "signblock=60,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform12d_block",
+      "y": 180
     },
-    "signblock=23,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform5b_block",
+    "signblock=60,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform12d_block",
       "y": 180
     },
-    "signblock=23,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform5b_block",
+    "signblock=60,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform12d_block",
       "y": 270
     },
-    "signblock=24,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform5c_block",
-      "y": 0
+    "signblock=60,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform12d_block",
+      "y": 270
+    },
+    "signblock=60,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform12d_block",
+      "y": 270
     },
-    "signblock=24,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform5c_block",
+    "signblock=60,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform12d_block",
       "y": 90
     },
-    "signblock=24,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform5c_block",
-      "y": 180
+    "signblock=60,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform12d_block",
+      "y": 90
     },
-    "signblock=24,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform5c_block",
-      "y": 270
+    "signblock=60,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform12d_block",
+      "y": 90
     },
-    "signblock=25,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform5d_block",
+    "signblock=61,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform13_block",
       "y": 0
     },
-    "signblock=25,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform5d_block",
-      "y": 90
+    "signblock=61,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform13_block",
+      "y": 0
+    },
+    "signblock=61,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform13_block",
+      "y": 0
+    },
+    "signblock=61,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform13_block",
+      "y": 180
+    },
+    "signblock=61,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform13_block",
+      "y": 180
     },
-    "signblock=25,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform5d_block",
+    "signblock=61,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform13_block",
       "y": 180
     },
-    "signblock=25,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform5d_block",
+    "signblock=61,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform13_block",
       "y": 270
     },
-    "signblock=26,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform6_block",
-      "y": 0
+    "signblock=61,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform13_block",
+      "y": 270
+    },
+    "signblock=61,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform13_block",
+      "y": 270
     },
-    "signblock=26,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform6_block",
+    "signblock=61,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform13_block",
       "y": 90
     },
-    "signblock=26,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform6_block",
-      "y": 180
+    "signblock=61,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform13_block",
+      "y": 90
     },
-    "signblock=26,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform6_block",
-      "y": 270
+    "signblock=61,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform13_block",
+      "y": 90
     },
-    "signblock=27,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform6a_block",
+    "signblock=62,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform13a_block",
       "y": 0
     },
-    "signblock=27,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform6a_block",
-      "y": 90
+    "signblock=62,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform13a_block",
+      "y": 0
+    },
+    "signblock=62,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform13a_block",
+      "y": 0
+    },
+    "signblock=62,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform13a_block",
+      "y": 180
+    },
+    "signblock=62,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform13a_block",
+      "y": 180
     },
-    "signblock=27,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform6a_block",
+    "signblock=62,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform13a_block",
       "y": 180
     },
-    "signblock=27,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform6a_block",
+    "signblock=62,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform13a_block",
       "y": 270
     },
-    "signblock=28,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform6b_block",
-      "y": 0
+    "signblock=62,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform13a_block",
+      "y": 270
+    },
+    "signblock=62,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform13a_block",
+      "y": 270
     },
-    "signblock=28,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform6b_block",
+    "signblock=62,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform13a_block",
       "y": 90
     },
-    "signblock=28,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform6b_block",
-      "y": 180
+    "signblock=62,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform13a_block",
+      "y": 90
     },
-    "signblock=28,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform6b_block",
-      "y": 270
+    "signblock=62,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform13a_block",
+      "y": 90
     },
-    "signblock=29,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform6c_block",
+    "signblock=63,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform13b_block",
       "y": 0
     },
-    "signblock=29,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform6c_block",
-      "y": 90
+    "signblock=63,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform13b_block",
+      "y": 0
+    },
+    "signblock=63,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform13b_block",
+      "y": 0
+    },
+    "signblock=63,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform13b_block",
+      "y": 180
+    },
+    "signblock=63,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform13b_block",
+      "y": 180
     },
-    "signblock=29,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform6c_block",
+    "signblock=63,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform13b_block",
       "y": 180
     },
-    "signblock=29,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform6c_block",
+    "signblock=63,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform13b_block",
       "y": 270
     },
-    "signblock=30,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform6d_block",
-      "y": 0
+    "signblock=63,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform13b_block",
+      "y": 270
+    },
+    "signblock=63,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform13b_block",
+      "y": 270
     },
-    "signblock=30,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform6d_block",
+    "signblock=63,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform13b_block",
       "y": 90
     },
-    "signblock=30,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform6d_block",
-      "y": 180
+    "signblock=63,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform13b_block",
+      "y": 90
     },
-    "signblock=30,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform6d_block",
-      "y": 270
+    "signblock=63,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform13b_block",
+      "y": 90
     },
-    "signblock=31,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform7_block",
+    "signblock=64,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform13c_block",
       "y": 0
     },
-    "signblock=31,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform7_block",
-      "y": 90
+    "signblock=64,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform13c_block",
+      "y": 0
+    },
+    "signblock=64,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform13c_block",
+      "y": 0
+    },
+    "signblock=64,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform13c_block",
+      "y": 180
+    },
+    "signblock=64,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform13c_block",
+      "y": 180
     },
-    "signblock=31,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform7_block",
+    "signblock=64,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform13c_block",
       "y": 180
     },
-    "signblock=31,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform7_block",
+    "signblock=64,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform13c_block",
       "y": 270
     },
-    "signblock=32,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform7a_block",
-      "y": 0
+    "signblock=64,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform13c_block",
+      "y": 270
+    },
+    "signblock=64,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform13c_block",
+      "y": 270
     },
-    "signblock=32,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform7a_block",
+    "signblock=64,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform13c_block",
       "y": 90
     },
-    "signblock=32,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform7a_block",
-      "y": 180
+    "signblock=64,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform13c_block",
+      "y": 90
     },
-    "signblock=32,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform7a_block",
-      "y": 270
+    "signblock=64,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform13c_block",
+      "y": 90
+    },
+    "signblock=65,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform13d_block",
+      "y": 0
     },
-    "signblock=33,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform7b_block",
+    "signblock=65,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform13d_block",
       "y": 0
     },
-    "signblock=33,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform7b_block",
-      "y": 90
+    "signblock=65,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform13d_block",
+      "y": 0
     },
-    "signblock=33,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform7b_block",
+    "signblock=65,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform13d_block",
       "y": 180
     },
-    "signblock=33,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform7b_block",
-      "y": 270
+    "signblock=65,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform13d_block",
+      "y": 180
     },
-    "signblock=34,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform7c_block",
-      "y": 0
+    "signblock=65,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform13d_block",
+      "y": 180
     },
-    "signblock=34,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform7c_block",
-      "y": 90
+    "signblock=65,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform13d_block",
+      "y": 270
     },
-    "signblock=34,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform7c_block",
-      "y": 180
+    "signblock=65,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform13d_block",
+      "y": 270
     },
-    "signblock=34,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform7c_block",
+    "signblock=65,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform13d_block",
       "y": 270
     },
-    "signblock=35,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform7d_block",
-      "y": 0
+    "signblock=65,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform13d_block",
+      "y": 90
     },
-    "signblock=35,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform7d_block",
+    "signblock=65,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform13d_block",
       "y": 90
     },
-    "signblock=35,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform7d_block",
-      "y": 180
+    "signblock=65,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform13d_block",
+      "y": 90
     },
-    "signblock=35,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform7d_block",
-      "y": 270
+    "signblock=66,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform14_block",
+      "y": 0
     },
-    "signblock=36,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform8_block",
+    "signblock=66,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform14_block",
       "y": 0
     },
-    "signblock=36,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform8_block",
-      "y": 90
+    "signblock=66,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform14_block",
+      "y": 0
     },
-    "signblock=36,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform8_block",
+    "signblock=66,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform14_block",
       "y": 180
     },
-    "signblock=36,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform8_block",
-      "y": 270
+    "signblock=66,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform14_block",
+      "y": 180
     },
-    "signblock=37,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform8a_block",
-      "y": 0
+    "signblock=66,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform14_block",
+      "y": 180
     },
-    "signblock=37,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform8a_block",
-      "y": 90
+    "signblock=66,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform14_block",
+      "y": 270
     },
-    "signblock=37,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform8a_block",
-      "y": 180
+    "signblock=66,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform14_block",
+      "y": 270
     },
-    "signblock=37,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform8a_block",
+    "signblock=66,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform14_block",
       "y": 270
     },
-    "signblock=38,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform8b_block",
-      "y": 0
+    "signblock=66,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform14_block",
+      "y": 90
     },
-    "signblock=38,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform8b_block",
+    "signblock=66,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform14_block",
       "y": 90
     },
-    "signblock=38,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform8b_block",
-      "y": 180
+    "signblock=66,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform14_block",
+      "y": 90
     },
-    "signblock=38,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform8b_block",
-      "y": 270
+    "signblock=67,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform14a_block",
+      "y": 0
     },
-    "signblock=39,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform8c_block",
+    "signblock=67,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform14a_block",
       "y": 0
     },
-    "signblock=39,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform8c_block",
-      "y": 90
+    "signblock=67,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform14a_block",
+      "y": 0
     },
-    "signblock=39,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform8c_block",
+    "signblock=67,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform14a_block",
       "y": 180
     },
-    "signblock=39,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform8c_block",
-      "y": 270
+    "signblock=67,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform14a_block",
+      "y": 180
     },
-    "signblock=40,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform8d_block",
-      "y": 0
+    "signblock=67,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform14a_block",
+      "y": 180
     },
-    "signblock=40,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform8d_block",
-      "y": 90
+    "signblock=67,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform14a_block",
+      "y": 270
     },
-    "signblock=40,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform8d_block",
-      "y": 180
+    "signblock=67,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform14a_block",
+      "y": 270
     },
-    "signblock=40,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform8d_block",
+    "signblock=67,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform14a_block",
       "y": 270
     },
-    "signblock=41,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform9_block",
-      "y": 0
+    "signblock=67,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform14a_block",
+      "y": 90
     },
-    "signblock=41,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform9_block",
+    "signblock=67,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform14a_block",
       "y": 90
     },
-    "signblock=41,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform9_block",
-      "y": 180
+    "signblock=67,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform14a_block",
+      "y": 90
     },
-    "signblock=41,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform9_block",
-      "y": 270
+    "signblock=68,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform14b_block",
+      "y": 0
     },
-    "signblock=42,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform9a_block",
+    "signblock=68,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform14b_block",
       "y": 0
     },
-    "signblock=42,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform9a_block",
-      "y": 90
+    "signblock=68,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform14b_block",
+      "y": 0
     },
-    "signblock=42,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform9a_block",
+    "signblock=68,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform14b_block",
       "y": 180
     },
-    "signblock=42,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform9a_block",
-      "y": 270
+    "signblock=68,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform14b_block",
+      "y": 180
     },
-    "signblock=43,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform9b_block",
-      "y": 0
+    "signblock=68,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform14b_block",
+      "y": 180
     },
-    "signblock=43,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform9b_block",
-      "y": 90
+    "signblock=68,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform14b_block",
+      "y": 270
     },
-    "signblock=43,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform9b_block",
-      "y": 180
+    "signblock=68,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform14b_block",
+      "y": 270
     },
-    "signblock=43,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform9b_block",
+    "signblock=68,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform14b_block",
       "y": 270
     },
-    "signblock=44,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform9c_block",
-      "y": 0
+    "signblock=68,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform14b_block",
+      "y": 90
     },
-    "signblock=44,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform9c_block",
+    "signblock=68,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform14b_block",
       "y": 90
     },
-    "signblock=44,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform9c_block",
-      "y": 180
+    "signblock=68,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform14b_block",
+      "y": 90
     },
-    "signblock=44,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform9c_block",
-      "y": 270
+    "signblock=69,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform14c_block",
+      "y": 0
     },
-    "signblock=45,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform9d_block",
+    "signblock=69,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform14c_block",
       "y": 0
     },
-    "signblock=45,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform9d_block",
-      "y": 90
+    "signblock=69,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform14c_block",
+      "y": 0
     },
-    "signblock=45,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform9d_block",
+    "signblock=69,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform14c_block",
       "y": 180
     },
-    "signblock=45,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform9d_block",
-      "y": 270
+    "signblock=69,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform14c_block",
+      "y": 180
     },
-    "signblock=46,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform10_block",
-      "y": 0
+    "signblock=69,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform14c_block",
+      "y": 180
     },
-    "signblock=46,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform10_block",
-      "y": 90
+    "signblock=69,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform14c_block",
+      "y": 270
     },
-    "signblock=46,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform10_block",
-      "y": 180
+    "signblock=69,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform14c_block",
+      "y": 270
     },
-    "signblock=46,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform10_block",
+    "signblock=69,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform14c_block",
       "y": 270
     },
-    "signblock=47,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform10a_block",
-      "y": 0
+    "signblock=69,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform14c_block",
+      "y": 90
     },
-    "signblock=47,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform10a_block",
+    "signblock=69,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform14c_block",
       "y": 90
     },
-    "signblock=47,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform10a_block",
-      "y": 180
+    "signblock=69,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform14c_block",
+      "y": 90
     },
-    "signblock=47,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform10a_block",
-      "y": 270
+    "signblock=70,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform14d_block",
+      "y": 0
     },
-    "signblock=48,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform10b_block",
+    "signblock=70,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform14d_block",
       "y": 0
     },
-    "signblock=48,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform10b_block",
-      "y": 90
+    "signblock=70,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform14d_block",
+      "y": 0
     },
-    "signblock=48,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform10b_block",
+    "signblock=70,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform14d_block",
       "y": 180
     },
-    "signblock=48,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform10b_block",
-      "y": 270
+    "signblock=70,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform14d_block",
+      "y": 180
     },
-    "signblock=49,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform10c_block",
-      "y": 0
+    "signblock=70,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform14d_block",
+      "y": 180
     },
-    "signblock=49,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform10c_block",
-      "y": 90
+    "signblock=70,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform14d_block",
+      "y": 270
     },
-    "signblock=49,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform10c_block",
-      "y": 180
+    "signblock=70,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform14d_block",
+      "y": 270
     },
-    "signblock=49,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform10c_block",
+    "signblock=70,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform14d_block",
       "y": 270
     },
-    "signblock=50,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform10d_block",
-      "y": 0
+    "signblock=70,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform14d_block",
+      "y": 90
     },
-    "signblock=50,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform10d_block",
+    "signblock=70,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform14d_block",
       "y": 90
     },
-    "signblock=50,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform10d_block",
-      "y": 180
+    "signblock=70,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform14d_block",
+      "y": 90
     },
-    "signblock=50,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform10d_block",
-      "y": 270
+    "signblock=71,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform15_block",
+      "y": 0
     },
-    "signblock=51,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform11_block",
+    "signblock=71,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform15_block",
       "y": 0
     },
-    "signblock=51,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform11_block",
-      "y": 90
+    "signblock=71,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform15_block",
+      "y": 0
     },
-    "signblock=51,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform11_block",
+    "signblock=71,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform15_block",
       "y": 180
     },
-    "signblock=51,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform11_block",
-      "y": 270
+    "signblock=71,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform15_block",
+      "y": 180
     },
-    "signblock=52,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform11a_block",
-      "y": 0
+    "signblock=71,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform15_block",
+      "y": 180
     },
-    "signblock=52,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform11a_block",
-      "y": 90
+    "signblock=71,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform15_block",
+      "y": 270
     },
-    "signblock=52,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform11a_block",
-      "y": 180
+    "signblock=71,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform15_block",
+      "y": 270
     },
-    "signblock=52,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform11a_block",
+    "signblock=71,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform15_block",
       "y": 270
     },
-    "signblock=53,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform11b_block",
-      "y": 0
+    "signblock=71,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform15_block",
+      "y": 90
     },
-    "signblock=53,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform11b_block",
+    "signblock=71,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform15_block",
       "y": 90
     },
-    "signblock=53,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform11b_block",
-      "y": 180
+    "signblock=71,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform15_block",
+      "y": 90
     },
-    "signblock=53,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform11b_block",
-      "y": 270
+    "signblock=72,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform15a_block",
+      "y": 0
     },
-    "signblock=54,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform11c_block",
+    "signblock=72,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform15a_block",
       "y": 0
     },
-    "signblock=54,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform11c_block",
-      "y": 90
+    "signblock=72,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform15a_block",
+      "y": 0
     },
-    "signblock=54,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform11c_block",
+    "signblock=72,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform15a_block",
       "y": 180
     },
-    "signblock=54,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform11c_block",
-      "y": 270
+    "signblock=72,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform15a_block",
+      "y": 180
     },
-    "signblock=55,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform11d_block",
-      "y": 0
+    "signblock=72,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform15a_block",
+      "y": 180
     },
-    "signblock=55,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform11d_block",
-      "y": 90
+    "signblock=72,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform15a_block",
+      "y": 270
     },
-    "signblock=55,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform11d_block",
-      "y": 180
+    "signblock=72,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform15a_block",
+      "y": 270
     },
-    "signblock=55,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform11d_block",
+    "signblock=72,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform15a_block",
       "y": 270
     },
-    "signblock=56,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform12_block",
-      "y": 0
+    "signblock=72,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform15a_block",
+      "y": 90
     },
-    "signblock=56,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform12_block",
+    "signblock=72,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform15a_block",
       "y": 90
     },
-    "signblock=56,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform12_block",
-      "y": 180
+    "signblock=72,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform15a_block",
+      "y": 90
     },
-    "signblock=56,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform12_block",
-      "y": 270
+    "signblock=73,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform15b_block",
+      "y": 0
     },
-    "signblock=57,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform12a_block",
+    "signblock=73,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform15b_block",
       "y": 0
     },
-    "signblock=57,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform12a_block",
-      "y": 90
+    "signblock=73,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform15b_block",
+      "y": 0
     },
-    "signblock=57,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform12a_block",
+    "signblock=73,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform15b_block",
       "y": 180
     },
-    "signblock=57,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform12a_block",
-      "y": 270
+    "signblock=73,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform15b_block",
+      "y": 180
     },
-    "signblock=58,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform12b_block",
-      "y": 0
+    "signblock=73,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform15b_block",
+      "y": 180
     },
-    "signblock=58,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform12b_block",
-      "y": 90
+    "signblock=73,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform15b_block",
+      "y": 270
     },
-    "signblock=58,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform12b_block",
-      "y": 180
+    "signblock=73,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform15b_block",
+      "y": 270
     },
-    "signblock=58,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform12b_block",
+    "signblock=73,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform15b_block",
       "y": 270
     },
-    "signblock=59,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform12c_block",
-      "y": 0
+    "signblock=73,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform15b_block",
+      "y": 90
     },
-    "signblock=59,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform12c_block",
+    "signblock=73,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform15b_block",
       "y": 90
     },
-    "signblock=59,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform12c_block",
-      "y": 180
+    "signblock=73,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform15b_block",
+      "y": 90
     },
-    "signblock=59,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform12c_block",
-      "y": 270
+    "signblock=74,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform15c_block",
+      "y": 0
     },
-    "signblock=60,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform12d_block",
+    "signblock=74,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform15c_block",
       "y": 0
     },
-    "signblock=60,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform12d_block",
-      "y": 90
+    "signblock=74,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform15c_block",
+      "y": 0
     },
-    "signblock=60,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform12d_block",
+    "signblock=74,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform15c_block",
       "y": 180
     },
-    "signblock=60,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform12d_block",
-      "y": 270
+    "signblock=74,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform15c_block",
+      "y": 180
     },
-    "signblock=61,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform13_block",
-      "y": 0
+    "signblock=74,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform15c_block",
+      "y": 180
     },
-    "signblock=61,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform13_block",
-      "y": 90
+    "signblock=74,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform15c_block",
+      "y": 270
     },
-    "signblock=61,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform13_block",
-      "y": 180
+    "signblock=74,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform15c_block",
+      "y": 270
     },
-    "signblock=61,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform13_block",
+    "signblock=74,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform15c_block",
       "y": 270
     },
-    "signblock=62,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform13a_block",
-      "y": 0
+    "signblock=74,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform15c_block",
+      "y": 90
     },
-    "signblock=62,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform13a_block",
+    "signblock=74,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform15c_block",
       "y": 90
     },
-    "signblock=62,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform13a_block",
-      "y": 180
+    "signblock=74,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform15c_block",
+      "y": 90
     },
-    "signblock=62,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform13a_block",
-      "y": 270
+    "signblock=75,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform15d_block",
+      "y": 0
     },
-    "signblock=63,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform13b_block",
+    "signblock=75,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform15d_block",
       "y": 0
     },
-    "signblock=63,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform13b_block",
-      "y": 90
+    "signblock=75,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform15d_block",
+      "y": 0
     },
-    "signblock=63,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform13b_block",
+    "signblock=75,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform15d_block",
       "y": 180
     },
-    "signblock=63,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform13b_block",
-      "y": 270
+    "signblock=75,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform15d_block",
+      "y": 180
     },
-    "signblock=64,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform13c_block",
-      "y": 0
+    "signblock=75,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform15d_block",
+      "y": 180
     },
-    "signblock=64,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform13c_block",
-      "y": 90
+    "signblock=75,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform15d_block",
+      "y": 270
     },
-    "signblock=64,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform13c_block",
-      "y": 180
+    "signblock=75,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform15d_block",
+      "y": 270
     },
-    "signblock=64,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform13c_block",
+    "signblock=75,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform15d_block",
       "y": 270
     },
-    "signblock=65,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform13d_block",
-      "y": 0
+    "signblock=75,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform15d_block",
+      "y": 90
     },
-    "signblock=65,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform13d_block",
+    "signblock=75,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform15d_block",
       "y": 90
     },
-    "signblock=65,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform13d_block",
-      "y": 180
+    "signblock=75,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform15d_block",
+      "y": 90
     },
-    "signblock=65,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform13d_block",
-      "y": 270
+    "signblock=76,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform16_block",
+      "y": 0
     },
-    "signblock=66,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform14_block",
+    "signblock=76,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform16_block",
       "y": 0
     },
-    "signblock=66,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform14_block",
-      "y": 90
+    "signblock=76,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform16_block",
+      "y": 0
     },
-    "signblock=66,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform14_block",
+    "signblock=76,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform16_block",
       "y": 180
     },
-    "signblock=66,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform14_block",
-      "y": 270
+    "signblock=76,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform16_block",
+      "y": 180
     },
-    "signblock=67,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform14a_block",
-      "y": 0
+    "signblock=76,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform16_block",
+      "y": 180
     },
-    "signblock=67,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform14a_block",
-      "y": 90
+    "signblock=76,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform16_block",
+      "y": 270
     },
-    "signblock=67,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform14a_block",
-      "y": 180
+    "signblock=76,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform16_block",
+      "y": 270
     },
-    "signblock=67,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform14a_block",
+    "signblock=76,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform16_block",
       "y": 270
     },
-    "signblock=68,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform14b_block",
-      "y": 0
+    "signblock=76,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform16_block",
+      "y": 90
     },
-    "signblock=68,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform14b_block",
+    "signblock=76,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform16_block",
       "y": 90
     },
-    "signblock=68,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform14b_block",
-      "y": 180
+    "signblock=76,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform16_block",
+      "y": 90
     },
-    "signblock=68,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform14b_block",
-      "y": 270
+    "signblock=77,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform16a_block",
+      "y": 0
     },
-    "signblock=69,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform14c_block",
+    "signblock=77,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform16a_block",
       "y": 0
     },
-    "signblock=69,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform14c_block",
-      "y": 90
+    "signblock=77,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform16a_block",
+      "y": 0
     },
-    "signblock=69,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform14c_block",
+    "signblock=77,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform16a_block",
       "y": 180
     },
-    "signblock=69,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform14c_block",
-      "y": 270
+    "signblock=77,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform16a_block",
+      "y": 180
     },
-    "signblock=70,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform14d_block",
-      "y": 0
+    "signblock=77,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform16a_block",
+      "y": 180
     },
-    "signblock=70,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform14d_block",
-      "y": 90
+    "signblock=77,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform16a_block",
+      "y": 270
     },
-    "signblock=70,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform14d_block",
-      "y": 180
+    "signblock=77,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform16a_block",
+      "y": 270
     },
-    "signblock=70,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform14d_block",
+    "signblock=77,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform16a_block",
       "y": 270
     },
-    "signblock=71,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform15_block",
-      "y": 0
+    "signblock=77,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform16a_block",
+      "y": 90
     },
-    "signblock=71,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform15_block",
+    "signblock=77,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform16a_block",
       "y": 90
     },
-    "signblock=71,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform15_block",
-      "y": 180
+    "signblock=77,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform16a_block",
+      "y": 90
     },
-    "signblock=71,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform15_block",
-      "y": 270
+    "signblock=78,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform16b_block",
+      "y": 0
     },
-    "signblock=72,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform15a_block",
+    "signblock=78,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform16b_block",
       "y": 0
     },
-    "signblock=72,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform15a_block",
-      "y": 90
+    "signblock=78,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform16b_block",
+      "y": 0
     },
-    "signblock=72,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform15a_block",
+    "signblock=78,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform16b_block",
       "y": 180
     },
-    "signblock=72,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform15a_block",
-      "y": 270
+    "signblock=78,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform16b_block",
+      "y": 180
     },
-    "signblock=73,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform15b_block",
-      "y": 0
+    "signblock=78,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform16b_block",
+      "y": 180
     },
-    "signblock=73,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform15b_block",
-      "y": 90
+    "signblock=78,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform16b_block",
+      "y": 270
     },
-    "signblock=73,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform15b_block",
-      "y": 180
+    "signblock=78,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform16b_block",
+      "y": 270
     },
-    "signblock=73,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform15b_block",
+    "signblock=78,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform16b_block",
       "y": 270
     },
-    "signblock=74,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform15c_block",
-      "y": 0
+    "signblock=78,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform16b_block",
+      "y": 90
     },
-    "signblock=74,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform15c_block",
+    "signblock=78,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform16b_block",
       "y": 90
     },
-    "signblock=74,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform15c_block",
-      "y": 180
+    "signblock=78,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform16b_block",
+      "y": 90
     },
-    "signblock=74,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform15c_block",
-      "y": 270
+    "signblock=79,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform16c_block",
+      "y": 0
     },
-    "signblock=75,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform15d_block",
+    "signblock=79,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform16c_block",
       "y": 0
     },
-    "signblock=75,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform15d_block",
-      "y": 90
+    "signblock=79,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform16c_block",
+      "y": 0
     },
-    "signblock=75,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform15d_block",
+    "signblock=79,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform16c_block",
       "y": 180
     },
-    "signblock=75,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform15d_block",
-      "y": 270
+    "signblock=79,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform16c_block",
+      "y": 180
     },
-    "signblock=76,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform16_block",
-      "y": 0
+    "signblock=79,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform16c_block",
+      "y": 180
     },
-    "signblock=76,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform16_block",
-      "y": 90
+    "signblock=79,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform16c_block",
+      "y": 270
     },
-    "signblock=76,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform16_block",
-      "y": 180
+    "signblock=79,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform16c_block",
+      "y": 270
     },
-    "signblock=76,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform16_block",
+    "signblock=79,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform16c_block",
       "y": 270
     },
-    "signblock=77,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform16a_block",
-      "y": 0
+    "signblock=79,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform16c_block",
+      "y": 90
     },
-    "signblock=77,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform16a_block",
+    "signblock=79,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform16c_block",
       "y": 90
     },
-    "signblock=77,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform16a_block",
-      "y": 180
+    "signblock=79,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform16c_block",
+      "y": 90
     },
-    "signblock=77,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform16a_block",
-      "y": 270
+    "signblock=80,facing=north,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform16d_block",
+      "y": 0
     },
-    "signblock=78,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform16b_block",
+    "signblock=80,facing=north,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform16d_block",
       "y": 0
     },
-    "signblock=78,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform16b_block",
-      "y": 90
+    "signblock=80,facing=north,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform16d_block",
+      "y": 0
     },
-    "signblock=78,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform16b_block",
+    "signblock=80,facing=south,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform16d_block",
       "y": 180
-    },
-    "signblock=78,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform16b_block",
-      "y": 270
-    },
-    "signblock=79,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform16c_block",
-      "y": 0
     },
-    "signblock=79,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform16c_block",
-      "y": 90
+    "signblock=80,facing=south,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform16d_block",
+      "y": 180
     },
-    "signblock=79,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform16c_block",
+    "signblock=80,facing=south,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform16d_block",
       "y": 180
     },
-    "signblock=79,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform16c_block",
+    "signblock=80,facing=west,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform16d_block",
       "y": 270
     },
-    "signblock=80,facing=north": {
-      "model": "trainutilities:block/nl_platform_blocks/platform16d_block",
-      "y": 0
+    "signblock=80,facing=west,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform16d_block",
+      "y": 270
+    },
+    "signblock=80,facing=west,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform16d_block",
+      "y": 270
     },
-    "signblock=80,facing=east": {
-      "model": "trainutilities:block/nl_platform_blocks/platform16d_block",
+    "signblock=80,facing=east,z_align=positive": {
+      "model": "trainutilities:block/nl_platform_blocks/positive/platform16d_block",
       "y": 90
     },
-    "signblock=80,facing=south": {
-      "model": "trainutilities:block/nl_platform_blocks/platform16d_block",
-      "y": 180
+    "signblock=80,facing=east,z_align=center": {
+      "model": "trainutilities:block/nl_platform_blocks/center/platform16d_block",
+      "y": 90
     },
-    "signblock=80,facing=west": {
-      "model": "trainutilities:block/nl_platform_blocks/platform16d_block",
-      "y": 270
+    "signblock=80,facing=east,z_align=negative": {
+      "model": "trainutilities:block/nl_platform_blocks/negative/platform16d_block",
+      "y": 90
     }
   }
 }

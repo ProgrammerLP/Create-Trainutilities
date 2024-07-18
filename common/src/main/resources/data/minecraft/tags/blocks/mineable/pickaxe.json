@@ -10,7 +10,17 @@
     "trainutilities:door_ic2",
     "trainutilities:door_rrx",
     "trainutilities:door_flirt",
+    "trainutilities:door_sw_nyc",
+    "trainutilities:door_pkp_ic_white",
+    "trainutilities:door_pkp_ic_blue",
     "trainutilities:de_platform_block",
-    "trainutilities:nl_platform_block"
+    "trainutilities:nl_platform_block",
+    "trainutilities:pkp_ic_top_green_line_block",
+    "trainutilities:pkp_ic_top_yellow_line_block",
+    "trainutilities:pkp_ic_top_blue_line_block",
+    "trainutilities:pkp_ic_bottom_green_line_block",
+    "trainutilities:pkp_ic_bottom_yellow_line_block",
+    "trainutilities:pkp_ic_bottom_blue_line_block",
+    "trainutilities:door_goahead_desiro"
   ]
 }

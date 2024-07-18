@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "trainutilities:block/pkp_ic_top_green_line_block"
+    },
+    "facing=east": {
+      "model": "trainutilities:block/pkp_ic_top_green_line_block",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "trainutilities:block/pkp_ic_top_green_line_block",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "trainutilities:block/pkp_ic_top_green_line_block",
+      "y": 270
+    }
+  }
+}
