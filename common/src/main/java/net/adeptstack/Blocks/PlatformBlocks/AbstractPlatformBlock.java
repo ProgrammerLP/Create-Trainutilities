@@ -18,7 +18,6 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 public class AbstractPlatformBlock extends Block {
-
     public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
     public static final EnumProperty<EBlockPlacePosition> Z_ALIGN = EnumProperty.create("z_align", EBlockPlacePosition.class);
 
