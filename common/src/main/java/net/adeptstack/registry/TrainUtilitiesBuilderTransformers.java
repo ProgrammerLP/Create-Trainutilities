@@ -56,6 +56,7 @@ public class TrainUtilitiesBuilderTransformers {
                 .block(id, GlassBlock::new)
                 .initialProperties(() -> Blocks.GLASS)
                 .properties(p -> p.sound(SoundType.GLASS).mapColor(color))
+                .addLayer(() -> RenderType::translucent)
                 .item()
                 .tab(TRAINUTILS_TAB.getKey())
                 .build()
