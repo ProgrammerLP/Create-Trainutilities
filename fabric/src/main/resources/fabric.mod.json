@@ -3,7 +3,7 @@
   "id": "trainutilities",
   "version": "${version}",
   "name": "Create: TrainUtilities",
-  "description": "---",
+  "description": "Mod that adds custom sliding doors with realistic opening & closing sounds and station blocks, and also building blocks for stations and trains.",
   "authors": [
     "ProgrammerLP"
   ],

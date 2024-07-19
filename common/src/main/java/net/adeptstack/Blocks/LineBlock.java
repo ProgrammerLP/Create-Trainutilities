@@ -11,10 +11,10 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 
-public class RedLineBlock extends Block {
+public class LineBlock extends Block {
     public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
-    public RedLineBlock(BlockBehaviour.Properties p_49795_) {
+    public LineBlock(BlockBehaviour.Properties p_49795_) {
         super(p_49795_);
 
         this.registerDefaultState(this.stateDefinition.any()

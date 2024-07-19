@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "WWW",
+    "WWW",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:lime_dye"
+    },
+    "W": {
+      "item": "minecraft:white_concrete"
+    }
+  },
+  "result": {
+    "item": "trainutilities:pkp_ic_bottom_green_line_block",
+    "count": 6
+  }
+}
