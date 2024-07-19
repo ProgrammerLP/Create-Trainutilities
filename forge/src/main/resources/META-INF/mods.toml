@@ -7,8 +7,8 @@ displayURL="https://modrinth.com/mod/create-trainutilities/"
 [[mods]]
 modId = "trainutilities"
 version = "${version}"
-displayName = "trainutilities"
-authors = "ProgrammerLP"
+displayName = "Create: TrainUtilities"
+authors = "Adeptstack"
 description = '''
 Mod that adds custom sliding doors with sounds and station blocks, and also building blocks for stations and trains.
 '''

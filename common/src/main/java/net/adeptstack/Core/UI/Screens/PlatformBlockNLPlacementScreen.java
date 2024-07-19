@@ -10,7 +10,6 @@ import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.CommonComponents;
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 
@@ -53,7 +52,7 @@ public class PlatformBlockNLPlacementScreen extends Screen {
     private int selectedVariant = NO_VARIANT_SELECTED;
 
     public <T extends IntegerProperty> PlatformBlockNLPlacementScreen(int variant, T property, Function<Integer, TextureResult> textureGetter, Consumer<Integer> onDone) {
-        super(new TranslatableComponent("gui." + MOD_ID + ".selection_screen.blockplacementscreen_nl"));
+        super(Component.translatable("gui." + MOD_ID + ".selection_screen.blockplacementscreen_nl"));
         this.maxValues = property.getPossibleValues().size();
         this.startValue = property.getAllValues().mapToInt(x -> x.value()).min().orElse(0);
         this.maxRows = (int)Math.ceil((double)maxValues / (double)MAX_BUTTONS_PER_ROW);

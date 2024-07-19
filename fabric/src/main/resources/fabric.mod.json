@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "id": "trainutilities",
   "version": "${version}",
-  "name": "trainutilities",
-  "description": "Mod that adds custom sliding doors with sounds and station blocks, and also building blocks for stations and trains.",
+  "name": "Create: TrainUtilities",
+  "description": "---",
   "authors": [
     "ProgrammerLP"
   ],
