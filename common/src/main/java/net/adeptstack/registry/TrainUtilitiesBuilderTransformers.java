@@ -27,48 +27,49 @@ import static net.adeptstack.registry.ModTabs.TRAINUTILS_TAB;
 @SuppressWarnings({"unused","removal"})
 public class TrainUtilitiesBuilderTransformers {
 
-    public static BlockEntry<PlatformBlockDE> DEPlatformBlock(String id, MapColor color) {
+    public static BlockEntry<PlatformBlockDE> DEPlatformBlock(String id, MaterialColor color) {
         return REGISTRATE
                 .block(id, PlatformBlockDE::new)
                 .initialProperties(() -> Blocks.IRON_BARS)
-                .properties(p -> p.mapColor(color)
+                .properties(p -> p.color(color)
                         .sound(SoundType.METAL))
                 .item()
-                .tab(TRAINUTILS_TAB.getKey())
+                .tab(() -> ModTabs.TRAINUTILS_TAB)
                 .build()
                 .register();
     }
 
-    public static BlockEntry<PlatformBlockNL> NLPlatformBlock(String id, MapColor color) {
+    public static BlockEntry<PlatformBlockNL> NLPlatformBlock(String id, MaterialColor color) {
         return REGISTRATE
                 .block(id, PlatformBlockNL::new)
                 .initialProperties(() -> Blocks.IRON_BARS)
-                .properties(p -> p.mapColor(color)
+                .properties(p -> p.color(color)
                         .sound(SoundType.METAL))
                 .item()
-                .tab(TRAINUTILS_TAB.getKey())
+                .tab(() -> ModTabs.TRAINUTILS_TAB)
                 .build()
                 .register();
     }
 
-    public static BlockEntry<GlassBlock> GlassBlock(String id, MapColor color) {
+    public static BlockEntry<GlassBlock> GlassBlock(String id, MaterialColor color) {
         return REGISTRATE
                 .block(id, GlassBlock::new)
                 .initialProperties(() -> Blocks.GLASS)
-                .properties(p -> p.sound(SoundType.GLASS).mapColor(color))
+                .properties(p -> p.sound(SoundType.GLASS).color(color))
+                .addLayer(() -> RenderType::translucent)
                 .item()
-                .tab(TRAINUTILS_TAB.getKey())
+                .tab(() -> ModTabs.TRAINUTILS_TAB)
                 .build()
                 .register();
     }
 
-    public static BlockEntry<LineBlock> LineBlock(String id, MapColor color) {
+    public static BlockEntry<LineBlock> LineBlock(String id, MaterialColor color) {
         return REGISTRATE
                 .block(id, LineBlock::new)
                 .initialProperties(() -> Blocks.WHITE_CONCRETE)
-                .properties(p -> p.mapColor(color))
+                .properties(p -> p.color(color))
                 .item()
-                .tab(TRAINUTILS_TAB.getKey())
+                .tab(() -> ModTabs.TRAINUTILS_TAB)
                 .build()
                 .register();
     }

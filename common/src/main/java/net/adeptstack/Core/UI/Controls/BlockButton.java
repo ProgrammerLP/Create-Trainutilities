@@ -4,6 +4,7 @@ import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.vertex.PoseStack;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.TextComponent;
 import net.minecraft.resources.ResourceLocation;
 
 import java.util.function.Consumer;
@@ -16,7 +17,7 @@ public class BlockButton extends Button {
     private final int textureHeight;
 
     public BlockButton(int x, int y, Consumer<BlockButton> onPress, ResourceLocation textureLocation, int textureWidth, int textureHeight) {
-        super(x, y, 20, 20, Component.empty(), (b) -> onPress.accept((BlockButton)b), NO_TOOLTIP);
+        super(x, y, 20, 20, new TextComponent(""), (b) -> onPress.accept((BlockButton)b), NO_TOOLTIP);
         this.location = textureLocation;
         this.textureWidth = textureWidth;
         this.textureHeight = textureHeight;
