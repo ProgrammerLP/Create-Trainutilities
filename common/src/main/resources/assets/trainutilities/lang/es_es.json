@@ -10,6 +10,8 @@
   "block.trainutilities.pkp_ic_bottom_green_line_block": " PKP Bloque de linea interurbano (parte abajo, verde)",
   "block.trainutilities.pkp_ic_bottom_yellow_line_block": "PKP Bloque de linea interurbano (parte abajo, amarillo)",
   "block.trainutilities.pkp_ic_bottom_blue_line_block": "PKP Bloque de linea interurbano (parte abajo, azul)",
+  "block.trainutilities.pkp_block_white": "PKP Bloque de interurbano (blanca)",
+  "block.trainutilities.pkp_block_blue": "PKP Bloque de interurbano (azul)",
 
   "block.trainutilities.door_ice": "Puerta de DB ICE",
   "block.trainutilities.door_ic2": "Puerta de DB IC2",

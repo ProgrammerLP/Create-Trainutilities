@@ -10,6 +10,8 @@
   "block.trainutilities.pkp_ic_bottom_green_line_block": " PKP Intercity line block (bottom, green)",
   "block.trainutilities.pkp_ic_bottom_yellow_line_block": "PKP Intercity line block (bottom, yellow)",
   "block.trainutilities.pkp_ic_bottom_blue_line_block": "PKP Intercity line block (bottom, blue)",
+  "block.trainutilities.pkp_block_white": "PKP Intercity block white",
+  "block.trainutilities.pkp_block_blue": "PKP Intercity block blue",
 
   "block.trainutilities.door_ice": "DB ICE door",
   "block.trainutilities.door_ic2": "DB IC2 door",

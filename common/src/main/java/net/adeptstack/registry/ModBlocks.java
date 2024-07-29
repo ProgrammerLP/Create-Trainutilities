@@ -5,6 +5,7 @@ import net.adeptstack.Blocks.Doors.TrainSlidingDoorBlock;
 import net.adeptstack.Blocks.PlatformBlocks.PlatformBlockDE;
 import net.adeptstack.Blocks.PlatformBlocks.PlatformBlockNL;
 import net.adeptstack.Blocks.LineBlock;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.GlassBlock;
 import net.minecraft.world.level.material.MapColor;
 
@@ -18,6 +19,12 @@ public class ModBlocks {
             TrainUtilitiesBuilderTransformers.NLPlatformBlock("nl_platform_block", MapColor.NONE);
 
     //===BUILDING BLOCKS===
+    public static final BlockEntry<Block> PKP_BLOCK_WHITE =
+            TrainUtilitiesBuilderTransformers.DefaultBlock("pkp_block_white", MapColor.TERRACOTTA_WHITE);
+
+    public static final BlockEntry<Block> PKP_BLOCK_BLUE =
+            TrainUtilitiesBuilderTransformers.DefaultBlock("pkp_block_blue", MapColor.TERRACOTTA_BLUE);
+
     //glass
     public static final BlockEntry<GlassBlock> FRAMELESS_GLASS =
             TrainUtilitiesBuilderTransformers.GlassBlock("frameless_glass", MapColor.NONE);
