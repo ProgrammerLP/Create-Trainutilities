@@ -107,7 +107,7 @@ public class TrainUtilitiesBuilderTransformers {
     }
 
     public static TrainSlidingDoorProperties GetSlidingDoorProperties(String type) {
-        if (type == "ice") {
+        if (type == "ice" || type == "ice_top") {
             return new TrainSlidingDoorProperties(ModSounds.DOOR_ICE_OPEN.get(), ModSounds.DOOR_ICE_CLOSE.get(), .025f);
         }
         else if (type == "ic2") {

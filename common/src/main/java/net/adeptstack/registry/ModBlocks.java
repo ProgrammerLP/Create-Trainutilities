@@ -42,7 +42,7 @@ public class ModBlocks {
     public static final BlockEntry<LineBlock> RIGHTSLOPED_REDLINE_BLOCK =
             TrainUtilitiesBuilderTransformers.LineBlock("rightsloped_redline_block", MapColor.TERRACOTTA_WHITE);
 
-    //pkp ic doors
+    //pkp ic blocks
     public static final BlockEntry<LineBlock> PKP_IC_TOP_GREEN_LINE_BLOCK =
             TrainUtilitiesBuilderTransformers.LineBlock("pkp_ic_top_green_line_block", MapColor.TERRACOTTA_WHITE);
 
@@ -64,6 +64,9 @@ public class ModBlocks {
     //===DOORS===
     public static final BlockEntry<TrainSlidingDoorBlock> DOOR_ICE =
             TrainUtilitiesBuilderTransformers.TrainSlidingDoor("ice", MapColor.TERRACOTTA_WHITE);
+
+    public static final BlockEntry<TrainSlidingDoorBlock> DOOR_ICE_TOP =
+            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("ice_top", MapColor.TERRACOTTA_WHITE);
 
     public static final BlockEntry<TrainSlidingDoorBlock> DOOR_IC2 =
             TrainUtilitiesBuilderTransformers.TrainSlidingDoor("ic2", MapColor.TERRACOTTA_WHITE);
