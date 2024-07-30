@@ -1,50 +1,110 @@
 {
   "door_ice_open": {
     "subtitle": "sound.trainutilities.door_ice_open",
-    "sounds": [ "trainutilities:door_ice_open" ]
+    "sounds": [
+      {
+        "name": "trainutilities:door_ice_open",
+        "stream": true
+      }
+    ]
   },
   "door_ice_close": {
     "subtitle": "sound.trainutilities.door_ice_close",
-    "sounds": [ "trainutilities:door_ice_close" ]
+    "sounds": [
+      {
+        "name": "trainutilities:door_ice_close",
+        "stream": true
+      }
+    ]
   },
   "door_rrx_open": {
     "subtitle": "sound.trainutilities.door_rrx_open",
-    "sounds": [ "trainutilities:door_rrx_open" ]
+    "sounds": [
+      {
+        "name": "trainutilities:door_rrx_open",
+        "stream": true
+      }
+    ]
   },
   "door_rrx_close": {
     "subtitle": "sound.trainutilities.door_rrx_close",
-    "sounds": [ "trainutilities:door_rrx_close" ]
+    "sounds": [
+      {
+        "name": "trainutilities:door_rrx_close",
+        "stream": true
+      }
+    ]
   },
   "door_ic2_open": {
     "subtitle": "sound.trainutilities.door_ic2_open",
-    "sounds": [ "trainutilities:door_ic2_open" ]
+    "sounds": [
+      {
+        "name": "trainutilities:door_ic2_open",
+        "stream": true
+      }
+    ]
   },
   "door_ic2_close": {
     "subtitle": "sound.trainutilities.door_ic2_close",
-    "sounds": [ "trainutilities:door_ic2_close" ]
+    "sounds": [
+      {
+        "name": "trainutilities:door_ic2_close",
+        "stream": true
+      }
+    ]
   },
   "door_flirt_open": {
     "subtitle": "sound.trainutilities.door_flirt_open",
-    "sounds": [ "trainutilities:door_flirt_open" ]
+    "sounds": [
+      {
+        "name": "trainutilities:door_flirt_open",
+        "stream": true
+      }
+    ]
   },
   "door_flirt_close": {
     "subtitle": "sound.trainutilities.door_flirt_close",
-    "sounds": [ "trainutilities:door_flirt_close" ]
+    "sounds": [
+      {
+        "name": "trainutilities:door_flirt_close",
+        "stream": true
+      }
+    ]
   },
   "door_sw_nyc_open": {
     "subtitle": "sound.trainutilities.door_sw_nyc_open",
-    "sounds": [ "trainutilities:door_sw_nyc_open" ]
+    "sounds": [
+      {
+        "name": "trainutilities:door_sw_nyc_open",
+        "stream": true
+      }
+    ]
   },
   "door_sw_nyc_close": {
   "subtitle": "sound.trainutilities.door_sw_nyc_close",
-  "sounds": [ "trainutilities:door_sw_nyc_close" ]
+  "sounds": [
+    {
+      "name": "trainutilities:door_sw_nyc_close",
+      "stream": true
+    }
+  ]
   },
   "door_pkp_ic_open": {
     "subtitle": "sound.trainutilities.door_pkp_ic_open",
-    "sounds": [ "trainutilities:door_pkp_ic_open" ]
+    "sounds": [
+      {
+        "name": "trainutilities:door_pkp_ic_open",
+        "stream": true
+      }
+    ]
   },
   "door_pkp_ic_close": {
     "subtitle": "sound.trainutilities.door_pkp_ic_close",
-    "sounds": [ "trainutilities:door_pkp_ic_close" ]
+    "sounds": [
+      {
+        "name": "trainutilities:door_pkp_ic_close",
+        "stream": true
+      }
+    ]
   }
 }

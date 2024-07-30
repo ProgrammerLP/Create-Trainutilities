@@ -13,6 +13,7 @@ import net.adeptstack.Blocks.PlatformBlocks.PlatformBlockDE;
 import net.adeptstack.Blocks.PlatformBlocks.PlatformBlockNL;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.sounds.SoundEvents;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.GlassBlock;
 import net.minecraft.world.level.block.SoundType;
@@ -57,6 +58,19 @@ public class TrainUtilitiesBuilderTransformers {
                 .initialProperties(() -> Blocks.GLASS)
                 .properties(p -> p.sound(SoundType.GLASS).color(color))
                 .addLayer(() -> RenderType::translucent)
+                .properties(p -> p.sound(SoundType.GLASS).mapColor(color))
+                .addLayer(() -> RenderType::translucent)
+                .item()
+                .tab(TRAINUTILS_TAB.getKey())
+                .build()
+                .register();
+    }
+
+    public static BlockEntry<Block> DefaultBlock(String id, MapColor color) {
+        return REGISTRATE
+                .block(id, Block::new)
+                .initialProperties(() -> Blocks.GLASS)
+                .properties(p -> p.sound(SoundType.STONE).mapColor(color))
                 .item()
                 .tab(() -> ModTabs.TRAINUTILS_TAB)
                 .build()
@@ -95,7 +109,7 @@ public class TrainUtilitiesBuilderTransformers {
     }
 
     public static TrainSlidingDoorProperties GetSlidingDoorProperties(String type) {
-        if (type == "ice") {
+        if (type == "ice" || type == "ice_top") {
             return new TrainSlidingDoorProperties(ModSounds.DOOR_ICE_OPEN.get(), ModSounds.DOOR_ICE_CLOSE.get(), .025f);
         }
         else if (type == "ic2") {

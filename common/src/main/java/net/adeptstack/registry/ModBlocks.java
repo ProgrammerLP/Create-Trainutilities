@@ -5,6 +5,7 @@ import net.adeptstack.Blocks.Doors.TrainSlidingDoorBlock;
 import net.adeptstack.Blocks.PlatformBlocks.PlatformBlockDE;
 import net.adeptstack.Blocks.PlatformBlocks.PlatformBlockNL;
 import net.adeptstack.Blocks.LineBlock;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.GlassBlock;
 import net.minecraft.world.level.material.MaterialColor;
 
@@ -18,6 +19,12 @@ public class ModBlocks {
             TrainUtilitiesBuilderTransformers.NLPlatformBlock("nl_platform_block", MaterialColor.NONE);
 
     //===BUILDING BLOCKS===
+    public static final BlockEntry<Block> PKP_BLOCK_WHITE =
+            TrainUtilitiesBuilderTransformers.DefaultBlock("pkp_block_white", MapColor.TERRACOTTA_WHITE);
+
+    public static final BlockEntry<Block> PKP_BLOCK_BLUE =
+            TrainUtilitiesBuilderTransformers.DefaultBlock("pkp_block_blue", MapColor.TERRACOTTA_BLUE);
+
     //glass
     public static final BlockEntry<GlassBlock> FRAMELESS_GLASS =
             TrainUtilitiesBuilderTransformers.GlassBlock("frameless_glass", MaterialColor.NONE);
@@ -35,7 +42,7 @@ public class ModBlocks {
     public static final BlockEntry<LineBlock> RIGHTSLOPED_REDLINE_BLOCK =
             TrainUtilitiesBuilderTransformers.LineBlock("rightsloped_redline_block", MaterialColor.TERRACOTTA_WHITE);
 
-    //pkp ic doors
+    //pkp ic blocks
     public static final BlockEntry<LineBlock> PKP_IC_TOP_GREEN_LINE_BLOCK =
             TrainUtilitiesBuilderTransformers.LineBlock("pkp_ic_top_green_line_block", MaterialColor.TERRACOTTA_WHITE);
 
@@ -58,6 +65,9 @@ public class ModBlocks {
     //===DOORS===
     public static final BlockEntry<TrainSlidingDoorBlock> DOOR_ICE =
             TrainUtilitiesBuilderTransformers.TrainSlidingDoor("ice", MaterialColor.TERRACOTTA_WHITE);
+
+    public static final BlockEntry<TrainSlidingDoorBlock> DOOR_ICE_TOP =
+            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("ice_top", MapColor.TERRACOTTA_WHITE);
 
     public static final BlockEntry<TrainSlidingDoorBlock> DOOR_IC2 =
             TrainUtilitiesBuilderTransformers.TrainSlidingDoor("ic2", MaterialColor.TERRACOTTA_WHITE);
