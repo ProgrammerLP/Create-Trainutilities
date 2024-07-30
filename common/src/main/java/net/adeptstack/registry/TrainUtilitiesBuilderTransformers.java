@@ -58,19 +58,19 @@ public class TrainUtilitiesBuilderTransformers {
                 .initialProperties(() -> Blocks.GLASS)
                 .properties(p -> p.sound(SoundType.GLASS).color(color))
                 .addLayer(() -> RenderType::translucent)
-                .properties(p -> p.sound(SoundType.GLASS).mapColor(color))
+                .properties(p -> p.sound(SoundType.GLASS).color(color))
                 .addLayer(() -> RenderType::translucent)
                 .item()
-                .tab(TRAINUTILS_TAB.getKey())
+                .tab(() -> ModTabs.TRAINUTILS_TAB)
                 .build()
                 .register();
     }
 
-    public static BlockEntry<Block> DefaultBlock(String id, MapColor color) {
+    public static BlockEntry<Block> DefaultBlock(String id, MaterialColor color) {
         return REGISTRATE
                 .block(id, Block::new)
                 .initialProperties(() -> Blocks.GLASS)
-                .properties(p -> p.sound(SoundType.STONE).mapColor(color))
+                .properties(p -> p.sound(SoundType.STONE).color(color))
                 .item()
                 .tab(() -> ModTabs.TRAINUTILS_TAB)
                 .build()

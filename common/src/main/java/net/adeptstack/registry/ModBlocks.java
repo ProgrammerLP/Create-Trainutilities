@@ -20,10 +20,10 @@ public class ModBlocks {
 
     //===BUILDING BLOCKS===
     public static final BlockEntry<Block> PKP_BLOCK_WHITE =
-            TrainUtilitiesBuilderTransformers.DefaultBlock("pkp_block_white", MapColor.TERRACOTTA_WHITE);
+            TrainUtilitiesBuilderTransformers.DefaultBlock("pkp_block_white", MaterialColor.TERRACOTTA_WHITE);
 
     public static final BlockEntry<Block> PKP_BLOCK_BLUE =
-            TrainUtilitiesBuilderTransformers.DefaultBlock("pkp_block_blue", MapColor.TERRACOTTA_BLUE);
+            TrainUtilitiesBuilderTransformers.DefaultBlock("pkp_block_blue", MaterialColor.TERRACOTTA_BLUE);
 
     //glass
     public static final BlockEntry<GlassBlock> FRAMELESS_GLASS =
@@ -67,7 +67,7 @@ public class ModBlocks {
             TrainUtilitiesBuilderTransformers.TrainSlidingDoor("ice", MaterialColor.TERRACOTTA_WHITE);
 
     public static final BlockEntry<TrainSlidingDoorBlock> DOOR_ICE_TOP =
-            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("ice_top", MapColor.TERRACOTTA_WHITE);
+            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("ice_top", MaterialColor.TERRACOTTA_WHITE);
 
     public static final BlockEntry<TrainSlidingDoorBlock> DOOR_IC2 =
             TrainUtilitiesBuilderTransformers.TrainSlidingDoor("ic2", MaterialColor.TERRACOTTA_WHITE);
