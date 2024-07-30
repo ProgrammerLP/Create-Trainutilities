@@ -1,0 +1,51 @@
+{
+  "block.trainutilities.frameless_glass": "Cristal sin bordes",
+  "block.trainutilities.top_redline_block": "DB IC(E) Bloque de linea (parte arriba)",
+  "block.trainutilities.bottom_redline_block": "DB IC(E) Bloque de linea (parte abajo)",
+  "block.trainutilities.leftsloped_redline_block": "DB IC(E) Bloque de linea inclinado (izquierda)",
+  "block.trainutilities.rightsloped_redline_block": "DB IC(E) Bloque de linea inclinado (derecha)",
+  "block.trainutilities.pkp_ic_top_green_line_block":  "PKP Bloque de linea interurbano (parte arriba, verde)",
+  "block.trainutilities.pkp_ic_top_yellow_line_block": "PKP Bloque de linea interurbano (parte arriba, amarillo)",
+  "block.trainutilities.pkp_ic_top_blue_line_block": "PKP Bloque de linea interurbano (parte arriba, azul)",
+  "block.trainutilities.pkp_ic_bottom_green_line_block": " PKP Bloque de linea interurbano (parte abajo, verde)",
+  "block.trainutilities.pkp_ic_bottom_yellow_line_block": "PKP Bloque de linea interurbano (parte abajo, amarillo)",
+  "block.trainutilities.pkp_ic_bottom_blue_line_block": "PKP Bloque de linea interurbano (parte abajo, azul)",
+  "block.trainutilities.pkp_block_white": "PKP Bloque de interurbano (blanca)",
+  "block.trainutilities.pkp_block_blue": "PKP Bloque de interurbano (azul)",
+
+  "block.trainutilities.door_ice": "Puerta de DB ICE",
+  "block.trainutilities.door_ic2": "Puerta de DB IC2",
+  "block.trainutilities.door_rrx": "Puerta de Desiro HC (diseño RRX)",
+  "block.trainutilities.door_flirt": "Puerta de Stadler Flirt 3XL(diseño VRR)",
+  "block.trainutilities.door_sw_nyc": "Puerta del metro de NYC",
+  "block.trainutilities.door_pkp_ic_white": "Puerta de PKP interurbana (blanca)",
+  "block.trainutilities.door_pkp_ic_blue": "Puerta de PKP interurbana (azul)",
+  "block.trainutilities.door_goahead_desiro": "Puerta de Desiro HC(Diseño GoAhead)",
+  "block.trainutilities.door_ice_top": "Puerta de DB ICE (parte arriba)",
+
+  "block.trainutilities.de_platform_block": "Bloque de plataforma alemán",
+  "block.trainutilities.nl_platform_block": "Bloque de plataforma holandés",
+
+  "sound.trainutilities.door_ice_open": "Puerta de ICE se abre",
+  "sound.trainutilities.door_ice_close": "Puerta de ICE se cierra",
+  "sound.trainutilities.door_rrx_open": "Puerta de Desiro HC se abre",
+  "sound.trainutilities.door_rrx_close": "Puerta de Desiro HC se cierra",
+  "sound.trainutilities.door_ic2_open": "Puerta de IC2 se abre",
+  "sound.trainutilities.door_ic2_close": "Puerta de IC2 se cierra",
+  "sound.trainutilities.door_flirt_open": "Puerta de Stadler Flirt se abre",
+  "sound.trainutilities.door_flirt_close": "Puerta de Stadler Flirt se cierra",
+  "sound.trainutilities.door_sw_nyc_open": "Puerta del metro de NYC se abre",
+  "sound.trainutilities.door_sw_nyc_close": "Puerta del metro de NYC se cierra",
+  "sound.trainutilities.door_pkp_ic_open": "Puerta de PKP interurbana se abre",
+  "sound.trainutilities.door_pkp_ic_close": "Puerta de PKP interurbana se cierra",
+
+  "advancement.trainutilities.platform_block": "Era Moderna",
+  "advancement.trainutilities.platform_block.description": "Obten un bloque de plataforma",
+  "advancement.trainutilities.doors": "¿Es esto la vida real?",
+  "advancement.trainutilities.doors.description": "Obten una de las nuevas puertas de TrainUtilities",
+
+  "itemGroup.trainutilities.trainutils_tab": "TrainUtilities",
+
+  "gui.trainutilities.selection_screen.blockplacementscreen_de": "Bloques de plataforma alemanes",
+  "gui.trainutilities.selection_screen.blockplacementscreen_nl": "Bloques de plataforma holandeses"
+}

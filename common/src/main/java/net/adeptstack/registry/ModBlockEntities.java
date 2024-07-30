@@ -13,7 +13,7 @@ public class ModBlockEntities {
                     .renderer(() -> TrainSlidingDoorBlockRenderer::new)
                     .validBlocks(ModBlocks.DOOR_ICE, ModBlocks.DOOR_IC2, ModBlocks.DOOR_RRX,
                             ModBlocks.DOOR_FLIRT, ModBlocks.DOOR_SW_NYC, ModBlocks.DOOR_PKP_IC_WHITE,
-                            ModBlocks.DOOR_PKP_IC_BLUE, ModBlocks.DOOR_GOAHEAD_DESIRO)
+                            ModBlocks.DOOR_PKP_IC_BLUE, ModBlocks.DOOR_GOAHEAD_DESIRO, ModBlocks.DOOR_ICE_TOP)
                     .register();
 
     public static void register() {}

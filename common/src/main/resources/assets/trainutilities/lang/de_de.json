@@ -10,6 +10,8 @@
   "block.trainutilities.pkp_ic_bottom_green_line_block": " PKP Intercity Linienblock (unten, grün)",
   "block.trainutilities.pkp_ic_bottom_yellow_line_block": "PKP Intercity Linienblock (unten, gelb)",
   "block.trainutilities.pkp_ic_bottom_blue_line_block": "PKP Intercity Linienblock (unten, blau)",
+  "block.trainutilities.pkp_block_white": "PKP Intercity Block Weiß",
+  "block.trainutilities.pkp_block_blue": "PKP Intercity Block Blau",
 
   "block.trainutilities.door_ice": "DB ICE Tür",
   "block.trainutilities.door_ic2": "DB IC2 Tür",
@@ -19,14 +21,15 @@
   "block.trainutilities.door_pkp_ic_white": "PKP Intercity Tür (weiß)",
   "block.trainutilities.door_pkp_ic_blue": "PKP Intercity Tür (blau)",
   "block.trainutilities.door_goahead_desiro": "Desiro HC Tür (GoAhead Design)",
+  "block.trainutilities.door_ice_top": "DB ICE Tür (oben)",
 
   "block.trainutilities.de_platform_block": "Deutscher Gleisblock",
   "block.trainutilities.nl_platform_block": "Niederländischer Gleisblock",
 
   "sound.trainutilities.door_ice_open": "ICE Tür öffnet",
   "sound.trainutilities.door_ice_close": "ICE Tür schließt",
-  "sound.trainutilities.door_rrx_open": "RRX Tür öffnet",
-  "sound.trainutilities.door_rrx_close": "RRX Tür schließt",
+  "sound.trainutilities.door_rrx_open": "Desiro HC Tür öffnet",
+  "sound.trainutilities.door_rrx_close": "Desiro HC Tür schließt",
   "sound.trainutilities.door_ic2_open": "IC2 Tür öffnet",
   "sound.trainutilities.door_ic2_close": "IC2 Tür schließt",
   "sound.trainutilities.door_flirt_open": "Stadler Flirt Tür öffnet ",

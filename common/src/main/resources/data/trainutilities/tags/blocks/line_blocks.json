@@ -10,6 +10,8 @@
     "trainutilities:pkp_ic_top_blue_line_block",
     "trainutilities:pkp_ic_bottom_green_line_block",
     "trainutilities:pkp_ic_bottom_yellow_line_block",
-    "trainutilities:pkp_ic_bottom_blue_line_block"
+    "trainutilities:pkp_ic_bottom_blue_line_block",
+    "trainutilities:pkp_block_blue",
+    "trainutilities:pkp_block_white"
   ]
 }
