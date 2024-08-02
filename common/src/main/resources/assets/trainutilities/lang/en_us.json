@@ -22,6 +22,10 @@
   "block.trainutilities.door_pkp_ic_blue": "PKP intercity door (blue)",
   "block.trainutilities.door_goahead_desiro": "Desiro HC door (GoAhead design)",
   "block.trainutilities.door_ice_top": "DB ICE door (top)",
+  "block.trainutilities.door_flirt_vias": "Stadler Flirt 3 XL door (VIAS design)",
+  "block.trainutilities.door_ic": "DB IC 1 door",
+  "block.trainutilities.door_ice_modern": "DB ICE door modern",
+  "block.trainutilities.door_modern_top": "DB ICE door modern (top)",
 
   "block.trainutilities.de_platform_block": "german platform block",
   "block.trainutilities.nl_platform_block": "dutch platform block",
