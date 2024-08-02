@@ -106,5 +106,23 @@
         "stream": true
       }
     ]
+  },
+  "door_ic_open": {
+    "subtitle": "sound.trainutilities.door_ic_open",
+    "sounds": [
+      {
+        "name": "trainutilities:door_ic_open",
+        "stream": true
+      }
+    ]
+  },
+  "door_ic_close": {
+    "subtitle": "sound.trainutilities.door_ic_close",
+    "sounds": [
+      {
+        "name": "trainutilities:door_ic_close",
+        "stream": true
+      }
+    ]
   }
 }

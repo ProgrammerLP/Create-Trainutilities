@@ -107,7 +107,7 @@ public class TrainUtilitiesBuilderTransformers {
     }
 
     public static TrainSlidingDoorProperties GetSlidingDoorProperties(String type) {
-        if (type == "ice" || type == "ice_top") {
+        if (type == "ice" || type == "ice_top" || type == "ice_modern_top" || type == "ice_modern") {
             return new TrainSlidingDoorProperties(ModSounds.DOOR_ICE_OPEN.get(), ModSounds.DOOR_ICE_CLOSE.get(), .025f);
         }
         else if (type == "ic2") {
@@ -127,6 +127,9 @@ public class TrainUtilitiesBuilderTransformers {
         }
         else if (type == "goahead_desiro") {
             return new TrainSlidingDoorProperties(ModSounds.DOOR_RRX_OPEN.get(), ModSounds.DOOR_RRX_CLOSE.get(), .025f);
+        }
+        else if (type == "ic") {
+            return new TrainSlidingDoorProperties(ModSounds.DOOR_IC_OPEN.get(), ModSounds.DOOR_IC_CLOSE.get(), .025f);
         }
         else {
             return new TrainSlidingDoorProperties(SoundEvents.IRON_DOOR_OPEN, SoundEvents.IRON_DOOR_CLOSE, .15f);
