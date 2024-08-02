@@ -1,11 +1,11 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"1": "trainutilities:block/door_ice/door_ice_window",
-		"2": "trainutilities:block/door_ice/block_top_side",
-		"3": "trainutilities:block/door_ice/block_top_topbottom",
-		"4": "trainutilities:block/door_ice/block_top_corner",
-		"particle": "trainutilities:block/door_ice/block_top_side"
+		"1": "trainutilities:block/door_ice_modern/door_ice_window",
+		"2": "trainutilities:block/door_ice_modern/block_top_side",
+		"3": "trainutilities:block/door_ice_modern/block_top_topbottom",
+		"4": "trainutilities:block/door_ice_modern/block_top_corner",
+		"particle": "trainutilities:block/door_ice_modern/block_top_side"
 	},
 	"elements": [
 		{

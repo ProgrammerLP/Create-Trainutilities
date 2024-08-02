@@ -1,12 +1,12 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"2": "trainutilities:block/door_flirt/block_bottom_2",
-		"3": "trainutilities:block/door_flirt/block_bottom_3",
-		"4": "trainutilities:block/door_flirt/block_top",
-		"5": "trainutilities:block/door_flirt/block_window",
-		"6": "trainutilities:block/door_flirt/block_corner",
-		"particle": "trainutilities:block/door_flirt/block_top"
+		"2": "trainutilities:block/door_flirt_vias/block_bottom_2",
+		"3": "trainutilities:block/door_flirt_vias/block_bottom_3",
+		"4": "trainutilities:block/door_flirt_vias/block_top",
+		"5": "trainutilities:block/door_flirt_vias/block_window",
+		"6": "trainutilities:block/door_flirt_vias/block_corner",
+		"particle": "trainutilities:block/door_flirt_vias/block_top"
 	},
 	"elements": [
 		{

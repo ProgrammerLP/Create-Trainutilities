@@ -116,7 +116,7 @@ public class TrainUtilitiesBuilderTransformers {
         else if (type == "rrx") {
             return new TrainSlidingDoorProperties(ModSounds.DOOR_RRX_OPEN.get(), ModSounds.DOOR_RRX_CLOSE.get(), .025f);
         }
-        else if (type == "flirt") {
+        else if (type == "flirt" || type == "flirt_vias") {
             return new TrainSlidingDoorProperties(ModSounds.DOOR_FLIRT_OPEN.get(), ModSounds.DOOR_FLIRT_CLOSE.get(), .025f);
         }
         else if (type == "sw_nyc") {
