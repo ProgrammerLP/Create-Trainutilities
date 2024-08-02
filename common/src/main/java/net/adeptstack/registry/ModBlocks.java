@@ -68,14 +68,26 @@ public class ModBlocks {
     public static final BlockEntry<TrainSlidingDoorBlock> DOOR_ICE_TOP =
             TrainUtilitiesBuilderTransformers.TrainSlidingDoor("ice_top", MapColor.TERRACOTTA_WHITE);
 
+    public static final BlockEntry<TrainSlidingDoorBlock> DOOR_ICE_MODERN =
+            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("ice_modern", MapColor.TERRACOTTA_WHITE);
+
+    public static final BlockEntry<TrainSlidingDoorBlock> DOOR_ICE_MODERN_TOP =
+            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("ice_modern_top", MapColor.TERRACOTTA_WHITE);
+
     public static final BlockEntry<TrainSlidingDoorBlock> DOOR_IC2 =
             TrainUtilitiesBuilderTransformers.TrainSlidingDoor("ic2", MapColor.TERRACOTTA_WHITE);
+
+    public static final BlockEntry<TrainSlidingDoorBlock> DOOR_IC =
+            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("ic", MapColor.TERRACOTTA_WHITE);
 
     public static final BlockEntry<TrainSlidingDoorBlock> DOOR_RRX =
             TrainUtilitiesBuilderTransformers.TrainSlidingDoor("rrx", MapColor.TERRACOTTA_GRAY);
 
     public static final BlockEntry<TrainSlidingDoorBlock> DOOR_FLIRT =
             TrainUtilitiesBuilderTransformers.TrainSlidingDoor("flirt", MapColor.TERRACOTTA_GREEN);
+
+    public static final BlockEntry<TrainSlidingDoorBlock> DOOR_FLIRT_VIAS =
+            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("flirt_vias", MapColor.TERRACOTTA_GRAY);
 
     public static final BlockEntry<TrainSlidingDoorBlock> DOOR_SW_NYC =
             TrainUtilitiesBuilderTransformers.TrainSlidingDoor("sw_nyc", MapColor.METAL);

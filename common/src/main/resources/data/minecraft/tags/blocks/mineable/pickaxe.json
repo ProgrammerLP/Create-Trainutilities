@@ -22,6 +22,10 @@
     "trainutilities:pkp_ic_bottom_yellow_line_block",
     "trainutilities:pkp_ic_bottom_blue_line_block",
     "trainutilities:door_goahead_desiro",
-    "trainutilities:door_ice_top"
+    "trainutilities:door_ice_top",
+    "trainutilities:door_ice_modern_top",
+    "trainutilities:door_ice_modern",
+    "trainutilities:door_flirt_vias",
+    "trainutilities:door_ic"
   ]
 }
