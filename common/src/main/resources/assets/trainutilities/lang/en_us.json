@@ -26,12 +26,14 @@
   "block.trainutilities.door_ic": "DB IC 1 door",
   "block.trainutilities.door_ice_modern": "DB ICE door modern",
   "block.trainutilities.door_modern_top": "DB ICE door modern (top)",
+  "block.trainutilities.door_elev_glass": "Elevator door (glass)",
+  "block.trainutilities.door_elev_metal": "Elevator door (metal)",
 
   "block.trainutilities.de_platform_block": "german platform block",
   "block.trainutilities.nl_platform_block": "dutch platform block",
 
-  "sound.trainutilities.door_ice_open": "ICE door opens",
-  "sound.trainutilities.door_ice_close": "ICE door closes",
+  "sound.trainutilities.door_ice_open": "DB ICE door opens",
+  "sound.trainutilities.door_ice_close": "DB ICE door closes",
   "sound.trainutilities.door_rrx_open": "Desiro HC door opens",
   "sound.trainutilities.door_rrx_close": "Desiro HC door closes",
   "sound.trainutilities.door_ic2_open": "IC2 door opens",
@@ -42,6 +44,10 @@
   "sound.trainutilities.door_sw_nyc_close": "NYC subway door closes",
   "sound.trainutilities.door_pkp_ic_open": "PKP intercity door opens",
   "sound.trainutilities.door_pkp_ic_close": "PKP intercity door closes",
+  "sound.trainutilities.door_ic_open": "DB IC door opens",
+  "sound.trainutilities.door_ic_close": "DB IC door closes",
+  "sound.trainutilities.door_elev_open": "Elevator door opens",
+  "sound.trainutilities.door_elev_close": "Elevator door closes",
 
   "advancement.trainutilities.platform_block": "Modern Age",
   "advancement.trainutilities.platform_block.description": "Receive a platform block",

@@ -131,6 +131,9 @@ public class TrainUtilitiesBuilderTransformers {
         else if (type == "ic") {
             return new TrainSlidingDoorProperties(ModSounds.DOOR_IC_OPEN.get(), ModSounds.DOOR_IC_CLOSE.get(), .025f);
         }
+        else if (type == "elev_glass" || type == "elev_metal") {
+            return new TrainSlidingDoorProperties(ModSounds.DOOR_ELEV_OPEN.get(), ModSounds.DOOR_ELEV_CLOSE.get(), .025f);
+        }
         else {
             return new TrainSlidingDoorProperties(SoundEvents.IRON_DOOR_OPEN, SoundEvents.IRON_DOOR_CLOSE, .15f);
         }

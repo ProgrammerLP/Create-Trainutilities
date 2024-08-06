@@ -124,5 +124,23 @@
         "stream": true
       }
     ]
+  },
+  "door_elev_open": {
+    "subtitle": "sound.trainutilities.door_elev_open",
+    "sounds": [
+      {
+        "name": "trainutilities:door_elev_open",
+        "stream": true
+      }
+    ]
+  },
+  "door_elev_close": {
+    "subtitle": "sound.trainutilities.door_elev_close",
+    "sounds": [
+      {
+        "name": "trainutilities:door_elev_close",
+        "stream": true
+      }
+    ]
   }
 }

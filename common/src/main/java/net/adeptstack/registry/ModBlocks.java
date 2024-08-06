@@ -101,5 +101,11 @@ public class ModBlocks {
     public static final BlockEntry<TrainSlidingDoorBlock> DOOR_GOAHEAD_DESIRO =
             TrainUtilitiesBuilderTransformers.TrainSlidingDoor("goahead_desiro", MapColor.TERRACOTTA_WHITE);
 
+    public static final BlockEntry<TrainSlidingDoorBlock> DOOR_ELEV_GLASS =
+            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("elev_glass", MapColor.TERRACOTTA_WHITE);
+
+    public static final BlockEntry<TrainSlidingDoorBlock> DOOR_ELEV_METAL =
+            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("elev_metal", MapColor.TERRACOTTA_WHITE);
+
     public static void register() { }
 }

@@ -26,6 +26,8 @@
   "block.trainutilities.door_ic": "DB IC 1 Tür",
   "block.trainutilities.door_ice_modern": "DB ICE Tür modern",
   "block.trainutilities.door_modern_top": "DB ICE Tür modern (oben)",
+  "block.trainutilities.door_elev_glass": "Aufzugstür (Glas)",
+  "block.trainutilities.door_elev_metal": "Aufzugstür (Metall)",
 
   "block.trainutilities.de_platform_block": "Deutscher Gleisblock",
   "block.trainutilities.nl_platform_block": "Niederländischer Gleisblock",
@@ -42,6 +44,10 @@
   "sound.trainutilities.door_sw_nyc_close": "NYC U-Bahn Tür schließt",
   "sound.trainutilities.door_pkp_ic_open": "PKP Intercity Tür öffnet",
   "sound.trainutilities.door_pkp_ic_close": "PKP Intercity Tür schließt",
+  "sound.trainutilities.door_ic_open": "DB IC Tür öffnet",
+  "sound.trainutilities.door_ic_close": "DB IC Tür schließt",
+  "sound.trainutilities.door_elev_open": "Aufzugstür öffnet",
+  "sound.trainutilities.door_elev_close": "Aufzugstür schließt",
 
   "advancement.trainutilities.platform_block": "Modernes Zeitalter",
   "advancement.trainutilities.platform_block.description": "Bekomme einen Plattformblock",
