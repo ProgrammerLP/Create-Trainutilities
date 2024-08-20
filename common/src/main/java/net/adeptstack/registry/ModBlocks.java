@@ -107,5 +107,17 @@ public class ModBlocks {
     public static final BlockEntry<TrainSlidingDoorBlock> DOOR_ELEV_METAL =
             TrainUtilitiesBuilderTransformers.TrainSlidingDoor("elev_metal", MapColor.TERRACOTTA_WHITE);
 
+    public static final BlockEntry<TrainSlidingDoorBlock> DOOR_LONDON_1973_STOCK =
+            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("london_1973_stock", MapColor.COLOR_ORANGE);
+
+    public static final BlockEntry<TrainSlidingDoorBlock> DOOR_LONDON_S7_STOCK =
+            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("london_s7_stock", MapColor.COLOR_ORANGE);
+
+    public static final BlockEntry<TrainSlidingDoorBlock> DOOR_LONDON_OVERGROUND =
+            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("london_overground", MapColor.COLOR_ORANGE);
+
+    public static final BlockEntry<TrainSlidingDoorBlock> DOOR_LONDON_EL =
+            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("london_el", MapColor.COLOR_ORANGE);
+
     public static void register() { }
 }

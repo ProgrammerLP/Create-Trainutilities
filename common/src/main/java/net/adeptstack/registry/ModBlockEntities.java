@@ -15,7 +15,9 @@ public class ModBlockEntities {
                             ModBlocks.DOOR_FLIRT, ModBlocks.DOOR_SW_NYC, ModBlocks.DOOR_PKP_IC_WHITE,
                             ModBlocks.DOOR_PKP_IC_BLUE, ModBlocks.DOOR_GOAHEAD_DESIRO, ModBlocks.DOOR_ICE_TOP,
                             ModBlocks.DOOR_IC, ModBlocks.DOOR_FLIRT_VIAS, ModBlocks.DOOR_ICE_MODERN,
-                            ModBlocks.DOOR_ICE_MODERN_TOP, ModBlocks.DOOR_ELEV_GLASS, ModBlocks.DOOR_ELEV_METAL)
+                            ModBlocks.DOOR_ICE_MODERN_TOP, ModBlocks.DOOR_ELEV_GLASS, ModBlocks.DOOR_ELEV_METAL,
+                            ModBlocks.DOOR_LONDON_1973_STOCK, ModBlocks.DOOR_LONDON_S7_STOCK,
+                            ModBlocks.DOOR_LONDON_OVERGROUND, ModBlocks.DOOR_LONDON_EL)
                     .register();
 
     public static void register() {}
