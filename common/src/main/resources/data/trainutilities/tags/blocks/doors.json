@@ -15,6 +15,10 @@
     "trainutilities:door_flirt_vias",
     "trainutilities:door_ic",
     "trainutilities:door_elev_metal",
-    "trainutilities:door_elev_glass"
+    "trainutilities:door_elev_glass",
+    "trainutilities:door_london_1973_stock",
+    "trainutilities:door_london_s7_stock",
+    "trainutilities:door_london_overground",
+    "trainutilities:door_london_el"
   ]
 }

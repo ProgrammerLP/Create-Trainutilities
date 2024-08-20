@@ -28,6 +28,10 @@
   "block.trainutilities.door_modern_top": "DB ICE Tür modern (oben)",
   "block.trainutilities.door_elev_glass": "Aufzugstür (Glas)",
   "block.trainutilities.door_elev_metal": "Aufzugstür (Metall)",
+  "block.trainutilities.door_london_1973_stock": "London 1973 Stock Tür",
+  "block.trainutilities.door_london_s7_stock": "London S7 Stock Tür",
+  "block.trainutilities.door_london_overground": "London Hochbahntür",
+  "block.trainutilities.door_london_el": "Tür Elizabeth Linie",
 
   "block.trainutilities.de_platform_block": "Deutscher Gleisblock",
   "block.trainutilities.nl_platform_block": "Niederländischer Gleisblock",
