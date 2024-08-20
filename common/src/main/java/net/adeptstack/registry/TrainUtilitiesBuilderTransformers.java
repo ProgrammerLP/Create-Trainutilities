@@ -134,6 +134,15 @@ public class TrainUtilitiesBuilderTransformers {
         else if (type == "elev_glass" || type == "elev_metal") {
             return new TrainSlidingDoorProperties(ModSounds.DOOR_ELEV_OPEN.get(), ModSounds.DOOR_ELEV_CLOSE.get(), .025f);
         }
+        else if (type == "london_1973_stock") {
+            return new TrainSlidingDoorProperties(ModSounds.DOOR_LONDON_1973_STOCK_OPEN.get(), ModSounds.DOOR_LONDON_1973_STOCK_CLOSE.get(), .025f);
+        }
+        else if (type == "london_s7_stock") {
+            return new TrainSlidingDoorProperties(ModSounds.DOOR_LONDON_S7_STOCK_OPEN.get(), ModSounds.DOOR_LONDON_S7_STOCK_CLOSE.get(), .025f);
+        }
+        else if (type == "london_overground" || type == "london_el") {
+            return new TrainSlidingDoorProperties(ModSounds.DOOR_LONDON_OVERGROUND_OPEN.get(), ModSounds.DOOR_LONDON_OVERGROUND_CLOSE.get(), .025f);
+        }
         else {
             return new TrainSlidingDoorProperties(SoundEvents.IRON_DOOR_OPEN, SoundEvents.IRON_DOOR_CLOSE, .15f);
         }
@@ -162,7 +171,6 @@ public class TrainUtilitiesBuilderTransformers {
         } else if (variant % 5 == 0) {
             name = "platform" + signBlockCount + "d_block.png";
         }
-
         return name;
     }
 
@@ -178,7 +186,6 @@ public class TrainUtilitiesBuilderTransformers {
             case 23 -> "platform_to_block.png";
             default -> "left/platform" + variant + "_block.png";
         };
-
         return name;
     }
 

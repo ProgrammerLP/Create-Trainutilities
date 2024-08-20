@@ -142,5 +142,59 @@
         "stream": true
       }
     ]
+  },
+  "door_london_1973_stock_open": {
+    "subtitle": "sound.trainutilities.door_london_1973_stock_open",
+    "sounds": [
+      {
+        "name": "trainutilities:door_london_1973_stock_open",
+        "stream": true
+      }
+    ]
+  },
+  "door_london_1973_stock_close": {
+    "subtitle": "sound.trainutilities.door_london_1973_stock_close",
+    "sounds": [
+      {
+        "name": "trainutilities:door_london_1973_stock_close",
+        "stream": true
+      }
+    ]
+  },
+  "door_london_s7_stock_open": {
+    "subtitle": "sound.trainutilities.door_london_s7_stock_open",
+    "sounds": [
+      {
+        "name": "trainutilities:door_london_s7_stock_open",
+        "stream": true
+      }
+    ]
+  },
+  "door_london_s7_stock_close": {
+    "subtitle": "sound.trainutilities.door_london_s7_stock_close",
+    "sounds": [
+      {
+        "name": "trainutilities:door_london_s7_stock_close",
+        "stream": true
+      }
+    ]
+  },
+  "door_london_overground_open": {
+    "subtitle": "sound.trainutilities.door_london_overground_open",
+    "sounds": [
+      {
+        "name": "trainutilities:door_london_overground_open",
+        "stream": true
+      }
+    ]
+  },
+  "door_london_overground_close": {
+    "subtitle": "sound.trainutilities.door_london_overground_close",
+    "sounds": [
+      {
+        "name": "trainutilities:door_london_overground_close",
+        "stream": true
+      }
+    ]
   }
 }
