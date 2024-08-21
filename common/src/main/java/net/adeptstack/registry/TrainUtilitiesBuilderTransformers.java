@@ -13,11 +13,9 @@ import net.adeptstack.Blocks.PlatformBlocks.PlatformBlockDE;
 import net.adeptstack.Blocks.PlatformBlocks.PlatformBlockNL;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.sounds.SoundEvents;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.GlassBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.material.MapColor;
 
 import static com.simibubi.create.AllInteractionBehaviours.interactionBehaviour;
@@ -83,6 +81,25 @@ public class TrainUtilitiesBuilderTransformers {
                 .item()
                 .tab(TRAINUTILS_TAB.getKey())
                 .build()
+                .register();
+    }
+
+    public static <B extends DoorBlock, P> NonNullUnaryOperator<BlockBuilder<B, P>> defaultDoor(String type) {
+        return b -> b.initialProperties(() -> Blocks.OAK_DOOR) // for villager AI..
+                .properties(p -> p.strength(3.0F, 6.0F))
+                .addLayer(() -> RenderType::translucent)
+                .onRegister(interactionBehaviour(new TrainSlidingDoorMovingInteraction()))
+                .item()
+                .tab(ModTabs.TRAINUTILS_TAB.getKey())
+                .build();
+    }
+
+    public static BlockEntry<DoorBlock> DefaultMinecraftDoor(String type, MapColor colour) {
+        return REGISTRATE.block("door_" + type, p -> new DoorBlock(p, BlockSetType.SPRUCE))
+                .initialProperties(AllBlocks.FRAMED_GLASS_DOOR)
+                .properties(p -> p.sound(SoundType.GLASS).mapColor(colour))
+                .transform(TrainUtilitiesBuilderTransformers.defaultDoor(type))
+                .properties(BlockBehaviour.Properties::noOcclusion)
                 .register();
     }
 

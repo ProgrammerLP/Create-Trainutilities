@@ -12,6 +12,8 @@
   "block.trainutilities.pkp_ic_bottom_blue_line_block": "PKP Intercity line block (bottom, blue)",
   "block.trainutilities.pkp_block_white": "PKP Intercity block white",
   "block.trainutilities.pkp_block_blue": "PKP Intercity block blue",
+  "block.trainutilities.cis_amendorf_block_1": "CIS Amendorf block (type 1)",
+  "block.trainutilities.cis_amendorf_block_2": "CIS Amendorf block (typ 2)",
 
   "block.trainutilities.door_ice": "DB ICE door (bottom)",
   "block.trainutilities.door_ic2": "DB IC2 door",
@@ -32,6 +34,8 @@
   "block.trainutilities.door_london_s7_stock": "London s7 stock door",
   "block.trainutilities.door_london_overground": "London overground door",
   "block.trainutilities.door_london_el": "Elizabeth line door",
+  "block.trainutilities.door_cis_amendorf_1": "CIS Amendorf door (type 1)",
+  "block.trainutilities.door_cis_amendorf_2": "CIS Amendorf door (type 2)",
 
   "block.trainutilities.de_platform_block": "german platform block",
   "block.trainutilities.nl_platform_block": "dutch platform block",

@@ -12,6 +12,8 @@
     "trainutilities:pkp_ic_bottom_yellow_line_block",
     "trainutilities:pkp_ic_bottom_blue_line_block",
     "trainutilities:pkp_block_blue",
-    "trainutilities:pkp_block_white"
+    "trainutilities:pkp_block_white",
+    "trainutilities:cis_amendorf_block_1",
+    "trainutilities:cis_amendorf_block_2"
   ]
 }

@@ -34,6 +34,10 @@
     "trainutilities:door_london_1973_stock",
     "trainutilities:door_london_s7_stock",
     "trainutilities:door_london_overground",
-    "trainutilities:door_london_el"
+    "trainutilities:door_london_el",
+    "trainutilities:cis_amendorf_block_1",
+    "trainutilities:cis_amendorf_block_2",
+    "trainutilities:door_cis_amendorf_1",
+    "trainutilities:door_cis_amendorf_2"
   ]
 }
