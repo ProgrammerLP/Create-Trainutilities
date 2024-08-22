@@ -36,6 +36,8 @@
   "block.trainutilities.door_london_el": "Tür Elizabeth Linie",
   "block.trainutilities.door_cis_amendorf_1": "CIS Amendorftür (Typ 1)",
   "block.trainutilities.door_cis_amendorf_2": "CIS Amendorftür (Typ 2)",
+  "block.trainutilities.door_andesite_alloy": "Tür aus Andesitlegierung",
+  "block.trainutilities.door_andesite_alloy_window": "Tür aus Andesitlegierung (Fenster)",
 
   "block.trainutilities.de_platform_block": "Deutscher Gleisblock",
   "block.trainutilities.nl_platform_block": "Niederländischer Gleisblock",

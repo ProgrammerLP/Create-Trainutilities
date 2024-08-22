@@ -38,6 +38,8 @@
     "trainutilities:cis_amendorf_block_1",
     "trainutilities:cis_amendorf_block_2",
     "trainutilities:door_cis_amendorf_1",
-    "trainutilities:door_cis_amendorf_2"
+    "trainutilities:door_cis_amendorf_2",
+    "trainutilities:door_andesite_alloy_window",
+    "trainutilities:door_andesite_alloy"
   ]
 }

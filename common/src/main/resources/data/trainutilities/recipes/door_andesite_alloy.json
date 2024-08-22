@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "create:andesite_alloy"
+    }
+  },
+  "result": {
+    "item": "trainutilities:door_andesite_alloy",
+    "count": 1
+  }
+}

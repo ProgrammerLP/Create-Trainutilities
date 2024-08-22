@@ -36,6 +36,8 @@
   "block.trainutilities.door_london_el": "Elizabeth line door",
   "block.trainutilities.door_cis_amendorf_1": "CIS Amendorf door (type 1)",
   "block.trainutilities.door_cis_amendorf_2": "CIS Amendorf door (type 2)",
+  "block.trainutilities.door_andesite_alloy": "Andesite alloy door",
+  "block.trainutilities.door_andesite_alloy_window": "Andesite alloy door (window)",
 
   "block.trainutilities.de_platform_block": "german platform block",
   "block.trainutilities.nl_platform_block": "dutch platform block",

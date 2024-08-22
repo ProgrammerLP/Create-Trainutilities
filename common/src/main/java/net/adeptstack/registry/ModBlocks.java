@@ -139,5 +139,12 @@ public class ModBlocks {
     public static final BlockEntry<DoorBlock> DOOR_CIS_AMENDORF_2 =
             TrainUtilitiesBuilderTransformers.DefaultMinecraftDoor("cis_amendorf_2", MapColor.TERRACOTTA_GREEN);
 
+    //Create Styled Doors
+    public static final BlockEntry<TrainSlidingDoorBlock> DOOR_ANDESITE_ALLOY_WINDOW =
+            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("andesite_alloy_window", MapColor.STONE);
+
+    public static final BlockEntry<TrainSlidingDoorBlock> DOOR_ANDESITE_ALLOY =
+            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("andesite_alloy", MapColor.STONE);
+
     public static void register() { }
 }
