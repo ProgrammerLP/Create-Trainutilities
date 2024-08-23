@@ -38,6 +38,8 @@
   "block.trainutilities.door_cis_amendorf_2": "CIS Amendorf door (type 2)",
   "block.trainutilities.door_andesite_alloy": "Andesite alloy door",
   "block.trainutilities.door_andesite_alloy_window": "Andesite alloy door (window)",
+  "block.trainutilities.door_ungarian_flirt": "Stadler Flirt door (MÁV design)",
+  "block.trainutilities.door_warsaw_tram": "Warsaw tram door",
 
   "block.trainutilities.de_platform_block": "german platform block",
   "block.trainutilities.nl_platform_block": "dutch platform block",

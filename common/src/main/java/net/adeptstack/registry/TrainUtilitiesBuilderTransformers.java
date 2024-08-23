@@ -130,20 +130,17 @@ public class TrainUtilitiesBuilderTransformers {
         else if (type == "ic2") {
             return new TrainSlidingDoorProperties(ModSounds.DOOR_IC2_OPEN.get(), ModSounds.DOOR_IC2_CLOSE.get(), .025f);
         }
-        else if (type == "rrx") {
+        else if (type == "rrx" || type == "goahead_desiro") {
             return new TrainSlidingDoorProperties(ModSounds.DOOR_RRX_OPEN.get(), ModSounds.DOOR_RRX_CLOSE.get(), .025f);
         }
-        else if (type == "flirt" || type == "flirt_vias") {
+        else if (type == "flirt" || type == "flirt_vias" || type == "ungarian_flirt") {
             return new TrainSlidingDoorProperties(ModSounds.DOOR_FLIRT_OPEN.get(), ModSounds.DOOR_FLIRT_CLOSE.get(), .025f);
         }
-        else if (type == "sw_nyc") {
+        else if (type == "sw_nyc" || type == "warsaw_tram") {
             return new TrainSlidingDoorProperties(ModSounds.DOOR_SW_NYC_OPEN.get(), ModSounds.DOOR_SW_NYC_CLOSE.get(), .035f);
         }
         else if (type == "pkp_ic_white" || type == "pkp_ic_blue") {
             return new TrainSlidingDoorProperties(ModSounds.DOOR_PKP_IC_OPEN.get(), ModSounds.DOOR_PKP_IC_CLOSE.get(), .025f);
-        }
-        else if (type == "goahead_desiro") {
-            return new TrainSlidingDoorProperties(ModSounds.DOOR_RRX_OPEN.get(), ModSounds.DOOR_RRX_CLOSE.get(), .025f);
         }
         else if (type == "ic") {
             return new TrainSlidingDoorProperties(ModSounds.DOOR_IC_OPEN.get(), ModSounds.DOOR_IC_CLOSE.get(), .025f);

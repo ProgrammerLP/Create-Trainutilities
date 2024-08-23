@@ -102,6 +102,9 @@ public class ModBlocks {
     public static final BlockEntry<TrainSlidingDoorBlock> DOOR_FLIRT_VIAS =
             TrainUtilitiesBuilderTransformers.TrainSlidingDoor("flirt_vias", MapColor.TERRACOTTA_GRAY);
 
+    public static final BlockEntry<TrainSlidingDoorBlock> DOOR_UNGARIAN_FLIRT =
+            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("ungarian_flirt", MapColor.COLOR_YELLOW);
+
     public static final BlockEntry<TrainSlidingDoorBlock> DOOR_SW_NYC =
             TrainUtilitiesBuilderTransformers.TrainSlidingDoor("sw_nyc", MapColor.METAL);
 
@@ -131,6 +134,9 @@ public class ModBlocks {
 
     public static final BlockEntry<TrainSlidingDoorBlock> DOOR_LONDON_EL =
             TrainUtilitiesBuilderTransformers.TrainSlidingDoor("london_el", MapColor.COLOR_ORANGE);
+
+    public static final BlockEntry<TrainSlidingDoorBlock> DOOR_WARSAW_TRAM =
+            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("warsaw_tram", MapColor.COLOR_BLACK);
 
     //MC Doors
     public static final BlockEntry<DoorBlock> DOOR_CIS_AMENDORF_1 =
