@@ -8,6 +8,22 @@
     "trainutilities:door_pkp_ic_white",
     "trainutilities:door_pkp_ic_blue",
     "trainutilities:door_goahead_desiro",
-    "trainutilities:door_ice_top"
+    "trainutilities:door_ice_top",
+    "trainutilities:door_ice_modern_top",
+    "trainutilities:door_ice_modern",
+    "trainutilities:door_flirt_vias",
+    "trainutilities:door_ic",
+    "trainutilities:door_elev_metal",
+    "trainutilities:door_elev_glass",
+    "trainutilities:door_london_1973_stock",
+    "trainutilities:door_london_s7_stock",
+    "trainutilities:door_london_overground",
+    "trainutilities:door_london_el",
+    "trainutilities:door_cis_amendorf_1",
+    "trainutilities:door_cis_amendorf_2",
+    "trainutilities:door_andesite_alloy_window",
+    "trainutilities:door_andesite_alloy",
+    "trainutilities:door_ungarian_flirt",
+    "trainutilities:door_warsaw_tram"
   ]
 }

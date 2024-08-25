@@ -86,10 +86,29 @@ public class TrainUtilitiesBuilderTransformers {
                 .register();
     }
 
+    public static <B extends DoorBlock, P> NonNullUnaryOperator<BlockBuilder<B, P>> defaultDoor(String type) {
+        return b -> b.initialProperties(() -> Blocks.OAK_DOOR) // for villager AI..
+                .properties(p -> p.strength(3.0F, 6.0F))
+                .addLayer(() -> RenderType::translucent)
+                .onRegister(interactionBehaviour(new TrainSlidingDoorMovingInteraction()))
+                .item()
+                .tab(ModTabs.TRAINUTILS_TAB.getKey())
+                .build();
+    }
+
+    public static BlockEntry<DoorBlock> DefaultMinecraftDoor(String type, MapColor colour) {
+        return REGISTRATE.block("door_" + type, p -> new DoorBlock(p, BlockSetType.SPRUCE))
+                .initialProperties(AllBlocks.FRAMED_GLASS_DOOR)
+                .properties(p -> p.sound(SoundType.METAL).mapColor(colour))
+                .transform(TrainUtilitiesBuilderTransformers.defaultDoor(type))
+                .properties(BlockBehaviour.Properties::noOcclusion)
+                .register();
+    }
+
     public static <B extends TrainSlidingDoorBlock, P> NonNullUnaryOperator<BlockBuilder<B, P>> slidingDoor(String type) {
         return b -> b.initialProperties(() -> Blocks.OAK_DOOR) // for villager AI..
                 .properties(p -> p.strength(3.0F, 6.0F))
-                .addLayer(() -> RenderType::cutout)
+                .addLayer(() -> RenderType::translucent)
                 .onRegister(interactionBehaviour(new TrainSlidingDoorMovingInteraction()))
                 .onRegister(movementBehaviour(new TrainSlidingDoorMovementBehaviour(type)))
                 .item()
@@ -100,33 +119,45 @@ public class TrainUtilitiesBuilderTransformers {
     public static BlockEntry<TrainSlidingDoorBlock> TrainSlidingDoor(String type, MaterialColor colour) {
         return REGISTRATE.block("door_" + type, TrainSlidingDoorBlock::new)
                 .initialProperties(AllBlocks.FRAMED_GLASS_DOOR)
-                .properties(p -> p.sound(SoundType.GLASS).color(colour))
+                .properties(p -> p.sound(SoundType.METAL).mapColor(colour))
                 .transform(TrainUtilitiesBuilderTransformers.slidingDoor(type))
                 .properties(BlockBehaviour.Properties::noOcclusion)
                 .register();
     }
 
     public static TrainSlidingDoorProperties GetSlidingDoorProperties(String type) {
-        if (type == "ice" || type == "ice_top") {
+        if (type == "ice" || type == "ice_top" || type == "ice_modern_top" || type == "ice_modern") {
             return new TrainSlidingDoorProperties(ModSounds.DOOR_ICE_OPEN.get(), ModSounds.DOOR_ICE_CLOSE.get(), .025f);
         }
         else if (type == "ic2") {
             return new TrainSlidingDoorProperties(ModSounds.DOOR_IC2_OPEN.get(), ModSounds.DOOR_IC2_CLOSE.get(), .025f);
         }
-        else if (type == "rrx") {
+        else if (type == "rrx" || type == "goahead_desiro") {
             return new TrainSlidingDoorProperties(ModSounds.DOOR_RRX_OPEN.get(), ModSounds.DOOR_RRX_CLOSE.get(), .025f);
         }
-        else if (type == "flirt") {
+        else if (type == "flirt" || type == "flirt_vias" || type == "ungarian_flirt") {
             return new TrainSlidingDoorProperties(ModSounds.DOOR_FLIRT_OPEN.get(), ModSounds.DOOR_FLIRT_CLOSE.get(), .025f);
         }
-        else if (type == "sw_nyc") {
+        else if (type == "sw_nyc" || type == "warsaw_tram") {
             return new TrainSlidingDoorProperties(ModSounds.DOOR_SW_NYC_OPEN.get(), ModSounds.DOOR_SW_NYC_CLOSE.get(), .035f);
         }
         else if (type == "pkp_ic_white" || type == "pkp_ic_blue") {
             return new TrainSlidingDoorProperties(ModSounds.DOOR_PKP_IC_OPEN.get(), ModSounds.DOOR_PKP_IC_CLOSE.get(), .025f);
         }
-        else if (type == "goahead_desiro") {
-            return new TrainSlidingDoorProperties(ModSounds.DOOR_RRX_OPEN.get(), ModSounds.DOOR_RRX_CLOSE.get(), .025f);
+        else if (type == "ic") {
+            return new TrainSlidingDoorProperties(ModSounds.DOOR_IC_OPEN.get(), ModSounds.DOOR_IC_CLOSE.get(), .025f);
+        }
+        else if (type == "elev_glass" || type == "elev_metal") {
+            return new TrainSlidingDoorProperties(ModSounds.DOOR_ELEV_OPEN.get(), ModSounds.DOOR_ELEV_CLOSE.get(), .025f);
+        }
+        else if (type == "london_1973_stock") {
+            return new TrainSlidingDoorProperties(ModSounds.DOOR_LONDON_1973_STOCK_OPEN.get(), ModSounds.DOOR_LONDON_1973_STOCK_CLOSE.get(), .025f);
+        }
+        else if (type == "london_s7_stock") {
+            return new TrainSlidingDoorProperties(ModSounds.DOOR_LONDON_S7_STOCK_OPEN.get(), ModSounds.DOOR_LONDON_S7_STOCK_CLOSE.get(), .025f);
+        }
+        else if (type == "london_overground" || type == "london_el") {
+            return new TrainSlidingDoorProperties(ModSounds.DOOR_LONDON_OVERGROUND_OPEN.get(), ModSounds.DOOR_LONDON_OVERGROUND_CLOSE.get(), .025f);
         }
         else {
             return new TrainSlidingDoorProperties(SoundEvents.IRON_DOOR_OPEN, SoundEvents.IRON_DOOR_CLOSE, .15f);
