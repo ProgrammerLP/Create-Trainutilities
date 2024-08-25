@@ -7,6 +7,7 @@ import net.adeptstack.Blocks.PlatformBlocks.PlatformBlockDE;
 import net.adeptstack.Blocks.PlatformBlocks.PlatformBlockNL;
 import net.adeptstack.Blocks.LineBlock;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DoorBlock;
 import net.minecraft.world.level.block.GlassBlock;
 import net.minecraft.world.level.material.MaterialColor;
 
@@ -64,10 +65,10 @@ public class ModBlocks {
 
     //cis blocks
     public static final BlockEntry<LineBlock> CIS_AMENDORF_BLOCK_1 =
-            TrainUtilitiesBuilderTransformers.LineBlock("cis_amendorf_block_1", MapColor.COLOR_GREEN);
+            TrainUtilitiesBuilderTransformers.LineBlock("cis_amendorf_block_1", MaterialColor.COLOR_GREEN);
 
     public static final BlockEntry<LineBlock> CIS_AMENDORF_BLOCK_2 =
-            TrainUtilitiesBuilderTransformers.LineBlock("cis_amendorf_block_2", MapColor.COLOR_GREEN);
+            TrainUtilitiesBuilderTransformers.LineBlock("cis_amendorf_block_2", MaterialColor.COLOR_GREEN);
 
     //===DOORS===
     public static final BlockEntry<TrainSlidingDoorBlock> DOOR_ICE =
@@ -77,16 +78,16 @@ public class ModBlocks {
             TrainUtilitiesBuilderTransformers.TrainSlidingDoor("ice_top", MaterialColor.TERRACOTTA_WHITE);
 
     public static final BlockEntry<TrainSlidingDoorBlock> DOOR_ICE_MODERN =
-            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("ice_modern", MapColor.TERRACOTTA_WHITE);
+            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("ice_modern", MaterialColor.TERRACOTTA_WHITE);
 
     public static final BlockEntry<TrainSlidingDoorBlock> DOOR_ICE_MODERN_TOP =
-            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("ice_modern_top", MapColor.TERRACOTTA_WHITE);
+            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("ice_modern_top", MaterialColor.TERRACOTTA_WHITE);
 
     public static final BlockEntry<TrainSlidingDoorBlock> DOOR_IC2 =
             TrainUtilitiesBuilderTransformers.TrainSlidingDoor("ic2", MaterialColor.TERRACOTTA_WHITE);
 
     public static final BlockEntry<TrainSlidingDoorBlock> DOOR_IC =
-            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("ic", MapColor.TERRACOTTA_WHITE);
+            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("ic", MaterialColor.TERRACOTTA_WHITE);
 
     public static final BlockEntry<TrainSlidingDoorBlock> DOOR_RRX =
             TrainUtilitiesBuilderTransformers.TrainSlidingDoor("rrx", MaterialColor.TERRACOTTA_GRAY);
@@ -95,10 +96,10 @@ public class ModBlocks {
             TrainUtilitiesBuilderTransformers.TrainSlidingDoor("flirt", MaterialColor.TERRACOTTA_GREEN);
 
     public static final BlockEntry<TrainSlidingDoorBlock> DOOR_FLIRT_VIAS =
-            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("flirt_vias", MapColor.TERRACOTTA_GRAY);
+            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("flirt_vias", MaterialColor.TERRACOTTA_GRAY);
 
     public static final BlockEntry<TrainSlidingDoorBlock> DOOR_UNGARIAN_FLIRT =
-            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("ungarian_flirt", MapColor.COLOR_YELLOW);
+            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("ungarian_flirt", MaterialColor.COLOR_YELLOW);
 
     public static final BlockEntry<TrainSlidingDoorBlock> DOOR_SW_NYC =
             TrainUtilitiesBuilderTransformers.TrainSlidingDoor("sw_nyc", MaterialColor.METAL);
@@ -113,39 +114,39 @@ public class ModBlocks {
             TrainUtilitiesBuilderTransformers.TrainSlidingDoor("goahead_desiro", MaterialColor.TERRACOTTA_WHITE);
 
     public static final BlockEntry<TrainSlidingDoorBlock> DOOR_ELEV_GLASS =
-            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("elev_glass", MapColor.TERRACOTTA_WHITE);
+            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("elev_glass", MaterialColor.TERRACOTTA_WHITE);
 
     public static final BlockEntry<TrainSlidingDoorBlock> DOOR_ELEV_METAL =
-            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("elev_metal", MapColor.TERRACOTTA_WHITE);
+            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("elev_metal", MaterialColor.TERRACOTTA_WHITE);
 
     public static final BlockEntry<TrainSlidingDoorBlock> DOOR_LONDON_1973_STOCK =
-            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("london_1973_stock", MapColor.COLOR_ORANGE);
+            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("london_1973_stock", MaterialColor.COLOR_ORANGE);
 
     public static final BlockEntry<TrainSlidingDoorBlock> DOOR_LONDON_S7_STOCK =
-            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("london_s7_stock", MapColor.COLOR_ORANGE);
+            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("london_s7_stock", MaterialColor.COLOR_ORANGE);
 
     public static final BlockEntry<TrainSlidingDoorBlock> DOOR_LONDON_OVERGROUND =
-            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("london_overground", MapColor.COLOR_ORANGE);
+            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("london_overground", MaterialColor.COLOR_ORANGE);
 
     public static final BlockEntry<TrainSlidingDoorBlock> DOOR_LONDON_EL =
-            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("london_el", MapColor.COLOR_ORANGE);
+            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("london_el", MaterialColor.COLOR_ORANGE);
 
     public static final BlockEntry<TrainSlidingDoorBlock> DOOR_WARSAW_TRAM =
-            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("warsaw_tram", MapColor.COLOR_BLACK);
+            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("warsaw_tram", MaterialColor.COLOR_BLACK);
 
     //MC Doors
     public static final BlockEntry<DoorBlock> DOOR_CIS_AMENDORF_1 =
-            TrainUtilitiesBuilderTransformers.DefaultMinecraftDoor("cis_amendorf_1", MapColor.TERRACOTTA_GREEN);
+            TrainUtilitiesBuilderTransformers.DefaultMinecraftDoor("cis_amendorf_1", MaterialColor.TERRACOTTA_GREEN);
 
     public static final BlockEntry<DoorBlock> DOOR_CIS_AMENDORF_2 =
-            TrainUtilitiesBuilderTransformers.DefaultMinecraftDoor("cis_amendorf_2", MapColor.TERRACOTTA_GREEN);
+            TrainUtilitiesBuilderTransformers.DefaultMinecraftDoor("cis_amendorf_2", MaterialColor.TERRACOTTA_GREEN);
 
     //Create Styled Doors
     public static final BlockEntry<TrainSlidingDoorBlock> DOOR_ANDESITE_ALLOY_WINDOW =
-            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("andesite_alloy_window", MapColor.STONE);
+            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("andesite_alloy_window", MaterialColor.STONE);
 
     public static final BlockEntry<TrainSlidingDoorBlock> DOOR_ANDESITE_ALLOY =
-            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("andesite_alloy", MapColor.STONE);
+            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("andesite_alloy", MaterialColor.STONE);
 
     public static void register() { }
 }

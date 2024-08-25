@@ -54,7 +54,7 @@ public class TrainSlidingDoorMovingInteraction extends SimpleBlockMovingInteract
                 }
             }
             else {
-                float pitch = player.level().random.nextFloat() * 0.1F + 0.9F;
+                float pitch = player.level.random.nextFloat() * 0.1F + 0.9F;
                 if (sound != null)
                     playSound(player, sound, pitch);
             }
