@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"WW",
+		"WW"
+	],
+	"key": {
+		"W": {
+			"item": "minecraft:green_concrete"
+		}
+	},
+	"result": {
+		"item": "trainutilities:cis_amendorf_block_1",
+		"count": 6
+	}
+}

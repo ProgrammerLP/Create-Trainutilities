@@ -1,0 +1,22 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "trainutilities:block/door_andesite_alloy/andesite_alloy_door_side",
+		"1": "trainutilities:block/door_andesite_alloy/andesite_alloy_door_top",
+		"particle": "trainutilities:block/door_andesite_alloy/andesite_alloy_door_side"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [3, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 4, 16, 7], "rotation": 90, "texture": "#0"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"south": {"uv": [0, 4, 16, 7], "rotation": 90, "texture": "#0"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"up": {"uv": [0, 0, 16, 3], "rotation": 90, "texture": "#0"},
+				"down": {"uv": [0, 0, 16, 3], "rotation": 90, "texture": "#0"}
+			}
+		}
+	]
+}
