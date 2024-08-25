@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:spruce_door"
+    },
+    {
+      "item": "minecraft:green_concrete"
+    },
+    {
+      "item": "trainutilities:frameless_glass"
+    }
+  ],
+  "result": {
+    "item": "trainutilities:door_cis_amendorf_1",
+    "count": 1
+  }
+}

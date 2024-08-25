@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "trainutilities:door_andesite_alloy"
+    },
+    {
+      "item": "create:framed_glass"
+    }
+  ],
+  "result": {
+    "item": "trainutilities:door_andesite_alloy_window",
+    "count": 1
+  }
+}
