@@ -97,7 +97,7 @@ public class TrainUtilitiesBuilderTransformers {
     public static BlockEntry<DoorBlock> DefaultMinecraftDoor(String type, MapColor colour) {
         return REGISTRATE.block("door_" + type, p -> new DoorBlock(p, BlockSetType.SPRUCE))
                 .initialProperties(AllBlocks.FRAMED_GLASS_DOOR)
-                .properties(p -> p.sound(SoundType.GLASS).mapColor(colour))
+                .properties(p -> p.sound(SoundType.METAL).mapColor(colour))
                 .transform(TrainUtilitiesBuilderTransformers.defaultDoor(type))
                 .properties(BlockBehaviour.Properties::noOcclusion)
                 .register();
@@ -117,7 +117,7 @@ public class TrainUtilitiesBuilderTransformers {
     public static BlockEntry<TrainSlidingDoorBlock> TrainSlidingDoor(String type, MapColor colour) {
         return REGISTRATE.block("door_" + type, TrainSlidingDoorBlock::new)
                 .initialProperties(AllBlocks.FRAMED_GLASS_DOOR)
-                .properties(p -> p.sound(SoundType.GLASS).mapColor(colour))
+                .properties(p -> p.sound(SoundType.METAL).mapColor(colour))
                 .transform(TrainUtilitiesBuilderTransformers.slidingDoor(type))
                 .properties(BlockBehaviour.Properties::noOcclusion)
                 .register();
