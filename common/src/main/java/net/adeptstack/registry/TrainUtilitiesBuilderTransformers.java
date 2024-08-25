@@ -13,10 +13,7 @@ import net.adeptstack.Blocks.PlatformBlocks.PlatformBlockDE;
 import net.adeptstack.Blocks.PlatformBlocks.PlatformBlockNL;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.sounds.SoundEvents;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.GlassBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MaterialColor;
 
@@ -66,11 +63,11 @@ public class TrainUtilitiesBuilderTransformers {
                 .register();
     }
 
-    public static BlockEntry<Block> DefaultBlock(String id, MapColor color) {
+    public static BlockEntry<Block> DefaultBlock(String id, MaterialColor color) {
         return REGISTRATE
                 .block(id, Block::new)
                 .initialProperties(() -> Blocks.GLASS)
-                .properties(p -> p.sound(SoundType.STONE).mapColor(color))
+                .properties(p -> p.sound(SoundType.STONE).color(color))
                 .item()
                 .tab(() -> ModTabs.TRAINUTILS_TAB)
                 .build()
@@ -94,14 +91,14 @@ public class TrainUtilitiesBuilderTransformers {
                 .addLayer(() -> RenderType::translucent)
                 .onRegister(interactionBehaviour(new TrainSlidingDoorMovingInteraction()))
                 .item()
-                .tab(ModTabs.TRAINUTILS_TAB.getKey())
+                .tab(() -> ModTabs.TRAINUTILS_TAB)
                 .build();
     }
 
-    public static BlockEntry<DoorBlock> DefaultMinecraftDoor(String type, MapColor colour) {
-        return REGISTRATE.block("door_" + type, p -> new DoorBlock(p, BlockSetType.SPRUCE))
+    public static BlockEntry<DoorBlock> DefaultMinecraftDoor(String type, MaterialColor colour) {
+        return REGISTRATE.block("door_" + type, p -> new DoorBlock(p))
                 .initialProperties(AllBlocks.FRAMED_GLASS_DOOR)
-                .properties(p -> p.sound(SoundType.GLASS).mapColor(colour))
+                .properties(p -> p.sound(SoundType.METAL).color(colour))
                 .transform(TrainUtilitiesBuilderTransformers.defaultDoor(type))
                 .properties(BlockBehaviour.Properties::noOcclusion)
                 .register();
@@ -121,7 +118,7 @@ public class TrainUtilitiesBuilderTransformers {
     public static BlockEntry<TrainSlidingDoorBlock> TrainSlidingDoor(String type, MaterialColor colour) {
         return REGISTRATE.block("door_" + type, TrainSlidingDoorBlock::new)
                 .initialProperties(AllBlocks.FRAMED_GLASS_DOOR)
-                .properties(p -> p.sound(SoundType.GLASS).color(colour))
+                .properties(p -> p.sound(SoundType.METAL).color(colour))
                 .transform(TrainUtilitiesBuilderTransformers.slidingDoor(type))
                 .properties(BlockBehaviour.Properties::noOcclusion)
                 .register();
