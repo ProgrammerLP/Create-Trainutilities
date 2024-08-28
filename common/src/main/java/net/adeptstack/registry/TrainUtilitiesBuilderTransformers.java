@@ -87,7 +87,7 @@ public class TrainUtilitiesBuilderTransformers {
     public static <B extends DoorBlock, P> NonNullUnaryOperator<BlockBuilder<B, P>> defaultDoor(String type) {
         return b -> b.initialProperties(() -> Blocks.OAK_DOOR) // for villager AI..
                 .properties(p -> p.strength(3.0F, 6.0F))
-                .addLayer(() -> RenderType::translucent)
+                .addLayer(() -> RenderType::cutout)
                 .onRegister(interactionBehaviour(new TrainSlidingDoorMovingInteraction()))
                 .item()
                 .tab(ModTabs.TRAINUTILS_TAB.getKey())
@@ -106,7 +106,7 @@ public class TrainUtilitiesBuilderTransformers {
     public static <B extends TrainSlidingDoorBlock, P> NonNullUnaryOperator<BlockBuilder<B, P>> slidingDoor(String type) {
         return b -> b.initialProperties(() -> Blocks.OAK_DOOR) // for villager AI..
                 .properties(p -> p.strength(3.0F, 6.0F))
-                .addLayer(() -> RenderType::translucent)
+                .addLayer(() -> RenderType::cutout)
                 .onRegister(interactionBehaviour(new TrainSlidingDoorMovingInteraction()))
                 .onRegister(movementBehaviour(new TrainSlidingDoorMovementBehaviour(type)))
                 .item()
