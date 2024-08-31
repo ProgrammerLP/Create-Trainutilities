@@ -1,6 +1,6 @@
-package net.adeptstack.Blocks.PlatformBlocks;
+package net.adeptstack.Blocks.PanelBlocks;
 
-import net.adeptstack.Blocks.Behaviour.EBlockPlacePosition;
+import net.adeptstack.Core.Enums.EBlockPlacePosition;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.BlockPlaceContext;
@@ -17,7 +17,7 @@ import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-public class AbstractPlatformBlock extends Block {
+public class PanelBlockBase extends Block {
     public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
     public static final EnumProperty<EBlockPlacePosition> Z_ALIGN = EnumProperty.create("z_align", EBlockPlacePosition.class);
 
@@ -30,7 +30,7 @@ public class AbstractPlatformBlock extends Block {
     private static final VoxelShape SHAPE_N = Block.box(0, 0, 14, 16, 16, 16);
     private static final VoxelShape SHAPE_W = Block.box(14, 0, 0, 16, 16, 16);
 
-    public AbstractPlatformBlock(BlockBehaviour.Properties p_49795_) {
+    public PanelBlockBase(BlockBehaviour.Properties p_49795_) {
         super(p_49795_);
 
         this.registerDefaultState(this.stateDefinition.any()

@@ -4,13 +4,13 @@ import com.simibubi.create.AllBlocks;
 import com.tterrag.registrate.builders.BlockBuilder;
 import com.tterrag.registrate.util.entry.BlockEntry;
 import com.tterrag.registrate.util.nullness.NonNullUnaryOperator;
-import net.adeptstack.Blocks.Behaviour.TrainSlidingDoorMovementBehaviour;
-import net.adeptstack.Blocks.Behaviour.TrainSlidingDoorMovingInteraction;
-import net.adeptstack.Blocks.Behaviour.TrainSlidingDoorProperties;
-import net.adeptstack.Blocks.Doors.TrainSlidingDoorBlock;
+import net.adeptstack.Blocks.Behaviour.SlidingDoor.TrainSlidingDoorMovementBehaviour;
+import net.adeptstack.Blocks.Behaviour.SlidingDoor.TrainSlidingDoorMovingInteraction;
+import net.adeptstack.Core.Utils.TrainSlidingDoorProperties;
+import net.adeptstack.Blocks.Doors.SlidingDoor.TrainSlidingDoorBlock;
 import net.adeptstack.Blocks.LineBlock;
-import net.adeptstack.Blocks.PlatformBlocks.PlatformBlockDE;
-import net.adeptstack.Blocks.PlatformBlocks.PlatformBlockNL;
+import net.adeptstack.Blocks.PanelBlocks.PlatformBlocks.PlatformBlockDE;
+import net.adeptstack.Blocks.PanelBlocks.PlatformBlocks.PlatformBlockNL;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.level.block.*;
@@ -104,7 +104,7 @@ public class TrainUtilitiesBuilderTransformers {
     }
 
     public static <B extends TrainSlidingDoorBlock, P> NonNullUnaryOperator<BlockBuilder<B, P>> slidingDoor(String type) {
-        return b -> b.initialProperties(() -> Blocks.OAK_DOOR) // for villager AI..
+        return b -> b.initialProperties(AllBlocks.FRAMED_GLASS_DOOR) // for villager AI..
                 .properties(p -> p.strength(3.0F, 6.0F))
                 .addLayer(() -> RenderType::cutout)
                 .onRegister(interactionBehaviour(new TrainSlidingDoorMovingInteraction()))

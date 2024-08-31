@@ -1,6 +1,5 @@
-package net.adeptstack.Blocks.Behaviour;
+package net.adeptstack.Blocks.Behaviour.SlidingDoor;
 
-import com.mojang.authlib.minecraft.client.MinecraftClient;
 import com.simibubi.create.content.contraptions.Contraption;
 import com.simibubi.create.content.contraptions.behaviour.MovementBehaviour;
 import com.simibubi.create.content.contraptions.behaviour.MovementContext;
@@ -13,7 +12,8 @@ import com.simibubi.create.content.trains.entity.CarriageContraptionEntity;
 import com.simibubi.create.content.trains.station.GlobalStation;
 import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
 import com.simibubi.create.foundation.utility.animation.LerpedFloat;
-import net.adeptstack.Blocks.Doors.TrainSlidingDoorBlockEntity;
+import net.adeptstack.Core.Utils.TrainSlidingDoorProperties;
+import net.adeptstack.Blocks.Doors.SlidingDoor.TrainSlidingDoorBlockEntity;
 import net.adeptstack.registry.TrainUtilitiesBuilderTransformers;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -31,7 +31,6 @@ import net.minecraft.world.phys.Vec3;
 
 import java.lang.ref.WeakReference;
 import java.util.Map;
-import java.util.Timer;
 import java.util.TimerTask;
 
 public class TrainSlidingDoorMovementBehaviour implements MovementBehaviour {

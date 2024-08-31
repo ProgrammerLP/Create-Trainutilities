@@ -1,4 +1,4 @@
-package net.adeptstack.Blocks.Behaviour;
+package net.adeptstack.Core.Utils;
 
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;

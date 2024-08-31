@@ -1,4 +1,4 @@
-package net.adeptstack.Blocks.Doors;
+package net.adeptstack.Blocks.Doors.SlidingDoor;
 
 import com.simibubi.create.content.decoration.slidingDoor.SlidingDoorBlock;
 import net.adeptstack.registry.ModBlockEntities;

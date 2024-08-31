@@ -1,7 +1,7 @@
-package net.adeptstack.Core.Utils;
+package net.adeptstack.Core.Client;
 
-import net.adeptstack.Blocks.PlatformBlocks.PlatformBlockDE;
-import net.adeptstack.Blocks.PlatformBlocks.PlatformBlockNL;
+import net.adeptstack.Blocks.PanelBlocks.PlatformBlocks.PlatformBlockDE;
+import net.adeptstack.Blocks.PanelBlocks.PlatformBlocks.PlatformBlockNL;
 import net.adeptstack.Core.Network.ModNetwork;
 import net.adeptstack.Core.Network.Packages.PackagePlatformBlock;
 import net.adeptstack.Core.UI.Screens.PlatformBlockDEPlacementScreen;
@@ -9,7 +9,6 @@ import net.adeptstack.Core.UI.Screens.PlatformBlockNLPlacementScreen;
 import net.adeptstack.registry.TrainUtilitiesBuilderTransformers;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
-import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.state.BlockState;
 

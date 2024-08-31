@@ -1,19 +1,12 @@
 package net.adeptstack.registry;
 
 import com.tterrag.registrate.util.entry.BlockEntry;
-import net.adeptstack.Blocks.Behaviour.TrainSlidingDoorMovingInteraction;
-import net.adeptstack.Blocks.Doors.TrainSlidingDoorBlock;
-import net.adeptstack.Blocks.PlatformBlocks.PlatformBlockDE;
-import net.adeptstack.Blocks.PlatformBlocks.PlatformBlockNL;
+import net.adeptstack.Blocks.Doors.SlidingDoor.TrainSlidingDoorBlock;
+import net.adeptstack.Blocks.PanelBlocks.PlatformBlocks.PlatformBlockDE;
+import net.adeptstack.Blocks.PanelBlocks.PlatformBlocks.PlatformBlockNL;
 import net.adeptstack.Blocks.LineBlock;
-import net.minecraft.tags.BlockTags;
 import net.minecraft.world.level.block.*;
-import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.material.MapColor;
-
-import static com.simibubi.create.AllInteractionBehaviours.interactionBehaviour;
-import static net.adeptstack.Main.REGISTRATE;
-import static net.adeptstack.registry.ModTabs.TRAINUTILS_TAB;
 
 public class ModBlocks {
 

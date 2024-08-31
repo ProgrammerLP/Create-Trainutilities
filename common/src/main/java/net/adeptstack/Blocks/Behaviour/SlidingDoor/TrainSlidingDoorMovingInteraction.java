@@ -1,8 +1,8 @@
-package net.adeptstack.Blocks.Behaviour;
+package net.adeptstack.Blocks.Behaviour.SlidingDoor;
 
 import com.simibubi.create.content.contraptions.Contraption;
 import com.simibubi.create.content.contraptions.behaviour.SimpleBlockMovingInteraction;
-import net.adeptstack.Blocks.Doors.TrainSlidingDoorBlock;
+import net.adeptstack.Blocks.Doors.SlidingDoor.TrainSlidingDoorBlock;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.sounds.SoundEvent;
@@ -14,10 +14,6 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.DoorHingeSide;
 import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
 import net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate;
-import org.jetbrains.annotations.NotNull;
-
-import java.util.Timer;
-import java.util.TimerTask;
 
 public class TrainSlidingDoorMovingInteraction extends SimpleBlockMovingInteraction {
 
@@ -56,6 +52,7 @@ public class TrainSlidingDoorMovingInteraction extends SimpleBlockMovingInteract
             else {
                 float pitch = player.level().random.nextFloat() * 0.1F + 0.9F;
                 if (sound != null)
+
                     playSound(player, sound, pitch);
             }
         }

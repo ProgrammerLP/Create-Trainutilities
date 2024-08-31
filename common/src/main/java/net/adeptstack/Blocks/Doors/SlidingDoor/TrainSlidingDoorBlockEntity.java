@@ -1,4 +1,4 @@
-package net.adeptstack.Blocks.Doors;
+package net.adeptstack.Blocks.Doors.SlidingDoor;
 
 import com.simibubi.create.content.decoration.slidingDoor.SlidingDoorBlockEntity;
 import com.simibubi.create.foundation.utility.animation.LerpedFloat;

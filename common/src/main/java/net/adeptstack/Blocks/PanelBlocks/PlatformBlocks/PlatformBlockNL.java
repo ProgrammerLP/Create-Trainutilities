@@ -1,6 +1,7 @@
-package net.adeptstack.Blocks.PlatformBlocks;
+package net.adeptstack.Blocks.PanelBlocks.PlatformBlocks;
 
-import net.adeptstack.Core.Utils.ClientWrapper;
+import net.adeptstack.Blocks.PanelBlocks.PanelBlockBase;
+import net.adeptstack.Core.Client.ClientWrapper;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
@@ -12,11 +13,11 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.phys.BlockHitResult;
 
-public class PlatformBlockDE extends AbstractPlatformBlock{
+public class PlatformBlockNL extends PanelBlockBase {
 
-    public static final IntegerProperty SIGN_BLOCKS = IntegerProperty.create("signblock", 0, 23);
+    public static final IntegerProperty SIGN_BLOCKS = IntegerProperty.create("signblock", 0, 80);
 
-    public PlatformBlockDE(Properties p_49795_) {
+    public PlatformBlockNL(Properties p_49795_) {
         super(p_49795_);
 
         this.registerDefaultState(this.stateDefinition.any()
@@ -32,7 +33,7 @@ public class PlatformBlockDE extends AbstractPlatformBlock{
     @Override
     public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
         if (level.isClientSide) {
-            ClientWrapper.openPlatformBlockDEScreen(pos, state);
+            ClientWrapper.openPlatformBlockNLScreen(pos, state);
         }
         return InteractionResult.SUCCESS;
     }

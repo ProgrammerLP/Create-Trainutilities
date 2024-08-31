@@ -1,4 +1,4 @@
-package net.adeptstack.Blocks.Behaviour;
+package net.adeptstack.Core.Enums;
 
 import net.minecraft.util.StringRepresentable;
 

@@ -1,8 +1,8 @@
 package net.adeptstack.Core.Network.Packages;
 
 import dev.architectury.networking.NetworkManager;
-import net.adeptstack.Blocks.PlatformBlocks.PlatformBlockDE;
-import net.adeptstack.Blocks.PlatformBlocks.PlatformBlockNL;
+import net.adeptstack.Blocks.PanelBlocks.PlatformBlocks.PlatformBlockDE;
+import net.adeptstack.Blocks.PanelBlocks.PlatformBlocks.PlatformBlockNL;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.level.block.state.BlockState;
