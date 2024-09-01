@@ -6,6 +6,7 @@ import net.adeptstack.Core.Data.CTUTagGen;
 import net.adeptstack.Core.Network.ModNetwork;
 import net.adeptstack.registry.*;
 import net.minecraft.data.DataGenerator;
+import net.minecraft.data.DataProvider;
 
 public final class Main {
     public static final String MOD_ID = "trainutilities";

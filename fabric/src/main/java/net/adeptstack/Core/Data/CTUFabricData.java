@@ -1,4 +1,4 @@
-package net.adeptstack.fabric.Core.Data;
+package net.adeptstack.Core.Data;
 
 import io.github.fabricators_of_create.porting_lib.data.ExistingFileHelper;
 import net.adeptstack.Core.Compat.Mods;
