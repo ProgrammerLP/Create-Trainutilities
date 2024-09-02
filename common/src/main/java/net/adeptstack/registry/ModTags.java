@@ -21,6 +21,8 @@ import static net.adeptstack.registry.ModTags.NameSpace.MOD;
 public class ModTags {
     public enum NameSpace {
         MOD(Main.MOD_ID, false, true),
+        CREATE("create"),
+        QUARK("quark"),
         FRAMEDBLOCKS("framedblocks");
 
         public final String id;

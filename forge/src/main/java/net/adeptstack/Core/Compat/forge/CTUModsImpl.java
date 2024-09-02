@@ -6,7 +6,7 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class ModsImpl {
+public class CTUModsImpl {
     public static boolean isModLoaded(String id, @Nullable String fabricId) {
         List<ModInfo> mods = LoadingModList.get().getMods();
         for (ModInfo mod : mods) {

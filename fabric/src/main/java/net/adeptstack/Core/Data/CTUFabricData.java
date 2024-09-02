@@ -1,7 +1,7 @@
 package net.adeptstack.Core.Data;
 
 import io.github.fabricators_of_create.porting_lib.data.ExistingFileHelper;
-import net.adeptstack.Core.Compat.Mods;
+import net.adeptstack.Core.Compat.CTUMods;
 import net.adeptstack.Main;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
@@ -14,7 +14,7 @@ public class CTUFabricData implements DataGeneratorEntrypoint {
     @Override
     public void onInitializeDataGenerator(FabricDataGenerator gen) {
         // Ensure that all mods are present if they are needed for data gen
-        for (Mods mod : Mods.values())
+        for (CTUMods mod : CTUMods.values())
             mod.assertForDataGen();
 
         Path railwaysResources = Paths.get(System.getProperty(ExistingFileHelper.EXISTING_RESOURCES));

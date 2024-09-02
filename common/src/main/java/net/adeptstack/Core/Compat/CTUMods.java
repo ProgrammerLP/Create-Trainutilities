@@ -7,7 +7,7 @@ import org.jetbrains.annotations.Nullable;
 import java.util.Optional;
 import java.util.function.Supplier;
 
-public enum Mods {
+public enum CTUMods {
     FRAMEDBLOCKS("framedblocks"),
     QUARK("quark")
     ;
@@ -16,11 +16,11 @@ public enum Mods {
     public final boolean requiredForDataGen;
     public final @Nullable String fabricId;
 
-    Mods(@Nullable String fabricId) {
+    CTUMods(@Nullable String fabricId) {
         this(fabricId, false);
     }
 
-    Mods(@Nullable String fabricId, boolean requiredForDataGen) {
+    CTUMods(@Nullable String fabricId, boolean requiredForDataGen) {
         this.fabricId = fabricId;
         this.isLoaded = isModLoaded(asId(), fabricId);
         this.requiredForDataGen = requiredForDataGen;
