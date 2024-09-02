@@ -6,6 +6,7 @@ import net.adeptstack.Core.Network.ModNetwork;
 import net.adeptstack.registry.*;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.DataProvider;
+import net.minecraft.resources.ResourceLocation;
 
 public final class Main {
     public static final String MOD_ID = "trainutilities";
@@ -18,6 +19,7 @@ public final class Main {
         ModTabs.CREATIVE_MODE_TABS.register();
         ModSounds.SOUND_EVENTS.register();
         ModNetwork.init();
+        ModPartialModels.init();
         ModTags.register();
     }
 
@@ -25,4 +27,8 @@ public final class Main {
 //        REGISTRATE.addDataGenerator(ProviderType.BLOCK_TAGS, CTUTagGen::generateBlockTags);
 //        REGISTRATE.addDataGenerator(ProviderType.ITEM_TAGS, CTUTagGen::generateItemTags);
 //    }
+
+    public static ResourceLocation asResource(String path) {
+        return new ResourceLocation(MOD_ID, path);
+    }
 }

@@ -12,6 +12,7 @@ import com.simibubi.create.foundation.render.SuperByteBuffer;
 import com.simibubi.create.foundation.utility.AngleHelper;
 import com.simibubi.create.foundation.utility.Couple;
 import com.simibubi.create.foundation.utility.Iterate;
+import net.adeptstack.registry.ModPartialModels;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
@@ -53,9 +54,9 @@ public class TrainSlidingDoorBlockRenderer extends SlidingDoorRenderer {
                 .add(Vec3.atLowerCornerOf(facing.getNormal())
                         .scale(value2 * 1 / 32f));
 
-        if (((SlidingDoorBlock) blockState.getBlock()).isFoldingDoor()) {
+        if (((TrainSlidingDoorBlock) blockState.getBlock()).isFoldingDoor()) {
             Couple<PartialModel> partials =
-                    AllPartialModels.FOLDING_DOORS.get(blockState.getBlock().arch$registryName());
+                    ModPartialModels.FOLDING_DOORS.get(blockState.getBlock().arch$registryName());
 
             boolean flip = blockState.getValue(DoorBlock.HINGE) == DoorHingeSide.RIGHT;
             for (boolean left : Iterate.trueAndFalse) {

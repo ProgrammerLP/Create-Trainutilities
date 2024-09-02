@@ -2,9 +2,12 @@ package net.adeptstack.registry;
 
 import com.simibubi.create.AllBlocks;
 import com.simibubi.create.AllTags;
+import com.simibubi.create.content.decoration.slidingDoor.SlidingDoorBlock;
+import com.simibubi.create.foundation.data.AssetLookup;
 import com.tterrag.registrate.builders.BlockBuilder;
 import com.tterrag.registrate.util.entry.BlockEntry;
 import com.tterrag.registrate.util.nullness.NonNullUnaryOperator;
+import io.github.fabricators_of_create.porting_lib.models.generators.ModelFile;
 import net.adeptstack.Blocks.Behaviour.SlidingDoor.TrainSlidingDoorMovementBehaviour;
 import net.adeptstack.Blocks.Behaviour.SlidingDoor.TrainSlidingDoorMovingInteraction;
 import net.adeptstack.Core.Utils.TrainSlidingDoorProperties;
@@ -23,6 +26,7 @@ import net.minecraft.world.level.material.MapColor;
 
 import static com.simibubi.create.AllInteractionBehaviours.interactionBehaviour;
 import static com.simibubi.create.AllMovementBehaviours.movementBehaviour;
+import static com.simibubi.create.content.decoration.slidingDoor.SlidingDoorBlock.GLASS_SET_TYPE;
 import static com.simibubi.create.foundation.data.TagGen.pickaxeOnly;
 import static net.adeptstack.Main.REGISTRATE;
 import static net.adeptstack.registry.ModTabs.TRAINUTILS_TAB;
@@ -153,8 +157,8 @@ public class TrainUtilitiesBuilderTransformers {
                 .build();
     }
 
-    public static BlockEntry<TrainSlidingDoorBlock> TrainSlidingDoor(String type, MapColor colour) {
-        return REGISTRATE.block("door_" + type, TrainSlidingDoorBlock::new)
+    public static BlockEntry<TrainSlidingDoorBlock> TrainSlidingDoor(String type, boolean folds, MapColor colour) {
+        return REGISTRATE.block("door_" + type, p -> new TrainSlidingDoorBlock(p, GLASS_SET_TYPE.get(), folds))
                 .initialProperties(AllBlocks.FRAMED_GLASS_DOOR)
                 .properties(p -> p.sound(SoundType.METAL).mapColor(colour))
                 .transform(TrainUtilitiesBuilderTransformers.slidingDoor(type))
