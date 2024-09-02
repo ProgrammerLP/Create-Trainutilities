@@ -1,6 +1,7 @@
 package net.adeptstack.registry;
 
 import com.simibubi.create.AllBlocks;
+import com.simibubi.create.AllTags;
 import com.tterrag.registrate.builders.BlockBuilder;
 import com.tterrag.registrate.util.entry.BlockEntry;
 import com.tterrag.registrate.util.nullness.NonNullUnaryOperator;
@@ -13,6 +14,8 @@ import net.adeptstack.Blocks.PanelBlocks.PlatformBlocks.PlatformBlockDE;
 import net.adeptstack.Blocks.PanelBlocks.PlatformBlocks.PlatformBlockNL;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.sounds.SoundEvents;
+import net.minecraft.tags.BlockTags;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
@@ -20,6 +23,7 @@ import net.minecraft.world.level.material.MapColor;
 
 import static com.simibubi.create.AllInteractionBehaviours.interactionBehaviour;
 import static com.simibubi.create.AllMovementBehaviours.movementBehaviour;
+import static com.simibubi.create.foundation.data.TagGen.pickaxeOnly;
 import static net.adeptstack.Main.REGISTRATE;
 import static net.adeptstack.registry.ModTabs.TRAINUTILS_TAB;
 
@@ -32,7 +36,11 @@ public class TrainUtilitiesBuilderTransformers {
                 .initialProperties(() -> Blocks.IRON_BARS)
                 .properties(p -> p.mapColor(color)
                         .sound(SoundType.METAL))
+                .transform(pickaxeOnly())
+                .tag(ModTags.AllBlockTags.PLATFORM_BLOCKS.tag)
+                .loot((lr, block) -> lr.add(block, lr.createSingleItemTable(block)))
                 .item()
+                .tag(ModTags.AllItemTags.PLATFORM_BLOCKS.tag)
                 .tab(TRAINUTILS_TAB.getKey())
                 .build()
                 .register();
@@ -44,7 +52,11 @@ public class TrainUtilitiesBuilderTransformers {
                 .initialProperties(() -> Blocks.IRON_BARS)
                 .properties(p -> p.mapColor(color)
                         .sound(SoundType.METAL))
+                .transform(pickaxeOnly())
+                .tag(ModTags.AllBlockTags.PLATFORM_BLOCKS.tag)
+                .loot((lr, block) -> lr.add(block, lr.createSingleItemTable(block)))
                 .item()
+                .tag(ModTags.AllItemTags.PLATFORM_BLOCKS.tag)
                 .tab(TRAINUTILS_TAB.getKey())
                 .build()
                 .register();
@@ -56,6 +68,9 @@ public class TrainUtilitiesBuilderTransformers {
                 .initialProperties(() -> Blocks.GLASS)
                 .properties(p -> p.sound(SoundType.GLASS).mapColor(color))
                 .addLayer(() -> RenderType::translucent)
+                .transform(pickaxeOnly())
+                .tag(ModTags.AllBlockTags.FRAMEABLE.tag)
+                .loot((lr, block) -> lr.add(block, lr.createSingleItemTable(block)))
                 .item()
                 .tab(TRAINUTILS_TAB.getKey())
                 .build()
@@ -67,6 +82,9 @@ public class TrainUtilitiesBuilderTransformers {
                 .block(id, Block::new)
                 .initialProperties(() -> Blocks.GLASS)
                 .properties(p -> p.sound(SoundType.STONE).mapColor(color))
+                .transform(pickaxeOnly())
+                .tag(ModTags.AllBlockTags.FRAMEABLE.tag)
+                .loot((lr, block) -> lr.add(block, lr.createSingleItemTable(block)))
                 .item()
                 .tab(TRAINUTILS_TAB.getKey())
                 .build()
@@ -78,7 +96,12 @@ public class TrainUtilitiesBuilderTransformers {
                 .block(id, LineBlock::new)
                 .initialProperties(() -> Blocks.WHITE_CONCRETE)
                 .properties(p -> p.mapColor(color))
+                .transform(pickaxeOnly())
+                .tag(ModTags.AllBlockTags.FRAMEABLE.tag)
+                .tag(ModTags.AllBlockTags.LINE_BLOCKS.tag)
+                .loot((lr, block) -> lr.add(block, lr.createSingleItemTable(block)))
                 .item()
+                .tag(ModTags.AllItemTags.LINE_BLOCKS.tag)
                 .tab(TRAINUTILS_TAB.getKey())
                 .build()
                 .register();
@@ -88,8 +111,16 @@ public class TrainUtilitiesBuilderTransformers {
         return b -> b.initialProperties(() -> Blocks.OAK_DOOR) // for villager AI..
                 .properties(p -> p.strength(3.0F, 6.0F))
                 .addLayer(() -> RenderType::cutout)
+                .transform(pickaxeOnly())
                 .onRegister(interactionBehaviour(new TrainSlidingDoorMovingInteraction()))
+                .tag(BlockTags.DOORS)
+                .tag(ModTags.AllBlockTags.DOORS.tag)
+                .tag(AllTags.AllBlockTags.NON_DOUBLE_DOOR.tag)
+                .loot((lr, block) -> lr.add(block, lr.createDoorTable(block)))
                 .item()
+                .tag(ItemTags.DOORS)
+                .tag(ModTags.AllItemTags.DOORS.tag)
+                .tag(AllTags.AllItemTags.CONTRAPTION_CONTROLLED.tag)
                 .tab(ModTabs.TRAINUTILS_TAB.getKey())
                 .build();
     }
@@ -107,9 +138,17 @@ public class TrainUtilitiesBuilderTransformers {
         return b -> b.initialProperties(AllBlocks.FRAMED_GLASS_DOOR) // for villager AI..
                 .properties(p -> p.strength(3.0F, 6.0F))
                 .addLayer(() -> RenderType::cutout)
+                .transform(pickaxeOnly())
                 .onRegister(interactionBehaviour(new TrainSlidingDoorMovingInteraction()))
                 .onRegister(movementBehaviour(new TrainSlidingDoorMovementBehaviour(type)))
+                .tag(BlockTags.DOORS)
+                .tag(ModTags.AllBlockTags.DOORS.tag)
+                .tag(AllTags.AllBlockTags.NON_DOUBLE_DOOR.tag)
+                .loot((lr, block) -> lr.add(block, lr.createDoorTable(block)))
                 .item()
+                .tag(ItemTags.DOORS)
+                .tag(ModTags.AllItemTags.DOORS.tag)
+                .tag(AllTags.AllItemTags.CONTRAPTION_CONTROLLED.tag)
                 .tab(ModTabs.TRAINUTILS_TAB.getKey())
                 .build();
     }
