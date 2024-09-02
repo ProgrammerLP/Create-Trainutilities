@@ -2,7 +2,6 @@ package net.adeptstack;
 
 import com.simibubi.create.foundation.data.CreateRegistrate;
 import com.tterrag.registrate.providers.ProviderType;
-import net.adeptstack.Core.Data.CTUTagGen;
 import net.adeptstack.Core.Network.ModNetwork;
 import net.adeptstack.registry.*;
 import net.minecraft.data.DataGenerator;
@@ -22,8 +21,8 @@ public final class Main {
         ModTags.register();
     }
 
-    public static void gatherData(DataGenerator.PackGenerator gen) {
-        REGISTRATE.addDataGenerator(ProviderType.BLOCK_TAGS, CTUTagGen::generateBlockTags);
-        REGISTRATE.addDataGenerator(ProviderType.ITEM_TAGS, CTUTagGen::generateItemTags);
-    }
+//    public static void gatherData(DataGenerator.PackGenerator gen) {
+//        REGISTRATE.addDataGenerator(ProviderType.BLOCK_TAGS, CTUTagGen::generateBlockTags);
+//        REGISTRATE.addDataGenerator(ProviderType.ITEM_TAGS, CTUTagGen::generateItemTags);
+//    }
 }
