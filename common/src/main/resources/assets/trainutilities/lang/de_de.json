@@ -40,6 +40,10 @@
   "block.trainutilities.door_andesite_alloy_window": "Tür aus Andesitlegierung (Fenster)",
   "block.trainutilities.door_ungarian_flirt": "Stadler Flirt Tür (MÁV Design)",
   "block.trainutilities.door_warsaw_tram": "Warschauer Straßenbahntür",
+  "block.trainutilities.door_iron_clean": "glänzende Eisentür",
+  "block.trainutilities.door_iron_rusty": "Rostige Eisentür",
+  "block.trainutilities.door_industrial_iron": "Industrie Eisentür",
+  "block.trainutilities.door_industrial_iron_window": "Industrie Eisentür (Fenster)",
 
   "block.trainutilities.de_platform_block": "Deutscher Gleisblock",
   "block.trainutilities.nl_platform_block": "Niederländischer Gleisblock",
