@@ -2,11 +2,16 @@ package net.adeptstack.registry;
 
 import com.tterrag.registrate.util.entry.BlockEntry;
 import net.adeptstack.Blocks.Doors.SlidingDoor.TrainSlidingDoorBlock;
+import net.adeptstack.Blocks.PanelBlocks.IsoWallBlock;
 import net.adeptstack.Blocks.PanelBlocks.PlatformBlocks.PlatformBlockDE;
 import net.adeptstack.Blocks.PanelBlocks.PlatformBlocks.PlatformBlockNL;
 import net.adeptstack.Blocks.LineBlock;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.material.MapColor;
+
+import static com.simibubi.create.foundation.data.TagGen.pickaxeOnly;
+import static net.adeptstack.Main.REGISTRATE;
+import static net.adeptstack.registry.ModTabs.TRAINUTILS_TAB;
 
 public class ModBlocks {
 
@@ -156,6 +161,20 @@ public class ModBlocks {
 
     public static final BlockEntry<TrainSlidingDoorBlock> DOOR_INDUSTRIAL_IRON =
             TrainUtilitiesBuilderTransformers.TrainSlidingDoor("industrial_iron", true, MapColor.STONE);
+
+    //TESTBLOCKS
+    public static final BlockEntry<IsoWallBlock> ISO_WALL_BLOCK =
+            REGISTRATE
+                    .block("iso_wall_block", IsoWallBlock::new)
+                    .initialProperties(() -> Blocks.IRON_BARS)
+                    .properties(p -> p.mapColor(MapColor.WOOL)
+                            .sound(SoundType.METAL))
+                    .transform(pickaxeOnly())
+                    .loot((lr, block) -> lr.add(block, lr.createSingleItemTable(block)))
+                    .item()
+                    .tab(TRAINUTILS_TAB.getKey())
+                    .build()
+                    .register();
 
     public static void register() { }
 }

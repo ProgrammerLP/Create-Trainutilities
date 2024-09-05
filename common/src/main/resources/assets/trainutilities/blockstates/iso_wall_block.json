@@ -1,0 +1,292 @@
+{
+  "variants": {
+    "part=top_left,facing=north,z_align=positive": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 90
+    },
+    "part=top_left,facing=north,z_align=center": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 90
+    },
+    "part=top_left,facing=north,z_align=negative": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 90
+    },
+    "part=top_left,facing=east,z_align=positive": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 180
+    },
+    "part=top_left,facing=east,z_align=center": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 180
+    },
+    "part=top_left,facing=east,z_align=negative": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 180
+    },
+    "part=top_left,facing=south,z_align=positive": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 270
+    },
+    "part=top_left,facing=south,z_align=center": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 270
+    },
+    "part=top_left,facing=south,z_align=negative": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 270
+    },
+    "part=top_left,facing=west,z_align=positive": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 0
+    },
+    "part=top_left,facing=west,z_align=center": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 0
+    },
+    "part=top_left,facing=west,z_align=negative": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 0
+    },
+    "part=top_right,facing=north,z_align=positive": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 90
+    },
+    "part=top_right,facing=north,z_align=center": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 90
+    },
+    "part=top_right,facing=north,z_align=negative": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 90
+    },
+    "part=top_right,facing=east,z_align=positive": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 180
+    },
+    "part=top_right,facing=east,z_align=center": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 180
+    },
+    "part=top_right,facing=east,z_align=negative": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 180
+    },
+    "part=top_right,facing=south,z_align=positive": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 270
+    },
+    "part=top_right,facing=south,z_align=center": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 270
+    },
+    "part=top_right,facing=south,z_align=negative": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 270
+    },
+    "part=top_right,facing=west,z_align=positive": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 0
+    },
+    "part=top_right,facing=west,z_align=center": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 0
+    },
+    "part=top_right,facing=west,z_align=negative": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 0
+    },
+    "part=middle_left,facing=north,z_align=positive": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 90
+    },
+    "part=middle_left,facing=north,z_align=center": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 90
+    },
+    "part=middle_left,facing=north,z_align=negative": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 90
+    },
+    "part=middle_left,facing=east,z_align=positive": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 180
+    },
+    "part=middle_left,facing=east,z_align=center": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 180
+    },
+    "part=middle_left,facing=east,z_align=negative": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 180
+    },
+    "part=middle_left,facing=south,z_align=positive": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 270
+    },
+    "part=middle_left,facing=south,z_align=center": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 270
+    },
+    "part=middle_left,facing=south,z_align=negative": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 270
+    },
+    "part=middle_left,facing=west,z_align=positive": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 0
+    },
+    "part=middle_left,facing=west,z_align=center": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 0
+    },
+    "part=middle_left,facing=west,z_align=negative": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 0
+    },
+    "part=middle_right,facing=north,z_align=positive": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 90
+    },
+    "part=middle_right,facing=north,z_align=center": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 90
+    },
+    "part=middle_right,facing=north,z_align=negative": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 90
+    },
+    "part=middle_right,facing=east,z_align=positive": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 180
+    },
+    "part=middle_right,facing=east,z_align=center": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 180
+    },
+    "part=middle_right,facing=east,z_align=negative": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 180
+    },
+    "part=middle_right,facing=south,z_align=positive": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 270
+    },
+    "part=middle_right,facing=south,z_align=center": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 270
+    },
+    "part=middle_right,facing=south,z_align=negative": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 270
+    },
+    "part=middle_right,facing=west,z_align=positive": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 0
+    },
+    "part=middle_right,facing=west,z_align=center": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 0
+    },
+    "part=middle_right,facing=west,z_align=negative": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 0
+    },
+    "part=bottom_left,facing=north,z_align=positive": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 90
+    },
+    "part=bottom_left,facing=north,z_align=center": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 90
+    },
+    "part=bottom_left,facing=north,z_align=negative": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 90
+    },
+    "part=bottom_left,facing=east,z_align=positive": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 180
+    },
+    "part=bottom_left,facing=east,z_align=center": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 180
+    },
+    "part=bottom_left,facing=east,z_align=negative": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 180
+    },
+    "part=bottom_left,facing=south,z_align=positive": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 270
+    },
+    "part=bottom_left,facing=south,z_align=center": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 270
+    },
+    "part=bottom_left,facing=south,z_align=negative": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 270
+    },
+    "part=bottom_left,facing=west,z_align=positive": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 0
+    },
+    "part=bottom_left,facing=west,z_align=center": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 0
+    },
+    "part=bottom_left,facing=west,z_align=negative": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 0
+    },
+    "part=bottom_right,facing=north,z_align=positive": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 90
+    },
+    "part=bottom_right,facing=north,z_align=center": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 90
+    },
+    "part=bottom_right,facing=north,z_align=negative": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 90
+    },
+    "part=bottom_right,facing=east,z_align=positive": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 180
+    },
+    "part=bottom_right,facing=east,z_align=center": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 180
+    },
+    "part=bottom_right,facing=east,z_align=negative": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 180
+    },
+    "part=bottom_right,facing=south,z_align=positive": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 270
+    },
+    "part=bottom_right,facing=south,z_align=center": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 270
+    },
+    "part=bottom_right,facing=south,z_align=negative": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 270
+    },
+    "part=bottom_right,facing=west,z_align=positive": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 0
+    },
+    "part=bottom_right,facing=west,z_align=center": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 0
+    },
+    "part=bottom_right,facing=west,z_align=negative": {
+      "model": "trainutilities:block/iso_wall_block/center/top_left",
+      "y": 0
+    }
+  }
+}
