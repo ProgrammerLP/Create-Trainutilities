@@ -46,6 +46,7 @@
     "trainutilities:door_iron_clean",
     "trainutilities:door_iron_rusty",
     "trainutilities:door_industrial_iron",
-    "trainutilities:door_industrial_iron_window"
+    "trainutilities:door_industrial_iron_window",
+    "trainutilities:iso_wall_block"
   ]
 }
