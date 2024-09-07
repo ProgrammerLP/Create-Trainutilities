@@ -15,6 +15,7 @@
   "block.trainutilities.cis_amendorf_block_1": "CIS Amendorf block (type 1)",
   "block.trainutilities.cis_amendorf_block_2": "CIS Amendorf block (typ 2)",
   "block.trainutilities.iso_wall_block": "Noise isolation wall",
+  "block.trainutilities.iso_wall_block_green": "Noise isolation wall (green)",
 
   "block.trainutilities.door_ice": "DB ICE door (bottom)",
   "block.trainutilities.door_ic2": "DB IC2 door",
