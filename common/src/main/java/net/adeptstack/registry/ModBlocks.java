@@ -164,17 +164,10 @@ public class ModBlocks {
 
     //TESTBLOCKS
     public static final BlockEntry<IsoWallBlock> ISO_WALL_BLOCK =
-            REGISTRATE
-                    .block("iso_wall_block", IsoWallBlock::new)
-                    .initialProperties(() -> Blocks.IRON_BARS)
-                    .properties(p -> p.mapColor(MapColor.WOOL)
-                            .sound(SoundType.METAL))
-                    .transform(pickaxeOnly())
-                    .loot((lr, block) -> lr.add(block, lr.createSingleItemTable(block)))
-                    .item()
-                    .tab(TRAINUTILS_TAB.getKey())
-                    .build()
-                    .register();
+            TrainUtilitiesBuilderTransformers.IsoWallBlock("iso_wall_block", MapColor.COLOR_CYAN);
+
+    public static final BlockEntry<IsoWallBlock> ISO_WALL_BLOCK_GREEN =
+            TrainUtilitiesBuilderTransformers.IsoWallBlock("iso_wall_block_green", MapColor.COLOR_LIGHT_GREEN);
 
     public static void register() { }
 }

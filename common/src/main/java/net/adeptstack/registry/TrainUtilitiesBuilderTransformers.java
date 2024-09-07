@@ -10,6 +10,7 @@ import com.tterrag.registrate.util.nullness.NonNullUnaryOperator;
 import io.github.fabricators_of_create.porting_lib.models.generators.ModelFile;
 import net.adeptstack.Blocks.Behaviour.SlidingDoor.TrainSlidingDoorMovementBehaviour;
 import net.adeptstack.Blocks.Behaviour.SlidingDoor.TrainSlidingDoorMovingInteraction;
+import net.adeptstack.Blocks.PanelBlocks.IsoWallBlock;
 import net.adeptstack.Core.Utils.TrainSlidingDoorProperties;
 import net.adeptstack.Blocks.Doors.SlidingDoor.TrainSlidingDoorBlock;
 import net.adeptstack.Blocks.LineBlock;
@@ -88,6 +89,20 @@ public class TrainUtilitiesBuilderTransformers {
                 .properties(p -> p.sound(SoundType.STONE).mapColor(color))
                 .transform(pickaxeOnly())
                 .tag(ModTags.AllBlockTags.FRAMEABLE.tag)
+                .loot((lr, block) -> lr.add(block, lr.createSingleItemTable(block)))
+                .item()
+                .tab(TRAINUTILS_TAB.getKey())
+                .build()
+                .register();
+    }
+
+    public static BlockEntry<IsoWallBlock> IsoWallBlock(String id, MapColor color) {
+        return REGISTRATE
+                .block(id, IsoWallBlock::new)
+                .initialProperties(() -> Blocks.IRON_BARS)
+                .properties(p -> p.mapColor(MapColor.WOOL)
+                        .sound(SoundType.METAL))
+                .transform(pickaxeOnly())
                 .loot((lr, block) -> lr.add(block, lr.createSingleItemTable(block)))
                 .item()
                 .tab(TRAINUTILS_TAB.getKey())
