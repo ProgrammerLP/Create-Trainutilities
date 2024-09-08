@@ -9,10 +9,6 @@ import net.adeptstack.Blocks.LineBlock;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.material.MapColor;
 
-import static com.simibubi.create.foundation.data.TagGen.pickaxeOnly;
-import static net.adeptstack.Main.REGISTRATE;
-import static net.adeptstack.registry.ModTabs.TRAINUTILS_TAB;
-
 public class ModBlocks {
 
     //===PLATFORM BLOCKS===
@@ -21,6 +17,9 @@ public class ModBlocks {
 
     public static final BlockEntry<PlatformBlockNL> NL_PLATFORM_BLOCK =
             TrainUtilitiesBuilderTransformers.NLPlatformBlock("nl_platform_block", MapColor.NONE);
+
+    public static final BlockEntry<PlatformBlockNL> CH_PLATFORM_BLOCK =
+            TrainUtilitiesBuilderTransformers.NLPlatformBlock("ch_platform_block", MapColor.NONE);
 
     //===BUILDING BLOCKS===
     public static final BlockEntry<Block> PKP_BLOCK_WHITE =
@@ -71,6 +70,13 @@ public class ModBlocks {
 
     public static final BlockEntry<LineBlock> CIS_AMENDORF_BLOCK_2 =
             TrainUtilitiesBuilderTransformers.LineBlock("cis_amendorf_block_2", MapColor.COLOR_GREEN);
+
+    //noise isolation walls
+    public static final BlockEntry<IsoWallBlock> ISO_WALL_BLOCK =
+            TrainUtilitiesBuilderTransformers.IsoWallBlock("iso_wall_block", MapColor.COLOR_CYAN);
+
+    public static final BlockEntry<IsoWallBlock> ISO_WALL_BLOCK_GREEN =
+            TrainUtilitiesBuilderTransformers.IsoWallBlock("iso_wall_block_green", MapColor.COLOR_LIGHT_GREEN);
 
     //===DOORS===
     public static final BlockEntry<TrainSlidingDoorBlock> DOOR_ICE =
@@ -163,11 +169,6 @@ public class ModBlocks {
             TrainUtilitiesBuilderTransformers.TrainSlidingDoor("industrial_iron", true, MapColor.STONE);
 
     //TESTBLOCKS
-    public static final BlockEntry<IsoWallBlock> ISO_WALL_BLOCK =
-            TrainUtilitiesBuilderTransformers.IsoWallBlock("iso_wall_block", MapColor.COLOR_CYAN);
-
-    public static final BlockEntry<IsoWallBlock> ISO_WALL_BLOCK_GREEN =
-            TrainUtilitiesBuilderTransformers.IsoWallBlock("iso_wall_block_green", MapColor.COLOR_LIGHT_GREEN);
 
     public static void register() { }
 }
