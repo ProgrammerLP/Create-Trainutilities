@@ -3,6 +3,7 @@ package net.adeptstack.registry;
 import com.tterrag.registrate.util.entry.BlockEntry;
 import net.adeptstack.Blocks.Doors.SlidingDoor.TrainSlidingDoorBlock;
 import net.adeptstack.Blocks.PanelBlocks.IsoWallBlock;
+import net.adeptstack.Blocks.PanelBlocks.PlatformBlocks.PlatformBlockCH;
 import net.adeptstack.Blocks.PanelBlocks.PlatformBlocks.PlatformBlockDE;
 import net.adeptstack.Blocks.PanelBlocks.PlatformBlocks.PlatformBlockNL;
 import net.adeptstack.Blocks.LineBlock;
@@ -18,8 +19,8 @@ public class ModBlocks {
     public static final BlockEntry<PlatformBlockNL> NL_PLATFORM_BLOCK =
             TrainUtilitiesBuilderTransformers.NLPlatformBlock("nl_platform_block", MapColor.NONE);
 
-    public static final BlockEntry<PlatformBlockNL> CH_PLATFORM_BLOCK =
-            TrainUtilitiesBuilderTransformers.NLPlatformBlock("ch_platform_block", MapColor.NONE);
+    public static final BlockEntry<PlatformBlockCH> CH_PLATFORM_BLOCK =
+            TrainUtilitiesBuilderTransformers.CHPlatformBlock("ch_platform_block", MapColor.NONE);
 
     //===BUILDING BLOCKS===
     public static final BlockEntry<Block> PKP_BLOCK_WHITE =

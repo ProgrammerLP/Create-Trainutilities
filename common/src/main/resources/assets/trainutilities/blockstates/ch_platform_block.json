@@ -1,0 +1,1108 @@
+{
+  "variants": {
+    "signblock=0,facing=north,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/empty_platform_block",
+      "y": 0
+    },
+    "signblock=0,facing=north,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/empty_platform_block",
+      "y": 0
+    },
+    "signblock=0,facing=north,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/empty_platform_block",
+      "y": 0
+    },
+    "signblock=0,facing=south,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/empty_platform_block",
+      "y": 180
+    },
+    "signblock=0,facing=south,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/empty_platform_block",
+      "y": 180
+    },
+    "signblock=0,facing=south,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/empty_platform_block",
+      "y": 180
+    },
+    "signblock=0,facing=west,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/empty_platform_block",
+      "y": 270
+    },
+    "signblock=0,facing=west,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/empty_platform_block",
+      "y": 270
+    },
+    "signblock=0,facing=west,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/empty_platform_block",
+      "y": 270
+    },
+    "signblock=0,facing=east,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/empty_platform_block",
+      "y": 90
+    },
+    "signblock=0,facing=east,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/empty_platform_block",
+      "y": 90
+    },
+    "signblock=0,facing=east,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/empty_platform_block",
+      "y": 90
+    },
+    "signblock=1,facing=north,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform1_block",
+      "y": 0
+    },
+    "signblock=1,facing=north,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform1_block",
+      "y": 0
+    },
+    "signblock=1,facing=north,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform1_block",
+      "y": 0
+    },
+    "signblock=1,facing=south,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform1_block",
+      "y": 180
+    },
+    "signblock=1,facing=south,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform1_block",
+      "y": 180
+    },
+    "signblock=1,facing=south,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform1_block",
+      "y": 180
+    },
+    "signblock=1,facing=west,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform1_block",
+      "y": 270
+    },
+    "signblock=1,facing=west,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform1_block",
+      "y": 270
+    },
+    "signblock=1,facing=west,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform1_block",
+      "y": 270
+    },
+    "signblock=1,facing=east,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform1_block",
+      "y": 90
+    },
+    "signblock=1,facing=east,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform1_block",
+      "y": 90
+    },
+    "signblock=1,facing=east,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform1_block",
+      "y": 90
+    },
+    "signblock=2,facing=north,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform2_block",
+      "y": 0
+    },
+    "signblock=2,facing=north,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform2_block",
+      "y": 0
+    },
+    "signblock=2,facing=north,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform2_block",
+      "y": 0
+    },
+    "signblock=2,facing=south,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform2_block",
+      "y": 180
+    },
+    "signblock=2,facing=south,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform2_block",
+      "y": 180
+    },
+    "signblock=2,facing=south,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform2_block",
+      "y": 180
+    },
+    "signblock=2,facing=west,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform2_block",
+      "y": 270
+    },
+    "signblock=2,facing=west,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform2_block",
+      "y": 270
+    },
+    "signblock=2,facing=west,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform2_block",
+      "y": 270
+    },
+    "signblock=2,facing=east,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform2_block",
+      "y": 90
+    },
+    "signblock=2,facing=east,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform2_block",
+      "y": 90
+    },
+    "signblock=2,facing=east,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform2_block",
+      "y": 90
+    },
+    "signblock=3,facing=north,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform3_block",
+      "y": 0
+    },
+    "signblock=3,facing=north,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform3_block",
+      "y": 0
+    },
+    "signblock=3,facing=north,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform3_block",
+      "y": 0
+    },
+    "signblock=3,facing=south,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform3_block",
+      "y": 180
+    },
+    "signblock=3,facing=south,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform3_block",
+      "y": 180
+    },
+    "signblock=3,facing=south,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform3_block",
+      "y": 180
+    },
+    "signblock=3,facing=west,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform3_block",
+      "y": 270
+    },
+    "signblock=3,facing=west,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform3_block",
+      "y": 270
+    },
+    "signblock=3,facing=west,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform3_block",
+      "y": 270
+    },
+    "signblock=3,facing=east,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform3_block",
+      "y": 90
+    },
+    "signblock=3,facing=east,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform3_block",
+      "y": 90
+    },
+    "signblock=3,facing=east,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform3_block",
+      "y": 90
+    },
+    "signblock=4,facing=north,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform4_block",
+      "y": 0
+    },
+    "signblock=4,facing=north,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform4_block",
+      "y": 0
+    },
+    "signblock=4,facing=north,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform4_block",
+      "y": 0
+    },
+    "signblock=4,facing=south,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform4_block",
+      "y": 180
+    },
+    "signblock=4,facing=south,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform4_block",
+      "y": 180
+    },
+    "signblock=4,facing=south,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform4_block",
+      "y": 180
+    },
+    "signblock=4,facing=west,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform4_block",
+      "y": 270
+    },
+    "signblock=4,facing=west,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform4_block",
+      "y": 270
+    },
+    "signblock=4,facing=west,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform4_block",
+      "y": 270
+    },
+    "signblock=4,facing=east,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform4_block",
+      "y": 90
+    },
+    "signblock=4,facing=east,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform4_block",
+      "y": 90
+    },
+    "signblock=4,facing=east,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform4_block",
+      "y": 90
+    },
+    "signblock=5,facing=north,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform5_block",
+      "y": 0
+    },
+    "signblock=5,facing=north,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform5_block",
+      "y": 0
+    },
+    "signblock=5,facing=north,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform5_block",
+      "y": 0
+    },
+    "signblock=5,facing=south,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform5_block",
+      "y": 180
+    },
+    "signblock=5,facing=south,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform5_block",
+      "y": 180
+    },
+    "signblock=5,facing=south,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform5_block",
+      "y": 180
+    },
+    "signblock=5,facing=west,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform5_block",
+      "y": 270
+    },
+    "signblock=5,facing=west,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform5_block",
+      "y": 270
+    },
+    "signblock=5,facing=west,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform5_block",
+      "y": 270
+    },
+    "signblock=5,facing=east,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform5_block",
+      "y": 90
+    },
+    "signblock=5,facing=east,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform5_block",
+      "y": 90
+    },
+    "signblock=5,facing=east,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform5_block",
+      "y": 90
+    },
+    "signblock=6,facing=north,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform6_block",
+      "y": 0
+    },
+    "signblock=6,facing=north,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform6_block",
+      "y": 0
+    },
+    "signblock=6,facing=north,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform6_block",
+      "y": 0
+    },
+    "signblock=6,facing=south,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform6_block",
+      "y": 180
+    },
+    "signblock=6,facing=south,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform6_block",
+      "y": 180
+    },
+    "signblock=6,facing=south,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform6_block",
+      "y": 180
+    },
+    "signblock=6,facing=west,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform6_block",
+      "y": 270
+    },
+    "signblock=6,facing=west,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform6_block",
+      "y": 270
+    },
+    "signblock=6,facing=west,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform6_block",
+      "y": 270
+    },
+    "signblock=6,facing=east,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform6_block",
+      "y": 90
+    },
+    "signblock=6,facing=east,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform6_block",
+      "y": 90
+    },
+    "signblock=6,facing=east,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform6_block",
+      "y": 90
+    },
+    "signblock=7,facing=north,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform7_block",
+      "y": 0
+    },
+    "signblock=7,facing=north,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform7_block",
+      "y": 0
+    },
+    "signblock=7,facing=north,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform7_block",
+      "y": 0
+    },
+    "signblock=7,facing=south,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform7_block",
+      "y": 180
+    },
+    "signblock=7,facing=south,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform7_block",
+      "y": 180
+    },
+    "signblock=7,facing=south,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform7_block",
+      "y": 180
+    },
+    "signblock=7,facing=west,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform7_block",
+      "y": 270
+    },
+    "signblock=7,facing=west,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform7_block",
+      "y": 270
+    },
+    "signblock=7,facing=west,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform7_block",
+      "y": 270
+    },
+    "signblock=7,facing=east,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform7_block",
+      "y": 90
+    },
+    "signblock=7,facing=east,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform7_block",
+      "y": 90
+    },
+    "signblock=7,facing=east,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform7_block",
+      "y": 90
+    },
+    "signblock=8,facing=north,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform8_block",
+      "y": 0
+    },
+    "signblock=8,facing=north,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform8_block",
+      "y": 0
+    },
+    "signblock=8,facing=north,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform8_block",
+      "y": 0
+    },
+    "signblock=8,facing=south,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform8_block",
+      "y": 180
+    },
+    "signblock=8,facing=south,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform8_block",
+      "y": 180
+    },
+    "signblock=8,facing=south,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform8_block",
+      "y": 180
+    },
+    "signblock=8,facing=west,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform8_block",
+      "y": 270
+    },
+    "signblock=8,facing=west,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform8_block",
+      "y": 270
+    },
+    "signblock=8,facing=west,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform8_block",
+      "y": 270
+    },
+    "signblock=8,facing=east,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform8_block",
+      "y": 90
+    },
+    "signblock=8,facing=east,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform8_block",
+      "y": 90
+    },
+    "signblock=8,facing=east,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform8_block",
+      "y": 90
+    },
+    "signblock=9,facing=north,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform9_block",
+      "y": 0
+    },
+    "signblock=9,facing=north,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform9_block",
+      "y": 0
+    },
+    "signblock=9,facing=north,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform9_block",
+      "y": 0
+    },
+    "signblock=9,facing=south,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform9_block",
+      "y": 180
+    },
+    "signblock=9,facing=south,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform9_block",
+      "y": 180
+    },
+    "signblock=9,facing=south,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform9_block",
+      "y": 180
+    },
+    "signblock=9,facing=west,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform9_block",
+      "y": 270
+    },
+    "signblock=9,facing=west,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform9_block",
+      "y": 270
+    },
+    "signblock=9,facing=west,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform9_block",
+      "y": 270
+    },
+    "signblock=9,facing=east,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform9_block",
+      "y": 90
+    },
+    "signblock=9,facing=east,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform9_block",
+      "y": 90
+    },
+    "signblock=9,facing=east,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform9_block",
+      "y": 90
+    },
+    "signblock=10,facing=north,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform10_block",
+      "y": 0
+    },
+    "signblock=10,facing=north,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform10_block",
+      "y": 0
+    },
+    "signblock=10,facing=north,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform10_block",
+      "y": 0
+    },
+    "signblock=10,facing=south,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform10_block",
+      "y": 180
+    },
+    "signblock=10,facing=south,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform10_block",
+      "y": 180
+    },
+    "signblock=10,facing=south,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform10_block",
+      "y": 180
+    },
+    "signblock=10,facing=west,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform10_block",
+      "y": 270
+    },
+    "signblock=10,facing=west,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform10_block",
+      "y": 270
+    },
+    "signblock=10,facing=west,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform10_block",
+      "y": 270
+    },
+    "signblock=10,facing=east,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform10_block",
+      "y": 90
+    },
+    "signblock=10,facing=east,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform10_block",
+      "y": 90
+    },
+    "signblock=10,facing=east,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform10_block",
+      "y": 90
+    },
+    "signblock=11,facing=north,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform11_block",
+      "y": 0
+    },
+    "signblock=11,facing=north,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform11_block",
+      "y": 0
+    },
+    "signblock=11,facing=north,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform11_block",
+      "y": 0
+    },
+    "signblock=11,facing=south,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform11_block",
+      "y": 180
+    },
+    "signblock=11,facing=south,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform11_block",
+      "y": 180
+    },
+    "signblock=11,facing=south,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform11_block",
+      "y": 180
+    },
+    "signblock=11,facing=west,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform11_block",
+      "y": 270
+    },
+    "signblock=11,facing=west,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform11_block",
+      "y": 270
+    },
+    "signblock=11,facing=west,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform11_block",
+      "y": 270
+    },
+    "signblock=11,facing=east,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform11_block",
+      "y": 90
+    },
+    "signblock=11,facing=east,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform11_block",
+      "y": 90
+    },
+    "signblock=11,facing=east,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform11_block",
+      "y": 90
+    },
+    "signblock=12,facing=north,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform12_block",
+      "y": 0
+    },
+    "signblock=12,facing=north,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform12_block",
+      "y": 0
+    },
+    "signblock=12,facing=north,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform12_block",
+      "y": 0
+    },
+    "signblock=12,facing=south,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform12_block",
+      "y": 180
+    },
+    "signblock=12,facing=south,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform12_block",
+      "y": 180
+    },
+    "signblock=12,facing=south,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform12_block",
+      "y": 180
+    },
+    "signblock=12,facing=west,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform12_block",
+      "y": 270
+    },
+    "signblock=12,facing=west,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform12_block",
+      "y": 270
+    },
+    "signblock=12,facing=west,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform12_block",
+      "y": 270
+    },
+    "signblock=12,facing=east,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform12_block",
+      "y": 90
+    },
+    "signblock=12,facing=east,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform12_block",
+      "y": 90
+    },
+    "signblock=12,facing=east,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform12_block",
+      "y": 90
+    },
+    "signblock=13,facing=north,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform13_block",
+      "y": 0
+    },
+    "signblock=13,facing=north,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform13_block",
+      "y": 0
+    },
+    "signblock=13,facing=north,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform13_block",
+      "y": 0
+    },
+    "signblock=13,facing=south,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform13_block",
+      "y": 180
+    },
+    "signblock=13,facing=south,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform13_block",
+      "y": 180
+    },
+    "signblock=13,facing=south,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform13_block",
+      "y": 180
+    },
+    "signblock=13,facing=west,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform13_block",
+      "y": 270
+    },
+    "signblock=13,facing=west,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform13_block",
+      "y": 270
+    },
+    "signblock=13,facing=west,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform13_block",
+      "y": 270
+    },
+    "signblock=13,facing=east,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform13_block",
+      "y": 90
+    },
+    "signblock=13,facing=east,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform13_block",
+      "y": 90
+    },
+    "signblock=13,facing=east,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform13_block",
+      "y": 90
+    },
+    "signblock=14,facing=north,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform14_block",
+      "y": 0
+    },
+    "signblock=14,facing=north,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform14_block",
+      "y": 0
+    },
+    "signblock=14,facing=north,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform14_block",
+      "y": 0
+    },
+    "signblock=14,facing=south,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform14_block",
+      "y": 180
+    },
+    "signblock=14,facing=south,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform14_block",
+      "y": 180
+    },
+    "signblock=14,facing=south,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform14_block",
+      "y": 180
+    },
+    "signblock=14,facing=west,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform14_block",
+      "y": 270
+    },
+    "signblock=14,facing=west,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform14_block",
+      "y": 270
+    },
+    "signblock=14,facing=west,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform14_block",
+      "y": 270
+    },
+    "signblock=14,facing=east,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform14_block",
+      "y": 90
+    },
+    "signblock=14,facing=east,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform14_block",
+      "y": 90
+    },
+    "signblock=14,facing=east,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform14_block",
+      "y": 90
+    },
+    "signblock=15,facing=north,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform15_block",
+      "y": 0
+    },
+    "signblock=15,facing=north,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform15_block",
+      "y": 0
+    },
+    "signblock=15,facing=north,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform15_block",
+      "y": 0
+    },
+    "signblock=15,facing=south,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform15_block",
+      "y": 180
+    },
+    "signblock=15,facing=south,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform15_block",
+      "y": 180
+    },
+    "signblock=15,facing=south,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform15_block",
+      "y": 180
+    },
+    "signblock=15,facing=west,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform15_block",
+      "y": 270
+    },
+    "signblock=15,facing=west,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform15_block",
+      "y": 270
+    },
+    "signblock=15,facing=west,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform15_block",
+      "y": 270
+    },
+    "signblock=15,facing=east,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform15_block",
+      "y": 90
+    },
+    "signblock=15,facing=east,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform15_block",
+      "y": 90
+    },
+    "signblock=15,facing=east,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform15_block",
+      "y": 90
+    },
+    "signblock=16,facing=north,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform16_block",
+      "y": 0
+    },
+    "signblock=16,facing=north,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform16_block",
+      "y": 0
+    },
+    "signblock=16,facing=north,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform16_block",
+      "y": 0
+    },
+    "signblock=16,facing=south,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform16_block",
+      "y": 180
+    },
+    "signblock=16,facing=south,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform16_block",
+      "y": 180
+    },
+    "signblock=16,facing=south,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform16_block",
+      "y": 180
+    },
+    "signblock=16,facing=west,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform16_block",
+      "y": 270
+    },
+    "signblock=16,facing=west,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform16_block",
+      "y": 270
+    },
+    "signblock=16,facing=west,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform16_block",
+      "y": 270
+    },
+    "signblock=16,facing=east,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform16_block",
+      "y": 90
+    },
+    "signblock=16,facing=east,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform16_block",
+      "y": 90
+    },
+    "signblock=16,facing=east,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform16_block",
+      "y": 90
+    },
+    "signblock=17,facing=north,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform_a_block",
+      "y": 0
+    },
+    "signblock=17,facing=north,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform_a_block",
+      "y": 0
+    },
+    "signblock=17,facing=north,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform_a_block",
+      "y": 0
+    },
+    "signblock=17,facing=south,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform_a_block",
+      "y": 180
+    },
+    "signblock=17,facing=south,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform_a_block",
+      "y": 180
+    },
+    "signblock=17,facing=south,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform_a_block",
+      "y": 180
+    },
+    "signblock=17,facing=west,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform_a_block",
+      "y": 270
+    },
+    "signblock=17,facing=west,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform_a_block",
+      "y": 270
+    },
+    "signblock=17,facing=west,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform_a_block",
+      "y": 270
+    },
+    "signblock=17,facing=east,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform_a_block",
+      "y": 90
+    },
+    "signblock=17,facing=east,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform_a_block",
+      "y": 90
+    },
+    "signblock=17,facing=east,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform_a_block",
+      "y": 90
+    },
+    "signblock=18,facing=north,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform_b_block",
+      "y": 0
+    },
+    "signblock=18,facing=north,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform_b_block",
+      "y": 0
+    },
+    "signblock=18,facing=north,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform_b_block",
+      "y": 0
+    },
+    "signblock=18,facing=south,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform_b_block",
+      "y": 180
+    },
+    "signblock=18,facing=south,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform_b_block",
+      "y": 180
+    },
+    "signblock=18,facing=south,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform_b_block",
+      "y": 180
+    },
+    "signblock=18,facing=west,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform_b_block",
+      "y": 270
+    },
+    "signblock=18,facing=west,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform_b_block",
+      "y": 270
+    },
+    "signblock=18,facing=west,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform_b_block",
+      "y": 270
+    },
+    "signblock=18,facing=east,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform_b_block",
+      "y": 90
+    },
+    "signblock=18,facing=east,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform_b_block",
+      "y": 90
+    },
+    "signblock=18,facing=east,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform_b_block",
+      "y": 90
+    },
+    "signblock=19,facing=north,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform_c_block",
+      "y": 0
+    },
+    "signblock=19,facing=north,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform_c_block",
+      "y": 0
+    },
+    "signblock=19,facing=north,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform_c_block",
+      "y": 0
+    },
+    "signblock=19,facing=south,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform_c_block",
+      "y": 180
+    },
+    "signblock=19,facing=south,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform_c_block",
+      "y": 180
+    },
+    "signblock=19,facing=south,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform_c_block",
+      "y": 180
+    },
+    "signblock=19,facing=west,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform_c_block",
+      "y": 270
+    },
+    "signblock=19,facing=west,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform_c_block",
+      "y": 270
+    },
+    "signblock=19,facing=west,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform_c_block",
+      "y": 270
+    },
+    "signblock=19,facing=east,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform_c_block",
+      "y": 90
+    },
+    "signblock=19,facing=east,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform_c_block",
+      "y": 90
+    },
+    "signblock=19,facing=east,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform_c_block",
+      "y": 90
+    },
+    "signblock=20,facing=north,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform_d_block",
+      "y": 0
+    },
+    "signblock=20,facing=north,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform_d_block",
+      "y": 0
+    },
+    "signblock=20,facing=north,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform_d_block",
+      "y": 0
+    },
+    "signblock=20,facing=south,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform_d_block",
+      "y": 180
+    },
+    "signblock=20,facing=south,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform_d_block",
+      "y": 180
+    },
+    "signblock=20,facing=south,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform_d_block",
+      "y": 180
+    },
+    "signblock=20,facing=west,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform_d_block",
+      "y": 270
+    },
+    "signblock=20,facing=west,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform_d_block",
+      "y": 270
+    },
+    "signblock=20,facing=west,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform_d_block",
+      "y": 270
+    },
+    "signblock=20,facing=east,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform_d_block",
+      "y": 90
+    },
+    "signblock=20,facing=east,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform_d_block",
+      "y": 90
+    },
+    "signblock=20,facing=east,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform_d_block",
+      "y": 90
+    },
+    "signblock=21,facing=north,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform_e_block",
+      "y": 0
+    },
+    "signblock=21,facing=north,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform_e_block",
+      "y": 0
+    },
+    "signblock=21,facing=north,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform_e_block",
+      "y": 0
+    },
+    "signblock=21,facing=south,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform_e_block",
+      "y": 180
+    },
+    "signblock=21,facing=south,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform_e_block",
+      "y": 180
+    },
+    "signblock=21,facing=south,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform_e_block",
+      "y": 180
+    },
+    "signblock=21,facing=west,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform_e_block",
+      "y": 270
+    },
+    "signblock=21,facing=west,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform_e_block",
+      "y": 270
+    },
+    "signblock=21,facing=west,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform_e_block",
+      "y": 270
+    },
+    "signblock=21,facing=east,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform_e_block",
+      "y": 90
+    },
+    "signblock=21,facing=east,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform_e_block",
+      "y": 90
+    },
+    "signblock=21,facing=east,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform_e_block",
+      "y": 90
+    },
+    "signblock=22,facing=north,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform_f_block",
+      "y": 0
+    },
+    "signblock=22,facing=north,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform_f_block",
+      "y": 0
+    },
+    "signblock=22,facing=north,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform_f_block",
+      "y": 0
+    },
+    "signblock=22,facing=south,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform_f_block",
+      "y": 180
+    },
+    "signblock=22,facing=south,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform_f_block",
+      "y": 180
+    },
+    "signblock=22,facing=south,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform_f_block",
+      "y": 180
+    },
+    "signblock=22,facing=west,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform_f_block",
+      "y": 270
+    },
+    "signblock=22,facing=west,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform_f_block",
+      "y": 270
+    },
+    "signblock=22,facing=west,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform_f_block",
+      "y": 270
+    },
+    "signblock=22,facing=east,z_align=positive": {
+      "model": "trainutilities:block/ch_platform_blocks/positive/platform_f_block",
+      "y": 90
+    },
+    "signblock=22,facing=east,z_align=center": {
+      "model": "trainutilities:block/ch_platform_blocks/center/platform_f_block",
+      "y": 90
+    },
+    "signblock=22,facing=east,z_align=negative": {
+      "model": "trainutilities:block/ch_platform_blocks/negative/platform_f_block",
+      "y": 90
+    }
+  }
+}

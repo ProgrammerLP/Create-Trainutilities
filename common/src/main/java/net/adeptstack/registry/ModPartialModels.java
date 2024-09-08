@@ -1,22 +1,14 @@
 package net.adeptstack.registry;
 
 import com.jozufozu.flywheel.core.PartialModel;
-import com.simibubi.create.content.fluids.FluidTransportBehaviour;
 import com.simibubi.create.foundation.utility.Couple;
-import com.simibubi.create.foundation.utility.Iterate;
-import com.simibubi.create.foundation.utility.Lang;
 import net.adeptstack.Main;
-import net.minecraft.core.Direction;
 import net.minecraft.resources.ResourceLocation;
 
-import java.util.EnumMap;
 import java.util.HashMap;
 import java.util.Map;
 
 public class ModPartialModels {
-//    public static final PartialModel
-//
-//                    ;
 
     public static final Map<ResourceLocation, Couple<PartialModel>> FOLDING_DOORS = new HashMap<>();
 

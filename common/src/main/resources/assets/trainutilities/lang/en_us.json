@@ -49,6 +49,7 @@
 
   "block.trainutilities.de_platform_block": "german platform block",
   "block.trainutilities.nl_platform_block": "dutch platform block",
+  "block.trainutilities.ch_platform_block": "swiss platform block",
 
   "sound.trainutilities.door_ice_open": "DB ICE door opens",
   "sound.trainutilities.door_ice_close": "DB ICE door closes",
@@ -81,5 +82,6 @@
   "itemGroup.trainutilities.trainutils_tab": "TrainUtilities",
 
   "gui.trainutilities.selection_screen.blockplacementscreen_de": "german platform blocks",
-  "gui.trainutilities.selection_screen.blockplacementscreen_nl": "dutch platform blocks"
+  "gui.trainutilities.selection_screen.blockplacementscreen_nl": "dutch platform blocks",
+  "gui.trainutilities.selection_screen.blockplacementscreen_ch": "swiss platform blocks"
 }

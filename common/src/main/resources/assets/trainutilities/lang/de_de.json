@@ -49,6 +49,7 @@
 
   "block.trainutilities.de_platform_block": "Deutscher Gleisblock",
   "block.trainutilities.nl_platform_block": "Niederländischer Gleisblock",
+  "block.trainutilities.ch_platform_block": "Schweizer Gleisblock",
 
   "sound.trainutilities.door_ice_open": "ICE Tür öffnet",
   "sound.trainutilities.door_ice_close": "ICE Tür schließt",
@@ -81,5 +82,6 @@
   "itemGroup.trainutilities.trainutils_tab": "TrainUtilities",
 
   "gui.trainutilities.selection_screen.blockplacementscreen_de": "Deutsche Gleisblöcke",
-  "gui.trainutilities.selection_screen.blockplacementscreen_nl": "Niederländische Gleisblöcke"
+  "gui.trainutilities.selection_screen.blockplacementscreen_nl": "Niederländische Gleisblöcke",
+  "gui.trainutilities.selection_screen.blockplacementscreen_ch": "Schweizer Gleisblöcke"
 }

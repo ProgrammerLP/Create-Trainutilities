@@ -11,6 +11,7 @@ import io.github.fabricators_of_create.porting_lib.models.generators.ModelFile;
 import net.adeptstack.Blocks.Behaviour.SlidingDoor.TrainSlidingDoorMovementBehaviour;
 import net.adeptstack.Blocks.Behaviour.SlidingDoor.TrainSlidingDoorMovingInteraction;
 import net.adeptstack.Blocks.PanelBlocks.IsoWallBlock;
+import net.adeptstack.Blocks.PanelBlocks.PlatformBlocks.PlatformBlockCH;
 import net.adeptstack.Core.Utils.TrainSlidingDoorProperties;
 import net.adeptstack.Blocks.Doors.SlidingDoor.TrainSlidingDoorBlock;
 import net.adeptstack.Blocks.LineBlock;
@@ -54,6 +55,22 @@ public class TrainUtilitiesBuilderTransformers {
     public static BlockEntry<PlatformBlockNL> NLPlatformBlock(String id, MapColor color) {
         return REGISTRATE
                 .block(id, PlatformBlockNL::new)
+                .initialProperties(() -> Blocks.IRON_BARS)
+                .properties(p -> p.mapColor(color)
+                        .sound(SoundType.METAL))
+                .transform(pickaxeOnly())
+                .tag(ModTags.AllBlockTags.PLATFORM_BLOCKS.tag)
+                .loot((lr, block) -> lr.add(block, lr.createSingleItemTable(block)))
+                .item()
+                .tag(ModTags.AllItemTags.PLATFORM_BLOCKS.tag)
+                .tab(TRAINUTILS_TAB.getKey())
+                .build()
+                .register();
+    }
+
+    public static BlockEntry<PlatformBlockCH> CHPlatformBlock(String id, MapColor color) {
+        return REGISTRATE
+                .block(id, PlatformBlockCH::new)
                 .initialProperties(() -> Blocks.IRON_BARS)
                 .properties(p -> p.mapColor(color)
                         .sound(SoundType.METAL))
@@ -257,6 +274,20 @@ public class TrainUtilitiesBuilderTransformers {
             case 22 -> "platform_f_block.png";
             case 23 -> "platform_to_block.png";
             default -> "left/platform" + variant + "_block.png";
+        };
+        return name;
+    }
+
+    public static String GetCHPlatformBlockTextureName(int variant) {
+        String name = switch (variant) {
+            case 0 -> "empty.png";
+            case 17 -> "a.png";
+            case 18 -> "b.png";
+            case 19 -> "c.png";
+            case 20 -> "d.png";
+            case 21 -> "e.png";
+            case 22 -> "f.png";
+            default -> variant + ".png";
         };
         return name;
     }

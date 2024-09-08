@@ -1,9 +1,11 @@
 package net.adeptstack.Core.Client;
 
+import net.adeptstack.Blocks.PanelBlocks.PlatformBlocks.PlatformBlockCH;
 import net.adeptstack.Blocks.PanelBlocks.PlatformBlocks.PlatformBlockDE;
 import net.adeptstack.Blocks.PanelBlocks.PlatformBlocks.PlatformBlockNL;
 import net.adeptstack.Core.Network.ModNetwork;
 import net.adeptstack.Core.Network.Packages.PackagePlatformBlock;
+import net.adeptstack.Core.UI.Screens.PlatformBlockCHPlacementScreen;
 import net.adeptstack.Core.UI.Screens.PlatformBlockDEPlacementScreen;
 import net.adeptstack.Core.UI.Screens.PlatformBlockNLPlacementScreen;
 import net.adeptstack.registry.TrainUtilitiesBuilderTransformers;
@@ -22,7 +24,7 @@ public class ClientWrapper {
                         PlatformBlockDE.SIGN_BLOCKS,
                         (variant) -> {
                             String name = TrainUtilitiesBuilderTransformers.GetDEPlatformBlockTextureName(variant);
-                            return new PlatformBlockDEPlacementScreen.TextureResult(new ResourceLocation(MOD_ID, "textures/block/platformblocks/" + name), 720, 720);
+                            return new PlatformBlockDEPlacementScreen.TextureResult(new ResourceLocation(MOD_ID, "textures/block/platformblocks/" + name), 256, 256);
                         }, (variant) -> {
                     ModNetwork.CHANNEL.sendToServer(new PackagePlatformBlock(pos, variant));
                 }
@@ -37,10 +39,26 @@ public class ClientWrapper {
                         PlatformBlockNL.SIGN_BLOCKS,
                         (variant) -> {
                             String name = TrainUtilitiesBuilderTransformers.GetNLPlatformBlockTextureName(variant);
-                            return new PlatformBlockNLPlacementScreen.TextureResult(new ResourceLocation(MOD_ID, "textures/block/nl_platformblocks/" + name), 1000, 1000);
+                            return new PlatformBlockNLPlacementScreen.TextureResult(new ResourceLocation(MOD_ID, "textures/block/nl_platformblocks/" + name), 256, 256);
                         }, (variant) -> {
                     ModNetwork.CHANNEL.sendToServer(new PackagePlatformBlock(pos, variant));
                 }
+                )
+        );
+    }
+
+    public static void openPlatformBlockCHScreen(BlockPos pos, BlockState blockState) {
+        Minecraft.getInstance().setScreen(
+                new PlatformBlockCHPlacementScreen(
+                        blockState.getValue(PlatformBlockCH.SIGN_BLOCKS),
+                        PlatformBlockCH.SIGN_BLOCKS,
+                        (variant) -> {
+                            String name = TrainUtilitiesBuilderTransformers.GetCHPlatformBlockTextureName(variant);
+                            return new PlatformBlockCHPlacementScreen.TextureResult(new ResourceLocation(MOD_ID, "textures/block/ch_platformblocks/" + name), 256, 256);
+                        }, (variant) -> {
+                    ModNetwork.CHANNEL.sendToServer(new PackagePlatformBlock(pos, variant));
+                        },
+                    "gui." + MOD_ID + ".selection_screen.blockplacementscreen_ch"
                 )
         );
     }
