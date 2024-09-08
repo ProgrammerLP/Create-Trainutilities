@@ -27,7 +27,8 @@ public class ClientWrapper {
                             return new PlatformBlockDEPlacementScreen.TextureResult(new ResourceLocation(MOD_ID, "textures/block/platformblocks/" + name), 256, 256);
                         }, (variant) -> {
                     ModNetwork.CHANNEL.sendToServer(new PackagePlatformBlock(pos, variant));
-                }
+                        },
+                        "gui." + MOD_ID + ".selection_screen.blockplacementscreen_nl"
                 )
         );
     }
@@ -42,7 +43,8 @@ public class ClientWrapper {
                             return new PlatformBlockNLPlacementScreen.TextureResult(new ResourceLocation(MOD_ID, "textures/block/nl_platformblocks/" + name), 256, 256);
                         }, (variant) -> {
                     ModNetwork.CHANNEL.sendToServer(new PackagePlatformBlock(pos, variant));
-                }
+                        },
+                        "gui." + MOD_ID + ".selection_screen.blockplacementscreen_de"
                 )
         );
     }
