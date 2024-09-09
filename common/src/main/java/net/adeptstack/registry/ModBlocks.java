@@ -146,6 +146,21 @@ public class ModBlocks {
     public static final BlockEntry<TrainSlidingDoorBlock> DOOR_RAILJET =
             TrainUtilitiesBuilderTransformers.TintedTrainSlidingDoor("railjet", false, MapColor.COLOR_RED);
 
+    public static final BlockEntry<TrainSlidingDoorBlock> DOOR_SBAHN_COLOGNE =
+            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("sbahn_cologne", false, MapColor.COLOR_LIGHT_GREEN);
+
+    public static final BlockEntry<TrainSlidingDoorBlock> DOOR_SBAHN_VRR =
+            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("sbahn_vrr", false, MapColor.TERRACOTTA_WHITE);
+
+    public static final BlockEntry<TrainSlidingDoorBlock> DOOR_TALENT1 =
+            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("talent1", false, MapColor.TERRACOTTA_WHITE);
+
+    public static final BlockEntry<TrainSlidingDoorBlock> DOOR_TALENT2 =
+            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("talent2", false, MapColor.TERRACOTTA_WHITE);
+
+    public static final BlockEntry<TrainSlidingDoorBlock> DOOR_TALENT3 =
+            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("talent3", false, MapColor.TERRACOTTA_WHITE);
+
     //MC Doors
     public static final BlockEntry<DoorBlock> DOOR_CIS_AMENDORF_1 =
             TrainUtilitiesBuilderTransformers.DefaultMinecraftDoor("cis_amendorf_1", MapColor.TERRACOTTA_GREEN);

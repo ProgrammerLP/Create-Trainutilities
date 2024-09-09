@@ -30,6 +30,11 @@
     "trainutilities:door_iron_rusty",
     "trainutilities:door_industrial_iron",
     "trainutilities:door_industrial_iron_window",
-    "trainutilities:door_railjet"
+    "trainutilities:door_railjet",
+    "trainutilities:door_sbahn_cologne",
+    "trainutilities:door_sbahn_vrr",
+    "trainutilities:door_talent1",
+    "trainutilities:door_talent2",
+    "trainutilities:door_talent3"
   ]
 }
