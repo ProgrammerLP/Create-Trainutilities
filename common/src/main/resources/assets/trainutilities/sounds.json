@@ -196,5 +196,23 @@
         "stream": true
       }
     ]
+  },
+  "door_railjet_open": {
+    "subtitle": "sound.trainutilities.door_railjet_open",
+    "sounds": [
+      {
+        "name": "trainutilities:door_railjet_open",
+        "stream": true
+      }
+    ]
+  },
+  "door_railjet_close": {
+    "subtitle": "sound.trainutilities.door_railjet_close",
+    "sounds": [
+      {
+        "name": "trainutilities:door_railjet_close",
+        "stream": true
+      }
+    ]
   }
 }

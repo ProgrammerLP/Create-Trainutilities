@@ -46,6 +46,7 @@
   "block.trainutilities.door_iron_rusty": "Rusty iron door",
   "block.trainutilities.door_industrial_iron": "Industrial iron door",
   "block.trainutilities.door_industrial_iron_window": "Industrial iron door (window)",
+  "block.trainutilities.door_railjet": "Railjet door",
 
   "block.trainutilities.de_platform_block": "german platform block",
   "block.trainutilities.nl_platform_block": "dutch platform block",
@@ -73,6 +74,8 @@
   "sound.trainutilities.door_london_s7_stock_close": "London s7 stock door closes",
   "sound.trainutilities.door_london_overground_open": "London overground door opens",
   "sound.trainutilities.door_london_overground_close": "London overground door closes",
+  "sound.trainutilities.door_railjet_open": "Railjet door opens",
+  "sound.trainutilities.door_railjet_close": "Railjet door closes",
 
   "advancement.trainutilities.platform_block": "Modern Age",
   "advancement.trainutilities.platform_block.description": "Receive a platform block",

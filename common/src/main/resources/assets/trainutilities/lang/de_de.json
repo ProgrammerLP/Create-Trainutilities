@@ -46,6 +46,7 @@
   "block.trainutilities.door_iron_rusty": "Rostige Eisentür",
   "block.trainutilities.door_industrial_iron": "Industrie Eisentür",
   "block.trainutilities.door_industrial_iron_window": "Industrie Eisentür (Fenster)",
+  "block.trainutilities.door_railjet": "Railjet Tür",
 
   "block.trainutilities.de_platform_block": "Deutscher Gleisblock",
   "block.trainutilities.nl_platform_block": "Niederländischer Gleisblock",
@@ -73,6 +74,8 @@
   "sound.trainutilities.door_london_s7_stock_close": "London s7 stock Tür schließt",
   "sound.trainutilities.door_london_overground_open": "London overground Tür öffnet",
   "sound.trainutilities.door_london_overground_close": "London overground Tür schließt",
+  "sound.trainutilities.door_railjet_open": "Railjet Tür öffnet",
+  "sound.trainutilities.door_railjet_close": "Railjet Tür schließt",
 
   "advancement.trainutilities.platform_block": "Modernes Zeitalter",
   "advancement.trainutilities.platform_block.description": "Bekomme einen Plattformblock",
