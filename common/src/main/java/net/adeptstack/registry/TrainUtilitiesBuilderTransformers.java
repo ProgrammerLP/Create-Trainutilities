@@ -173,7 +173,6 @@ public class TrainUtilitiesBuilderTransformers {
     public static <B extends TrainSlidingDoorBlock, P> NonNullUnaryOperator<BlockBuilder<B, P>> slidingDoor(String type) {
         return b -> b.initialProperties(AllBlocks.FRAMED_GLASS_DOOR) // for villager AI..
                 .properties(p -> p.strength(3.0F, 6.0F))
-                .addLayer(() -> RenderType::cutout)
                 .transform(pickaxeOnly())
                 .onRegister(interactionBehaviour(new TrainSlidingDoorMovingInteraction()))
                 .onRegister(movementBehaviour(new TrainSlidingDoorMovementBehaviour(type)))
@@ -193,6 +192,17 @@ public class TrainUtilitiesBuilderTransformers {
         return REGISTRATE.block("door_" + type, p -> new TrainSlidingDoorBlock(p, GLASS_SET_TYPE.get(), folds))
                 .initialProperties(AllBlocks.FRAMED_GLASS_DOOR)
                 .properties(p -> p.sound(SoundType.METAL).mapColor(colour))
+                .addLayer(() -> RenderType::cutout)
+                .transform(TrainUtilitiesBuilderTransformers.slidingDoor(type))
+                .properties(BlockBehaviour.Properties::noOcclusion)
+                .register();
+    }
+
+    public static BlockEntry<TrainSlidingDoorBlock> TintedTrainSlidingDoor(String type, boolean folds, MapColor colour) {
+        return REGISTRATE.block("door_" + type, p -> new TrainSlidingDoorBlock(p, GLASS_SET_TYPE.get(), folds))
+                .initialProperties(AllBlocks.FRAMED_GLASS_DOOR)
+                .properties(p -> p.sound(SoundType.METAL).mapColor(colour))
+                .addLayer(() -> RenderType::translucent)
                 .transform(TrainUtilitiesBuilderTransformers.slidingDoor(type))
                 .properties(BlockBehaviour.Properties::noOcclusion)
                 .register();

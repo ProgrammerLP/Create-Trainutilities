@@ -48,6 +48,7 @@
     "trainutilities:door_industrial_iron",
     "trainutilities:door_industrial_iron_window",
     "trainutilities:iso_wall_block",
-    "trainutilities:iso_wall_block_green"
+    "trainutilities:iso_wall_block_green",
+    "trainutilities:door_railjet"
   ]
 }

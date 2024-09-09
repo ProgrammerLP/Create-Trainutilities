@@ -87,10 +87,10 @@ public class ModBlocks {
             TrainUtilitiesBuilderTransformers.TrainSlidingDoor("ice_top", false, MapColor.TERRACOTTA_WHITE);
 
     public static final BlockEntry<TrainSlidingDoorBlock> DOOR_ICE_MODERN =
-            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("ice_modern", false, MapColor.TERRACOTTA_WHITE);
+            TrainUtilitiesBuilderTransformers.TintedTrainSlidingDoor("ice_modern", false, MapColor.TERRACOTTA_WHITE);
 
     public static final BlockEntry<TrainSlidingDoorBlock> DOOR_ICE_MODERN_TOP =
-            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("ice_modern_top", false, MapColor.TERRACOTTA_WHITE);
+            TrainUtilitiesBuilderTransformers.TintedTrainSlidingDoor("ice_modern_top", false, MapColor.TERRACOTTA_WHITE);
 
     public static final BlockEntry<TrainSlidingDoorBlock> DOOR_IC2 =
             TrainUtilitiesBuilderTransformers.TrainSlidingDoor("ic2", false, MapColor.TERRACOTTA_WHITE);
@@ -141,7 +141,10 @@ public class ModBlocks {
             TrainUtilitiesBuilderTransformers.TrainSlidingDoor("london_el", false, MapColor.COLOR_ORANGE);
 
     public static final BlockEntry<TrainSlidingDoorBlock> DOOR_WARSAW_TRAM =
-            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("warsaw_tram", false, MapColor.COLOR_BLACK);
+            TrainUtilitiesBuilderTransformers.TintedTrainSlidingDoor("warsaw_tram", false, MapColor.COLOR_BLACK);
+
+    public static final BlockEntry<TrainSlidingDoorBlock> DOOR_RAILJET =
+            TrainUtilitiesBuilderTransformers.TintedTrainSlidingDoor("railjet", false, MapColor.COLOR_RED);
 
     //MC Doors
     public static final BlockEntry<DoorBlock> DOOR_CIS_AMENDORF_1 =
