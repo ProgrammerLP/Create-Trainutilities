@@ -86,5 +86,6 @@
 
   "gui.trainutilities.selection_screen.blockplacementscreen_de": "german platform blocks",
   "gui.trainutilities.selection_screen.blockplacementscreen_nl": "dutch platform blocks",
-  "gui.trainutilities.selection_screen.blockplacementscreen_ch": "swiss platform blocks"
+  "gui.trainutilities.selection_screen.blockplacementscreen_ch": "swiss platform blocks",
+  "gui.trainutilities.selection_screen.changeDoorSoundScreen": "change door sounds"
 }
