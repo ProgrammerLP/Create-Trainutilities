@@ -10,17 +10,17 @@ import net.minecraft.world.level.block.state.BlockState;
 
 import java.util.function.Supplier;
 
-public class PackagePlatformBlock {
+public class PlatformBlockPackage {
 
     public final BlockPos pos;
     public final int signblock;
 
 
-    public PackagePlatformBlock(FriendlyByteBuf buf) {
+    public PlatformBlockPackage(FriendlyByteBuf buf) {
         this(buf.readBlockPos(), buf.readInt());
     }
 
-    public PackagePlatformBlock(BlockPos pos, int signblock) {
+    public PlatformBlockPackage(BlockPos pos, int signblock) {
         this.pos = pos;
         this.signblock = signblock;
     }
