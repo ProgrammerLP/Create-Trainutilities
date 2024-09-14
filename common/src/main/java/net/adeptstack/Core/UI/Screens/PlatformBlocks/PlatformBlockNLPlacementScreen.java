@@ -1,5 +1,6 @@
-package net.adeptstack.Core.UI.Screens;
+package net.adeptstack.Core.UI.Screens.PlatformBlocks;
 
+import net.adeptstack.Core.UI.Screens.PlatformBlockScreenBase;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 
 import java.util.function.Consumer;
