@@ -1,6 +1,7 @@
 package net.adeptstack.Core.Network;
 
 import dev.architectury.networking.NetworkChannel;
+import net.adeptstack.Core.Network.Packages.ChangeDoorSoundPackage;
 import net.adeptstack.Core.Network.Packages.PlatformBlockPackage;
 import net.minecraft.resources.ResourceLocation;
 
@@ -12,5 +13,6 @@ public class ModNetwork {
 
     public static void init() {
         CHANNEL.register(PlatformBlockPackage.class, PlatformBlockPackage::encode, PlatformBlockPackage::new, PlatformBlockPackage::apply);
+        CHANNEL.register(ChangeDoorSoundPackage.class, ChangeDoorSoundPackage::encode, ChangeDoorSoundPackage::new, ChangeDoorSoundPackage::apply);
     }
 }

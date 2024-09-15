@@ -3,6 +3,7 @@ package net.adeptstack.Blocks.Doors.SlidingDoor;
 import com.simibubi.create.content.decoration.slidingDoor.SlidingDoorBlockEntity;
 import com.simibubi.create.foundation.utility.animation.LerpedFloat;
 import net.minecraft.core.BlockPos;
+import net.minecraft.world.level.block.DoorBlock;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 
@@ -26,6 +27,11 @@ public class TrainSlidingDoorBlockEntity extends SlidingDoorBlockEntity {
             showBlockModel();
 
         super.tick();
+    }
+
+    public static int getDoorSoundValue(BlockState state) {
+        return state.getOptionalValue(TrainSlidingDoorBlock.DOOR_SOUND)
+                .orElse(0);
     }
 
     @Override

@@ -189,7 +189,7 @@ public class TrainUtilitiesBuilderTransformers {
     }
 
     public static BlockEntry<TrainSlidingDoorBlock> TrainSlidingDoor(String type, boolean folds, MapColor colour) {
-        return REGISTRATE.block("door_" + type, p -> new TrainSlidingDoorBlock(p, GLASS_SET_TYPE.get(), folds))
+        return REGISTRATE.block("door_" + type, p -> new TrainSlidingDoorBlock(p, GLASS_SET_TYPE.get(), folds, GetSlidingDoorDefaultSound(type)))
                 .initialProperties(AllBlocks.FRAMED_GLASS_DOOR)
                 .properties(p -> p.sound(SoundType.METAL).mapColor(colour))
                 .addLayer(() -> RenderType::cutout)
@@ -199,7 +199,7 @@ public class TrainUtilitiesBuilderTransformers {
     }
 
     public static BlockEntry<TrainSlidingDoorBlock> TintedTrainSlidingDoor(String type, boolean folds, MapColor colour) {
-        return REGISTRATE.block("door_" + type, p -> new TrainSlidingDoorBlock(p, GLASS_SET_TYPE.get(), folds))
+        return REGISTRATE.block("door_" + type, p -> new TrainSlidingDoorBlock(p, GLASS_SET_TYPE.get(), folds, GetSlidingDoorDefaultSound(type)))
                 .initialProperties(AllBlocks.FRAMED_GLASS_DOOR)
                 .properties(p -> p.sound(SoundType.METAL).mapColor(colour))
                 .addLayer(() -> RenderType::translucent)
@@ -208,45 +208,87 @@ public class TrainUtilitiesBuilderTransformers {
                 .register();
     }
 
-    public static TrainSlidingDoorProperties GetSlidingDoorProperties(String type) {
-        if (type == "ice" || type == "ice_top" || type == "ice_modern_top" || type == "ice_modern") {
+    public static TrainSlidingDoorProperties GetSlidingDoorProperties(int variant) {
+        if (variant == 1) {
             return new TrainSlidingDoorProperties(ModSounds.DOOR_ICE_OPEN.get(), ModSounds.DOOR_ICE_CLOSE.get(), .025f);
         }
-        else if (type == "ic2") {
+        else if (variant == 2) {
             return new TrainSlidingDoorProperties(ModSounds.DOOR_IC2_OPEN.get(), ModSounds.DOOR_IC2_CLOSE.get(), .025f);
         }
-        else if (type == "rrx" || type == "goahead_desiro") {
+        else if (variant == 3) {
             return new TrainSlidingDoorProperties(ModSounds.DOOR_RRX_OPEN.get(), ModSounds.DOOR_RRX_CLOSE.get(), .025f);
         }
-        else if (type == "flirt" || type == "flirt_vias" || type == "ungarian_flirt") {
+        else if (variant == 4) {
             return new TrainSlidingDoorProperties(ModSounds.DOOR_FLIRT_OPEN.get(), ModSounds.DOOR_FLIRT_CLOSE.get(), .025f);
         }
-        else if (type == "sw_nyc" || type == "warsaw_tram") {
+        else if (variant == 5) {
             return new TrainSlidingDoorProperties(ModSounds.DOOR_SW_NYC_OPEN.get(), ModSounds.DOOR_SW_NYC_CLOSE.get(), .035f);
         }
-        else if (type == "pkp_ic_white" || type == "pkp_ic_blue") {
+        else if (variant == 6) {
             return new TrainSlidingDoorProperties(ModSounds.DOOR_PKP_IC_OPEN.get(), ModSounds.DOOR_PKP_IC_CLOSE.get(), .025f);
         }
-        else if (type == "ic") {
+        else if (variant == 7) {
             return new TrainSlidingDoorProperties(ModSounds.DOOR_IC_OPEN.get(), ModSounds.DOOR_IC_CLOSE.get(), .025f);
         }
-        else if (type == "elev_glass" || type == "elev_metal") {
+        else if (variant == 8) {
             return new TrainSlidingDoorProperties(ModSounds.DOOR_ELEV_OPEN.get(), ModSounds.DOOR_ELEV_CLOSE.get(), .025f);
         }
-        else if (type == "london_1973_stock") {
+        else if (variant == 9) {
             return new TrainSlidingDoorProperties(ModSounds.DOOR_LONDON_1973_STOCK_OPEN.get(), ModSounds.DOOR_LONDON_1973_STOCK_CLOSE.get(), .025f);
         }
-        else if (type == "london_s7_stock") {
+        else if (variant == 10) {
             return new TrainSlidingDoorProperties(ModSounds.DOOR_LONDON_S7_STOCK_OPEN.get(), ModSounds.DOOR_LONDON_S7_STOCK_CLOSE.get(), .025f);
         }
-        else if (type == "london_overground" || type == "london_el") {
+        else if (variant == 11) {
             return new TrainSlidingDoorProperties(ModSounds.DOOR_LONDON_OVERGROUND_OPEN.get(), ModSounds.DOOR_LONDON_OVERGROUND_CLOSE.get(), .025f);
         }
-        else if (type == "railjet") {
+        else if (variant == 12) {
             return new TrainSlidingDoorProperties(ModSounds.DOOR_RAILJET_OPEN.get(), ModSounds.DOOR_RAILJET_CLOSE.get(), .025f);
         }
         else {
             return new TrainSlidingDoorProperties(SoundEvents.IRON_DOOR_OPEN, SoundEvents.IRON_DOOR_CLOSE, .15f);
+        }
+    }
+
+    public static int GetSlidingDoorDefaultSound(String type) {
+        if (type == "ice" || type == "ice_top" || type == "ice_modern_top" || type == "ice_modern") {
+            return 1;
+        }
+        else if (type == "ic2") {
+            return 2;
+        }
+        else if (type == "rrx" || type == "goahead_desiro") {
+            return 3;
+        }
+        else if (type == "flirt" || type == "flirt_vias" || type == "ungarian_flirt") {
+            return 4;
+        }
+        else if (type == "sw_nyc" || type == "warsaw_tram") {
+            return 5;
+        }
+        else if (type == "pkp_ic_white" || type == "pkp_ic_blue") {
+            return 6;
+        }
+        else if (type == "ic") {
+            return 7;
+        }
+        else if (type == "elev_glass" || type == "elev_metal") {
+            return 8;
+        }
+        else if (type == "london_1973_stock") {
+            return 9;
+        }
+        else if (type == "london_s7_stock") {
+            return 10;
+        }
+        else if (type == "london_overground" || type == "london_el") {
+            return 11;
+        }
+        else if (type == "railjet") {
+            return 12;
+        }
+        else {
+            return 0;
         }
     }
 }

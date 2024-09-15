@@ -5,6 +5,7 @@ import net.adeptstack.Blocks.PanelBlocks.PlatformBlocks.PlatformBlockCH;
 import net.adeptstack.Blocks.PanelBlocks.PlatformBlocks.PlatformBlockDE;
 import net.adeptstack.Blocks.PanelBlocks.PlatformBlocks.PlatformBlockNL;
 import net.adeptstack.Core.Network.ModNetwork;
+import net.adeptstack.Core.Network.Packages.ChangeDoorSoundPackage;
 import net.adeptstack.Core.Network.Packages.PlatformBlockPackage;
 import net.adeptstack.Core.UI.Screens.ChangeDoorSoundScreen;
 import net.adeptstack.Core.UI.Screens.PlatformBlocks.PlatformBlockCHPlacementScreen;
@@ -79,7 +80,7 @@ public class ClientWrapper {
                             String name = TextureNames.GetDoorTextureName(variant);
                             return new ChangeDoorSoundScreen.TextureResult(new ResourceLocation(MOD_ID, "textures/item/" + name), 16, 16);
                         }, (variant) -> {
-                    ModNetwork.CHANNEL.sendToServer(new PlatformBlockPackage(pos, variant));
+                    ModNetwork.CHANNEL.sendToServer(new ChangeDoorSoundPackage(pos, variant));
                 },
                         "gui." + MOD_ID + ".selection_screen.changeDoorSoundScreen"
                 )

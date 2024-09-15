@@ -53,9 +53,9 @@ public class TrainSlidingDoorMovementBehaviour implements MovementBehaviour {
         if (!context.world.isClientSide())
             tickOpen(context, open);
 
-        if (tsdp == null) {
-            tsdp = TrainUtilitiesBuilderTransformers.GetSlidingDoorProperties(type);
-        }
+        int sound = TrainSlidingDoorBlockEntity.getDoorSoundValue(structureBlockInfo.state());
+        System.out.println(sound);
+        tsdp = TrainUtilitiesBuilderTransformers.GetSlidingDoorProperties(sound);
 
         Map<BlockPos, BlockEntity> tes = context.contraption.presentBlockEntities;
         if (!(tes.get(context.localPos) instanceof TrainSlidingDoorBlockEntity sdbe))

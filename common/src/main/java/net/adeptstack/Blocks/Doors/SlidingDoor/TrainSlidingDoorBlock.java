@@ -13,6 +13,8 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
+import net.minecraft.world.level.block.state.properties.DoorHingeSide;
+import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.phys.BlockHitResult;
 
@@ -32,6 +34,20 @@ public class TrainSlidingDoorBlock extends SlidingDoorBlock {
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> pBuilder) {
         super.createBlockStateDefinition(pBuilder);
         pBuilder.add(DOOR_SOUND);
+    }
+
+    @Override
+    public void neighborChanged(BlockState pState, Level pLevel, BlockPos pPos, Block pBlock, BlockPos pFromPos, boolean pIsMoving) {
+        super.neighborChanged(pState, pLevel, pPos, pBlock, pFromPos, pIsMoving);
+        if (pState.getValue(HINGE) == DoorHingeSide.LEFT && pState.getValue(HALF) == DoubleBlockHalf.LOWER) {
+
+        } else if (pState.getValue(HINGE) == DoorHingeSide.LEFT && pState.getValue(HALF) == DoubleBlockHalf.UPPER) {
+
+        } else if (pState.getValue(HINGE) == DoorHingeSide.RIGHT && pState.getValue(HALF) == DoubleBlockHalf.LOWER) {
+
+        } else if (pState.getValue(HINGE) == DoorHingeSide.RIGHT && pState.getValue(HALF) == DoubleBlockHalf.UPPER) {
+
+        }
     }
 
     @Override
