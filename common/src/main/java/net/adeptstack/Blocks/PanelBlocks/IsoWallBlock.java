@@ -1,9 +1,8 @@
 package net.adeptstack.Blocks.PanelBlocks;
 
-import net.adeptstack.Core.Enums.EBlockPlacePosition;
 import net.adeptstack.Core.Enums.EMultiBlockPart;
+import net.adeptstack.Core.Utils.PlacementUtils;
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.Direction;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.BlockPlaceContext;
@@ -12,7 +11,6 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
-import net.minecraft.world.level.material.PushReaction;
 import org.jetbrains.annotations.Nullable;
 
 @SuppressWarnings({"unused","removal"})
@@ -37,7 +35,7 @@ public class IsoWallBlock extends PanelBlockBase {
         BlockPos posBL = context.getClickedPos();
         BlockPos posML = posBL.above();
         BlockPos posTL = posML.above();
-        BlockPos posBR = getPlaceDirectionLeft(posBL, context.getHorizontalDirection());
+        BlockPos posBR = PlacementUtils.getPlaceDirectionLeft(posBL, context.getHorizontalDirection());
         BlockPos posMR = posBR.above();
         BlockPos posTR = posMR.above();
         Level level = context.getLevel();
@@ -51,7 +49,7 @@ public class IsoWallBlock extends PanelBlockBase {
     @Override
     public void setPlacedBy(Level level, BlockPos pos, BlockState state, @Nullable LivingEntity placer, ItemStack stack) {
         BlockPos posBL = pos;
-        BlockPos posBR = getPlaceDirectionRight(pos, state.getValue(FACING));
+        BlockPos posBR = PlacementUtils.getPlaceDirectionRight(pos, state.getValue(FACING));
         BlockPos posML = pos.above();
         BlockPos posMR = posBR.above();
         BlockPos posTL = posML.above();
@@ -63,34 +61,10 @@ public class IsoWallBlock extends PanelBlockBase {
         level.setBlockAndUpdate(posTR, state.setValue(PART, EMultiBlockPart.TOP_RIGHT));
     }
 
-    private BlockPos getPlaceDirectionRight(BlockPos pos, Direction facing) {
-        if (facing == Direction.SOUTH) {
-            return pos.east();
-        } else if (facing == Direction.EAST) {
-            return pos.north();
-        } else if (facing == Direction.NORTH) {
-            return pos.west();
-        } else {
-            return pos.south();
-        }
-    }
-
-    private BlockPos getPlaceDirectionLeft(BlockPos pos, Direction facing) {
-        if (facing == Direction.SOUTH) {
-            return pos.west();
-        } else if (facing == Direction.WEST) {
-            return pos.north();
-        } else if (facing == Direction.NORTH) {
-            return pos.east();
-        } else {
-            return pos.south();
-        }
-    }
-
     @Override
     public void onRemove(BlockState state, Level level, BlockPos pos, BlockState newState, boolean movedByPiston) {
         if (state.getValue(PART) == EMultiBlockPart.TOP_LEFT) {
-            BlockPos posTR = getPlaceDirectionRight(pos, state.getValue(FACING));
+            BlockPos posTR = PlacementUtils.getPlaceDirectionRight(pos, state.getValue(FACING));
             BlockPos posMR = posTR.below();
             BlockPos posML = pos.below();
             BlockPos posBL = posML.below();
@@ -103,7 +77,7 @@ public class IsoWallBlock extends PanelBlockBase {
                 level.removeBlock(posBR, false);
             }
         } else if (state.getValue(PART) == EMultiBlockPart.MIDDLE_LEFT) {
-            BlockPos posMR = getPlaceDirectionRight(pos, state.getValue(FACING));
+            BlockPos posMR = PlacementUtils.getPlaceDirectionRight(pos, state.getValue(FACING));
             BlockPos posTL = pos.above();
             BlockPos posTR = posMR.above();
             BlockPos posBL = pos.below();
@@ -116,7 +90,7 @@ public class IsoWallBlock extends PanelBlockBase {
                 level.removeBlock(posBR, false);
             }
         } else if (state.getValue(PART) == EMultiBlockPart.BOTTOM_LEFT) {
-            BlockPos posBR = getPlaceDirectionRight(pos, state.getValue(FACING));
+            BlockPos posBR = PlacementUtils.getPlaceDirectionRight(pos, state.getValue(FACING));
             BlockPos posMR = posBR.above();
             BlockPos posML = pos.above();
             BlockPos posTL = posML.above();
@@ -129,7 +103,7 @@ public class IsoWallBlock extends PanelBlockBase {
                 level.removeBlock(posBR, false);
             }
         } else if (state.getValue(PART) == EMultiBlockPart.TOP_RIGHT) {
-            BlockPos posTL = getPlaceDirectionLeft(pos, state.getValue(FACING));
+            BlockPos posTL = PlacementUtils.getPlaceDirectionLeft(pos, state.getValue(FACING));
             BlockPos posMR = posTL.below();
             BlockPos posML = pos.below();
             BlockPos posBL = posML.below();
@@ -142,7 +116,7 @@ public class IsoWallBlock extends PanelBlockBase {
                 level.removeBlock(posBR, false);
             }
         } else if (state.getValue(PART) == EMultiBlockPart.MIDDLE_RIGHT) {
-            BlockPos posML = getPlaceDirectionLeft(pos, state.getValue(FACING));
+            BlockPos posML = PlacementUtils.getPlaceDirectionLeft(pos, state.getValue(FACING));
             BlockPos posTL = pos.above();
             BlockPos posTR = posML.above();
             BlockPos posBL = pos.below();
@@ -155,7 +129,7 @@ public class IsoWallBlock extends PanelBlockBase {
                 level.removeBlock(posBR, false);
             }
         } else if (state.getValue(PART) == EMultiBlockPart.BOTTOM_RIGHT) {
-            BlockPos posBL = getPlaceDirectionLeft(pos, state.getValue(FACING));
+            BlockPos posBL = PlacementUtils.getPlaceDirectionLeft(pos, state.getValue(FACING));
             BlockPos posMR = posBL.above();
             BlockPos posML = pos.above();
             BlockPos posTL = posML.above();

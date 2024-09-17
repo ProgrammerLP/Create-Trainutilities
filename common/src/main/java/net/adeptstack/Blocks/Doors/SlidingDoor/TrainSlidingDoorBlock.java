@@ -40,7 +40,7 @@ public class TrainSlidingDoorBlock extends SlidingDoorBlock {
     public void neighborChanged(BlockState pState, Level pLevel, BlockPos pPos, Block pBlock, BlockPos pFromPos, boolean pIsMoving) {
         super.neighborChanged(pState, pLevel, pPos, pBlock, pFromPos, pIsMoving);
         if (pState.getValue(HINGE) == DoorHingeSide.LEFT && pState.getValue(HALF) == DoubleBlockHalf.LOWER) {
-
+            is
         } else if (pState.getValue(HINGE) == DoorHingeSide.LEFT && pState.getValue(HALF) == DoubleBlockHalf.UPPER) {
 
         } else if (pState.getValue(HINGE) == DoorHingeSide.RIGHT && pState.getValue(HALF) == DoubleBlockHalf.LOWER) {
@@ -55,7 +55,7 @@ public class TrainSlidingDoorBlock extends SlidingDoorBlock {
         if (!pPlayer.isShiftKeyDown()) {
             return super.use(pState, pLevel, pPos, pPlayer, pHand, pHit);
         } else {
-            if (pLevel.isClientSide) {
+            if (pLevel.isClientSide && !isFoldingDoor()) {
                 ClientWrapper.openChangeDoorSoundScreen(pPos, pState);
             }
             return InteractionResult.SUCCESS;
