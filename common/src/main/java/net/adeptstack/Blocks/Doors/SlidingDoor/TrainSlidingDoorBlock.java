@@ -2,6 +2,7 @@ package net.adeptstack.Blocks.Doors.SlidingDoor;
 
 import com.simibubi.create.content.decoration.slidingDoor.SlidingDoorBlock;
 import net.adeptstack.Core.Client.ClientWrapper;
+import net.adeptstack.Core.Utils.PlacementUtils;
 import net.adeptstack.registry.ModBlockEntities;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;
@@ -37,26 +38,15 @@ public class TrainSlidingDoorBlock extends SlidingDoorBlock {
     }
 
     @Override
-    public void neighborChanged(BlockState pState, Level pLevel, BlockPos pPos, Block pBlock, BlockPos pFromPos, boolean pIsMoving) {
-        super.neighborChanged(pState, pLevel, pPos, pBlock, pFromPos, pIsMoving);
-
-//        if (pState.getValue(HINGE) == DoorHingeSide.LEFT && pState.getValue(HALF) == DoubleBlockHalf.LOWER) {
-//
-//        } else if (pState.getValue(HINGE) == DoorHingeSide.LEFT && pState.getValue(HALF) == DoubleBlockHalf.UPPER) {
-//
-//        } else if (pState.getValue(HINGE) == DoorHingeSide.RIGHT && pState.getValue(HALF) == DoubleBlockHalf.LOWER) {
-//
-//        } else if (pState.getValue(HINGE) == DoorHingeSide.RIGHT && pState.getValue(HALF) == DoubleBlockHalf.UPPER) {
-//
-//        }
-    }
-
-    @Override
     public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
         if (!pPlayer.isShiftKeyDown()) {
             return super.use(pState, pLevel, pPos, pPlayer, pHand, pHit);
         } else {
-            ClientWrapper.openChangeDoorSoundScreen(pPos, pState);
+            try {
+                ClientWrapper.openChangeDoorSoundScreen(pPos, pState);
+            } catch (Exception e) {
+                System.out.println(e.toString());
+            }
             return InteractionResult.SUCCESS;
         }
     }
