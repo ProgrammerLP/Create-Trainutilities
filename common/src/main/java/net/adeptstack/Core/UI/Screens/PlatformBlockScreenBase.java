@@ -86,7 +86,7 @@ public class PlatformBlockScreenBase extends Screen {
                 addRenderableWidget(new BlockButton(guiLeft + MARGIN_LEFT + 1 + k * 20, guiTop + WINDOW_TOP_PART_HEIGHT + i * 20, (b) -> {
                     this.selectedVariant = startValue + n;
                     this.preview = result;
-                }, result.location(), result.textureWidth(), result.textureHeight()));
+                }, result.location(), result.textureWidth(), result.textureHeight(), "" + (startValue + n)));
             }
         }
 
