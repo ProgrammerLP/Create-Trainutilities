@@ -33,7 +33,7 @@ public class ClientWrapper {
                         }, (variant) -> {
                     ModNetwork.CHANNEL.sendToServer(new PlatformBlockPackage(pos, variant));
                         },
-                        "gui." + MOD_ID + ".selection_screen.blockplacementscreen_nl"
+                        "gui." + MOD_ID + ".selection_screen.blockplacementscreen_de", 1
                 )
         );
     }
@@ -49,7 +49,7 @@ public class ClientWrapper {
                         }, (variant) -> {
                     ModNetwork.CHANNEL.sendToServer(new PlatformBlockPackage(pos, variant));
                         },
-                        "gui." + MOD_ID + ".selection_screen.blockplacementscreen_de"
+                        "gui." + MOD_ID + ".selection_screen.blockplacementscreen_nl", 2
                 )
         );
     }
@@ -65,25 +65,29 @@ public class ClientWrapper {
                         }, (variant) -> {
                     ModNetwork.CHANNEL.sendToServer(new PlatformBlockPackage(pos, variant));
                         },
-                    "gui." + MOD_ID + ".selection_screen.blockplacementscreen_ch"
+                    "gui." + MOD_ID + ".selection_screen.blockplacementscreen_ch", 3
                 )
         );
     }
 
     //Sound Screens
     public static void openChangeDoorSoundScreen(BlockPos pos, BlockState blockState) {
-        Minecraft.getInstance().setScreen(
-                new ChangeDoorSoundScreen(
-                        blockState.getValue(TrainSlidingDoorBlock.DOOR_SOUND),
-                        TrainSlidingDoorBlock.DOOR_SOUND,
-                        (variant) -> {
-                            String name = TextureNames.GetDoorTextureName(variant);
-                            return new ChangeDoorSoundScreen.TextureResult(new ResourceLocation(MOD_ID, "textures/item/" + name), 16, 16);
-                        }, (variant) -> {
-                    ModNetwork.CHANNEL.sendToServer(new ChangeDoorSoundPackage(pos, variant));
-                },
-                        "gui." + MOD_ID + ".selection_screen.changeDoorSoundScreen"
-                )
-        );
+        try {
+            Minecraft.getInstance().setScreen(
+                    new ChangeDoorSoundScreen(
+                            blockState.getValue(TrainSlidingDoorBlock.DOOR_SOUND),
+                            TrainSlidingDoorBlock.DOOR_SOUND,
+                            (variant) -> {
+                                String name = TextureNames.GetDoorTextureName(variant);
+                                return new ChangeDoorSoundScreen.TextureResult(new ResourceLocation(MOD_ID, "textures/item/" + name), 16, 16);
+                            }, (variant) -> {
+                        ModNetwork.CHANNEL.sendToServer(new ChangeDoorSoundPackage(pos, variant));
+                    },
+                            "gui." + MOD_ID + ".selection_screen.changeDoorSoundScreen"
+                    )
+            );
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
     }
 }

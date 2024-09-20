@@ -7,7 +7,7 @@ import java.util.function.Consumer;
 import java.util.function.Function;
 
 public class PlatformBlockCHPlacementScreen extends PlatformBlockScreenBase {
-    public <T extends IntegerProperty> PlatformBlockCHPlacementScreen(int variant, T property, Function<Integer, TextureResult> textureGetter, Consumer<Integer> onDone, String id) {
-        super(variant, property, textureGetter, onDone, id);
+    public <T extends IntegerProperty> PlatformBlockCHPlacementScreen(int variant, T property, Function<Integer, TextureResult> textureGetter, Consumer<Integer> onDone, String id, int typeID) {
+        super(variant, property, textureGetter, onDone, id, typeID);
     }
 }

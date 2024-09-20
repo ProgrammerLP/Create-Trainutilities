@@ -2,6 +2,7 @@ package net.adeptstack.Core.UI.Screens;
 
 import net.adeptstack.Core.UI.Controls.BlockButton;
 import net.adeptstack.Core.Utils.TextureNames;
+import net.adeptstack.Core.Utils.ToolTipUtils;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.screens.Screen;
@@ -86,7 +87,7 @@ public class ChangeDoorSoundScreen extends Screen {
                 addRenderableWidget(new BlockButton(guiLeft + MARGIN_LEFT + 1 + k * 20, guiTop + WINDOW_TOP_PART_HEIGHT + i * 20, (b) -> {
                     this.selectedVariant = startValue + n;
                     this.preview = result;
-                }, result.location(), result.textureWidth(), result.textureHeight(), TextureNames.GetSoundName(startValue + n)));
+                }, result.location(), result.textureWidth(), result.textureHeight(), ToolTipUtils.GetSoundName(startValue + n)));
             }
         }
 

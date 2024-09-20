@@ -1,6 +1,7 @@
 package net.adeptstack.Core.UI.Screens;
 
 import net.adeptstack.Core.UI.Controls.BlockButton;
+import net.adeptstack.Core.Utils.ToolTipUtils;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.screens.Screen;
@@ -46,8 +47,9 @@ public class PlatformBlockScreenBase extends Screen {
 
     // Values
     private int selectedVariant = NO_VARIANT_SELECTED;
+    private int typeID = 0;
 
-    public <T extends IntegerProperty> PlatformBlockScreenBase(int variant, T property, Function<Integer, PlatformBlockScreenBase.TextureResult> textureGetter, Consumer<Integer> onDone, String id) {
+    public <T extends IntegerProperty> PlatformBlockScreenBase(int variant, T property, Function<Integer, PlatformBlockScreenBase.TextureResult> textureGetter, Consumer<Integer> onDone, String id, int typeId) {
         super(Component.translatable(id));
         this.maxValues = property.getPossibleValues().size();
         this.startValue = property.getAllValues().mapToInt(x -> x.value()).min().orElse(0);
@@ -55,6 +57,7 @@ public class PlatformBlockScreenBase extends Screen {
         this.textureGetter = textureGetter;
         this.onDone = onDone;
         this.selectedVariant = variant;
+        this.typeID = typeId;
         if (variant != NO_VARIANT_SELECTED) {
             this.preview = textureGetter.apply(variant);
         }
@@ -81,12 +84,20 @@ public class PlatformBlockScreenBase extends Screen {
 
         for (int i = 0, count = 0; count < maxValues; i++) {
             for (int k = 0; k < MAX_BUTTONS_PER_ROW && count < maxValues; k++, count++) {
+                String msg = "";
                 final int n = count;
                 final TextureResult result = textureGetter.apply(startValue + n);
+                if (typeID == 1) {
+                    msg = ToolTipUtils.GetDEPlatformBlockToolTipName(n);
+                } else if (typeID == 2) {
+                    msg = ToolTipUtils.GetNLPlatformBlockToolTipName(n);
+                } else if (typeID == 3) {
+                    msg = ToolTipUtils.GetCHPlatformBlockToolTipName(n);
+                }
                 addRenderableWidget(new BlockButton(guiLeft + MARGIN_LEFT + 1 + k * 20, guiTop + WINDOW_TOP_PART_HEIGHT + i * 20, (b) -> {
                     this.selectedVariant = startValue + n;
                     this.preview = result;
-                }, result.location(), result.textureWidth(), result.textureHeight(), "" + (startValue + n)));
+                }, result.location(), result.textureWidth(), result.textureHeight(), msg));
             }
         }
 

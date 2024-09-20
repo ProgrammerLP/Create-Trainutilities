@@ -46,7 +46,7 @@
   "block.trainutilities.door_iron_rusty": "Rusty iron door",
   "block.trainutilities.door_industrial_iron": "Industrial iron door",
   "block.trainutilities.door_industrial_iron_window": "Industrial iron door (window)",
-  "block.trainutilities.door_railjet": "Railjet door",
+  "block.trainutilities.door_railjet": "ÖBB Railjet door",
 
   "block.trainutilities.de_platform_block": "german platform block",
   "block.trainutilities.nl_platform_block": "dutch platform block",
@@ -74,8 +74,8 @@
   "sound.trainutilities.door_london_s7_stock_close": "London s7 stock door closes",
   "sound.trainutilities.door_london_overground_open": "London overground door opens",
   "sound.trainutilities.door_london_overground_close": "London overground door closes",
-  "sound.trainutilities.door_railjet_open": "Railjet door opens",
-  "sound.trainutilities.door_railjet_close": "Railjet door closes",
+  "sound.trainutilities.door_railjet_open": "ÖBB Railjet door opens",
+  "sound.trainutilities.door_railjet_close": "ÖBB Railjet door closes",
 
   "advancement.trainutilities.platform_block": "Modern Age",
   "advancement.trainutilities.platform_block.description": "Receive a platform block",
@@ -87,5 +87,19 @@
   "gui.trainutilities.selection_screen.blockplacementscreen_de": "german platform blocks",
   "gui.trainutilities.selection_screen.blockplacementscreen_nl": "dutch platform blocks",
   "gui.trainutilities.selection_screen.blockplacementscreen_ch": "swiss platform blocks",
-  "gui.trainutilities.selection_screen.changeDoorSoundScreen": "change door sounds"
+  "gui.trainutilities.selection_screen.changeDoorSoundScreen": "change door sounds",
+
+  "gui.trainutilities.tooltip.default_sound": "default door sound",
+  "gui.trainutilities.tooltip.ice_sound": "DB ICE door sound",
+  "gui.trainutilities.tooltip.ic2_sound": "DB IC2 door sound",
+  "gui.trainutilities.tooltip.desiro_hc_sound": "Desiro HC door sound",
+  "gui.trainutilities.tooltip.stadlerflirt_sound": "Stadler Flirt door sound",
+  "gui.trainutilities.tooltip.subway_sound": "subway door sound",
+  "gui.trainutilities.tooltip.pkp_ic_sound": "PKP IC door sound",
+  "gui.trainutilities.tooltip.ic_sound": "DB IC door sound",
+  "gui.trainutilities.tooltip.elevator_sound": "elevator door sound",
+  "gui.trainutilities.tooltip.london_1973_stock_soud": "London 1973 stock door sound",
+  "gui.trainutilities.tooltip.london_s7_stock_sound": "London S7 stock door sound",
+  "gui.trainutilities.tooltip.london_overground_sound": "London oveground door sound",
+  "gui.trainutilities.tooltip.railjet_sound": "ÖBB Railjet door sound"
 }

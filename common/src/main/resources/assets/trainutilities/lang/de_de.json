@@ -46,7 +46,7 @@
   "block.trainutilities.door_iron_rusty": "Rostige Eisentür",
   "block.trainutilities.door_industrial_iron": "Industrie Eisentür",
   "block.trainutilities.door_industrial_iron_window": "Industrie Eisentür (Fenster)",
-  "block.trainutilities.door_railjet": "Railjet Tür",
+  "block.trainutilities.door_railjet": "ÖBB Railjet Tür",
 
   "block.trainutilities.de_platform_block": "Deutscher Gleisblock",
   "block.trainutilities.nl_platform_block": "Niederländischer Gleisblock",
@@ -72,10 +72,10 @@
   "sound.trainutilities.door_london_1973_stock_close": "London 1973 stock Tür schließt",
   "sound.trainutilities.door_london_s7_stock_open": "London s7 stock Tür öffnet",
   "sound.trainutilities.door_london_s7_stock_close": "London s7 stock Tür schließt",
-  "sound.trainutilities.door_london_overground_open": "London overground Tür öffnet",
-  "sound.trainutilities.door_london_overground_close": "London overground Tür schließt",
-  "sound.trainutilities.door_railjet_open": "Railjet Tür öffnet",
-  "sound.trainutilities.door_railjet_close": "Railjet Tür schließt",
+  "sound.trainutilities.door_london_overground_open": "London Hochbahn Tür öffnet",
+  "sound.trainutilities.door_london_overground_close": "London Hochbahn Tür schließt",
+  "sound.trainutilities.door_railjet_open": "ÖBB Railjet Tür öffnet",
+  "sound.trainutilities.door_railjet_close": "ÖBB Railjet Tür schließt",
 
   "advancement.trainutilities.platform_block": "Modernes Zeitalter",
   "advancement.trainutilities.platform_block.description": "Bekomme einen Plattformblock",
@@ -87,5 +87,19 @@
   "gui.trainutilities.selection_screen.blockplacementscreen_de": "Deutsche Gleisblöcke",
   "gui.trainutilities.selection_screen.blockplacementscreen_nl": "Niederländische Gleisblöcke",
   "gui.trainutilities.selection_screen.blockplacementscreen_ch": "Schweizer Gleisblöcke",
-  "gui.trainutilities.selection_screen.changeDoorSoundScreen": "Tür Sounds ändern"
+  "gui.trainutilities.selection_screen.changeDoorSoundScreen": "Tür Sounds ändern",
+
+  "gui.trainutilities.tooltip.default_sound": "Standard Tür Sound",
+  "gui.trainutilities.tooltip.ice_sound": "DB ICE Tür Sound",
+  "gui.trainutilities.tooltip.ic2_sound": "DB IC2 Tür Sound",
+  "gui.trainutilities.tooltip.desiro_hc_sound": "Desiro HC Tür Sound",
+  "gui.trainutilities.tooltip.stadlerflirt_sound": "Stadler Flirt Tür Sound",
+  "gui.trainutilities.tooltip.subway_sound": "U-Bahn Tür Sound",
+  "gui.trainutilities.tooltip.pkp_ic_sound": "PKP IC Tür Sound",
+  "gui.trainutilities.tooltip.ic_sound": "DB IC Tür Sound",
+  "gui.trainutilities.tooltip.elevator_sound": "Aufzug Tür Sound",
+  "gui.trainutilities.tooltip.london_1973_stock_soud": "London 1973 stock Tür Sound",
+  "gui.trainutilities.tooltip.london_s7_stock_sound": "London S7 stock Tür Sound",
+  "gui.trainutilities.tooltip.london_overground_sound": "London Hochbahn Tür Sound",
+  "gui.trainutilities.tooltip.railjet_sound": "ÖBB Railjet Tür Sound"
 }
