@@ -1,7 +1,7 @@
 package net.adeptstack.Blocks.PanelBlocks;
 
 import net.adeptstack.Core.Enums.EMultiBlockPart;
-import net.adeptstack.Core.Utils.PlacementUtils;
+import net.adeptstack.Core.Utils.ScreenUtils.PlacementUtils;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;

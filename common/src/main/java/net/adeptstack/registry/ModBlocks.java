@@ -147,10 +147,10 @@ public class ModBlocks {
             TrainUtilitiesBuilderTransformers.TintedTrainSlidingDoor("railjet", false, MapColor.COLOR_RED);
 
     public static final BlockEntry<TrainSlidingDoorBlock> DOOR_SBAHN_COLOGNE =
-            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("sbahn_cologne", false, MapColor.COLOR_LIGHT_GREEN);
+            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("sbahn_cologne", false, MapColor.TERRACOTTA_WHITE);
 
     public static final BlockEntry<TrainSlidingDoorBlock> DOOR_SBAHN_VRR =
-            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("sbahn_vrr", false, MapColor.TERRACOTTA_WHITE);
+            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("sbahn_vrr", false, MapColor.TERRACOTTA_LIGHT_GREEN);
 
     public static final BlockEntry<TrainSlidingDoorBlock> DOOR_TALENT1 =
             TrainUtilitiesBuilderTransformers.TrainSlidingDoor("talent1", false, MapColor.TERRACOTTA_WHITE);

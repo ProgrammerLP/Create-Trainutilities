@@ -1,14 +1,18 @@
 package net.adeptstack.Core.UI.Screens;
 
 import net.adeptstack.Core.UI.Controls.BlockButton;
-import net.adeptstack.Core.Utils.TextureNames;
-import net.adeptstack.Core.Utils.ToolTipUtils;
+import net.adeptstack.Core.Utils.ScreenUtils.ToolTipUtils;
+import net.adeptstack.Core.Utils.TrainSlidingDoorProperties;
+import net.adeptstack.registry.ModSounds;
+import net.adeptstack.registry.TrainUtilitiesBuilderTransformers;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.CommonComponents;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 
 import java.util.function.Consumer;
@@ -65,9 +69,24 @@ public class ChangeDoorSoundScreen extends Screen {
         onDone.accept(this.selectedVariant);
     }
 
+    private void onListen(boolean open) {
+        if (Minecraft.getInstance().player != null) {
+            TrainSlidingDoorProperties tsdp = TrainUtilitiesBuilderTransformers.GetSlidingDoorProperties(this.selectedVariant);
+            if (open) {
+                Minecraft.getInstance().getSoundManager().stop();
+                Minecraft.getInstance().player.level().playSound(Minecraft.getInstance().player, Minecraft.getInstance().player.blockPosition(), tsdp.GetOpen(), SoundSource.MASTER);
+            }
+            else {
+                Minecraft.getInstance().getSoundManager().stop();
+                Minecraft.getInstance().player.level().playSound(Minecraft.getInstance().player, Minecraft.getInstance().player.blockPosition(), tsdp.GetClose(), SoundSource.MASTER);
+            }
+        }
+    }
+
     @Override
     public void onClose() {
         super.onClose();
+        Minecraft.getInstance().getSoundManager().stop();
     }
 
     public int getSelectedVariantId() {
@@ -87,6 +106,7 @@ public class ChangeDoorSoundScreen extends Screen {
                 addRenderableWidget(new BlockButton(guiLeft + MARGIN_LEFT + 1 + k * 20, guiTop + WINDOW_TOP_PART_HEIGHT + i * 20, (b) -> {
                     this.selectedVariant = startValue + n;
                     this.preview = result;
+                    onListen(false);
                 }, result.location(), result.textureWidth(), result.textureHeight(), ToolTipUtils.GetSoundName(startValue + n)));
             }
         }
@@ -106,6 +126,19 @@ public class ChangeDoorSoundScreen extends Screen {
                         .size(DEFAULT_BUTTON_WIDTH, 20)
                         .build()
         );
+
+//        addRenderableWidget(new Button.Builder(Component.translatable(""), (btn) -> onListen(true))
+//                .pos(guiLeft + WINDOW_WIDTH - MARGIN_RIGHT - DEFAULT_BUTTON_WIDTH, guiTop + WINDOW_TOP_PART_HEIGHT + maxRows * BlockButton.DEFAULT_HEIGHT + WINDOW_BOTTOM_PART_HEIGHT - 66)
+//                .size(DEFAULT_BUTTON_WIDTH, 20)
+//                .tooltip(Tooltip.create(""))
+//                .build()
+//        );
+//
+//        addRenderableWidget(new Button.Builder(CommonComponents.GUI_CANCEL, (btn) -> onListen(false))
+//                .pos(guiLeft + WINDOW_WIDTH - MARGIN_RIGHT - DEFAULT_BUTTON_WIDTH, guiTop + WINDOW_TOP_PART_HEIGHT + maxRows * BlockButton.DEFAULT_HEIGHT + WINDOW_BOTTOM_PART_HEIGHT - 66)
+//                .size(DEFAULT_BUTTON_WIDTH, 20)
+//                .build()
+//        );
     }
 
     @Override

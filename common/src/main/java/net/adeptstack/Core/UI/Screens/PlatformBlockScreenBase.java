@@ -1,7 +1,7 @@
 package net.adeptstack.Core.UI.Screens;
 
 import net.adeptstack.Core.UI.Controls.BlockButton;
-import net.adeptstack.Core.Utils.ToolTipUtils;
+import net.adeptstack.Core.Utils.ScreenUtils.ToolTipUtils;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.screens.Screen;

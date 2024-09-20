@@ -1,4 +1,4 @@
-package net.adeptstack.Core.Utils;
+package net.adeptstack.Core.Utils.ScreenUtils;
 
 public class TextureNames {
     public static String GetNLPlatformBlockTextureName(int variant) {

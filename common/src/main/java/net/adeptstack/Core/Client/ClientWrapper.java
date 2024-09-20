@@ -11,7 +11,7 @@ import net.adeptstack.Core.UI.Screens.ChangeDoorSoundScreen;
 import net.adeptstack.Core.UI.Screens.PlatformBlocks.PlatformBlockCHPlacementScreen;
 import net.adeptstack.Core.UI.Screens.PlatformBlocks.PlatformBlockDEPlacementScreen;
 import net.adeptstack.Core.UI.Screens.PlatformBlocks.PlatformBlockNLPlacementScreen;
-import net.adeptstack.Core.Utils.TextureNames;
+import net.adeptstack.Core.Utils.ScreenUtils.TextureNames;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceLocation;

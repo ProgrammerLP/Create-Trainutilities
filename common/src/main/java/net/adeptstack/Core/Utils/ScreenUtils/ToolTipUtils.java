@@ -1,4 +1,4 @@
-package net.adeptstack.Core.Utils;
+package net.adeptstack.Core.Utils.ScreenUtils;
 
 public class ToolTipUtils {
     public static String GetSoundName(int variant) {

@@ -1,4 +1,4 @@
-package net.adeptstack.Core.Utils;
+package net.adeptstack.Core.Utils.ScreenUtils;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
