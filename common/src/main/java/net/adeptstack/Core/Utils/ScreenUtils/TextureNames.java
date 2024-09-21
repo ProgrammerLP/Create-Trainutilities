@@ -71,8 +71,8 @@ public class TextureNames {
             case 10 -> "door_london_s7_stock.png";
             case 11 -> "door_london_overground.png";
             case 12 -> "door_railjet.png";
-            case 13 -> "a.png";
-            case 14 -> "b.png";
+            case 13 -> "door_sbahn_cologne.png";
+            case 14 -> "door_talent1.png";
             case 15 -> "c.png";
             case 16 -> "d.png";
             default -> "door_ic2.png";

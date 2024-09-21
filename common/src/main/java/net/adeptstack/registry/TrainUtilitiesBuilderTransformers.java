@@ -245,6 +245,12 @@ public class TrainUtilitiesBuilderTransformers {
         else if (variant == 12) {
             return new TrainSlidingDoorProperties(ModSounds.DOOR_RAILJET_OPEN.get(), ModSounds.DOOR_RAILJET_CLOSE.get(), .025f);
         }
+        else if (variant == 13) {
+            return new TrainSlidingDoorProperties(ModSounds.DOOR_SBAHN_OPEN.get(), ModSounds.DOOR_SBAHN_CLOSE.get(), .025f);
+        }
+        else if (variant == 14) {
+            return new TrainSlidingDoorProperties(ModSounds.DOOR_TALENT_OPEN.get(), ModSounds.DOOR_TALENT_CLOSE.get(), .025f);
+        }
         else {
             return new TrainSlidingDoorProperties(SoundEvents.IRON_DOOR_OPEN, SoundEvents.IRON_DOOR_CLOSE, .15f);
         }
@@ -286,6 +292,12 @@ public class TrainUtilitiesBuilderTransformers {
         }
         else if (type == "railjet") {
             return 12;
+        }
+        else if (type == "sbahn_cologne" || type == "sbahn_vrr") {
+            return 13;
+        }
+        else if (type == "talent1" || type == "talent2" || type == "talent3") {
+            return 14;
         }
         else {
             return 0;

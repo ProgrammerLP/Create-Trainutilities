@@ -214,5 +214,41 @@
         "stream": true
       }
     ]
+  },
+  "door_sbahn_open": {
+    "subtitle": "sound.trainutilities.door_sbahn_open",
+    "sounds": [
+      {
+        "name": "trainutilities:door_sbahn_open",
+        "stream": true
+      }
+    ]
+  },
+  "door_sbahn_close": {
+    "subtitle": "sound.trainutilities.door_sbahn_close",
+    "sounds": [
+      {
+        "name": "trainutilities:door_sbahn_close",
+        "stream": true
+      }
+    ]
+  },
+  "door_talent_open": {
+    "subtitle": "sound.trainutilities.door_talent_open",
+    "sounds": [
+      {
+        "name": "trainutilities:door_talent_open",
+        "stream": true
+      }
+    ]
+  },
+  "door_talent_close": {
+    "subtitle": "sound.trainutilities.door_talent_close",
+    "sounds": [
+      {
+        "name": "trainutilities:door_talent_close",
+        "stream": true
+      }
+    ]
   }
 }
