@@ -47,6 +47,11 @@
   "block.trainutilities.door_industrial_iron": "Industrie Eisentür",
   "block.trainutilities.door_industrial_iron_window": "Industrie Eisentür (Fenster)",
   "block.trainutilities.door_railjet": "ÖBB Railjet Tür",
+  "block.trainutilities.door_sbahn_vrr": "S-Bahn Tür (VRR Design)",
+  "block.trainutilities.door_sbahn_cologne": "S-Bahn Tür (Köln Design)",
+  "block.trainutilities.door_talent1": "Talent 1 Tür",
+  "block.trainutilities.door_talent2": "Talent 2 Tür",
+  "block.trainutilities.door_talent3": "Talent 3 Tür",
 
   "block.trainutilities.de_platform_block": "Deutscher Gleisblock",
   "block.trainutilities.nl_platform_block": "Niederländischer Gleisblock",
@@ -76,6 +81,10 @@
   "sound.trainutilities.door_london_overground_close": "London Hochbahn Tür schließt",
   "sound.trainutilities.door_railjet_open": "ÖBB Railjet Tür öffnet",
   "sound.trainutilities.door_railjet_close": "ÖBB Railjet Tür schließt",
+  "sound.trainutilities.door_sbahn_open": "S-Bahn Tür öffnet",
+  "sound.trainutilities.door_sbahn_close": "S-Bahn Tür schließt",
+  "sound.trainutilities.door_talent_open": "Talent Tür öffnet",
+  "sound.trainutilities.door_talent_close": "Talent Tür schließt",
 
   "advancement.trainutilities.platform_block": "Modernes Zeitalter",
   "advancement.trainutilities.platform_block.description": "Bekomme einen Plattformblock",
@@ -101,5 +110,7 @@
   "gui.trainutilities.tooltip.london_1973_stock_soud": "London 1973 stock Tür Sound",
   "gui.trainutilities.tooltip.london_s7_stock_sound": "London S7 stock Tür Sound",
   "gui.trainutilities.tooltip.london_overground_sound": "London Hochbahn Tür Sound",
-  "gui.trainutilities.tooltip.railjet_sound": "ÖBB Railjet Tür Sound"
+  "gui.trainutilities.tooltip.railjet_sound": "ÖBB Railjet Tür Sound",
+  "gui.trainutilities.tooltip.sbahn_sound": "S-Bahn Tür Sound",
+  "gui.trainutilities.tooltip.talent_sound": "Talent Tür Sound"
 }
