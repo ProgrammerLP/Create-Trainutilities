@@ -39,10 +39,8 @@ public class TrainSlidingDoorBlock extends SlidingDoorBlock {
         if (!pPlayer.isShiftKeyDown()) {
             return super.use(pState, pLevel, pPos, pPlayer, pHand, pHit);
         } else {
-            try {
+            if (pLevel.isClientSide) {
                 ClientWrapper.openChangeDoorSoundScreen(pPos, pState);
-            } catch (Exception e) {
-                System.out.println(e.toString());
             }
             return InteractionResult.SUCCESS;
         }
