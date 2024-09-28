@@ -157,7 +157,7 @@ public class TrainUtilitiesBuilderTransformers {
                 .tag(ItemTags.DOORS)
                 .tag(ModTags.AllItemTags.DOORS.tag)
                 .tag(AllTags.AllItemTags.CONTRAPTION_CONTROLLED.tag)
-                .tab(ModTabs.TRAINUTILS_TAB.getKey())
+                .tab(ModTabs.DOORS_TAB.getKey())
                 .build();
     }
 
@@ -184,7 +184,7 @@ public class TrainUtilitiesBuilderTransformers {
                 .tag(ItemTags.DOORS)
                 .tag(ModTags.AllItemTags.DOORS.tag)
                 .tag(AllTags.AllItemTags.CONTRAPTION_CONTROLLED.tag)
-                .tab(ModTabs.TRAINUTILS_TAB.getKey())
+                .tab(ModTabs.DOORS_TAB.getKey())
                 .build();
     }
 

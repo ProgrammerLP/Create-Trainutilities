@@ -92,6 +92,7 @@
   "advancement.trainutilities.doors.description": "Bekomme eine der neuen TrainUtilities Türen",
 
   "itemGroup.trainutilities.trainutils_tab": "TrainUtilities",
+  "itemGroup.trainutilities.doors_tab": "TrainUtilities - Türen",
 
   "gui.trainutilities.selection_screen.blockplacementscreen_de": "Deutsche Gleisblöcke",
   "gui.trainutilities.selection_screen.blockplacementscreen_nl": "Niederländische Gleisblöcke",
