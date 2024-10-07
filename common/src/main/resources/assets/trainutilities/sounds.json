@@ -250,5 +250,23 @@
         "stream": true
       }
     ]
+  },
+  "door_caf_urbos_3_open": {
+    "subtitle": "sound.trainutilities.door_caf_urbos_3_open",
+    "sounds": [
+      {
+        "name": "trainutilities:door_caf_urbos_3_open",
+        "stream": true
+      }
+    ]
+  },
+  "door_caf_urbos_3_close": {
+    "subtitle": "sound.trainutilities.door_caf_urbos_3_close",
+    "sounds": [
+      {
+        "name": "trainutilities:door_caf_urbos_3_close",
+        "stream": true
+      }
+    ]
   }
 }

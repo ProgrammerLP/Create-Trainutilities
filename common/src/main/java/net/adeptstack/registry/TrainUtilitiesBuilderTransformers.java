@@ -251,6 +251,9 @@ public class TrainUtilitiesBuilderTransformers {
         else if (variant == 14) {
             return new TrainSlidingDoorProperties(ModSounds.DOOR_TALENT_OPEN.get(), ModSounds.DOOR_TALENT_CLOSE.get(), .025f);
         }
+        else if (variant == 15) {
+            return new TrainSlidingDoorProperties(ModSounds.DOOR_CAF_URBOS_3_OPEN.get(), ModSounds.DOOR_CAF_URBOS_3_CLOSE.get(), .025f);
+        }
         else {
             return new TrainSlidingDoorProperties(SoundEvents.IRON_DOOR_OPEN, SoundEvents.IRON_DOOR_CLOSE, .15f);
         }
@@ -298,6 +301,9 @@ public class TrainUtilitiesBuilderTransformers {
         }
         else if (type == "talent1" || type == "talent2" || type == "talent3") {
             return 14;
+        }
+        else if (type == "caf_urbos_3") {
+            return 15;
         }
         else {
             return 0;

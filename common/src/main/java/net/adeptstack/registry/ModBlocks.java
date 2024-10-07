@@ -143,6 +143,9 @@ public class ModBlocks {
     public static final BlockEntry<TrainSlidingDoorBlock> DOOR_WARSAW_TRAM =
             TrainUtilitiesBuilderTransformers.TintedTrainSlidingDoor("warsaw_tram", false, MapColor.COLOR_BLACK);
 
+    public static final BlockEntry<TrainSlidingDoorBlock> DOOR_CAF_URBOS_3 =
+            TrainUtilitiesBuilderTransformers.TintedTrainSlidingDoor("caf_urbos_3", false, MapColor.COLOR_BLACK);
+
     public static final BlockEntry<TrainSlidingDoorBlock> DOOR_RAILJET =
             TrainUtilitiesBuilderTransformers.TintedTrainSlidingDoor("railjet", false, MapColor.COLOR_RED);
 

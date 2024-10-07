@@ -18,7 +18,7 @@ public class ToolTipUtils {
             case 12 -> "gui.trainutilities.tooltip.railjet_sound";
             case 13 -> "gui.trainutilities.tooltip.sbahn_sound";
             case 14 -> "gui.trainutilities.tooltip.talent_sound";
-            case 15 -> "c.png";
+            case 15 -> "gui.trainutilities.tooltip.caf_urbos_sound";
             case 16 -> "d.png";
             default -> "gui.trainutilities.tooltip.ic2_sound";
         };
