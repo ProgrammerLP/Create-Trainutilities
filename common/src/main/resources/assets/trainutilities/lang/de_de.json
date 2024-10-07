@@ -52,6 +52,7 @@
   "block.trainutilities.door_talent1": "Talent 1 Tür",
   "block.trainutilities.door_talent2": "Talent 2 Tür",
   "block.trainutilities.door_talent3": "Talent 3 Tür",
+  "block.trainutilities.door_caf_urbos_3": "Caf Urbos 3 Tür",
 
   "block.trainutilities.de_platform_block": "Deutscher Gleisblock",
   "block.trainutilities.nl_platform_block": "Niederländischer Gleisblock",
@@ -85,6 +86,8 @@
   "sound.trainutilities.door_sbahn_close": "S-Bahn Tür schließt",
   "sound.trainutilities.door_talent_open": "Talent Tür öffnet",
   "sound.trainutilities.door_talent_close": "Talent Tür schließt",
+  "sound.trainutilities.door_caf_urbos_3_open": "Caf Urbos Tür öffnet",
+  "sound.trainutilities.door_caf_urbos_3_close": "Caf Urbos Tür schließt",
 
   "advancement.trainutilities.platform_block": "Modernes Zeitalter",
   "advancement.trainutilities.platform_block.description": "Bekomme einen Plattformblock",
@@ -113,5 +116,6 @@
   "gui.trainutilities.tooltip.london_overground_sound": "London Hochbahn Tür Sound",
   "gui.trainutilities.tooltip.railjet_sound": "ÖBB Railjet Tür Sound",
   "gui.trainutilities.tooltip.sbahn_sound": "S-Bahn Tür Sound",
-  "gui.trainutilities.tooltip.talent_sound": "Talent Tür Sound"
+  "gui.trainutilities.tooltip.talent_sound": "Talent Tür Sound",
+  "gui.trainutilities.tooltip.caf_urbos_sound": "Caf Urbos Tür Sound"
 }
