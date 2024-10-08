@@ -4,7 +4,7 @@
 	"textures": {
 		"0": "trainutilities:block/door_talent1/texture_top_side",
 		"1": "trainutilities:block/door_talent1/texture_big_element",
-		"2": "block/texture_t2_bottom_glass",
+		"3": "trainutilities:block/door_talent1/texture_t2_bottom_glass",
 		"particle": "trainutilities:block/door_talent1/texture_top_side"
 	},
 	"elements": [
@@ -52,12 +52,12 @@
 			"to": [3, 16, 13],
 			"rotation": {"angle": 0, "axis": "y", "origin": [3, 8, 8]},
 			"faces": {
-				"north": {"uv": [6.5, 0, 8, 4], "texture": "#2"},
-				"east": {"uv": [0, 0, 5, 4], "texture": "#2"},
-				"south": {"uv": [6.5, 4, 8, 8], "texture": "#2"},
-				"west": {"uv": [0, 4, 5, 8], "texture": "#2"},
-				"up": {"uv": [6.5, 5, 5, 0], "texture": "#2"},
-				"down": {"uv": [6.5, 5, 5, 10], "texture": "#2"}
+				"north": {"uv": [6.5, 0, 8, 4], "texture": "#3"},
+				"east": {"uv": [0, 0, 5, 4], "texture": "#3"},
+				"south": {"uv": [6.5, 4, 8, 8], "texture": "#3"},
+				"west": {"uv": [0, 4, 5, 8], "texture": "#3"},
+				"up": {"uv": [6.5, 5, 5, 0], "texture": "#3"},
+				"down": {"uv": [6.5, 5, 5, 10], "texture": "#3"}
 			}
 		}
 	]
