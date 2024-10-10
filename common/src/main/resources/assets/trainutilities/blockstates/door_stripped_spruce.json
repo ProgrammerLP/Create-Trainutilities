@@ -1,0 +1,244 @@
+{
+  "variants": {
+    "facing=east,half=lower,hinge=left,open=false,visible=false": {
+      "model": "trainutilities:block/door_stripped_spruce/block"
+    },
+    "facing=east,half=lower,hinge=left,open=false,visible=true": {
+      "model": "trainutilities:block/door_stripped_spruce/block"
+    },
+    "facing=east,half=lower,hinge=left,open=true,visible=false": {
+      "model": "trainutilities:block/door_stripped_spruce/block",
+      "y": 90
+    },
+    "facing=east,half=lower,hinge=left,open=true,visible=true": {
+      "model": "trainutilities:block/door_stripped_spruce/block",
+      "y": 90
+    },
+    "facing=east,half=lower,hinge=right,open=false,visible=false": {
+      "model": "trainutilities:block/door_stripped_spruce/block"
+    },
+    "facing=east,half=lower,hinge=right,open=false,visible=true": {
+      "model": "trainutilities:block/door_stripped_spruce/block"
+    },
+    "facing=east,half=lower,hinge=right,open=true,visible=false": {
+      "model": "trainutilities:block/door_stripped_spruce/block",
+      "y": 270
+    },
+    "facing=east,half=lower,hinge=right,open=true,visible=true": {
+      "model": "trainutilities:block/door_stripped_spruce/block",
+      "y": 270
+    },
+    "facing=east,half=upper,hinge=left,open=false,visible=false": {
+      "model": "trainutilities:block/door_stripped_spruce/block"
+    },
+    "facing=east,half=upper,hinge=left,open=false,visible=true": {
+      "model": "trainutilities:block/door_stripped_spruce/block"
+    },
+    "facing=east,half=upper,hinge=left,open=true,visible=false": {
+      "model": "trainutilities:block/door_stripped_spruce/block",
+      "y": 90
+    },
+    "facing=east,half=upper,hinge=left,open=true,visible=true": {
+      "model": "trainutilities:block/door_stripped_spruce/block",
+      "y": 90
+    },
+    "facing=east,half=upper,hinge=right,open=false,visible=false": {
+      "model": "trainutilities:block/door_stripped_spruce/block"
+    },
+    "facing=east,half=upper,hinge=right,open=false,visible=true": {
+      "model": "trainutilities:block/door_stripped_spruce/block"
+    },
+    "facing=east,half=upper,hinge=right,open=true,visible=false": {
+      "model": "trainutilities:block/door_stripped_spruce/block",
+      "y": 270
+    },
+    "facing=east,half=upper,hinge=right,open=true,visible=true": {
+      "model": "trainutilities:block/door_stripped_spruce/block",
+      "y": 270
+    },
+    "facing=north,half=lower,hinge=left,open=false,visible=false": {
+      "model": "trainutilities:block/door_stripped_spruce/block",
+      "y": 270
+    },
+    "facing=north,half=lower,hinge=left,open=false,visible=true": {
+      "model": "trainutilities:block/door_stripped_spruce/block",
+      "y": 270
+    },
+    "facing=north,half=lower,hinge=left,open=true,visible=false": {
+      "model": "trainutilities:block/door_stripped_spruce/block"
+    },
+    "facing=north,half=lower,hinge=left,open=true,visible=true": {
+      "model": "trainutilities:block/door_stripped_spruce/block"
+    },
+    "facing=north,half=lower,hinge=right,open=false,visible=false": {
+      "model": "trainutilities:block/door_stripped_spruce/block",
+      "y": 270
+    },
+    "facing=north,half=lower,hinge=right,open=false,visible=true": {
+      "model": "trainutilities:block/door_stripped_spruce/block",
+      "y": 270
+    },
+    "facing=north,half=lower,hinge=right,open=true,visible=false": {
+      "model": "trainutilities:block/door_stripped_spruce/block",
+      "y": 180
+    },
+    "facing=north,half=lower,hinge=right,open=true,visible=true": {
+      "model": "trainutilities:block/door_stripped_spruce/block",
+      "y": 180
+    },
+    "facing=north,half=upper,hinge=left,open=false,visible=false": {
+      "model": "trainutilities:block/door_stripped_spruce/block",
+      "y": 270
+    },
+    "facing=north,half=upper,hinge=left,open=false,visible=true": {
+      "model": "trainutilities:block/door_stripped_spruce/block",
+      "y": 270
+    },
+    "facing=north,half=upper,hinge=left,open=true,visible=false": {
+      "model": "trainutilities:block/door_stripped_spruce/block"
+    },
+    "facing=north,half=upper,hinge=left,open=true,visible=true": {
+      "model": "trainutilities:block/door_stripped_spruce/block"
+    },
+    "facing=north,half=upper,hinge=right,open=false,visible=false": {
+      "model": "trainutilities:block/door_stripped_spruce/block",
+      "y": 270
+    },
+    "facing=north,half=upper,hinge=right,open=false,visible=true": {
+      "model": "trainutilities:block/door_stripped_spruce/block",
+      "y": 270
+    },
+    "facing=north,half=upper,hinge=right,open=true,visible=false": {
+      "model": "trainutilities:block/door_stripped_spruce/block",
+      "y": 180
+    },
+    "facing=north,half=upper,hinge=right,open=true,visible=true": {
+      "model": "trainutilities:block/door_stripped_spruce/block",
+      "y": 180
+    },
+    "facing=south,half=lower,hinge=left,open=false,visible=false": {
+      "model": "trainutilities:block/door_stripped_spruce/block",
+      "y": 90
+    },
+    "facing=south,half=lower,hinge=left,open=false,visible=true": {
+      "model": "trainutilities:block/door_stripped_spruce/block",
+      "y": 90
+    },
+    "facing=south,half=lower,hinge=left,open=true,visible=false": {
+      "model": "trainutilities:block/door_stripped_spruce/block",
+      "y": 180
+    },
+    "facing=south,half=lower,hinge=left,open=true,visible=true": {
+      "model": "trainutilities:block/door_stripped_spruce/block",
+      "y": 180
+    },
+    "facing=south,half=lower,hinge=right,open=false,visible=false": {
+      "model": "trainutilities:block/door_stripped_spruce/block",
+      "y": 90
+    },
+    "facing=south,half=lower,hinge=right,open=false,visible=true": {
+      "model": "trainutilities:block/door_stripped_spruce/block",
+      "y": 90
+    },
+    "facing=south,half=lower,hinge=right,open=true,visible=false": {
+      "model": "trainutilities:block/door_stripped_spruce/block"
+    },
+    "facing=south,half=lower,hinge=right,open=true,visible=true": {
+      "model": "trainutilities:block/door_stripped_spruce/block"
+    },
+    "facing=south,half=upper,hinge=left,open=false,visible=false": {
+      "model": "trainutilities:block/door_stripped_spruce/block",
+      "y": 90
+    },
+    "facing=south,half=upper,hinge=left,open=false,visible=true": {
+      "model": "trainutilities:block/door_stripped_spruce/block",
+      "y": 90
+    },
+    "facing=south,half=upper,hinge=left,open=true,visible=false": {
+      "model": "trainutilities:block/door_stripped_spruce/block",
+      "y": 180
+    },
+    "facing=south,half=upper,hinge=left,open=true,visible=true": {
+      "model": "trainutilities:block/door_stripped_spruce/block",
+      "y": 180
+    },
+    "facing=south,half=upper,hinge=right,open=false,visible=false": {
+      "model": "trainutilities:block/door_stripped_spruce/block",
+      "y": 90
+    },
+    "facing=south,half=upper,hinge=right,open=false,visible=true": {
+      "model": "trainutilities:block/door_stripped_spruce/block",
+      "y": 90
+    },
+    "facing=south,half=upper,hinge=right,open=true,visible=false": {
+      "model": "trainutilities:block/door_stripped_spruce/block"
+    },
+    "facing=south,half=upper,hinge=right,open=true,visible=true": {
+      "model": "trainutilities:block/door_stripped_spruce/block"
+    },
+    "facing=west,half=lower,hinge=left,open=false,visible=false": {
+      "model": "trainutilities:block/door_stripped_spruce/block",
+      "y": 180
+    },
+    "facing=west,half=lower,hinge=left,open=false,visible=true": {
+      "model": "trainutilities:block/door_stripped_spruce/block",
+      "y": 180
+    },
+    "facing=west,half=lower,hinge=left,open=true,visible=false": {
+      "model": "trainutilities:block/door_stripped_spruce/block",
+      "y": 270
+    },
+    "facing=west,half=lower,hinge=left,open=true,visible=true": {
+      "model": "trainutilities:block/door_stripped_spruce/block",
+      "y": 270
+    },
+    "facing=west,half=lower,hinge=right,open=false,visible=false": {
+      "model": "trainutilities:block/door_stripped_spruce/block",
+      "y": 180
+    },
+    "facing=west,half=lower,hinge=right,open=false,visible=true": {
+      "model": "trainutilities:block/door_stripped_spruce/block",
+      "y": 180
+    },
+    "facing=west,half=lower,hinge=right,open=true,visible=false": {
+      "model": "trainutilities:block/door_stripped_spruce/block",
+      "y": 90
+    },
+    "facing=west,half=lower,hinge=right,open=true,visible=true": {
+      "model": "trainutilities:block/door_stripped_spruce/block",
+      "y": 90
+    },
+    "facing=west,half=upper,hinge=left,open=false,visible=false": {
+      "model": "trainutilities:block/door_stripped_spruce/block",
+      "y": 180
+    },
+    "facing=west,half=upper,hinge=left,open=false,visible=true": {
+      "model": "trainutilities:block/door_stripped_spruce/block",
+      "y": 180
+    },
+    "facing=west,half=upper,hinge=left,open=true,visible=false": {
+      "model": "trainutilities:block/door_stripped_spruce/block",
+      "y": 270
+    },
+    "facing=west,half=upper,hinge=left,open=true,visible=true": {
+      "model": "trainutilities:block/door_stripped_spruce/block",
+      "y": 270
+    },
+    "facing=west,half=upper,hinge=right,open=false,visible=false": {
+      "model": "trainutilities:block/door_stripped_spruce/block",
+      "y": 180
+    },
+    "facing=west,half=upper,hinge=right,open=false,visible=true": {
+      "model": "trainutilities:block/door_stripped_spruce/block",
+      "y": 180
+    },
+    "facing=west,half=upper,hinge=right,open=true,visible=false": {
+      "model": "trainutilities:block/door_stripped_spruce/block",
+      "y": 90
+    },
+    "facing=west,half=upper,hinge=right,open=true,visible=true": {
+      "model": "trainutilities:block/door_stripped_spruce/block",
+      "y": 90
+    }
+  }
+}

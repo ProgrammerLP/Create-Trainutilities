@@ -21,7 +21,7 @@ public class ModBlockEntities {
                             ModBlocks.DOOR_WARSAW_TRAM, ModBlocks.DOOR_IRON_CLEAN, ModBlocks.DOOR_IRON_RUSTY,
                             ModBlocks.DOOR_INDUSTRIAL_IRON, ModBlocks.DOOR_INDUSTRIAL_IRON_WINDOW, ModBlocks.DOOR_RAILJET,
                             ModBlocks.DOOR_SBAHN_COLOGNE, ModBlocks.DOOR_SBAHN_VRR, ModBlocks.DOOR_TALENT1, ModBlocks.DOOR_TALENT2,
-                            ModBlocks.DOOR_TALENT3, ModBlocks.DOOR_CAF_URBOS_3)
+                            ModBlocks.DOOR_TALENT3, ModBlocks.DOOR_CAF_URBOS_3, ModBlocks.DOOR_STRIPPED_SPRUCE)
                     .register();
 
     public static void register() {}

@@ -190,6 +190,9 @@ public class ModBlocks {
     public static final BlockEntry<TrainSlidingDoorBlock> DOOR_INDUSTRIAL_IRON =
             TrainUtilitiesBuilderTransformers.TrainSlidingDoor("industrial_iron", true, MapColor.STONE);
 
+    public static final BlockEntry<TrainSlidingDoorBlock> DOOR_STRIPPED_SPRUCE =
+            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("stripped_spruce", false, MapColor.WOOD);
+
     //TESTBLOCKS
 
     public static void register() { }
