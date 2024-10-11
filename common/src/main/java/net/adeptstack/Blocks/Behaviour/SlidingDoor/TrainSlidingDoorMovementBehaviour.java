@@ -12,6 +12,7 @@ import com.simibubi.create.content.trains.entity.CarriageContraptionEntity;
 import com.simibubi.create.content.trains.station.GlobalStation;
 import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
 import com.simibubi.create.foundation.utility.animation.LerpedFloat;
+import net.adeptstack.Blocks.Doors.SlidingDoor.TrainSlidingDoorBlock;
 import net.adeptstack.Core.Utils.TrainSlidingDoorProperties;
 import net.adeptstack.Blocks.Doors.SlidingDoor.TrainSlidingDoorBlockEntity;
 import net.adeptstack.registry.TrainUtilitiesBuilderTransformers;
@@ -25,6 +26,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.DoorBlock;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.DoorHingeSide;
 import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
 import net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate;
 import net.minecraft.world.phys.Vec3;
@@ -76,16 +78,32 @@ public class TrainSlidingDoorMovementBehaviour implements MovementBehaviour {
             }
         };
 
-        if (wasSettled && !sdbe.animation.settled() && !open) {
-            context.world.playLocalSound(context.position.x, context.position.y, context.position.z,
-                    tsdp.GetClose(), SoundSource.BLOCKS, 1f, 1, false);
-        }
+        if  (TrainSlidingDoorBlock.isDoubleDoor(structureBlockInfo.state().getValue(TrainSlidingDoorBlock.HINGE), context.localPos, context.state.getValue(TrainSlidingDoorBlock.FACING), context)) {
+            if (structureBlockInfo.state().getValue(TrainSlidingDoorBlock.HINGE) == DoorHingeSide.RIGHT) {
+                if (wasSettled && !sdbe.animation.settled() && !open) {
+                    context.world.playLocalSound(context.position.x, context.position.y, context.position.z,
+                            tsdp.GetClose(), SoundSource.BLOCKS, 1f, 1, false);
+                }
 
-        if (wasSettled && !sdbe.animation.settled() && open) {
-            context.world.playLocalSound(context.position.x, context.position.y, context.position.z,
-                    tsdp.GetOpen(), SoundSource.BLOCKS, 1f, 1, false);
-            //Timer t = new Timer();
-            //t.schedule(closeTask, 6000);
+                if (wasSettled && !sdbe.animation.settled() && open) {
+                    context.world.playLocalSound(context.position.x, context.position.y, context.position.z,
+                            tsdp.GetOpen(), SoundSource.BLOCKS, 1f, 1, false);
+                    //Timer t = new Timer();
+                    //t.schedule(closeTask, 6000);
+                }
+            }
+        } else {
+            if (wasSettled && !sdbe.animation.settled() && !open) {
+                context.world.playLocalSound(context.position.x, context.position.y, context.position.z,
+                        tsdp.GetClose(), SoundSource.BLOCKS, 1f, 1, false);
+            }
+
+            if (wasSettled && !sdbe.animation.settled() && open) {
+                context.world.playLocalSound(context.position.x, context.position.y, context.position.z,
+                        tsdp.GetOpen(), SoundSource.BLOCKS, 1f, 1, false);
+                //Timer t = new Timer();
+                //t.schedule(closeTask, 6000);
+            }
         }
     }
 
