@@ -171,7 +171,7 @@ public class TrainUtilitiesBuilderTransformers {
     }
 
     public static <B extends TrainSlidingDoorBlock, P> NonNullUnaryOperator<BlockBuilder<B, P>> slidingDoor(String type) {
-        return b -> b.initialProperties(AllBlocks.FRAMED_GLASS_DOOR) // for villager AI..
+        return b -> b.initialProperties(() -> Blocks.OAK_DOOR) // for villager AI..
                 .properties(p -> p.strength(3.0F, 6.0F))
                 .transform(pickaxeOnly())
                 .onRegister(interactionBehaviour(new TrainSlidingDoorMovingInteraction()))
