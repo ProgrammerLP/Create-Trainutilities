@@ -54,8 +54,8 @@ public class TrainSlidingDoorBlock extends SlidingDoorBlock {
             StructureTemplate.StructureBlockInfo structureBlockInfo = context.contraption.getBlocks().get(posH2);
             if (structureBlockInfo == null)
                 return false;
-            if (structureBlockInfo.state().getValue(HINGE) == DoorHingeSide.RIGHT) {
-                return structureBlockInfo.state().getBlock() instanceof TrainSlidingDoorBlock;
+            if (structureBlockInfo.state().getBlock() instanceof TrainSlidingDoorBlock) {
+                return structureBlockInfo.state().getValue(HINGE) == DoorHingeSide.RIGHT;
             }
         }
         else {
@@ -63,8 +63,8 @@ public class TrainSlidingDoorBlock extends SlidingDoorBlock {
             StructureTemplate.StructureBlockInfo structureBlockInfo = context.contraption.getBlocks().get(posH2);
             if (structureBlockInfo == null)
                 return false;
-            if (structureBlockInfo.state().getValue(HINGE) == DoorHingeSide.LEFT) {
-                return structureBlockInfo.state().getBlock() instanceof TrainSlidingDoorBlock;
+            if (structureBlockInfo.state().getBlock() instanceof TrainSlidingDoorBlock) {
+                return structureBlockInfo.state().getValue(HINGE) == DoorHingeSide.LEFT;
             }
         }
         return false;
