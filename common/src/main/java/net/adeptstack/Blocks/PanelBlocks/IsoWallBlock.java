@@ -39,7 +39,7 @@ public class IsoWallBlock extends PanelBlockBase {
         BlockPos posMR = posBR.above();
         BlockPos posTR = posMR.above();
         Level level = context.getLevel();
-        if (level.getBlockState(posML).canBeReplaced() && level.getBlockState(posMR).canBeReplaced() && level.getBlockState(posBR).canBeReplaced() && level.getBlockState(posTR).canBeReplaced() && level.getBlockState(posTL).canBeReplaced() && posTL.getY() < level.getMaxBuildHeight() - 1) {
+        if (level.getBlockState(posML).canBeReplaced(context) && level.getBlockState(posMR).canBeReplaced(context) && level.getBlockState(posBR).canBeReplaced(context) && level.getBlockState(posTR).canBeReplaced(context) && level.getBlockState(posTL).canBeReplaced(context) && posTL.getY() < level.getMaxBuildHeight() - 1) {
             return super.getStateForPlacement(context);
         } else {
             return null;

@@ -55,7 +55,7 @@ public class TrainSlidingDoorMovementBehaviour implements MovementBehaviour {
         if (!context.world.isClientSide())
             tickOpen(context, open);
 
-        int sound = TrainSlidingDoorBlockEntity.getDoorSoundValue(structureBlockInfo.state());
+        int sound = TrainSlidingDoorBlockEntity.getDoorSoundValue(structureBlockInfo.state);
         tsdp = TrainUtilitiesBuilderTransformers.GetSlidingDoorProperties(sound);
 
         Map<BlockPos, BlockEntity> tes = context.contraption.presentBlockEntities;
@@ -78,8 +78,8 @@ public class TrainSlidingDoorMovementBehaviour implements MovementBehaviour {
             }
         };
 
-        if  (TrainSlidingDoorBlock.isDoubleDoor(structureBlockInfo.state().getValue(TrainSlidingDoorBlock.HINGE), context.localPos, context.state.getValue(TrainSlidingDoorBlock.FACING), context)) {
-            if (structureBlockInfo.state().getValue(TrainSlidingDoorBlock.HINGE) == DoorHingeSide.RIGHT) {
+        if  (TrainSlidingDoorBlock.isDoubleDoor(structureBlockInfo.state.getValue(TrainSlidingDoorBlock.HINGE), context.localPos, context.state.getValue(TrainSlidingDoorBlock.FACING), context)) {
+            if (structureBlockInfo.state.getValue(TrainSlidingDoorBlock.HINGE) == DoorHingeSide.RIGHT) {
                 if (wasSettled && !sdbe.animation.settled() && !open) {
                     context.world.playLocalSound(context.position.x, context.position.y, context.position.z,
                             tsdp.GetClose(), SoundSource.BLOCKS, 1f, 1, false);

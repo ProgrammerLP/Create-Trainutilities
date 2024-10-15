@@ -21,7 +21,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
-import net.minecraft.world.level.block.state.properties.BlockSetType;
+
 import net.minecraft.world.level.block.state.properties.DoorHingeSide;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate;
@@ -34,8 +34,8 @@ public class TrainSlidingDoorBlock extends SlidingDoorBlock {
 
     public static final IntegerProperty DOOR_SOUND = IntegerProperty.create("door_sound", 0, 15);
 
-    public TrainSlidingDoorBlock(Properties properties, BlockSetType type, boolean isFolding, int defaultSound) {
-        super(properties, type, isFolding);
+    public TrainSlidingDoorBlock(Properties properties, boolean isFolding, int defaultSound) {
+        super(properties, isFolding);
 
         this.registerDefaultState(this.stateDefinition.any()
                 .setValue(DOOR_SOUND, defaultSound)
@@ -54,8 +54,8 @@ public class TrainSlidingDoorBlock extends SlidingDoorBlock {
             StructureTemplate.StructureBlockInfo structureBlockInfo = context.contraption.getBlocks().get(posH2);
             if (structureBlockInfo == null)
                 return false;
-            if (structureBlockInfo.state().getBlock() instanceof TrainSlidingDoorBlock) {
-                return structureBlockInfo.state().getValue(HINGE) == DoorHingeSide.RIGHT;
+            if (structureBlockInfo.state.getBlock() instanceof TrainSlidingDoorBlock) {
+                return structureBlockInfo.state.getValue(HINGE) == DoorHingeSide.RIGHT;
             }
         }
         else {
@@ -63,8 +63,8 @@ public class TrainSlidingDoorBlock extends SlidingDoorBlock {
             StructureTemplate.StructureBlockInfo structureBlockInfo = context.contraption.getBlocks().get(posH2);
             if (structureBlockInfo == null)
                 return false;
-            if (structureBlockInfo.state().getBlock() instanceof TrainSlidingDoorBlock) {
-                return structureBlockInfo.state().getValue(HINGE) == DoorHingeSide.LEFT;
+            if (structureBlockInfo.state.getBlock() instanceof TrainSlidingDoorBlock) {
+                return structureBlockInfo.state.getValue(HINGE) == DoorHingeSide.LEFT;
             }
         }
         return false;

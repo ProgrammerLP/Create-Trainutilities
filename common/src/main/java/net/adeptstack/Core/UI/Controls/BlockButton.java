@@ -3,7 +3,6 @@ package net.adeptstack.Core.UI.Controls;
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.vertex.PoseStack;
 import net.minecraft.client.gui.components.Button;
-import net.minecraft.client.gui.components.Tooltip;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 
@@ -17,12 +16,11 @@ public class BlockButton extends Button {
     private final int textureWidth;
     private final int textureHeight;
 
-    public BlockButton(int x, int y, Consumer<BlockButton> onPress, ResourceLocation textureLocation, int textureWidth, int textureHeight) {
-        super(x, y, 20, 20, Component.empty(), (b) -> onPress.accept((BlockButton)b), NO_TOOLTIP);
+    public BlockButton(int x, int y, Consumer<BlockButton> onPress, ResourceLocation textureLocation, int textureWidth, int textureHeight, OnTooltip toolTip) {
+        super(x, y, 20, 20, Component.empty(), (b) -> onPress.accept((BlockButton)b), toolTip);
         this.location = textureLocation;
         this.textureWidth = textureWidth;
         this.textureHeight = textureHeight;
-        setTooltip(Tooltip.create(Component.translatable(tooltipMessage)));
     }
 
     @Override

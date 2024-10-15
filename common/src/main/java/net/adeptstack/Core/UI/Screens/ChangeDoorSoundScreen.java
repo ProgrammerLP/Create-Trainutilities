@@ -2,13 +2,13 @@ package net.adeptstack.Core.UI.Screens;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.vertex.PoseStack;
-import net.adeptstack.Core.Network.ModNetwork;
-import net.adeptstack.Core.Network.Packages.PackagePlatformBlock;
 import net.adeptstack.Core.UI.Controls.BlockButton;
+import net.adeptstack.Core.Utils.ScreenUtils.ToolTipUtils;
+import net.adeptstack.Core.Utils.TrainSlidingDoorProperties;
+import net.adeptstack.registry.TrainUtilitiesBuilderTransformers;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.screens.Screen;
-import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.CommonComponents;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
@@ -74,11 +74,11 @@ public class ChangeDoorSoundScreen extends Screen {
             TrainSlidingDoorProperties tsdp = TrainUtilitiesBuilderTransformers.GetSlidingDoorProperties(this.selectedVariant);
             if (open) {
                 Minecraft.getInstance().getSoundManager().stop();
-                Minecraft.getInstance().player.level().playSound(Minecraft.getInstance().player, Minecraft.getInstance().player.blockPosition(), tsdp.GetOpen(), SoundSource.MASTER);
+                Minecraft.getInstance().player.level.playSound(Minecraft.getInstance().player, Minecraft.getInstance().player.blockPosition(), tsdp.GetOpen(), SoundSource.MASTER, 1, 1);
             }
             else {
                 Minecraft.getInstance().getSoundManager().stop();
-                Minecraft.getInstance().player.level().playSound(Minecraft.getInstance().player, Minecraft.getInstance().player.blockPosition(), tsdp.GetClose(), SoundSource.MASTER);
+                Minecraft.getInstance().player.level.playSound(Minecraft.getInstance().player, Minecraft.getInstance().player.blockPosition(), tsdp.GetClose(), SoundSource.MASTER, 1, 1);
             }
         }
     }
@@ -107,10 +107,11 @@ public class ChangeDoorSoundScreen extends Screen {
                     this.selectedVariant = startValue + n;
                     this.preview = result;
                     onListen(false);
-                }, result.location(), result.textureWidth(), result.textureHeight(), ToolTipUtils.GetSoundName(startValue + n)));
+                }, result.location(), result.textureWidth(), result.textureHeight(), (button, poseStack, mouseX, mouseY) -> {
+                        renderTooltip(poseStack, Component.translatable(ToolTipUtils.GetSoundName(startValue + n)), mouseX, mouseY);
+                    }));
             }
         }
-
 
         addRenderableWidget(new Button(guiLeft + WINDOW_WIDTH - MARGIN_RIGHT - DEFAULT_BUTTON_WIDTH,
                 guiTop + WINDOW_TOP_PART_HEIGHT + maxRows * BlockButton.DEFAULT_HEIGHT + WINDOW_BOTTOM_PART_HEIGHT - 28, DEFAULT_BUTTON_WIDTH,

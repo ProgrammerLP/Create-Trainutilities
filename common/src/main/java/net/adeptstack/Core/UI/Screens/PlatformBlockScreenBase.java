@@ -2,9 +2,8 @@ package net.adeptstack.Core.UI.Screens;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.vertex.PoseStack;
-import net.adeptstack.Core.Network.ModNetwork;
-import net.adeptstack.Core.Network.Packages.PackagePlatformBlock;
 import net.adeptstack.Core.UI.Controls.BlockButton;
+import net.adeptstack.Core.Utils.ScreenUtils.ToolTipUtils;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.core.BlockPos;
@@ -87,7 +86,7 @@ public class PlatformBlockScreenBase extends Screen {
 
         for (int i = 0, count = 0; count < maxValues; i++) {
             for (int k = 0; k < MAX_BUTTONS_PER_ROW && count < maxValues; k++, count++) {
-                String msg = "";
+                String msg;
                 final int n = count;
                 final TextureResult result = textureGetter.apply(startValue + n);
                 if (typeID == 1) {
@@ -96,11 +95,15 @@ public class PlatformBlockScreenBase extends Screen {
                     msg = ToolTipUtils.GetNLPlatformBlockToolTipName(n);
                 } else if (typeID == 3) {
                     msg = ToolTipUtils.GetCHPlatformBlockToolTipName(n);
+                } else {
+                    msg = "";
                 }
                 addRenderableWidget(new BlockButton(guiLeft + MARGIN_LEFT + 1 + k * 20, guiTop + WINDOW_TOP_PART_HEIGHT + i * 20, (b) -> {
                     this.selectedVariant = startValue + n;
                     this.preview = result;
-                }, result.location(), result.textureWidth(), result.textureHeight(), msg));
+                }, result.location(), result.textureWidth(), result.textureHeight(), (button, poseStack, mouseX, mouseY) -> {
+                        renderTooltip(poseStack, Component.translatable(msg), mouseX, mouseY);
+                    }));
             }
         }
 

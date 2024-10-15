@@ -2,12 +2,10 @@ package net.adeptstack.registry;
 
 import com.simibubi.create.AllBlocks;
 import com.simibubi.create.AllTags;
-import com.simibubi.create.content.decoration.slidingDoor.SlidingDoorBlock;
-import com.simibubi.create.foundation.data.AssetLookup;
 import com.tterrag.registrate.builders.BlockBuilder;
+import com.tterrag.registrate.providers.loot.RegistrateBlockLootTables;
 import com.tterrag.registrate.util.entry.BlockEntry;
 import com.tterrag.registrate.util.nullness.NonNullUnaryOperator;
-import io.github.fabricators_of_create.porting_lib.models.generators.ModelFile;
 import net.adeptstack.Blocks.Behaviour.SlidingDoor.TrainSlidingDoorMovementBehaviour;
 import net.adeptstack.Blocks.Behaviour.SlidingDoor.TrainSlidingDoorMovingInteraction;
 import net.adeptstack.Blocks.PanelBlocks.IsoWallBlock;
@@ -18,127 +16,127 @@ import net.adeptstack.Blocks.LineBlock;
 import net.adeptstack.Blocks.PanelBlocks.PlatformBlocks.PlatformBlockDE;
 import net.adeptstack.Blocks.PanelBlocks.PlatformBlocks.PlatformBlockNL;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.data.loot.BlockLoot;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.state.properties.BlockSetType;
-import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.material.MaterialColor;
 
 import static com.simibubi.create.AllInteractionBehaviours.interactionBehaviour;
 import static com.simibubi.create.AllMovementBehaviours.movementBehaviour;
-import static com.simibubi.create.content.decoration.slidingDoor.SlidingDoorBlock.GLASS_SET_TYPE;
 import static com.simibubi.create.foundation.data.TagGen.pickaxeOnly;
 import static net.adeptstack.Main.REGISTRATE;
+import static net.adeptstack.registry.ModTabs.DOORS_TAB;
 import static net.adeptstack.registry.ModTabs.TRAINUTILS_TAB;
 
 @SuppressWarnings({"unused","removal"})
 public class TrainUtilitiesBuilderTransformers {
 
-    public static BlockEntry<PlatformBlockDE> DEPlatformBlock(String id, MapColor color) {
+    public static BlockEntry<PlatformBlockDE> DEPlatformBlock(String id, MaterialColor color) {
         return REGISTRATE
                 .block(id, PlatformBlockDE::new)
                 .initialProperties(() -> Blocks.IRON_BARS)
-                .properties(p -> p.mapColor(color)
+                .properties(p -> p.color(color)
                         .sound(SoundType.METAL))
                 .transform(pickaxeOnly())
                 .tag(ModTags.AllBlockTags.PLATFORM_BLOCKS.tag)
-                .loot((lr, block) -> lr.add(block, lr.createSingleItemTable(block)))
+                .loot((lr, block) -> lr.add(block, RegistrateBlockLootTables.createSingleItemTable(block)))
                 .item()
                 .tag(ModTags.AllItemTags.PLATFORM_BLOCKS.tag)
-                .tab(TRAINUTILS_TAB.getKey())
+                .tab(() -> TRAINUTILS_TAB)
                 .build()
                 .register();
     }
 
-    public static BlockEntry<PlatformBlockNL> NLPlatformBlock(String id, MapColor color) {
+    public static BlockEntry<PlatformBlockNL> NLPlatformBlock(String id, MaterialColor color) {
         return REGISTRATE
                 .block(id, PlatformBlockNL::new)
                 .initialProperties(() -> Blocks.IRON_BARS)
-                .properties(p -> p.mapColor(color)
+                .properties(p -> p.color(color)
                         .sound(SoundType.METAL))
                 .transform(pickaxeOnly())
                 .tag(ModTags.AllBlockTags.PLATFORM_BLOCKS.tag)
-                .loot((lr, block) -> lr.add(block, lr.createSingleItemTable(block)))
+                .loot((lr, block) -> lr.add(block, RegistrateBlockLootTables.createSingleItemTable(block)))
                 .item()
                 .tag(ModTags.AllItemTags.PLATFORM_BLOCKS.tag)
-                .tab(TRAINUTILS_TAB.getKey())
+                .tab(() -> TRAINUTILS_TAB)
                 .build()
                 .register();
     }
 
-    public static BlockEntry<PlatformBlockCH> CHPlatformBlock(String id, MapColor color) {
+    public static BlockEntry<PlatformBlockCH> CHPlatformBlock(String id, MaterialColor color) {
         return REGISTRATE
                 .block(id, PlatformBlockCH::new)
                 .initialProperties(() -> Blocks.IRON_BARS)
-                .properties(p -> p.mapColor(color)
+                .properties(p -> p.color(color)
                         .sound(SoundType.METAL))
                 .transform(pickaxeOnly())
                 .tag(ModTags.AllBlockTags.PLATFORM_BLOCKS.tag)
-                .loot((lr, block) -> lr.add(block, lr.createSingleItemTable(block)))
+                .loot((lr, block) -> lr.add(block, RegistrateBlockLootTables.createSingleItemTable(block)))
                 .item()
                 .tag(ModTags.AllItemTags.PLATFORM_BLOCKS.tag)
-                .tab(TRAINUTILS_TAB.getKey())
+                .tab(() -> TRAINUTILS_TAB)
                 .build()
                 .register();
     }
 
-    public static BlockEntry<GlassBlock> GlassBlock(String id, MapColor color) {
+    public static BlockEntry<GlassBlock> GlassBlock(String id, MaterialColor color) {
         return REGISTRATE
                 .block(id, GlassBlock::new)
                 .initialProperties(() -> Blocks.GLASS)
-                .properties(p -> p.sound(SoundType.GLASS).mapColor(color))
+                .properties(p -> p.sound(SoundType.GLASS).color(color))
                 .addLayer(() -> RenderType::translucent)
                 .transform(pickaxeOnly())
                 .tag(ModTags.AllBlockTags.FRAMEABLE.tag)
-                .loot((lr, block) -> lr.add(block, lr.createSingleItemTable(block)))
+                .loot((lr, block) -> lr.add(block, RegistrateBlockLootTables.createSingleItemTable(block)))
                 .item()
-                .tab(TRAINUTILS_TAB.getKey())
+                .tab(() -> TRAINUTILS_TAB)
                 .build()
                 .register();
     }
 
-    public static BlockEntry<Block> DefaultBlock(String id, MapColor color) {
+    public static BlockEntry<Block> DefaultBlock(String id, MaterialColor color) {
         return REGISTRATE
                 .block(id, Block::new)
                 .initialProperties(() -> Blocks.GLASS)
-                .properties(p -> p.sound(SoundType.STONE).mapColor(color))
+                .properties(p -> p.sound(SoundType.STONE).color(color))
                 .transform(pickaxeOnly())
                 .tag(ModTags.AllBlockTags.FRAMEABLE.tag)
-                .loot((lr, block) -> lr.add(block, lr.createSingleItemTable(block)))
+                .loot((lr, block) -> lr.add(block, RegistrateBlockLootTables.createSingleItemTable(block)))
                 .item()
-                .tab(TRAINUTILS_TAB.getKey())
+                .tab(() -> TRAINUTILS_TAB)
                 .build()
                 .register();
     }
 
-    public static BlockEntry<IsoWallBlock> IsoWallBlock(String id, MapColor color) {
+    public static BlockEntry<IsoWallBlock> IsoWallBlock(String id, MaterialColor color) {
         return REGISTRATE
                 .block(id, IsoWallBlock::new)
                 .initialProperties(() -> Blocks.IRON_BARS)
-                .properties(p -> p.mapColor(MapColor.WOOL)
+                .properties(p -> p.color(MaterialColor.WOOL)
                         .sound(SoundType.METAL))
                 .transform(pickaxeOnly())
-                .loot((lr, block) -> lr.add(block, lr.createSingleItemTable(block)))
+                .loot((lr, block) -> lr.add(block, RegistrateBlockLootTables.createSingleItemTable(block)))
                 .item()
-                .tab(TRAINUTILS_TAB.getKey())
+                .tab(() -> TRAINUTILS_TAB)
                 .build()
                 .register();
     }
 
-    public static BlockEntry<LineBlock> LineBlock(String id, MapColor color) {
+    public static BlockEntry<LineBlock> LineBlock(String id, MaterialColor color) {
         return REGISTRATE
                 .block(id, LineBlock::new)
                 .initialProperties(() -> Blocks.WHITE_CONCRETE)
-                .properties(p -> p.mapColor(color))
+                .properties(p -> p.color(color))
                 .transform(pickaxeOnly())
                 .tag(ModTags.AllBlockTags.FRAMEABLE.tag)
                 .tag(ModTags.AllBlockTags.LINE_BLOCKS.tag)
-                .loot((lr, block) -> lr.add(block, lr.createSingleItemTable(block)))
+                .loot((lr, block) -> lr.add(block, RegistrateBlockLootTables.createSingleItemTable(block)))
                 .item()
                 .tag(ModTags.AllItemTags.LINE_BLOCKS.tag)
-                .tab(TRAINUTILS_TAB.getKey())
+                .tab(() -> TRAINUTILS_TAB)
                 .build()
                 .register();
     }
@@ -152,19 +150,19 @@ public class TrainUtilitiesBuilderTransformers {
                 .tag(BlockTags.DOORS)
                 .tag(ModTags.AllBlockTags.DOORS.tag)
                 .tag(AllTags.AllBlockTags.NON_DOUBLE_DOOR.tag)
-                .loot((lr, block) -> lr.add(block, lr.createDoorTable(block)))
+                .loot((lr, block) -> lr.add(block, BlockLoot.createDoorTable(block)))
                 .item()
                 .tag(ItemTags.DOORS)
                 .tag(ModTags.AllItemTags.DOORS.tag)
                 .tag(AllTags.AllItemTags.CONTRAPTION_CONTROLLED.tag)
-                .tab(ModTabs.DOORS_TAB.getKey())
+                .tab(() -> DOORS_TAB)
                 .build();
     }
 
-    public static BlockEntry<DoorBlock> DefaultMinecraftDoor(String type, MapColor colour) {
-        return REGISTRATE.block("door_" + type, p -> new DoorBlock(p, BlockSetType.SPRUCE))
+    public static BlockEntry<DoorBlock> DefaultMinecraftDoor(String type, MaterialColor colour) {
+        return REGISTRATE.block("door_" + type, DoorBlock::new)
                 .initialProperties(AllBlocks.FRAMED_GLASS_DOOR)
-                .properties(p -> p.sound(SoundType.METAL).mapColor(colour))
+                .properties(p -> p.sound(SoundType.METAL).color(colour))
                 .transform(TrainUtilitiesBuilderTransformers.defaultDoor(type))
                 .properties(BlockBehaviour.Properties::noOcclusion)
                 .register();
@@ -179,29 +177,29 @@ public class TrainUtilitiesBuilderTransformers {
                 .tag(BlockTags.DOORS)
                 .tag(ModTags.AllBlockTags.DOORS.tag)
                 .tag(AllTags.AllBlockTags.NON_DOUBLE_DOOR.tag)
-                .loot((lr, block) -> lr.add(block, lr.createDoorTable(block)))
+                .loot((lr, block) -> lr.add(block, BlockLoot.createDoorTable(block)))
                 .item()
                 .tag(ItemTags.DOORS)
                 .tag(ModTags.AllItemTags.DOORS.tag)
                 .tag(AllTags.AllItemTags.CONTRAPTION_CONTROLLED.tag)
-                .tab(ModTabs.DOORS_TAB.getKey())
+                .tab(() -> DOORS_TAB)
                 .build();
     }
 
-    public static BlockEntry<TrainSlidingDoorBlock> TrainSlidingDoor(String type, boolean folds, MapColor colour) {
-        return REGISTRATE.block("door_" + type, p -> new TrainSlidingDoorBlock(p, GLASS_SET_TYPE.get(), folds, GetSlidingDoorDefaultSound(type)))
+    public static BlockEntry<TrainSlidingDoorBlock> TrainSlidingDoor(String type, boolean folds, MaterialColor colour) {
+        return REGISTRATE.block("door_" + type, p -> new TrainSlidingDoorBlock(p, folds, GetSlidingDoorDefaultSound(type)))
                 .initialProperties(AllBlocks.FRAMED_GLASS_DOOR)
-                .properties(p -> p.sound(SoundType.METAL).mapColor(colour))
+                .properties(p -> p.sound(SoundType.METAL).color(colour))
                 .addLayer(() -> RenderType::cutout)
                 .transform(TrainUtilitiesBuilderTransformers.slidingDoor(type))
                 .properties(BlockBehaviour.Properties::noOcclusion)
                 .register();
     }
 
-    public static BlockEntry<TrainSlidingDoorBlock> TintedTrainSlidingDoor(String type, boolean folds, MapColor colour) {
-        return REGISTRATE.block("door_" + type, p -> new TrainSlidingDoorBlock(p, GLASS_SET_TYPE.get(), folds, GetSlidingDoorDefaultSound(type)))
+    public static BlockEntry<TrainSlidingDoorBlock> TintedTrainSlidingDoor(String type, boolean folds, MaterialColor colour) {
+        return REGISTRATE.block("door_" + type, p -> new TrainSlidingDoorBlock(p, folds, GetSlidingDoorDefaultSound(type)))
                 .initialProperties(AllBlocks.FRAMED_GLASS_DOOR)
-                .properties(p -> p.sound(SoundType.METAL).mapColor(colour))
+                .properties(p -> p.sound(SoundType.METAL).color(colour))
                 .addLayer(() -> RenderType::translucent)
                 .transform(TrainUtilitiesBuilderTransformers.slidingDoor(type))
                 .properties(BlockBehaviour.Properties::noOcclusion)

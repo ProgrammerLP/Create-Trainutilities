@@ -3,8 +3,6 @@ package net.adeptstack.registry;
 import com.simibubi.create.foundation.utility.Lang;
 import net.adeptstack.Main;
 import net.minecraft.core.Registry;
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.BlockItem;
@@ -71,9 +69,9 @@ public class ModTags {
         AllBlockTags(NameSpace namespace, String path, boolean optional, boolean alwaysDatagen) {
             ResourceLocation id = new ResourceLocation(namespace.id, path == null ? Lang.asId(name()) : path);
             if (optional) {
-                tag = optionalTag(BuiltInRegistries.BLOCK, id);
+                tag = optionalTag(Registry.BLOCK, id);
             } else {
-                tag = TagKey.create(Registries.BLOCK, id);
+                tag = TagKey.create(Registry.BLOCK_REGISTRY, id);
             }
             this.alwaysDatagen = alwaysDatagen;
         }
@@ -123,9 +121,9 @@ public class ModTags {
         AllItemTags(NameSpace namespace, String path, boolean optional, boolean alwaysDatagen) {
             ResourceLocation id = new ResourceLocation(namespace.id, path == null ? Lang.asId(name()) : path);
             if (optional) {
-                tag = optionalTag(BuiltInRegistries.ITEM, id);
+                tag = optionalTag(Registry.ITEM, id);
             } else {
-                tag = TagKey.create(Registries.ITEM, id);
+                tag = TagKey.create(Registry.ITEM_REGISTRY, id);
             }
             this.alwaysDatagen = alwaysDatagen;
         }

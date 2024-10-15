@@ -32,7 +32,7 @@ public class PlatformBlockPackage {
 
     public void apply(Supplier<NetworkManager.PacketContext> contextSupplier) {
         contextSupplier.get().queue(() -> {
-            BlockState state = contextSupplier.get().getPlayer().level().getBlockState(pos);
+            BlockState state = contextSupplier.get().getPlayer().level.getBlockState(pos);
             if (signblock >= 0) {
                 if (state.getBlock() instanceof PlatformBlockNL) {
                     state = state.setValue(PlatformBlockNL.SIGN_BLOCKS, signblock);
@@ -42,7 +42,7 @@ public class PlatformBlockPackage {
                     state = state.setValue(PlatformBlockCH.SIGN_BLOCKS, signblock);
                 }
             }
-            contextSupplier.get().getPlayer().level().setBlockAndUpdate(pos, state);
+            contextSupplier.get().getPlayer().level.setBlockAndUpdate(pos, state);
         });
     }
 }
