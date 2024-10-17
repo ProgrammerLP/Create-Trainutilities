@@ -38,5 +38,9 @@ public class BlockButton extends Button {
 
         RenderSystem.setShaderTexture(0, location);
         blit(poseStack, x + 2, y + 2, 16, 16, 0, 0, textureWidth, textureHeight, textureWidth, textureHeight);
+
+        if (this.isHoveredOrFocused()) {
+            this.renderToolTip(poseStack, mouseX, mouseY);
+        }
     }
 }

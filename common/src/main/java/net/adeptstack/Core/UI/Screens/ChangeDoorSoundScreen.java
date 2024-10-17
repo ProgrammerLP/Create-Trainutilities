@@ -107,9 +107,7 @@ public class ChangeDoorSoundScreen extends Screen {
                     this.selectedVariant = startValue + n;
                     this.preview = result;
                     onListen(false);
-                }, result.location(), result.textureWidth(), result.textureHeight(), (button, poseStack, mouseX, mouseY) -> {
-                        renderTooltip(poseStack, Component.translatable(ToolTipUtils.GetSoundName(startValue + n)), mouseX, mouseY);
-                    }));
+                }, result.location(), result.textureWidth(), result.textureHeight(), (button, poseStack, mouseX, mouseY) -> renderTooltip(poseStack, Component.translatable(ToolTipUtils.GetSoundName(startValue + n)), mouseX, mouseY)));
             }
         }
 
