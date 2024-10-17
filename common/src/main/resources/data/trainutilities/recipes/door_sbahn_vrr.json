@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "trainutilities:door_sbahn_cologne"
+    },
+    {
+      "item": "minecraft:lime_dye"
+    }
+  ],
+  "result": {
+    "item": "trainutilities:door_sbahn_vrr",
+    "count": 1
+  }
+}
