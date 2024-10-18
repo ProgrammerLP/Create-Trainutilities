@@ -9,6 +9,7 @@ import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.CommonComponents;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
@@ -52,8 +53,8 @@ public class PlatformBlockScreenBase extends Screen {
     private int selectedVariant = NO_VARIANT_SELECTED;
     private int typeID = 0;
 
-    public <T extends IntegerProperty> PlatformBlockNLPlacementScreen(int variant, T property, Function<Integer, TextureResult> textureGetter, Consumer<Integer> onDone) {
-        super(new TranslatableComponent("gui." + MOD_ID + ".selection_screen.blockplacementscreen_nl"));
+    public <T extends IntegerProperty> PlatformBlockScreenBase(int variant, T property, Function<Integer, PlatformBlockScreenBase.TextureResult> textureGetter, Consumer<Integer> onDone, String id, int typeId) {
+        super(new TranslatableComponent(id));
         this.maxValues = property.getPossibleValues().size();
         this.startValue = property.getAllValues().mapToInt(x -> x.value()).min().orElse(0);
         this.maxRows = (int)Math.ceil((double)maxValues / (double)MAX_BUTTONS_PER_ROW);
@@ -102,7 +103,7 @@ public class PlatformBlockScreenBase extends Screen {
                 addRenderableWidget(new BlockButton(guiLeft + MARGIN_LEFT + 1 + k * 20, guiTop + WINDOW_TOP_PART_HEIGHT + i * 20, (b) -> {
                     this.selectedVariant = startValue + n;
                     this.preview = result;
-                }, result.location(), result.textureWidth(), result.textureHeight(), (button, poseStack, mouseX, mouseY) -> renderTooltip(poseStack, Component.translatable(msg), mouseX, mouseY)));
+                }, result.location(), result.textureWidth(), result.textureHeight(), (button, poseStack, mouseX, mouseY) -> renderTooltip(poseStack, new TranslatableComponent(msg), mouseX, mouseY)));
             }
         }
 

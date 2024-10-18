@@ -3,7 +3,6 @@ package net.adeptstack.registry;
 import com.simibubi.create.AllBlocks;
 import com.simibubi.create.AllTags;
 import com.tterrag.registrate.builders.BlockBuilder;
-import com.tterrag.registrate.providers.loot.RegistrateBlockLootTables;
 import com.tterrag.registrate.util.entry.BlockEntry;
 import com.tterrag.registrate.util.nullness.NonNullUnaryOperator;
 import net.adeptstack.Blocks.Behaviour.SlidingDoor.TrainSlidingDoorMovementBehaviour;
@@ -16,7 +15,6 @@ import net.adeptstack.Blocks.LineBlock;
 import net.adeptstack.Blocks.PanelBlocks.PlatformBlocks.PlatformBlockDE;
 import net.adeptstack.Blocks.PanelBlocks.PlatformBlocks.PlatformBlockNL;
 import net.minecraft.client.renderer.RenderType;
-import net.minecraft.data.loot.BlockLoot;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
@@ -42,7 +40,6 @@ public class TrainUtilitiesBuilderTransformers {
                         .sound(SoundType.METAL))
                 .transform(pickaxeOnly())
                 .tag(ModTags.AllBlockTags.PLATFORM_BLOCKS.tag)
-                .loot((lr, block) -> lr.add(block, RegistrateBlockLootTables.createSingleItemTable(block)))
                 .item()
                 .tag(ModTags.AllItemTags.PLATFORM_BLOCKS.tag)
                 .tab(() -> TRAINUTILS_TAB)
@@ -58,7 +55,6 @@ public class TrainUtilitiesBuilderTransformers {
                         .sound(SoundType.METAL))
                 .transform(pickaxeOnly())
                 .tag(ModTags.AllBlockTags.PLATFORM_BLOCKS.tag)
-                .loot((lr, block) -> lr.add(block, RegistrateBlockLootTables.createSingleItemTable(block)))
                 .item()
                 .tag(ModTags.AllItemTags.PLATFORM_BLOCKS.tag)
                 .tab(() -> TRAINUTILS_TAB)
@@ -74,7 +70,6 @@ public class TrainUtilitiesBuilderTransformers {
                         .sound(SoundType.METAL))
                 .transform(pickaxeOnly())
                 .tag(ModTags.AllBlockTags.PLATFORM_BLOCKS.tag)
-                .loot((lr, block) -> lr.add(block, RegistrateBlockLootTables.createSingleItemTable(block)))
                 .item()
                 .tag(ModTags.AllItemTags.PLATFORM_BLOCKS.tag)
                 .tab(() -> TRAINUTILS_TAB)
@@ -90,7 +85,6 @@ public class TrainUtilitiesBuilderTransformers {
                 .addLayer(() -> RenderType::translucent)
                 .transform(pickaxeOnly())
                 .tag(ModTags.AllBlockTags.FRAMEABLE.tag)
-                .loot((lr, block) -> lr.add(block, RegistrateBlockLootTables.createSingleItemTable(block)))
                 .item()
                 .tab(() -> TRAINUTILS_TAB)
                 .build()
@@ -104,7 +98,6 @@ public class TrainUtilitiesBuilderTransformers {
                 .properties(p -> p.sound(SoundType.STONE).color(color))
                 .transform(pickaxeOnly())
                 .tag(ModTags.AllBlockTags.FRAMEABLE.tag)
-                .loot((lr, block) -> lr.add(block, RegistrateBlockLootTables.createSingleItemTable(block)))
                 .item()
                 .tab(() -> TRAINUTILS_TAB)
                 .build()
@@ -118,7 +111,6 @@ public class TrainUtilitiesBuilderTransformers {
                 .properties(p -> p.color(MaterialColor.WOOL)
                         .sound(SoundType.METAL))
                 .transform(pickaxeOnly())
-                .loot((lr, block) -> lr.add(block, RegistrateBlockLootTables.createSingleItemTable(block)))
                 .item()
                 .tab(() -> TRAINUTILS_TAB)
                 .build()
@@ -133,7 +125,6 @@ public class TrainUtilitiesBuilderTransformers {
                 .transform(pickaxeOnly())
                 .tag(ModTags.AllBlockTags.FRAMEABLE.tag)
                 .tag(ModTags.AllBlockTags.LINE_BLOCKS.tag)
-                .loot((lr, block) -> lr.add(block, RegistrateBlockLootTables.createSingleItemTable(block)))
                 .item()
                 .tag(ModTags.AllItemTags.LINE_BLOCKS.tag)
                 .tab(() -> TRAINUTILS_TAB)
@@ -150,7 +141,6 @@ public class TrainUtilitiesBuilderTransformers {
                 .tag(BlockTags.DOORS)
                 .tag(ModTags.AllBlockTags.DOORS.tag)
                 .tag(AllTags.AllBlockTags.NON_DOUBLE_DOOR.tag)
-                .loot((lr, block) -> lr.add(block, BlockLoot.createDoorTable(block)))
                 .item()
                 .tag(ItemTags.DOORS)
                 .tag(ModTags.AllItemTags.DOORS.tag)
@@ -177,7 +167,6 @@ public class TrainUtilitiesBuilderTransformers {
                 .tag(BlockTags.DOORS)
                 .tag(ModTags.AllBlockTags.DOORS.tag)
                 .tag(AllTags.AllBlockTags.NON_DOUBLE_DOOR.tag)
-                .loot((lr, block) -> lr.add(block, BlockLoot.createDoorTable(block)))
                 .item()
                 .tag(ItemTags.DOORS)
                 .tag(ModTags.AllItemTags.DOORS.tag)

@@ -17,8 +17,8 @@ public class BlockButton extends Button {
     private final int textureWidth;
     private final int textureHeight;
 
-    public BlockButton(int x, int y, Consumer<BlockButton> onPress, ResourceLocation textureLocation, int textureWidth, int textureHeight) {
-        super(x, y, 20, 20, new TextComponent(""), (b) -> onPress.accept((BlockButton)b), NO_TOOLTIP);
+    public BlockButton(int x, int y, Consumer<BlockButton> onPress, ResourceLocation textureLocation, int textureWidth, int textureHeight, OnTooltip toolTip) {
+        super(x, y, 20, 20, new TextComponent(""), (b) -> onPress.accept((BlockButton)b), toolTip);
         this.location = textureLocation;
         this.textureWidth = textureWidth;
         this.textureHeight = textureHeight;

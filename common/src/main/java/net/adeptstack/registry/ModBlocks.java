@@ -71,7 +71,6 @@ public class ModBlocks {
 
     public static final BlockEntry<LineBlock> CIS_AMENDORF_BLOCK_2 =
             TrainUtilitiesBuilderTransformers.LineBlock("cis_amendorf_block_2", MaterialColor.COLOR_GREEN);
-            TrainUtilitiesBuilderTransformers.LineBlock("cis_amendorf_block_2", MaterialColor.COLOR_GREEN);
 
     //noise isolation walls
     public static final BlockEntry<IsoWallBlock> ISO_WALL_BLOCK =

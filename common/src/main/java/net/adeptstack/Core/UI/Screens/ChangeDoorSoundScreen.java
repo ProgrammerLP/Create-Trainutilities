@@ -53,8 +53,8 @@ public class ChangeDoorSoundScreen extends Screen {
     // Values
     private int selectedVariant = NO_VARIANT_SELECTED;
 
-    public <T extends IntegerProperty> PlatformBlockDEPlacementScreen(int variant, T property, Function<Integer, PlatformBlockDEPlacementScreen.TextureResult> textureGetter, Consumer<Integer> onDone) {
-        super(new TranslatableComponent("gui." + MOD_ID + ".selection_screen.blockplacementscreen_de"));
+    public <T extends IntegerProperty> ChangeDoorSoundScreen(int variant, T property, Function<Integer, ChangeDoorSoundScreen.TextureResult> textureGetter, Consumer<Integer> onDone, String id) {
+        super(new TranslatableComponent(id));
         this.maxValues = property.getPossibleValues().size();
         this.startValue = property.getAllValues().mapToInt(x -> x.value()).min().orElse(0);
         this.maxRows = (int)Math.ceil((double)maxValues / (double)MAX_BUTTONS_PER_ROW);
@@ -108,7 +108,7 @@ public class ChangeDoorSoundScreen extends Screen {
                     this.selectedVariant = startValue + n;
                     this.preview = result;
                     onListen(false);
-                }, result.location(), result.textureWidth(), result.textureHeight(), (button, poseStack, mouseX, mouseY) -> renderTooltip(poseStack, Component.translatable(ToolTipUtils.GetSoundName(startValue + n)), mouseX, mouseY)));
+                }, result.location(), result.textureWidth(), result.textureHeight(), (button, poseStack, mouseX, mouseY) -> renderTooltip(poseStack, new TranslatableComponent(ToolTipUtils.GetSoundName(startValue + n)), mouseX, mouseY)));
             }
         }
 
