@@ -19,7 +19,10 @@
       "net.adeptstack.fabric.MainFabric"
     ],
     "client": [
-      "net.adeptstack.fabric.client.ExampleModFabricClient"
+      "net.adeptstack.fabric.client.MainFabricClient"
+    ],
+    "fabric-datagen": [
+      "net.adeptstack.Core.Data.CTUFabricData"
     ]
   },
   "mixins": [

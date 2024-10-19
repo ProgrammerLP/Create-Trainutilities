@@ -3,9 +3,11 @@ package net.adeptstack.Core.UI.Controls;
 import com.mojang.blaze3d.systems.RenderSystem;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.components.Button;
+import net.minecraft.client.gui.components.Tooltip;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 
+import java.awt.*;
 import java.util.function.Consumer;
 
 public class BlockButton extends Button {
@@ -14,11 +16,12 @@ public class BlockButton extends Button {
     private final int textureWidth;
     private final int textureHeight;
 
-    public BlockButton(int x, int y, Consumer<BlockButton> onPress, ResourceLocation textureLocation, int textureWidth, int textureHeight) {
+    public BlockButton(int x, int y, Consumer<BlockButton> onPress, ResourceLocation textureLocation, int textureWidth, int textureHeight, String tooltipMessage) {
         super(x, y, 20, 20, Component.empty(), (b) -> onPress.accept((BlockButton)b), DEFAULT_NARRATION);
         this.location = textureLocation;
         this.textureWidth = textureWidth;
         this.textureHeight = textureHeight;
+        setTooltip(Tooltip.create(Component.translatable(tooltipMessage)));
     }
 
     @Override
