@@ -6,9 +6,11 @@ import com.simibubi.create.foundation.item.KineticStats;
 import com.simibubi.create.foundation.item.TooltipHelper;
 import com.simibubi.create.foundation.item.TooltipModifier;
 import com.tterrag.registrate.providers.ProviderType;
+import dev.architectury.platform.Platform;
 import net.adeptstack.Blocks.Doors.SlidingDoor.TrainSlidingDoorBlock;
 import net.adeptstack.Core.Network.ModNetwork;
 import net.adeptstack.registry.*;
+import net.fabricmc.api.EnvType;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.DataProvider;
 import net.minecraft.resources.ResourceLocation;
@@ -28,7 +30,9 @@ public final class Main {
         ModTabs.CREATIVE_MODE_TABS.register();
         ModSounds.SOUND_EVENTS.register();
         ModNetwork.init();
-        ModPartialModels.init();
+        if (Platform.getEnv() == EnvType.CLIENT) {
+            ModPartialModels.init();
+        }
         ModTags.register();
     }
 
