@@ -8,6 +8,8 @@ import com.tterrag.registrate.builders.BlockBuilder;
 import com.tterrag.registrate.util.entry.BlockEntry;
 import com.tterrag.registrate.util.nullness.NonNullUnaryOperator;
 import io.github.fabricators_of_create.porting_lib.models.generators.ModelFile;
+import net.adeptstack.Blocks.Behaviour.DoorBlock.DoorBlockMovementBehaviour;
+import net.adeptstack.Blocks.Behaviour.DoorBlock.DoorBlockMovingInteraction;
 import net.adeptstack.Blocks.Behaviour.SlidingDoor.TrainSlidingDoorMovementBehaviour;
 import net.adeptstack.Blocks.Behaviour.SlidingDoor.TrainSlidingDoorMovingInteraction;
 import net.adeptstack.Blocks.PanelBlocks.IsoWallBlock;
@@ -148,7 +150,8 @@ public class TrainUtilitiesBuilderTransformers {
                 .properties(p -> p.strength(3.0F, 6.0F))
                 .addLayer(() -> RenderType::cutout)
                 .transform(pickaxeOnly())
-                .onRegister(interactionBehaviour(new TrainSlidingDoorMovingInteraction()))
+                .onRegister(interactionBehaviour(new DoorBlockMovingInteraction()))
+                .onRegister(movementBehaviour(new DoorBlockMovementBehaviour()))
                 .tag(BlockTags.DOORS)
                 .tag(ModTags.AllBlockTags.DOORS.tag)
                 .tag(AllTags.AllBlockTags.NON_DOUBLE_DOOR.tag)
