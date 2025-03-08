@@ -2,6 +2,7 @@ package net.adeptstack.registry;
 
 import com.simibubi.create.AllBlocks;
 import com.simibubi.create.AllTags;
+import com.simibubi.create.content.decoration.palettes.GlassPaneBlock;
 import com.simibubi.create.content.decoration.slidingDoor.SlidingDoorBlock;
 import com.simibubi.create.foundation.data.AssetLookup;
 import com.tterrag.registrate.builders.BlockBuilder;
@@ -90,6 +91,21 @@ public class TrainUtilitiesBuilderTransformers {
         return REGISTRATE
                 .block(id, GlassBlock::new)
                 .initialProperties(() -> Blocks.GLASS)
+                .properties(p -> p.sound(SoundType.GLASS).mapColor(color))
+                .addLayer(() -> RenderType::translucent)
+                .transform(pickaxeOnly())
+                .tag(ModTags.AllBlockTags.FRAMEABLE.tag)
+                .loot((lr, block) -> lr.add(block, lr.createSingleItemTable(block)))
+                .item()
+                .tab(TRAINUTILS_TAB.getKey())
+                .build()
+                .register();
+    }
+
+    public static BlockEntry<GlassPaneBlock> GlassPaneBlock(String id, MapColor color) {
+        return REGISTRATE
+                .block(id, GlassPaneBlock::new)
+                .initialProperties(() -> Blocks.GLASS_PANE)
                 .properties(p -> p.sound(SoundType.GLASS).mapColor(color))
                 .addLayer(() -> RenderType::translucent)
                 .transform(pickaxeOnly())
