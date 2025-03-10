@@ -2,9 +2,12 @@ package net.adeptstack.registry;
 
 import com.simibubi.create.AllBlocks;
 import com.simibubi.create.AllTags;
+import com.simibubi.create.content.decoration.palettes.GlassPaneBlock;
 import com.tterrag.registrate.builders.BlockBuilder;
 import com.tterrag.registrate.util.entry.BlockEntry;
 import com.tterrag.registrate.util.nullness.NonNullUnaryOperator;
+import net.adeptstack.Blocks.Behaviour.DoorBlock.DoorBlockMovementBehaviour;
+import net.adeptstack.Blocks.Behaviour.DoorBlock.DoorBlockMovingInteraction;
 import net.adeptstack.Blocks.Behaviour.SlidingDoor.TrainSlidingDoorMovementBehaviour;
 import net.adeptstack.Blocks.Behaviour.SlidingDoor.TrainSlidingDoorMovingInteraction;
 import net.adeptstack.Blocks.PanelBlocks.IsoWallBlock;
@@ -91,6 +94,21 @@ public class TrainUtilitiesBuilderTransformers {
                 .register();
     }
 
+    public static BlockEntry<GlassPaneBlock> GlassPaneBlock(String id, MaterialColor color) {
+        return REGISTRATE
+                .block(id, GlassPaneBlock::new)
+                .initialProperties(() -> Blocks.GLASS_PANE)
+                .properties(p -> p.sound(SoundType.GLASS).color(color))
+                .addLayer(() -> RenderType::translucent)
+                .transform(pickaxeOnly())
+                .tag(ModTags.AllBlockTags.FRAMEABLE.tag)
+                .loot((lr, block) -> lr.add(block, lr.createSingleItemTable(block)))
+                .item()
+                .tab(() -> TRAINUTILS_TAB)
+                .build()
+                .register();
+    }
+
     public static BlockEntry<Block> DefaultBlock(String id, MaterialColor color) {
         return REGISTRATE
                 .block(id, Block::new)
@@ -137,7 +155,8 @@ public class TrainUtilitiesBuilderTransformers {
                 .properties(p -> p.strength(3.0F, 6.0F))
                 .addLayer(() -> RenderType::cutout)
                 .transform(pickaxeOnly())
-                .onRegister(interactionBehaviour(new TrainSlidingDoorMovingInteraction()))
+                .onRegister(interactionBehaviour(new DoorBlockMovingInteraction()))
+                .onRegister(movementBehaviour(new DoorBlockMovementBehaviour()))
                 .tag(BlockTags.DOORS)
                 .tag(ModTags.AllBlockTags.DOORS.tag)
                 .tag(AllTags.AllBlockTags.NON_DOUBLE_DOOR.tag)
