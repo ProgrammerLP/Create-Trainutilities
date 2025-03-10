@@ -29,9 +29,9 @@ public class DoorBlockMovingInteraction extends SimpleBlockMovingInteraction {
         BlockPos otherPos = currentState.getValue(DoorBlock.HALF) == DoubleBlockHalf.LOWER ? pos.above() : pos.below();
         StructureTemplate.StructureBlockInfo info = contraption.getBlocks()
                 .get(otherPos);
-        if (info.state().hasProperty(DoorBlock.OPEN)) {
-            BlockState newState = info.state().cycle(DoorBlock.OPEN);
-            setContraptionBlockData(contraption.entity, otherPos, new StructureTemplate.StructureBlockInfo(info.pos(), newState, info.nbt()));
+        if (info.state.hasProperty(DoorBlock.OPEN)) {
+            BlockState newState = info.state.cycle(DoorBlock.OPEN);
+            setContraptionBlockData(contraption.entity, otherPos, new StructureTemplate.StructureBlockInfo(info.pos, newState, info.nbt));
         }
 
         currentState = currentState.cycle(DoorBlock.OPEN);
@@ -45,12 +45,12 @@ public class DoorBlockMovingInteraction extends SimpleBlockMovingInteraction {
                         pos.relative(hinge == DoorHingeSide.LEFT ? facing.getClockWise() : facing.getCounterClockWise());
                 StructureTemplate.StructureBlockInfo doubleInfo = contraption.getBlocks()
                         .get(doublePos);
-                if (doubleInfo != null && TrainSlidingDoorBlock.isDoubleDoor(currentState, hinge, facing, doubleInfo.state())) {
+                if (doubleInfo != null && TrainSlidingDoorBlock.isDoubleDoor(currentState, hinge, facing, doubleInfo.state)) {
                     handlePlayerInteraction(null, InteractionHand.MAIN_HAND, doublePos, contraption.entity);
                 }
             }
             else {
-                float pitch = player.level().random.nextFloat() * 0.1F + 0.9F;
+                float pitch = player.level.random.nextFloat() * 0.1F + 0.9F;
                 if (sound != null)
 
                     playSound(player, sound, pitch);

@@ -35,7 +35,7 @@ public class ModBlocks {
             TrainUtilitiesBuilderTransformers.GlassBlock("frameless_glass", MaterialColor.NONE);
 
     public static  final  BlockEntry<GlassPaneBlock> FRAMELESS_GLASS_PANE =
-            TrainUtilitiesBuilderTransformers.GlassPaneBlock("frameless_glass_pane", MapColor.NONE);
+            TrainUtilitiesBuilderTransformers.GlassPaneBlock("frameless_glass_pane", MaterialColor.NONE);
 
     //ic(e) line blocks
     public static final BlockEntry<LineBlock> TOP_REDLINE_BLOCK =

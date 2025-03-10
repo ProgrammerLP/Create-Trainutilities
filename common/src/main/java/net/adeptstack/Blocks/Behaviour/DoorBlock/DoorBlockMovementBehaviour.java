@@ -43,7 +43,7 @@ public class DoorBlockMovementBehaviour implements MovementBehaviour {
                 .get(context.localPos);
         if (structureBlockInfo == null)
             return;
-        boolean open = structureBlockInfo.state().getValue(DoorBlock.OPEN);
+        boolean open = structureBlockInfo.state.getValue(DoorBlock.OPEN);
 
         if (!context.world.isClientSide())
             tickOpen(context, open);
@@ -62,22 +62,22 @@ public class DoorBlockMovementBehaviour implements MovementBehaviour {
 
         StructureTemplate.StructureBlockInfo info = contraption.getBlocks()
                 .get(pos);
-        if (info == null || !info.state().hasProperty(DoorBlock.OPEN))
+        if (info == null || !info.state.hasProperty(DoorBlock.OPEN))
             return;
 
         toggleDoor(pos, contraption, info);
     }
 
     private void toggleDoor(BlockPos pos, Contraption contraption, StructureTemplate.StructureBlockInfo info) {
-        BlockState newState = info.state().cycle(DoorBlock.OPEN);
-        contraption.entity.setBlock(pos, new StructureTemplate.StructureBlockInfo(info.pos(), newState, info.nbt()));
+        BlockState newState = info.state.cycle(DoorBlock.OPEN);
+        contraption.entity.setBlock(pos, new StructureTemplate.StructureBlockInfo(info.pos, newState, info.nbt));
 
         BlockPos otherPos = newState.getValue(DoorBlock.HALF) == DoubleBlockHalf.LOWER ? pos.above() : pos.below();
         info = contraption.getBlocks()
                 .get(otherPos);
-        if (info != null && info.state().hasProperty(DoorBlock.OPEN)) {
-            newState = info.state().cycle(DoorBlock.OPEN);
-            contraption.entity.setBlock(otherPos, new StructureTemplate.StructureBlockInfo(info.pos(), newState, info.nbt()));
+        if (info != null && info.state.hasProperty(DoorBlock.OPEN)) {
+            newState = info.state.cycle(DoorBlock.OPEN);
+            contraption.entity.setBlock(otherPos, new StructureTemplate.StructureBlockInfo(info.pos, newState, info.nbt));
             contraption.invalidateColliders();
 
             boolean open = newState.getValue(DoorBlock.OPEN);
