@@ -97,6 +97,21 @@ public class TrainUtilitiesBuilderTransformers {
                 .register();
     }
 
+    public static BlockEntry<GlassPaneBlock> GlassPaneBlock(String id, MapColor color) {
+        return REGISTRATE
+                .block(id, GlassPaneBlock::new)
+                .initialProperties(() -> Blocks.GLASS_PANE)
+                .properties(p -> p.sound(SoundType.GLASS).mapColor(color))
+                .addLayer(() -> RenderType::translucent)
+                .transform(pickaxeOnly())
+                .tag(ModTags.AllBlockTags.FRAMEABLE.tag)
+                .loot((lr, block) -> lr.add(block, lr.createSingleItemTable(block)))
+                .item()
+                .tab(TRAINUTILS_TAB.getKey())
+                .build()
+                .register();
+    }
+
     public static BlockEntry<Block> DefaultBlock(String id, MaterialColor color) {
         return REGISTRATE
                 .block(id, Block::new)
@@ -146,7 +161,8 @@ public class TrainUtilitiesBuilderTransformers {
                 .properties(p -> p.strength(3.0F, 6.0F))
                 .addLayer(() -> RenderType::cutout)
                 .transform(pickaxeOnly())
-                .onRegister(interactionBehaviour(new TrainSlidingDoorMovingInteraction()))
+                .onRegister(interactionBehaviour(new DoorBlockMovingInteraction()))
+                .onRegister(movementBehaviour(new DoorBlockMovementBehaviour()))
                 .tag(BlockTags.DOORS)
                 .tag(ModTags.AllBlockTags.DOORS.tag)
                 .tag(AllTags.AllBlockTags.NON_DOUBLE_DOOR.tag)
