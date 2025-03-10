@@ -17,6 +17,8 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.state.BlockState;
 
+import java.awt.desktop.SystemSleepEvent;
+
 import static net.adeptstack.Main.MOD_ID;
 
 public class ClientWrapper {

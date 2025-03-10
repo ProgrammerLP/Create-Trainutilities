@@ -82,8 +82,10 @@ public class ChangeDoorSoundPackage {
                     }
 
                     state2 = state2.setValue(TrainSlidingDoorBlock.DOOR_SOUND, door_sound);
-                    state3 = state3.setValue(TrainSlidingDoorBlock.DOOR_SOUND, door_sound);
-                    state4 = state4.setValue(TrainSlidingDoorBlock.DOOR_SOUND, door_sound);
+                    if (pos3 != null && pos4 != null && state3 != null && state4 != null) {
+                        state3 = state3.setValue(TrainSlidingDoorBlock.DOOR_SOUND, door_sound);
+                        state4 = state4.setValue(TrainSlidingDoorBlock.DOOR_SOUND, door_sound);
+                    }
                 }
             }
             contextSupplier.get().getPlayer().level().setBlockAndUpdate(pos, state);
@@ -91,7 +93,7 @@ public class ChangeDoorSoundPackage {
                 contextSupplier.get().getPlayer().level().setBlockAndUpdate(pos2, state2);
             }
 
-            if (pos3 != null & pos4 != null && state3 != null && state4 != null) {
+            if (pos3 != null && pos4 != null && state3 != null && state4 != null) {
                 contextSupplier.get().getPlayer().level().setBlockAndUpdate(pos3, state3);
                 contextSupplier.get().getPlayer().level().setBlockAndUpdate(pos4, state4);
             }
