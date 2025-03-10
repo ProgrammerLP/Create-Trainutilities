@@ -102,7 +102,6 @@ public class TrainUtilitiesBuilderTransformers {
                 .addLayer(() -> RenderType::translucent)
                 .transform(pickaxeOnly())
                 .tag(ModTags.AllBlockTags.FRAMEABLE.tag)
-                .loot((lr, block) -> lr.add(block, lr.createSingleItemTable(block)))
                 .item()
                 .tab(() -> TRAINUTILS_TAB)
                 .build()
