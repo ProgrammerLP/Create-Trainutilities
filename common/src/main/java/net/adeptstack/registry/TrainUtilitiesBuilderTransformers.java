@@ -13,6 +13,7 @@ import net.adeptstack.Blocks.Behaviour.DoorBlock.DoorBlockMovementBehaviour;
 import net.adeptstack.Blocks.Behaviour.DoorBlock.DoorBlockMovingInteraction;
 import net.adeptstack.Blocks.Behaviour.SlidingDoor.TrainSlidingDoorMovementBehaviour;
 import net.adeptstack.Blocks.Behaviour.SlidingDoor.TrainSlidingDoorMovingInteraction;
+import net.adeptstack.Blocks.Lights.InteriorLightBlockBase;
 import net.adeptstack.Blocks.PanelBlocks.IsoWallBlock;
 import net.adeptstack.Blocks.PanelBlocks.PlatformBlocks.PlatformBlockCH;
 import net.adeptstack.Core.Utils.TrainSlidingDoorProperties;
@@ -82,6 +83,23 @@ public class TrainUtilitiesBuilderTransformers {
                 .loot((lr, block) -> lr.add(block, lr.createSingleItemTable(block)))
                 .item()
                 .tag(ModTags.AllItemTags.PLATFORM_BLOCKS.tag)
+                .tab(TRAINUTILS_TAB.getKey())
+                .build()
+                .register();
+    }
+
+    public static BlockEntry<InteriorLightBlockBase> InteriorLightBlock(String id, MapColor color) {
+        return REGISTRATE
+                .block(id, InteriorLightBlockBase::new)
+                .initialProperties(() -> Blocks.IRON_BLOCK)
+                .properties(p -> p.mapColor(color)
+                        .sound(SoundType.AMETHYST_CLUSTER)
+                        .lightLevel(state -> state.getValue(InteriorLightBlockBase.LIT) ? 15 : 0))
+                .transform(pickaxeOnly())
+                //.tag(ModTags.AllBlockTags.PLATFORM_BLOCKS.tag)
+                .loot((lr, block) -> lr.add(block, lr.createSingleItemTable(block)))
+                .item()
+                //.tag(ModTags.AllItemTags.PLATFORM_BLOCKS.tag)
                 .tab(TRAINUTILS_TAB.getKey())
                 .build()
                 .register();
