@@ -1,20 +1,8 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "###",
-    "#I#",
-    "###"
-  ],
-  "key": {
-    "#": {
-      "item": "minecraft:white_dye"
-    },
-    "I": {
-      "item": "minecraft:iron_block"
-    }
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:iron_block"
   },
-  "result": {
-    "item": "trainutilities:nl_platform_block",
-    "count": 8
-  }
+  "result": "trainutilities:nl_platform_block",
+  "count": 8
 }

@@ -1,20 +1,8 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "W#W",
-    "W#W",
-    "W#W"
-  ],
-  "key": {
-    "#": {
-      "item": "minecraft:white_wool"
-    },
-    "W": {
-      "item": "minecraft:iron_block"
-    }
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:iron_block"
   },
-  "result": {
-    "item": "trainutilities:iso_wall_block",
-    "count": 12
-  }
+  "result": "trainutilities:iso_wall_block",
+  "count": 2
 }
