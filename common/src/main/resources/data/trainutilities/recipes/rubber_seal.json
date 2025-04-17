@@ -1,0 +1,12 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    { "item": "minecraft:slime_ball" },
+    { "item": "minecraft:coal" },
+    { "item": "minecraft:leather" }
+  ],
+  "results": [
+    { "item": "trainutilities:rubber_seal", "count": 2 }
+  ],
+  "heatRequirement": "heated"
+}

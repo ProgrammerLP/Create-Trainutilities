@@ -1,0 +1,57 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "tag": "minecraft:wooden_doors"
+  },
+  "transitionalItem": {
+    "item": "trainutilities:incomplete_prototype_door_db"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        { "item": "trainutilities:incomplete_prototype_door_db" },
+        { "item": "trainutilities:rubber_seal" }
+      ],
+      "results": [
+        { "item": "trainutilities:incomplete_prototype_door_db" }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        { "item": "trainutilities:incomplete_prototype_door_db" },
+        { "item": "trainutilities:processing_unit" }
+      ],
+      "results": [
+        { "item": "trainutilities:incomplete_prototype_door_db" }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        { "item": "trainutilities:incomplete_prototype_door_db" },
+        { "item": "create:iron_sheet" }
+      ],
+      "results": [
+        { "item": "trainutilities:incomplete_prototype_door_db" }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        { "item": "trainutilities:incomplete_prototype_door_db" }
+      ],
+      "results": [
+        { "item": "trainutilities:incomplete_prototype_door_db" }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "trainutilities:prototype_door_db",
+      "chance": 1.0
+    }
+  ],
+  "loops": 1
+}

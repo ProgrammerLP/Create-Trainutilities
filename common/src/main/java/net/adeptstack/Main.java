@@ -26,8 +26,9 @@ public final class Main {
     public static void init() {
         // Write common init code here.
         ModBlockEntities.register();
-        ModBlocks.register();
         ModTabs.CREATIVE_MODE_TABS.register();
+        ModBlocks.register();
+        ModItems.register();
         ModSounds.SOUND_EVENTS.register();
         ModNetwork.init();
         if (Platform.getEnv() == EnvType.CLIENT) {
@@ -35,11 +36,6 @@ public final class Main {
         }
         ModTags.register();
     }
-
-//    public static void gatherData(DataGenerator.PackGenerator gen) {
-//        REGISTRATE.addDataGenerator(ProviderType.BLOCK_TAGS, CTUTagGen::generateBlockTags);
-//        REGISTRATE.addDataGenerator(ProviderType.ITEM_TAGS, CTUTagGen::generateItemTags);
-//    }
 
     public static ResourceLocation asResource(String path) {
         return new ResourceLocation(MOD_ID, path);

@@ -1,20 +1,8 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "###",
-    "#I#",
-    "###"
-  ],
-  "key": {
-    "#": {
-      "item": "minecraft:white_dye"
-    },
-    "I": {
-      "item": "create:framed_glass_door"
-    }
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "trainutilities:prototype_door_sf"
   },
-  "result": {
-    "item": "trainutilities:door_sbahn_cologne",
-    "count": 8
-  }
+  "result": "trainutilities:door_sbahn_cologne",
+  "count": 1
 }

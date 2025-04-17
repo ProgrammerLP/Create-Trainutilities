@@ -1,0 +1,48 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create:copper_sheet"
+  },
+  "transitionalItem": {
+    "item": "trainutilities:incomplete_sound_unit"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        { "item": "trainutilities:incomplete_sound_unit" },
+        { "item": "minecraft:redstone" }
+      ],
+      "results": [
+        { "item": "trainutilities:incomplete_sound_unit" }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        { "item": "trainutilities:incomplete_sound_unit" },
+        { "item": "create:electron_tube" }
+      ],
+      "results": [
+        { "item": "trainutilities:incomplete_sound_unit" }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        { "item": "trainutilities:incomplete_sound_unit" },
+        { "item": "trainutilities:speaker_membrane" }
+      ],
+      "results": [
+        { "item": "trainutilities:incomplete_sound_unit" }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "trainutilities:sound_unit",
+      "chance": 1.0
+    }
+  ],
+  "loops": 1
+}

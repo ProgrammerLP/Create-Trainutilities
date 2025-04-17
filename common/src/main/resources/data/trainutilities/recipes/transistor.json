@@ -1,0 +1,10 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    { "item": "minecraft:comparator" },
+    { "item": "create:electron_tube" }
+  ],
+  "results": [
+    { "item": "trainutilities:transistor" }
+  ]
+}
