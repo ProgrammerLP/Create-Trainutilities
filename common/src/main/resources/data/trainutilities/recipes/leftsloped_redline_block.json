@@ -1,19 +1,8 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    " #",
-    "#R"
-  ],
-  "key": {
-    "#": {
-      "item": "minecraft:white_concrete"
-    },
-    "R": {
-      "item": "minecraft:red_dye"
-    }
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:white_concrete"
   },
-  "result": {
-    "item": "trainutilities:leftsloped_redline_block",
-    "count": 3
-  }
+  "result": "trainutilities:leftsloped_redline_block",
+  "count": 1
 }

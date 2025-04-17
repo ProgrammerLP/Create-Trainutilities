@@ -1,20 +1,8 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "###",
-    "#W#",
-    "###"
-  ],
-  "key": {
-    "#": {
-      "item": "minecraft:blue_dye"
-    },
-    "W": {
-      "item": "minecraft:white_concrete"
-    }
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:blue_concrete"
   },
-  "result": {
-    "item": "trainutilities:pkp_block_blue",
-    "count": 1
-  }
+  "result": "trainutilities:pkp_block_blue",
+  "count": 1
 }

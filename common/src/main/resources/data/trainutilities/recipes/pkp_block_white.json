@@ -1,16 +1,8 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "WW",
-    "WW"
-  ],
-  "key": {
-    "W": {
-      "item": "minecraft:white_concrete"
-    }
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:white_concrete"
   },
-  "result": {
-    "item": "trainutilities:pkp_block_white",
-    "count": 1
-  }
+  "result": "trainutilities:pkp_block_white",
+  "count": 1
 }

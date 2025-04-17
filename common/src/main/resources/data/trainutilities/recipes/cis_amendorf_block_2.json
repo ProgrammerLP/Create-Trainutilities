@@ -1,20 +1,8 @@
 {
-	"type": "minecraft:crafting_shaped",
-	"pattern": [
-		"###",
-		"WWW",
-		"WWW"
-	],
-	"key": {
-		"#": {
-			"item": "minecraft:yellow_dye"
-		},
-		"W": {
-			"item": "minecraft:green_concrete"
-		}
+	"type": "minecraft:stonecutting",
+	"ingredient": {
+		"item": "minecraft:green_concrete"
 	},
-	"result": {
-		"item": "trainutilities:cis_amendorf_block_2",
-		"count": 6
-	}
+	"result": "trainutilities:cis_amendorf_block_2",
+	"count": 1
 }

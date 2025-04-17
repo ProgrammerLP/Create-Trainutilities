@@ -1,19 +1,8 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "#W",
-    "WW"
-  ],
-  "key": {
-    "#": {
-      "item": "minecraft:red_dye"
-    },
-    "W": {
-      "item": "minecraft:white_concrete"
-    }
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:white_concrete"
   },
-  "result": {
-    "item": "trainutilities:top_redline_block",
-    "count": 3
-  }
+  "result": "trainutilities:top_redline_block",
+  "count": 1
 }
