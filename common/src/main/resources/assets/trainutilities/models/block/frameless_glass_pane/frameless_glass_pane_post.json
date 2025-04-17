@@ -3,5 +3,6 @@
   "textures": {
     "edge": "trainutilities:block/frameless_glass_pane_top",
     "pane": "trainutilities:block/frameless_glass"
-  }
+  },
+  "render_type": "cutout"
 }

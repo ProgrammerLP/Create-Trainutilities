@@ -91,8 +91,8 @@ public class TrainUtilitiesBuilderTransformers {
         return REGISTRATE
                 .block(id, GlassBlock::new)
                 .initialProperties(() -> Blocks.GLASS)
-                .properties(p -> p.sound(SoundType.GLASS).mapColor(color))
-                .addLayer(() -> RenderType::translucent)
+                .properties(p -> p.sound(SoundType.GLASS).mapColor(color).noOcclusion().isViewBlocking((s, w, b) -> false))
+                ///.addLayer(() -> RenderType::translucent)
                 .transform(pickaxeOnly())
                 .tag(ModTags.AllBlockTags.FRAMEABLE.tag)
                 .loot((lr, block) -> lr.add(block, lr.createSingleItemTable(block)))
