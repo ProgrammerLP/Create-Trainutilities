@@ -3,6 +3,6 @@
   "ingredient": {
     "item": "trainutilities:frameless_glass"
   },
-  "result": "trainutilities:frameless_glass_pane",
-  "count": 8
+  "result": "create:framed_glass",
+  "count": 1
 }

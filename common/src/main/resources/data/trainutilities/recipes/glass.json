@@ -1,20 +1,8 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "###",
-    "#T#",
-    "###"
-  ],
-  "key": {
-    "#": {
-      "item": "minecraft:iron_nugget"
-    },
-    "T": {
-      "item": "trainutilities:frameless_glass"
-    }
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "trainutilities:frameless_glass"
   },
-  "result": {
-    "item": "minecraft:glass",
-    "count": 1
-  }
+  "result": "minecraft:glass",
+  "count": 1
 }
