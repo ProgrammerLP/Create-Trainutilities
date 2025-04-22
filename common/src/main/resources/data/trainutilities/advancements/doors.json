@@ -21,7 +21,8 @@
       "conditions": {
         "items": [
           {
-            "tag": "trainutilities:doors"
+            "tag": "trainutilities:db_doors",
+            "tag": "trainutilities:sf_doors"
           }
         ]
       }
