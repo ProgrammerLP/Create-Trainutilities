@@ -213,8 +213,8 @@
   "advancement.trainutilities.doors": "Is this the REALITY?",
   "advancement.trainutilities.doors.description": "Receive one of the new Create: TrainUtilities doors",
 
-  "itemGroup.trainutilities.trainutils_tab": "TrainUtilities",
-  "itemGroup.trainutilities.doors_tab": "TrainUtilities - Doors",
+  "itemGroup.trainutilities.trainutils_tab": "Create: TrainUtilities",
+  "itemGroup.trainutilities.doors_tab": "Create: TrainUtilities - Doors",
 
   "gui.trainutilities.selection_screen.blockplacementscreen_de": "German Platform Blocks",
   "gui.trainutilities.selection_screen.blockplacementscreen_nl": "Dutch Platform Blocks",

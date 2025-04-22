@@ -219,7 +219,7 @@
   "gui.trainutilities.selection_screen.blockplacementscreen_de": "Deutsche Gleisblöcke",
   "gui.trainutilities.selection_screen.blockplacementscreen_nl": "Niederländische Gleisblöcke",
   "gui.trainutilities.selection_screen.blockplacementscreen_ch": "Schweizer Gleisblöcke",
-  "gui.trainutilities.selection_screen.changeDoorSoundScreen": "Tür Sounds ändern",
+  "gui.trainutilities.selection_screen.changeDoorSoundScreen": "Ändern des Tür Sounds",
 
   "gui.trainutilities.tooltip.default_sound": "Standard Tür Sound",
   "gui.trainutilities.tooltip.ice_sound": "DB ICE Tür Sound",
