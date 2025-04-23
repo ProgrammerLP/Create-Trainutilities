@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "trainutilities:processing_unit"
+    },
+    "title": {
+      "translate": "advancement.trainutilities.door_ingrediants"
+    },
+    "description": {
+      "color": "#DBA213",
+      "translate": "advancement.trainutilities.door_ingrediants.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "create:conductor",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "trainutilities:processing_unit",
+            "item": "trainutilities:sound_unit",
+            "item": "trainutilities:transistor",
+            "item": "trainutilities:rubber_seal"
+          }
+        ]
+      }
+    }
+  }
+}

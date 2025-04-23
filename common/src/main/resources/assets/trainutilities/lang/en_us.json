@@ -212,6 +212,10 @@
   "advancement.trainutilities.platform_block.description": "Receive a Platform Block",
   "advancement.trainutilities.doors": "Is this the REALITY?",
   "advancement.trainutilities.doors.description": "Receive one of the new Create: TrainUtilities doors",
+  "advancement.trainutilities.incomplete_prototype_doors": "A first Draft!",
+  "advancement.trainutilities.incomplete_prototype_doors.description": "It squeaks and jams.",
+  "advancement.trainutilities.door_ingrediants": "Component Warehouse",
+  "advancement.trainutilities.door_ingrediants.description": "Own all 4 basic door components",
 
   "itemGroup.trainutilities.trainutils_tab": "Create: TrainUtilities",
   "itemGroup.trainutilities.doors_tab": "Create: TrainUtilities - Doors",

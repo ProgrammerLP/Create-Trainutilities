@@ -212,6 +212,10 @@
   "advancement.trainutilities.platform_block.description": "Bekomme einen Plattformblock",
   "advancement.trainutilities.doors": "Ist das die REALITÄT?",
   "advancement.trainutilities.doors.description": "Bekomme eine der neuen Create: TrainUtilities Türen",
+  "advancement.trainutilities.incomplete_prototype_doors": "Ein erster Entwurf!",
+  "advancement.trainutilities.incomplete_prototype_doors.description": "Sie quietscht und klemmt.",
+  "advancement.trainutilities.door_ingrediants": "Komponentenlager",
+  "advancement.trainutilities.door_ingrediants.description": "Besitze alle 4 Basis Tür Komponenten",
 
   "itemGroup.trainutilities.trainutils_tab": "Create: TrainUtilities",
   "itemGroup.trainutilities.doors_tab": "Create: TrainUtilities - Türen",
