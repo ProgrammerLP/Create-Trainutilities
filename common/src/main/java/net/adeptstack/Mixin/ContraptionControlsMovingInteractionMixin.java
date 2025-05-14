@@ -28,7 +28,7 @@ import net.minecraft.world.phys.Vec3;
 @Mixin(ContraptionControlsMovingInteraction.class)
 public class ContraptionControlsMovingInteractionMixin {
 
-    @Shadow
+    @Shadow(remap = false)
     private void send(AbstractContraptionEntity contraptionEntity, ItemStack filter, boolean disable) { throw new AssertionError(); }
 
     @Inject(method = "handlePlayerInteraction", remap = false, at = @At(value = "TAIL"), locals = LocalCapture.CAPTURE_FAILHARD)

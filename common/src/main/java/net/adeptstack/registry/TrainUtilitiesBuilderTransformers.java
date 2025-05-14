@@ -11,6 +11,8 @@ import com.tterrag.registrate.util.nullness.NonNullUnaryOperator;
 import io.github.fabricators_of_create.porting_lib.models.generators.ModelFile;
 import net.adeptstack.Blocks.Behaviour.DoorBlock.DoorBlockMovementBehaviour;
 import net.adeptstack.Blocks.Behaviour.DoorBlock.DoorBlockMovingInteraction;
+import net.adeptstack.Blocks.Behaviour.InteriorLight.InteriorLightMovementBehaviour;
+import net.adeptstack.Blocks.Behaviour.InteriorLight.InteriorLightMovingInteraction;
 import net.adeptstack.Blocks.Behaviour.SlidingDoor.TrainSlidingDoorMovementBehaviour;
 import net.adeptstack.Blocks.Behaviour.SlidingDoor.TrainSlidingDoorMovingInteraction;
 import net.adeptstack.Blocks.Lights.InteriorLightBlockBase;
@@ -83,23 +85,6 @@ public class TrainUtilitiesBuilderTransformers {
                 .loot((lr, block) -> lr.add(block, lr.createSingleItemTable(block)))
                 .item()
                 .tag(ModTags.AllItemTags.PLATFORM_BLOCKS.tag)
-                .tab(TRAINUTILS_TAB.getKey())
-                .build()
-                .register();
-    }
-
-    public static BlockEntry<InteriorLightBlockBase> InteriorLightBlock(String id, MapColor color) {
-        return REGISTRATE
-                .block(id, InteriorLightBlockBase::new)
-                .initialProperties(() -> Blocks.IRON_BLOCK)
-                .properties(p -> p.mapColor(color)
-                        .sound(SoundType.AMETHYST_CLUSTER)
-                        .lightLevel(state -> state.getValue(InteriorLightBlockBase.LIT) ? 15 : 0))
-                .transform(pickaxeOnly())
-                //.tag(ModTags.AllBlockTags.PLATFORM_BLOCKS.tag)
-                .loot((lr, block) -> lr.add(block, lr.createSingleItemTable(block)))
-                .item()
-                //.tag(ModTags.AllItemTags.PLATFORM_BLOCKS.tag)
                 .tab(TRAINUTILS_TAB.getKey())
                 .build()
                 .register();
@@ -179,6 +164,31 @@ public class TrainUtilitiesBuilderTransformers {
                 .register();
     }
 
+    public static <B extends InteriorLightBlockBase, P> NonNullUnaryOperator<BlockBuilder<B, P>> lightBlock() {
+        return b -> b.initialProperties(() -> Blocks.REDSTONE_LAMP) // for villager AI..
+                .properties(p -> p.strength(3.0F, 6.0F))
+                .addLayer(() -> RenderType::cutout)
+                .transform(pickaxeOnly())
+                .onRegister(interactionBehaviour(new InteriorLightMovingInteraction()))
+                .onRegister(movementBehaviour(new InteriorLightMovementBehaviour()))
+                .item()
+                .tab(ModTabs.DOORS_TAB.getKey())
+                .build();
+    }
+
+    public static BlockEntry<InteriorLightBlockBase> InteriorLightBlock(String id, MapColor color) {
+        return REGISTRATE
+                .block(id, InteriorLightBlockBase::new)
+                .initialProperties(() -> Blocks.IRON_BLOCK)
+                .properties(p -> p.mapColor(color)
+                        .sound(SoundType.AMETHYST_CLUSTER)
+                        .lightLevel(state -> state.getValue(InteriorLightBlockBase.LIT) ? 15 : 0))
+                .transform(lightBlock())
+                .item()
+                .build()
+                .register();
+    }
+
     public static <B extends DoorBlock, P> NonNullUnaryOperator<BlockBuilder<B, P>> defaultDoor(String type) {
         return b -> b.initialProperties(() -> Blocks.OAK_DOOR) // for villager AI..
                 .properties(p -> p.strength(3.0F, 6.0F))
@@ -186,14 +196,7 @@ public class TrainUtilitiesBuilderTransformers {
                 .transform(pickaxeOnly())
                 .onRegister(interactionBehaviour(new DoorBlockMovingInteraction()))
                 .onRegister(movementBehaviour(new DoorBlockMovementBehaviour()))
-                .tag(BlockTags.DOORS)
-                .tag(ModTags.AllBlockTags.DOORS.tag)
-                .tag(AllTags.AllBlockTags.NON_DOUBLE_DOOR.tag)
-                .loot((lr, block) -> lr.add(block, lr.createDoorTable(block)))
                 .item()
-                .tag(ItemTags.DOORS)
-                .tag(ModTags.AllItemTags.DOORS.tag)
-                .tag(AllTags.AllItemTags.CONTRAPTION_CONTROLLED.tag)
                 .tab(ModTabs.DOORS_TAB.getKey())
                 .build();
     }
