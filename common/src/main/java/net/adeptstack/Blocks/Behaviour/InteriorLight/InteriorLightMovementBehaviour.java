@@ -3,30 +3,15 @@ package net.adeptstack.Blocks.Behaviour.InteriorLight;
 import com.simibubi.create.content.contraptions.Contraption;
 import com.simibubi.create.content.contraptions.behaviour.MovementBehaviour;
 import com.simibubi.create.content.contraptions.behaviour.MovementContext;
-import com.simibubi.create.content.contraptions.elevator.ElevatorColumn;
 import com.simibubi.create.content.contraptions.elevator.ElevatorContraption;
-import com.simibubi.create.content.decoration.slidingDoor.DoorControl;
-import com.simibubi.create.content.decoration.slidingDoor.DoorControlBehaviour;
-import com.simibubi.create.content.trains.entity.Carriage;
-import com.simibubi.create.content.trains.entity.CarriageContraptionEntity;
-import com.simibubi.create.content.trains.station.GlobalStation;
-import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import net.adeptstack.Blocks.Lights.InteriorLightBlockBase;
+import net.adeptstack.Blocks.Lights.LightBlockBase;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.resources.ResourceKey;
-import net.minecraft.server.MinecraftServer;
-import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.DoorBlock;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
 import net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate;
 import net.minecraft.world.phys.Vec3;
-
-import java.lang.ref.WeakReference;
 
 public class InteriorLightMovementBehaviour implements MovementBehaviour {
 
@@ -36,7 +21,7 @@ public class InteriorLightMovementBehaviour implements MovementBehaviour {
                 .get(context.localPos);
         if (structureBlockInfo == null)
             return;
-        boolean open = structureBlockInfo.state().getValue(InteriorLightBlockBase.LIT);
+        boolean open = structureBlockInfo.state().getValue(LightBlockBase.LIT);
 
         if (!context.world.isClientSide())
             tickLIT(context, open);
@@ -55,21 +40,21 @@ public class InteriorLightMovementBehaviour implements MovementBehaviour {
 
         StructureTemplate.StructureBlockInfo info = contraption.getBlocks()
                 .get(pos);
-        if (info == null || !info.state().hasProperty(InteriorLightBlockBase.LIT))
+        if (info == null || !info.state().hasProperty(LightBlockBase.LIT))
             return;
 
         toggleLight(pos, contraption, info);
     }
 
     private void toggleLight(BlockPos pos, Contraption contraption, StructureTemplate.StructureBlockInfo info) {
-        BlockState newState = info.state().cycle(InteriorLightBlockBase.LIT);
+        BlockState newState = info.state().cycle(LightBlockBase.LIT);
         contraption.entity.setBlock(pos, new StructureTemplate.StructureBlockInfo(info.pos(), newState, info.nbt()));
 
-        if (info != null && info.state().hasProperty(InteriorLightBlockBase.LIT)) {
-            newState = info.state().cycle(InteriorLightBlockBase.LIT);
+        if (info != null && info.state().hasProperty(LightBlockBase.LIT)) {
+            newState = info.state().cycle(LightBlockBase.LIT);
             contraption.invalidateColliders();
 
-            boolean open = newState.getValue(InteriorLightBlockBase.LIT);
+            boolean open = newState.getValue(LightBlockBase.LIT);
 
             if (!open)
                 contraption.getContraptionWorld().playLocalSound(pos.getX(), pos.getY(), pos.getZ(),
@@ -97,7 +82,7 @@ public class InteriorLightMovementBehaviour implements MovementBehaviour {
         if (context.disabled)
             return false;
         Contraption contraption = context.contraption;
-        boolean canOpen = context.motion.length() < 1 / 128f && !contraption.entity.isStalled()
+        boolean canOpen = !contraption.entity.isStalled()
                 || contraption instanceof ElevatorContraption ec && ec.arrived;
 
         if (!canOpen) {
@@ -108,7 +93,7 @@ public class InteriorLightMovementBehaviour implements MovementBehaviour {
     }
 
     protected Direction getLightFacing(MovementContext context) {
-        Direction stateFacing = context.state.getValue(InteriorLightBlockBase.FACING);
+        Direction stateFacing = context.state.getValue(LightBlockBase.FACING);
         Direction originalFacing = Direction.get(Direction.AxisDirection.POSITIVE, stateFacing.getAxis());
         Vec3 centerOfContraption = context.contraption.bounds.getCenter();
         Vec3 diff = Vec3.atCenterOf(context.localPos)

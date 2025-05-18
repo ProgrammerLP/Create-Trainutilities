@@ -3,19 +3,19 @@ package net.adeptstack.registry;
 import com.simibubi.create.AllBlocks;
 import com.simibubi.create.AllTags;
 import com.simibubi.create.content.decoration.palettes.GlassPaneBlock;
-import com.simibubi.create.content.decoration.slidingDoor.SlidingDoorBlock;
-import com.simibubi.create.foundation.data.AssetLookup;
 import com.tterrag.registrate.builders.BlockBuilder;
 import com.tterrag.registrate.util.entry.BlockEntry;
 import com.tterrag.registrate.util.nullness.NonNullUnaryOperator;
-import io.github.fabricators_of_create.porting_lib.models.generators.ModelFile;
 import net.adeptstack.Blocks.Behaviour.DoorBlock.DoorBlockMovementBehaviour;
 import net.adeptstack.Blocks.Behaviour.DoorBlock.DoorBlockMovingInteraction;
+import net.adeptstack.Blocks.Behaviour.HeadTailLight.HeadTailLightMovementBehaviour;
+import net.adeptstack.Blocks.Behaviour.HeadTailLight.HeadTailLightMovingInteraction;
 import net.adeptstack.Blocks.Behaviour.InteriorLight.InteriorLightMovementBehaviour;
 import net.adeptstack.Blocks.Behaviour.InteriorLight.InteriorLightMovingInteraction;
 import net.adeptstack.Blocks.Behaviour.SlidingDoor.TrainSlidingDoorMovementBehaviour;
 import net.adeptstack.Blocks.Behaviour.SlidingDoor.TrainSlidingDoorMovingInteraction;
-import net.adeptstack.Blocks.Lights.InteriorLightBlockBase;
+import net.adeptstack.Blocks.Lights.HeadTailLightBlock;
+import net.adeptstack.Blocks.Lights.LightBlockBase;
 import net.adeptstack.Blocks.PanelBlocks.IsoWallBlock;
 import net.adeptstack.Blocks.PanelBlocks.PlatformBlocks.PlatformBlockCH;
 import net.adeptstack.Core.Utils.TrainSlidingDoorProperties;
@@ -164,7 +164,7 @@ public class TrainUtilitiesBuilderTransformers {
                 .register();
     }
 
-    public static <B extends InteriorLightBlockBase, P> NonNullUnaryOperator<BlockBuilder<B, P>> lightBlock() {
+    public static <B extends LightBlockBase, P> NonNullUnaryOperator<BlockBuilder<B, P>> interiorLightBlock() {
         return b -> b.initialProperties(() -> Blocks.REDSTONE_LAMP) // for villager AI..
                 .properties(p -> p.strength(3.0F, 6.0F))
                 .addLayer(() -> RenderType::cutout)
@@ -176,14 +176,39 @@ public class TrainUtilitiesBuilderTransformers {
                 .build();
     }
 
-    public static BlockEntry<InteriorLightBlockBase> InteriorLightBlock(String id, MapColor color) {
+    public static BlockEntry<LightBlockBase> InteriorLightBlock(String id, MapColor color) {
         return REGISTRATE
-                .block(id, InteriorLightBlockBase::new)
+                .block(id, LightBlockBase::new)
                 .initialProperties(() -> Blocks.IRON_BLOCK)
                 .properties(p -> p.mapColor(color)
                         .sound(SoundType.AMETHYST_CLUSTER)
-                        .lightLevel(state -> state.getValue(InteriorLightBlockBase.LIT) ? 15 : 0))
-                .transform(lightBlock())
+                        .lightLevel(state -> state.getValue(LightBlockBase.LIT) ? 15 : 0))
+                .transform(interiorLightBlock())
+                .item()
+                .build()
+                .register();
+    }
+
+    public static <B extends HeadTailLightBlock, P> NonNullUnaryOperator<BlockBuilder<B, P>> htLightBlock() {
+        return b -> b.initialProperties(() -> Blocks.REDSTONE_LAMP) // for villager AI..
+                .properties(p -> p.strength(3.0F, 6.0F))
+                .addLayer(() -> RenderType::cutout)
+                .transform(pickaxeOnly())
+                .onRegister(interactionBehaviour(new HeadTailLightMovingInteraction()))
+                .onRegister(movementBehaviour(new HeadTailLightMovementBehaviour()))
+                .item()
+                .tab(ModTabs.DOORS_TAB.getKey())
+                .build();
+    }
+
+    public static BlockEntry<HeadTailLightBlock> HeadTailLightBlock(String id, MapColor color) {
+        return REGISTRATE
+                .block(id, HeadTailLightBlock::new)
+                .initialProperties(() -> Blocks.IRON_BLOCK)
+                .properties(p -> p.mapColor(color)
+                        .sound(SoundType.AMETHYST_CLUSTER)
+                        .lightLevel(state -> state.getValue(LightBlockBase.LIT) ? state.getValue(HeadTailLightBlock.LIGHT_MODE) == 0 ? 15 : 10 : 0))
+                .transform(htLightBlock())
                 .item()
                 .build()
                 .register();

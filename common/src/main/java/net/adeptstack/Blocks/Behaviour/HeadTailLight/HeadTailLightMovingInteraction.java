@@ -1,4 +1,4 @@
-package net.adeptstack.Blocks.Behaviour.InteriorLight;
+package net.adeptstack.Blocks.Behaviour.HeadTailLight;
 
 import com.simibubi.create.content.contraptions.Contraption;
 import com.simibubi.create.content.contraptions.behaviour.SimpleBlockMovingInteraction;
@@ -9,7 +9,7 @@ import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.block.state.BlockState;
 
-public class InteriorLightMovingInteraction extends SimpleBlockMovingInteraction {
+public class HeadTailLightMovingInteraction extends SimpleBlockMovingInteraction {
 
     @Override
     protected BlockState handle(Player player, Contraption contraption, BlockPos pos, BlockState currentState) {

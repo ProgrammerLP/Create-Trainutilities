@@ -3,7 +3,8 @@ package net.adeptstack.registry;
 import com.simibubi.create.content.decoration.palettes.GlassPaneBlock;
 import com.tterrag.registrate.util.entry.BlockEntry;
 import net.adeptstack.Blocks.Doors.SlidingDoor.TrainSlidingDoorBlock;
-import net.adeptstack.Blocks.Lights.InteriorLightBlockBase;
+import net.adeptstack.Blocks.Lights.HeadTailLightBlock;
+import net.adeptstack.Blocks.Lights.LightBlockBase;
 import net.adeptstack.Blocks.PanelBlocks.IsoWallBlock;
 import net.adeptstack.Blocks.PanelBlocks.PlatformBlocks.PlatformBlockCH;
 import net.adeptstack.Blocks.PanelBlocks.PlatformBlocks.PlatformBlockDE;
@@ -32,8 +33,11 @@ public class ModBlocks {
             TrainUtilitiesBuilderTransformers.DefaultBlock("pkp_block_blue", MapColor.TERRACOTTA_BLUE);
 
     //Lights
-    public static final BlockEntry<InteriorLightBlockBase> TEST_LIGHT =
+    public static final BlockEntry<LightBlockBase> TEST_LIGHT =
             TrainUtilitiesBuilderTransformers.InteriorLightBlock("test_light", MapColor.COLOR_BLACK);
+
+    public static final BlockEntry<HeadTailLightBlock> TEST_HEADTAIL_LIGHT =
+            TrainUtilitiesBuilderTransformers.HeadTailLightBlock("test_light_two", MapColor.COLOR_BLACK);
 
     //glass
     public static final BlockEntry<GlassBlock> FRAMELESS_GLASS =

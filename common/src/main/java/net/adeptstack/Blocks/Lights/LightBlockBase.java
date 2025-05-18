@@ -1,6 +1,5 @@
 package net.adeptstack.Blocks.Lights;
 
-import net.adeptstack.Core.Client.ClientWrapper;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.sounds.SoundEvents;
@@ -17,11 +16,11 @@ import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.phys.BlockHitResult;
 
-public class InteriorLightBlockBase extends Block {
+public class LightBlockBase extends Block {
     public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
     public static final BooleanProperty LIT = RedstoneTorchBlock.LIT;
 
-    public InteriorLightBlockBase(Properties properties) {
+    public LightBlockBase(Properties properties) {
         super(properties);
 
         this.registerDefaultState(this.stateDefinition.any()

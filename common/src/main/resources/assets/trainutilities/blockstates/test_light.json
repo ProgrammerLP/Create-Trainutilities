@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "lit=false": {
+      "model": "trainutilities:block/test/off"
+    },
+    "lit=true,facing=north": {
+      "model": "trainutilities:block/test/on",
+      "y": 180
+    },
+    "lit=true,facing=south": {
+      "model": "trainutilities:block/test/on"
+    },
+    "lit=true,facing=west": {
+      "model": "trainutilities:block/test/on",
+      "y": 270
+    },
+    "lit=true,facing=east": {
+      "model": "trainutilities:block/test/on",
+      "y": 90
+    }
+  }
+}
