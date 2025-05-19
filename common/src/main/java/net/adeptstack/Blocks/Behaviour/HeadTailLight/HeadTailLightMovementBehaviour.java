@@ -40,6 +40,11 @@ public class HeadTailLightMovementBehaviour implements MovementBehaviour {
             Direction direction = vecToDirection(motion);
             if (direction == null)
                 return;
+            if (Math.abs(motion.x) <= 0.0001 && (direction == Direction.EAST || direction == Direction.WEST))
+                return;
+            if (Math.abs(motion.z) <= 0.0001 && (direction == Direction.NORTH || direction == Direction.SOUTH))
+                return;
+            System.out.println(motion);
 
             Vec3 localP = new Vec3(1, 0, 0);
             Vec3 localN = new Vec3(-1, 0, 0);
@@ -49,73 +54,57 @@ public class HeadTailLightMovementBehaviour implements MovementBehaviour {
 
             if (direction == Direction.NORTH) {
                 if (value.z > 0 && pos.getX() > 0) {
-                    System.out.println("VORNE+");
                     context.state = context.state .setValue(HeadTailLightBlock.LIGHT_MODE, 1);
                     context.contraption.entity.setBlock(pos, new StructureTemplate.StructureBlockInfo(pos, context.state, structureBlockInfo.nbt()));
                 } else if (value.z > 0 && pos.getX() < 0) {
-                    System.out.println("HINTEN+");
                     context.state = context.state .setValue(HeadTailLightBlock.LIGHT_MODE, 0);
                     context.contraption.entity.setBlock(pos, new StructureTemplate.StructureBlockInfo(pos, context.state, structureBlockInfo.nbt()));
                 } else if (value.z < 0 && pos.getX() > 0) {
-                    System.out.println("HINTEN-");
                     context.state = context.state .setValue(HeadTailLightBlock.LIGHT_MODE, 0);
                     context.contraption.entity.setBlock(pos, new StructureTemplate.StructureBlockInfo(pos, context.state, structureBlockInfo.nbt()));
                 } else if (value.z < 0 && pos.getX() < 0) {
-                    System.out.println("VORNE-");
                     context.state = context.state .setValue(HeadTailLightBlock.LIGHT_MODE, 1);
                     context.contraption.entity.setBlock(pos, new StructureTemplate.StructureBlockInfo(pos, context.state, structureBlockInfo.nbt()));
                 }
             } else if (direction == Direction.EAST) {
                 if (value.x > 0 && pos.getX() > 0) {
-                    System.out.println("VORNE+");
                     context.state = context.state .setValue(HeadTailLightBlock.LIGHT_MODE, 0);
                     context.contraption.entity.setBlock(pos, new StructureTemplate.StructureBlockInfo(pos, context.state, structureBlockInfo.nbt()));
                 } else if (value.x > 0 && pos.getX() < 0) {
-                    System.out.println("HINTEN+");
                     context.state = context.state .setValue(HeadTailLightBlock.LIGHT_MODE, 1);
                     context.contraption.entity.setBlock(pos, new StructureTemplate.StructureBlockInfo(pos, context.state, structureBlockInfo.nbt()));
                 } else if (value.x < 0 && pos.getX() > 0) {
-                    System.out.println("HINTEN-");
                     context.state = context.state .setValue(HeadTailLightBlock.LIGHT_MODE, 1);
                     context.contraption.entity.setBlock(pos, new StructureTemplate.StructureBlockInfo(pos, context.state, structureBlockInfo.nbt()));
                 } else if (value.x < 0 && pos.getX() < 0) {
-                    System.out.println("VORNE-");
                     context.state = context.state .setValue(HeadTailLightBlock.LIGHT_MODE, 0);
                     context.contraption.entity.setBlock(pos, new StructureTemplate.StructureBlockInfo(pos, context.state, structureBlockInfo.nbt()));
                 }
             } else if (direction == Direction.SOUTH) {
                 if (value.z > 0 && pos.getX() > 0) {
-                    System.out.println("VORNE+");
                     context.state = context.state .setValue(HeadTailLightBlock.LIGHT_MODE, 0);
                     context.contraption.entity.setBlock(pos, new StructureTemplate.StructureBlockInfo(pos, context.state, structureBlockInfo.nbt()));
                 } else if (value.z > 0 && pos.getX() < 0) {
-                    System.out.println("HINTEN+");
                     context.state = context.state .setValue(HeadTailLightBlock.LIGHT_MODE, 1);
                     context.contraption.entity.setBlock(pos, new StructureTemplate.StructureBlockInfo(pos, context.state, structureBlockInfo.nbt()));
                 } else if (value.z < 0 && pos.getX() > 0) {
-                    System.out.println("HINTEN-");
                     context.state = context.state .setValue(HeadTailLightBlock.LIGHT_MODE, 1);
                     context.contraption.entity.setBlock(pos, new StructureTemplate.StructureBlockInfo(pos, context.state, structureBlockInfo.nbt()));
                 } else if (value.z < 0 && pos.getX() < 0) {
-                    System.out.println("VORNE-");
                     context.state = context.state .setValue(HeadTailLightBlock.LIGHT_MODE, 0);
                     context.contraption.entity.setBlock(pos, new StructureTemplate.StructureBlockInfo(pos, context.state, structureBlockInfo.nbt()));
                 }
             } else if (direction == Direction.WEST) {
                 if (value.x > 0 && pos.getX() > 0) {
-                    System.out.println("VORNE+");
                     context.state = context.state .setValue(HeadTailLightBlock.LIGHT_MODE, 1);
                     context.contraption.entity.setBlock(pos, new StructureTemplate.StructureBlockInfo(pos, context.state, structureBlockInfo.nbt()));
                 } else if (value.x > 0 && pos.getX() < 0) {
-                    System.out.println("HINTEN+");
                     context.state = context.state .setValue(HeadTailLightBlock.LIGHT_MODE, 0);
                     context.contraption.entity.setBlock(pos, new StructureTemplate.StructureBlockInfo(pos, context.state, structureBlockInfo.nbt()));
                 } else if (value.x < 0 && pos.getX() > 0) {
-                    System.out.println("HINTEN-");
                     context.state = context.state .setValue(HeadTailLightBlock.LIGHT_MODE, 0);
                     context.contraption.entity.setBlock(pos, new StructureTemplate.StructureBlockInfo(pos, context.state, structureBlockInfo.nbt()));
                 } else if (value.x < 0 && pos.getX() < 0) {
-                    System.out.println("VORNE-");
                     context.state = context.state .setValue(HeadTailLightBlock.LIGHT_MODE, 1);
                     context.contraption.entity.setBlock(pos, new StructureTemplate.StructureBlockInfo(pos, context.state, structureBlockInfo.nbt()));
                 }
