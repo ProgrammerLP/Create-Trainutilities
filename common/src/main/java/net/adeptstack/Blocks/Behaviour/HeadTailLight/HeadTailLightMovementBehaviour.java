@@ -44,7 +44,8 @@ public class HeadTailLightMovementBehaviour implements MovementBehaviour {
                 return;
             if (Math.abs(motion.z) <= 0.0001 && (direction == Direction.NORTH || direction == Direction.SOUTH))
                 return;
-            System.out.println(motion);
+            if (Math.abs(motion.y) <= 0.0005 && Math.abs(motion.y) != 0)
+                return;
 
             Vec3 localP = new Vec3(1, 0, 0);
             Vec3 localN = new Vec3(-1, 0, 0);
