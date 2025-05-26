@@ -209,6 +209,8 @@
   "sound.trainutilities.door_caf_urbos_3_close": "Caf Urbos door closes",
   "sound.trainutilities.door_subway_open": "subway/tram door opens",
   "sound.trainutilities.door_subway_close": "subway/tram subway door closes",
+  "sound.trainutilities.door_ice_modern_open": "modern DB ICE door opens",
+  "sound.trainutilities.door_ice_modern_close": "modern DB ICE door closes",
 
   "advancement.trainutilities.platform_block": "Modern Age!",
   "advancement.trainutilities.platform_block.description": "Receive a Platform Block",

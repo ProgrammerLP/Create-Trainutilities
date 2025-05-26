@@ -277,7 +277,7 @@ public class TrainUtilitiesBuilderTransformers {
             return new TrainSlidingDoorProperties(ModSounds.DOOR_SUBWAY_OPEN.get(), ModSounds.DOOR_SUBWAY_CLOSE.get(), .035f);
         }
         else if (variant == 17) {
-            return new TrainSlidingDoorProperties(ModSounds.DOOR_CAF_URBOS_3_OPEN.get(), ModSounds.DOOR_CAF_URBOS_3_CLOSE.get(), .025f);
+            return new TrainSlidingDoorProperties(ModSounds.DOOR_ICE_MODERN_OPEN.get(), ModSounds.DOOR_ICE_MODERN_CLOSE.get(), .025f);
         }
         else {
             return new TrainSlidingDoorProperties(SoundEvents.IRON_DOOR_OPEN, SoundEvents.IRON_DOOR_CLOSE, .15f);

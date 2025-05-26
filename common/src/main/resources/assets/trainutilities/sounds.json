@@ -286,5 +286,23 @@
         "stream": true
       }
     ]
+  },
+  "door_ice_modern_open": {
+    "subtitle": "sound.trainutilities.door_ice_modern_open",
+    "sounds": [
+      {
+        "name": "trainutilities:door_ice_modern_open",
+        "stream": true
+      }
+    ]
+  },
+  "door_ice_modern_close": {
+    "subtitle": "sound.trainutilities.door_ice_modern_close",
+    "sounds": [
+      {
+        "name": "trainutilities:door_ice_modern_close",
+        "stream": true
+      }
+    ]
   }
 }
