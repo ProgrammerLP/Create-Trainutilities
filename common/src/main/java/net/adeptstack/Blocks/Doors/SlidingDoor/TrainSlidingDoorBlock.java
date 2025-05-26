@@ -32,7 +32,7 @@ import static net.adeptstack.Main.REGISTRATE;
 
 public class TrainSlidingDoorBlock extends SlidingDoorBlock {
 
-    public static final IntegerProperty DOOR_SOUND = IntegerProperty.create("door_sound", 0, 15);
+    public static final IntegerProperty DOOR_SOUND = IntegerProperty.create("door_sound", 0, 17);
 
     public TrainSlidingDoorBlock(Properties properties, BlockSetType type, boolean isFolding, int defaultSound) {
         super(properties, type, isFolding);

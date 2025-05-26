@@ -241,7 +241,7 @@ public class TrainUtilitiesBuilderTransformers {
             return new TrainSlidingDoorProperties(ModSounds.DOOR_FLIRT_OPEN.get(), ModSounds.DOOR_FLIRT_CLOSE.get(), .025f);
         }
         else if (variant == 5) {
-            return new TrainSlidingDoorProperties(ModSounds.DOOR_SW_NYC_OPEN.get(), ModSounds.DOOR_SW_NYC_CLOSE.get(), .035f);
+            return new TrainSlidingDoorProperties(ModSounds.DOOR_SW_NYC_OPEN.get(), ModSounds.DOOR_SW_NYC_CLOSE.get(), .025f);
         }
         else if (variant == 6) {
             return new TrainSlidingDoorProperties(ModSounds.DOOR_PKP_IC_OPEN.get(), ModSounds.DOOR_PKP_IC_CLOSE.get(), .025f);
@@ -273,13 +273,19 @@ public class TrainUtilitiesBuilderTransformers {
         else if (variant == 15) {
             return new TrainSlidingDoorProperties(ModSounds.DOOR_CAF_URBOS_3_OPEN.get(), ModSounds.DOOR_CAF_URBOS_3_CLOSE.get(), .025f);
         }
+        else if (variant == 16) {
+            return new TrainSlidingDoorProperties(ModSounds.DOOR_SUBWAY_OPEN.get(), ModSounds.DOOR_SUBWAY_CLOSE.get(), .035f);
+        }
+        else if (variant == 17) {
+            return new TrainSlidingDoorProperties(ModSounds.DOOR_CAF_URBOS_3_OPEN.get(), ModSounds.DOOR_CAF_URBOS_3_CLOSE.get(), .025f);
+        }
         else {
             return new TrainSlidingDoorProperties(SoundEvents.IRON_DOOR_OPEN, SoundEvents.IRON_DOOR_CLOSE, .15f);
         }
     }
 
     public static int GetSlidingDoorDefaultSound(String type) {
-        if (type == "ice" || type == "ice_top" || type == "ice_modern_top" || type == "ice_modern") {
+        if (type == "ice" || type == "ice_top") {
             return 1;
         }
         else if (type == "ic2") {
@@ -291,7 +297,7 @@ public class TrainUtilitiesBuilderTransformers {
         else if (type == "flirt" || type == "flirt_vias" || type == "ungarian_flirt") {
             return 4;
         }
-        else if (type == "sw_nyc" || type == "warsaw_tram") {
+        else if (type == "sw_nyc") {
             return 5;
         }
         else if (type == "pkp_ic_white" || type == "pkp_ic_blue") {
@@ -323,6 +329,12 @@ public class TrainUtilitiesBuilderTransformers {
         }
         else if (type == "caf_urbos_3") {
             return 15;
+        }
+        else if (type == "warsaw_tram") {
+            return 16;
+        }
+        else if (type == "ice_modern_top" || type == "ice_modern") {
+            return 17;
         }
         else {
             return 0;

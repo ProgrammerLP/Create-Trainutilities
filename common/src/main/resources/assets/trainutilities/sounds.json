@@ -268,5 +268,23 @@
         "stream": true
       }
     ]
+  },
+  "door_subway_open": {
+    "subtitle": "sound.trainutilities.door_subway_open",
+    "sounds": [
+      {
+        "name": "trainutilities:door_subway_open",
+        "stream": true
+      }
+    ]
+  },
+  "door_subway_close": {
+    "subtitle": "sound.trainutilities.door_subway_close",
+    "sounds": [
+      {
+        "name": "trainutilities:door_subway_close",
+        "stream": true
+      }
+    ]
   }
 }
