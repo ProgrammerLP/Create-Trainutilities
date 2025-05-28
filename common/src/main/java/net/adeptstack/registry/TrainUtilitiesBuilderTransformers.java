@@ -228,55 +228,55 @@ public class TrainUtilitiesBuilderTransformers {
     }
 
     public static TrainSlidingDoorProperties GetSlidingDoorProperties(int variant) {
-        if (variant == 1) {
+        if (variant == 2) {
             return new TrainSlidingDoorProperties(ModSounds.DOOR_ICE_OPEN.get(), ModSounds.DOOR_ICE_CLOSE.get(), .025f);
         }
-        else if (variant == 2) {
+        else if (variant == 3) {
             return new TrainSlidingDoorProperties(ModSounds.DOOR_IC2_OPEN.get(), ModSounds.DOOR_IC2_CLOSE.get(), .025f);
         }
-        else if (variant == 3) {
+        else if (variant == 4) {
             return new TrainSlidingDoorProperties(ModSounds.DOOR_RRX_OPEN.get(), ModSounds.DOOR_RRX_CLOSE.get(), .025f);
         }
-        else if (variant == 4) {
+        else if (variant == 5) {
             return new TrainSlidingDoorProperties(ModSounds.DOOR_FLIRT_OPEN.get(), ModSounds.DOOR_FLIRT_CLOSE.get(), .025f);
         }
-        else if (variant == 5) {
+        else if (variant == 6) {
             return new TrainSlidingDoorProperties(ModSounds.DOOR_SW_NYC_OPEN.get(), ModSounds.DOOR_SW_NYC_CLOSE.get(), .025f);
         }
-        else if (variant == 6) {
+        else if (variant == 7) {
             return new TrainSlidingDoorProperties(ModSounds.DOOR_PKP_IC_OPEN.get(), ModSounds.DOOR_PKP_IC_CLOSE.get(), .025f);
         }
-        else if (variant == 7) {
+        else if (variant == 8) {
             return new TrainSlidingDoorProperties(ModSounds.DOOR_IC_OPEN.get(), ModSounds.DOOR_IC_CLOSE.get(), .025f);
         }
-        else if (variant == 8) {
+        else if (variant == 9) {
             return new TrainSlidingDoorProperties(ModSounds.DOOR_ELEV_OPEN.get(), ModSounds.DOOR_ELEV_CLOSE.get(), .045f);
         }
-        else if (variant == 9) {
+        else if (variant == 10) {
             return new TrainSlidingDoorProperties(ModSounds.DOOR_LONDON_1973_STOCK_OPEN.get(), ModSounds.DOOR_LONDON_1973_STOCK_CLOSE.get(), .025f);
         }
-        else if (variant == 10) {
+        else if (variant == 11) {
             return new TrainSlidingDoorProperties(ModSounds.DOOR_LONDON_S7_STOCK_OPEN.get(), ModSounds.DOOR_LONDON_S7_STOCK_CLOSE.get(), .025f);
         }
-        else if (variant == 11) {
+        else if (variant == 12) {
             return new TrainSlidingDoorProperties(ModSounds.DOOR_LONDON_OVERGROUND_OPEN.get(), ModSounds.DOOR_LONDON_OVERGROUND_CLOSE.get(), .025f);
         }
-        else if (variant == 12) {
+        else if (variant == 13) {
             return new TrainSlidingDoorProperties(ModSounds.DOOR_RAILJET_OPEN.get(), ModSounds.DOOR_RAILJET_CLOSE.get(), .025f);
         }
-        else if (variant == 13) {
+        else if (variant == 14) {
             return new TrainSlidingDoorProperties(ModSounds.DOOR_SBAHN_OPEN.get(), ModSounds.DOOR_SBAHN_CLOSE.get(), .025f);
         }
-        else if (variant == 14) {
+        else if (variant == 15) {
             return new TrainSlidingDoorProperties(ModSounds.DOOR_TALENT_OPEN.get(), ModSounds.DOOR_TALENT_CLOSE.get(), .025f);
         }
-        else if (variant == 15) {
+        else if (variant == 16) {
             return new TrainSlidingDoorProperties(ModSounds.DOOR_CAF_URBOS_3_OPEN.get(), ModSounds.DOOR_CAF_URBOS_3_CLOSE.get(), .025f);
         }
-        else if (variant == 16) {
+        else if (variant == 17) {
             return new TrainSlidingDoorProperties(ModSounds.DOOR_SUBWAY_OPEN.get(), ModSounds.DOOR_SUBWAY_CLOSE.get(), .035f);
         }
-        else if (variant == 17) {
+        else if (variant == 18) {
             return new TrainSlidingDoorProperties(ModSounds.DOOR_ICE_MODERN_OPEN.get(), ModSounds.DOOR_ICE_MODERN_CLOSE.get(), .025f);
         }
         else {
@@ -286,55 +286,55 @@ public class TrainUtilitiesBuilderTransformers {
 
     public static int GetSlidingDoorDefaultSound(String type) {
         if (type == "ice" || type == "ice_top") {
-            return 1;
-        }
-        else if (type == "ic2") {
             return 2;
         }
-        else if (type == "rrx" || type == "goahead_desiro") {
+        else if (type == "ic2") {
             return 3;
         }
-        else if (type == "flirt" || type == "flirt_vias" || type == "ungarian_flirt") {
+        else if (type == "rrx" || type == "goahead_desiro") {
             return 4;
         }
-        else if (type == "sw_nyc") {
+        else if (type == "flirt" || type == "flirt_vias" || type == "ungarian_flirt") {
             return 5;
         }
-        else if (type == "pkp_ic_white" || type == "pkp_ic_blue") {
+        else if (type == "sw_nyc") {
             return 6;
         }
-        else if (type == "ic") {
+        else if (type == "pkp_ic_white" || type == "pkp_ic_blue") {
             return 7;
         }
-        else if (type == "elev_glass" || type == "elev_metal") {
+        else if (type == "ic") {
             return 8;
         }
-        else if (type == "london_1973_stock") {
+        else if (type == "elev_glass" || type == "elev_metal") {
             return 9;
         }
-        else if (type == "london_s7_stock") {
+        else if (type == "london_1973_stock") {
             return 10;
         }
-        else if (type == "london_overground" || type == "london_el") {
+        else if (type == "london_s7_stock") {
             return 11;
         }
-        else if (type == "railjet") {
+        else if (type == "london_overground" || type == "london_el") {
             return 12;
         }
-        else if (type == "sbahn_cologne" || type == "sbahn_vrr") {
+        else if (type == "railjet") {
             return 13;
         }
-        else if (type == "talent1" || type == "talent2" || type == "talent3") {
+        else if (type == "sbahn_cologne" || type == "sbahn_vrr") {
             return 14;
         }
-        else if (type == "caf_urbos_3") {
+        else if (type == "talent1" || type == "talent2" || type == "talent3") {
             return 15;
         }
-        else if (type == "warsaw_tram") {
+        else if (type == "caf_urbos_3") {
             return 16;
         }
-        else if (type == "ice_modern_top" || type == "ice_modern") {
+        else if (type == "warsaw_tram") {
             return 17;
+        }
+        else if (type == "ice_modern_top" || type == "ice_modern") {
+            return 18;
         }
         else {
             return 0;

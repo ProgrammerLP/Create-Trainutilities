@@ -80,12 +80,12 @@ public class TrainSlidingDoorMovementBehaviour implements MovementBehaviour {
 
         if  (TrainSlidingDoorBlock.isDoubleDoor(structureBlockInfo.state().getValue(TrainSlidingDoorBlock.HINGE), context.localPos, context.state.getValue(TrainSlidingDoorBlock.FACING), context)) {
             if (structureBlockInfo.state().getValue(TrainSlidingDoorBlock.HINGE) == DoorHingeSide.RIGHT) {
-                if (wasSettled && !sdbe.animation.settled() && !open) {
+                if (wasSettled && !sdbe.animation.settled() && !open && sound != 1) {
                     context.world.playLocalSound(context.position.x, context.position.y, context.position.z,
                             tsdp.GetClose(), SoundSource.BLOCKS, 1f, 1, false);
                 }
 
-                if (wasSettled && !sdbe.animation.settled() && open) {
+                if (wasSettled && !sdbe.animation.settled() && open && sound != 1) {
                     context.world.playLocalSound(context.position.x, context.position.y, context.position.z,
                             tsdp.GetOpen(), SoundSource.BLOCKS, 1f, 1, false);
                     //Timer t = new Timer();
@@ -93,12 +93,12 @@ public class TrainSlidingDoorMovementBehaviour implements MovementBehaviour {
                 }
             }
         } else {
-            if (wasSettled && !sdbe.animation.settled() && !open) {
+            if (wasSettled && !sdbe.animation.settled() && !open && sound != 1) {
                 context.world.playLocalSound(context.position.x, context.position.y, context.position.z,
                         tsdp.GetClose(), SoundSource.BLOCKS, 1f, 1, false);
             }
 
-            if (wasSettled && !sdbe.animation.settled() && open) {
+            if (wasSettled && !sdbe.animation.settled() && open && sound != 1) {
                 context.world.playLocalSound(context.position.x, context.position.y, context.position.z,
                         tsdp.GetOpen(), SoundSource.BLOCKS, 1f, 1, false);
                 //Timer t = new Timer();

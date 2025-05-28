@@ -244,5 +244,8 @@
   "gui.trainutilities.tooltip.railjet_sound": "ÖBB Railjet Tür Sound",
   "gui.trainutilities.tooltip.sbahn_sound": "S-Bahn Tür Sound",
   "gui.trainutilities.tooltip.talent_sound": "Talent Tür Sound",
-  "gui.trainutilities.tooltip.caf_urbos_sound": "Caf Urbos Tür Sound"
+  "gui.trainutilities.tooltip.caf_urbos_sound": "Caf Urbos Tür Sound",
+  "gui.trainutilities.tooltip.nyc_subway_sound": "NYC U-Bahn Tür Sound",
+  "gui.trainutilities.tooltip.modern_ice_sound": "Moderner DB ICE Tür Sound",
+  "gui.trainutilities.tooltip.no_sound": "Kein Sound"
 }

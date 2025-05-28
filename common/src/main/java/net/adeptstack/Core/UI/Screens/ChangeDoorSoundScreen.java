@@ -70,7 +70,7 @@ public class ChangeDoorSoundScreen extends Screen {
     }
 
     private void onListen(boolean open) {
-        if (Minecraft.getInstance().player != null) {
+        if (Minecraft.getInstance().player != null && this.selectedVariant != 1) {
             TrainSlidingDoorProperties tsdp = TrainUtilitiesBuilderTransformers.GetSlidingDoorProperties(this.selectedVariant);
             if (open) {
                 Minecraft.getInstance().getSoundManager().stop();
