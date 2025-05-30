@@ -57,6 +57,8 @@
     "trainutilities:door_talent3",
     "trainutilities:door_caf_urbos_3",
     "trainutilities:door_stripped_spruce",
-    "trainutilities:frameless_glass_pane"
+    "trainutilities:frameless_glass_pane",
+    "trainutilities:budapest_block_black",
+    "trainutilities:budapest_block_yellow"
   ]
 }
