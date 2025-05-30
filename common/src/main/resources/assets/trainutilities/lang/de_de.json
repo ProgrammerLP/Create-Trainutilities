@@ -17,6 +17,8 @@
   "block.trainutilities.iso_wall_block": "Schallschutzwand",
   "block.trainutilities.iso_wall_block_green": "Schallschutzwand (Grün)",
   "block.trainutilities.frameless_glass_pane": "Rahmenlose Glasscheibe",
+  "block.trainutilities.budapest_block_black": "Schwarzer Budapest Block",
+  "block.trainutilities.budapest_block_yellow": "Gelber Budapest Block",
 
   "block.trainutilities.door_ice": "DB ICE Tür",
   "block.trainutilities.door_ice.tooltip.summary": "Verwenden Sie es auf _Zügen_ oder _Aufzügen_, um _realistische Türen_ mit _realistischen Geräuschen_ zu erhalten.",

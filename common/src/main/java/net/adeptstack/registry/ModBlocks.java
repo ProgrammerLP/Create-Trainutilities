@@ -30,6 +30,12 @@ public class ModBlocks {
     public static final BlockEntry<Block> PKP_BLOCK_BLUE =
             TrainUtilitiesBuilderTransformers.DefaultBlock("pkp_block_blue", MapColor.TERRACOTTA_BLUE);
 
+    public static final BlockEntry<LineBlock> BUDAPEST_BLOCK_YELLOW =
+            TrainUtilitiesBuilderTransformers.LineBlock("budapest_block_yellow", MapColor.TERRACOTTA_YELLOW);
+
+    public static final BlockEntry<LineBlock> BUDAPEST_BLOCK_BLACK =
+            TrainUtilitiesBuilderTransformers.LineBlock("budapest_block_black", MapColor.TERRACOTTA_BLACK);
+
     //glass
     public static final BlockEntry<GlassBlock> FRAMELESS_GLASS =
             TrainUtilitiesBuilderTransformers.GlassBlock("frameless_glass", MapColor.NONE);

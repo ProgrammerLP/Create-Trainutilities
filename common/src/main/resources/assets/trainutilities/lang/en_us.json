@@ -17,6 +17,8 @@
   "block.trainutilities.iso_wall_block": "Noise Isolation Wall",
   "block.trainutilities.iso_wall_block_green": "Noise Isolation Wall (Green)",
   "block.trainutilities.frameless_glass_pane": "Frameless Glass Pane",
+  "block.trainutilities.budapest_block_black": "Budapest block black",
+  "block.trainutilities.budapest_block_yellow": "Budapest block yellow",
 
   "block.trainutilities.door_ice": "DB ICE Door (Bottom)",
   "block.trainutilities.door_ice.tooltip.summary": "Use it on _trains_ or _elevators_ to get _realistic doors_ with _realistic sounds_.",
