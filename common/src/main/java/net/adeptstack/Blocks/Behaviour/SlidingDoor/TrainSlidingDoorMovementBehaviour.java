@@ -58,7 +58,7 @@ public class TrainSlidingDoorMovementBehaviour implements MovementBehaviour {
 
         if (!context.world.isClientSide()) {
             tickOpen(context, open);
-            if (open) {
+            if (open && !shouldOpen(context)) {
                 tick++;
                 if (tick > 240) {
                     tickClose(context, true);
