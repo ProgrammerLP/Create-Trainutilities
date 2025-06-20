@@ -8,11 +8,13 @@ import com.simibubi.create.content.contraptions.elevator.ElevatorContraption;
 import com.simibubi.create.content.decoration.slidingDoor.DoorControl;
 import com.simibubi.create.content.decoration.slidingDoor.DoorControlBehaviour;
 import com.simibubi.create.content.trains.entity.Carriage;
+import com.simibubi.create.content.trains.entity.CarriageContraption;
 import com.simibubi.create.content.trains.entity.CarriageContraptionEntity;
 import com.simibubi.create.content.trains.station.GlobalStation;
 import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
 import com.simibubi.create.foundation.utility.animation.LerpedFloat;
 import net.adeptstack.Blocks.Doors.SlidingDoor.TrainSlidingDoorBlock;
+import net.adeptstack.Core.Client.ClientWrapper;
 import net.adeptstack.Core.Utils.TrainSlidingDoorProperties;
 import net.adeptstack.Blocks.Doors.SlidingDoor.TrainSlidingDoorBlockEntity;
 import net.adeptstack.registry.TrainUtilitiesBuilderTransformers;
@@ -33,12 +35,14 @@ import net.minecraft.world.phys.Vec3;
 
 import java.lang.ref.WeakReference;
 import java.util.Map;
+import java.util.Timer;
 import java.util.TimerTask;
 
 public class TrainSlidingDoorMovementBehaviour implements MovementBehaviour {
 
     TrainSlidingDoorProperties tsdp;
     String type;
+    int tick = 0;
 
     public TrainSlidingDoorMovementBehaviour(String type) {
         this.type = type;
@@ -52,8 +56,19 @@ public class TrainSlidingDoorMovementBehaviour implements MovementBehaviour {
             return;
         boolean open = TrainSlidingDoorBlockEntity.isOpen(structureBlockInfo.state());
 
-        if (!context.world.isClientSide())
+        if (!context.world.isClientSide()) {
             tickOpen(context, open);
+            if (open) {
+                tick++;
+                if (tick > 240) {
+                    tickClose(context, true);
+                    tick = 0;
+                }
+            }
+            else {
+                tick = 0;
+            }
+        }
 
         int sound = TrainSlidingDoorBlockEntity.getDoorSoundValue(structureBlockInfo.state());
         tsdp = TrainUtilitiesBuilderTransformers.GetSlidingDoorProperties(sound);
@@ -65,20 +80,7 @@ public class TrainSlidingDoorMovementBehaviour implements MovementBehaviour {
         sdbe.animation.chase(open ? 1 : 0, tsdp.GetSpeed(), LerpedFloat.Chaser.LINEAR);
         sdbe.animation.tickChaser();
 
-        TimerTask closeTask = new TimerTask() {
-            @Override
-            public void run() {
-                BlockPos pos = context.localPos;
-                Contraption contraption = context.contraption;
-                StructureTemplate.StructureBlockInfo info = contraption.getBlocks().get(pos);
-
-                if (context.world.isClientSide()) {
-                    tickClose(context, open);
-                }
-            }
-        };
-
-        if  (TrainSlidingDoorBlock.isDoubleDoor(structureBlockInfo.state().getValue(TrainSlidingDoorBlock.HINGE), context.localPos, context.state.getValue(TrainSlidingDoorBlock.FACING), context)) {
+        if (TrainSlidingDoorBlock.isDoubleDoor(structureBlockInfo.state().getValue(TrainSlidingDoorBlock.HINGE), context.localPos, context.state.getValue(TrainSlidingDoorBlock.FACING), context)) {
             if (structureBlockInfo.state().getValue(TrainSlidingDoorBlock.HINGE) == DoorHingeSide.RIGHT) {
                 if (wasSettled && !sdbe.animation.settled() && !open && sound != 1) {
                     context.world.playLocalSound(context.position.x, context.position.y, context.position.z,
@@ -88,8 +90,6 @@ public class TrainSlidingDoorMovementBehaviour implements MovementBehaviour {
                 if (wasSettled && !sdbe.animation.settled() && open && sound != 1) {
                     context.world.playLocalSound(context.position.x, context.position.y, context.position.z,
                             tsdp.GetOpen(), SoundSource.BLOCKS, 1f, 1, false);
-                    //Timer t = new Timer();
-                    //t.schedule(closeTask, 6000);
                 }
             }
         } else {
@@ -101,8 +101,6 @@ public class TrainSlidingDoorMovementBehaviour implements MovementBehaviour {
             if (wasSettled && !sdbe.animation.settled() && open && sound != 1) {
                 context.world.playLocalSound(context.position.x, context.position.y, context.position.z,
                         tsdp.GetOpen(), SoundSource.BLOCKS, 1f, 1, false);
-                //Timer t = new Timer();
-                //t.schedule(closeTask, 6000);
             }
         }
     }
@@ -127,10 +125,10 @@ public class TrainSlidingDoorMovementBehaviour implements MovementBehaviour {
 
     protected void tickClose(MovementContext context, boolean currentlyClose) {
         boolean shouldClose = !shouldOpen(context);
-        if (shouldUpdate(context, shouldClose)) {
+        if (!shouldUpdate(context, shouldClose)) {
             return;
         }
-        if (currentlyClose != shouldClose) {
+        if (currentlyClose == shouldClose) {
             return;
         }
 
@@ -154,10 +152,10 @@ public class TrainSlidingDoorMovementBehaviour implements MovementBehaviour {
                 .get(otherPos);
         if (info != null && info.state().hasProperty(DoorBlock.OPEN)) {
             newState = info.state().setValue(DoorBlock.OPEN, false);
-            //newState = info.state().setValue(DoorBlock.OPEN, false);
             contraption.entity.setBlock(otherPos, new StructureTemplate.StructureBlockInfo(info.pos(), newState, info.nbt()));
             contraption.invalidateColliders();
         }
+        contraption.invalidateColliders();
     }
 
     private void toggleDoor(BlockPos pos, Contraption contraption, StructureTemplate.StructureBlockInfo info) {
@@ -198,7 +196,7 @@ public class TrainSlidingDoorMovementBehaviour implements MovementBehaviour {
             return false;
         }
 
-        if (context.temporaryData instanceof WeakReference<?> wr && wr.get()instanceof DoorControlBehaviour dcb)
+        if (context.temporaryData instanceof WeakReference<?> wr && wr.get() instanceof DoorControlBehaviour dcb)
             if (dcb.blockEntity != null && !dcb.blockEntity.isRemoved())
                 return shouldOpenAt(dcb, context);
 
