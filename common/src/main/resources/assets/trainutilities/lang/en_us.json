@@ -229,6 +229,14 @@
   "sound.trainutilities.door_subway_close": "subway/tram subway door closes",
   "sound.trainutilities.door_ice_modern_open": "modern DB ICE door opens",
   "sound.trainutilities.door_ice_modern_close": "modern DB ICE door closes",
+  "sound.trainutilities.door_class_350_open": "Class 350 door opens",
+  "sound.trainutilities.door_class_350_close": "Class 350 door closes",
+  "sound.trainutilities.door_class_390_open": "Class 390 door opens",
+  "sound.trainutilities.door_class_390_close": "Class 390 door closes",
+  "sound.trainutilities.door_class_450_open": "Class 450 door opens",
+  "sound.trainutilities.door_class_450_close": "Class 450 door closes",
+  "sound.trainutilities.door_1996_stock_open": "1996 Stock door opens",
+  "sound.trainutilities.door_1996_stock_close": "1996 Stock door closes",
 
   "advancement.trainutilities.platform_block": "Modern Age!",
   "advancement.trainutilities.platform_block.description": "Receive a Platform Block",
@@ -265,5 +273,9 @@
   "gui.trainutilities.tooltip.caf_urbos_sound": "caf urbos door sound",
   "gui.trainutilities.tooltip.nyc_subway_sound": "NYC subway door sound",
   "gui.trainutilities.tooltip.modern_ice_sound": "modern DB ICE door sound",
-  "gui.trainutilities.tooltip.no_sound": "no sound"
+  "gui.trainutilities.tooltip.no_sound": "no sound",
+  "gui.trainutilities.tooltip.class_350": "Class 350 door sound",
+  "gui.trainutilities.tooltip.class_390": "Class 390 door sound",
+  "gui.trainutilities.tooltip.class_450": "Class 450 door sound",
+  "gui.trainutilities.tooltip.1996_stock": "1996 Stock door sound"
 }

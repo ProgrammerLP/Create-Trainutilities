@@ -22,6 +22,10 @@ public class ToolTipUtils {
             case 16 -> "gui.trainutilities.tooltip.caf_urbos_sound";
             case 17 -> "gui.trainutilities.tooltip.subway_sound";
             case 18 -> "gui.trainutilities.tooltip.modern_ice_sound";
+            case 19 -> "gui.trainutilities.tooltip.class_350_sound";
+            case 20 -> "gui.trainutilities.tooltip.class_390_sound";
+            case 21 -> "gui.trainutilities.tooltip.class_450_sound";
+            case 22 -> "gui.trainutilities.tooltip.1996_stock_sound";
             default -> "gui.trainutilities.tooltip.ic2_sound";
         };
         return name;
