@@ -42,7 +42,6 @@ public class TrainSlidingDoorMovementBehaviour implements MovementBehaviour {
 
     TrainSlidingDoorProperties tsdp;
     String type;
-    int tick = 0;
 
     public TrainSlidingDoorMovementBehaviour(String type) {
         this.type = type;
@@ -55,18 +54,21 @@ public class TrainSlidingDoorMovementBehaviour implements MovementBehaviour {
         if (structureBlockInfo == null)
             return;
         boolean open = TrainSlidingDoorBlockEntity.isOpen(structureBlockInfo.state());
-
         if (!context.world.isClientSide()) {
             tickOpen(context, open);
-            if (open && !shouldOpen(context)) {
-                tick++;
-                if (tick > 240) {
-                    tickClose(context, true);
-                    tick = 0;
+            if (!context.world.isClientSide()) {
+                if (open && !shouldOpen(context)) {
+                    int ticksOpen = context.data.getInt("OpenTicks");
+                    ticksOpen++;
+                    context.data.putInt("OpenTicks", ticksOpen);
+                    if (ticksOpen > 240) {
+                        tickClose(context, true);
+                        context.data.putInt("OpenTicks", 0);
+                    }
                 }
-            }
-            else {
-                tick = 0;
+                else {
+                    context.data.putInt("OpenTicks", 0);
+                }
             }
         }
 
