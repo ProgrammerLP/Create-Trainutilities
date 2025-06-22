@@ -279,6 +279,18 @@ public class TrainUtilitiesBuilderTransformers {
         else if (variant == 18) {
             return new TrainSlidingDoorProperties(ModSounds.DOOR_ICE_MODERN_OPEN.get(), ModSounds.DOOR_ICE_MODERN_CLOSE.get(), .025f);
         }
+        else if (variant == 19) {
+            return new TrainSlidingDoorProperties(ModSounds.DOOR_CLASS_350_OPEN.get(), ModSounds.DOOR_CLASS_350_CLOSE.get(), .025f);
+        }
+        else if (variant == 20) {
+            return new TrainSlidingDoorProperties(ModSounds.DOOR_CLASS_390_OPEN.get(), ModSounds.DOOR_CLASS_390_CLOSE.get(), .025f);
+        }
+        else if (variant == 21) {
+            return new TrainSlidingDoorProperties(ModSounds.DOOR_CLASS_450_OPEN.get(), ModSounds.DOOR_CLASS_450_CLOSE.get(), .025f);
+        }
+        else if (variant == 22) {
+            return new TrainSlidingDoorProperties(ModSounds.DOOR_1996_STOCK_OPEN.get(), ModSounds.DOOR_1996_STOCK_CLOSE.get(), .025f);
+        }
         else {
             return new TrainSlidingDoorProperties(SoundEvents.IRON_DOOR_OPEN, SoundEvents.IRON_DOOR_CLOSE, .15f);
         }
@@ -335,6 +347,18 @@ public class TrainUtilitiesBuilderTransformers {
         }
         else if (type == "ice_modern_top" || type == "ice_modern") {
             return 18;
+        }
+        else if (type == "class_350") {
+            return 19;
+        }
+        else if (type == "class_390") {
+            return 20;
+        }
+        else if (type == "class_450") {
+            return 21;
+        }
+        else if (type == "1996_stock") {
+            return 22;
         }
         else {
             return 0;
