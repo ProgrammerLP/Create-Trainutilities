@@ -1,8 +1,8 @@
 package net.adeptstack.registry;
 
 import com.tterrag.registrate.util.entry.BlockEntityEntry;
-import net.adeptstack.Blocks.Doors.SlidingDoor.TrainSlidingDoorBlockEntity;
-import net.adeptstack.Blocks.Doors.SlidingDoor.TrainSlidingDoorBlockRenderer;
+import net.adeptstack.blocks.doors.slidingDoor.TrainSlidingDoorBlockEntity;
+import net.adeptstack.blocks.doors.slidingDoor.TrainSlidingDoorBlockRenderer;
 
 import static net.adeptstack.Main.REGISTRATE;
 
