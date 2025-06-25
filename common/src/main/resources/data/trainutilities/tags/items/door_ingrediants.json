@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "trainutilities:processing_unit",
+    "trainutilities:sound_unit",
+    "trainutilities:transistor",
+    "trainutilities:rubber_seal"
+  ]
+}
