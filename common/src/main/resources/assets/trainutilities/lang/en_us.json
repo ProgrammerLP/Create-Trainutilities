@@ -245,7 +245,7 @@
   "advancement.trainutilities.incomplete_prototype_doors": "A first Draft!",
   "advancement.trainutilities.incomplete_prototype_doors.description": "It squeaks and jams.",
   "advancement.trainutilities.door_ingrediants": "Component Warehouse",
-  "advancement.trainutilities.door_ingrediants.description": "Own all 4 basic door components",
+  "advancement.trainutilities.door_ingrediants.description": "Own at least one basic door component",
 
   "itemGroup.trainutilities.trainutils_tab": "Create: TrainUtilities",
   "itemGroup.trainutilities.doors_tab": "Create: TrainUtilities - Doors",
