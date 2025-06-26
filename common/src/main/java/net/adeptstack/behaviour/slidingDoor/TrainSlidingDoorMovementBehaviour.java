@@ -57,7 +57,7 @@ public class TrainSlidingDoorMovementBehaviour implements MovementBehaviour {
                     int ticksOpen = context.data.getInt("OpenTicks");
                     ticksOpen++;
                     context.data.putInt("OpenTicks", ticksOpen);
-                    if (ticksOpen > 240) {
+                    if (ticksOpen > 180) {
                         tickClose(context, true);
                         context.data.putInt("OpenTicks", 0);
                     }
