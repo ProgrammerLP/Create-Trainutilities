@@ -225,7 +225,10 @@ public class TrainUtilitiesBuilderTransformers {
     }
 
     public static TrainSlidingDoorProperties GetSlidingDoorProperties(int variant) {
-        if (variant == 2) {
+        if (variant == 1) {
+            return new TrainSlidingDoorProperties(SoundEvents.WAXED_SIGN_INTERACT_FAIL, SoundEvents.DISPENSER_FAIL, .025f);
+        }
+        else if (variant == 2) {
             return new TrainSlidingDoorProperties(ModSounds.DOOR_ICE_OPEN.get(), ModSounds.DOOR_ICE_CLOSE.get(), .025f);
         }
         else if (variant == 3) {
