@@ -274,8 +274,8 @@
   "gui.trainutilities.tooltip.nyc_subway_sound": "NYC U-Bahn Tür Sound",
   "gui.trainutilities.tooltip.modern_ice_sound": "Moderner DB ICE Tür Sound",
   "gui.trainutilities.tooltip.no_sound": "Kein Sound",
-  "gui.trainutilities.tooltip.class_350": "Class 350 Tür Sound",
-  "gui.trainutilities.tooltip.class_390": "Class 390 Tür Sound",
-  "gui.trainutilities.tooltip.class_450": "Class 450 Tür Sound",
-  "gui.trainutilities.tooltip.1996_stock": "1996 Stock Tür Sound"
+  "gui.trainutilities.tooltip.class_350_sound": "Class 350 Tür Sound",
+  "gui.trainutilities.tooltip.class_390_sound": "Class 390 Tür Sound",
+  "gui.trainutilities.tooltip.class_450_sound": "Class 450 Tür Sound",
+  "gui.trainutilities.tooltip.1996_stock_sound": "1996 Stock Tür Sound"
 }
