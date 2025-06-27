@@ -21,10 +21,7 @@
       "conditions": {
         "items": [
           {
-            "item": "trainutilities:processing_unit",
-            "item": "trainutilities:sound_unit",
-            "item": "trainutilities:transistor",
-            "item": "trainutilities:rubber_seal"
+            "tag": "trainutilities:door_ingrediants"
           }
         ]
       }

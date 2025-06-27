@@ -22,8 +22,7 @@
       "conditions": {
         "items": [
           {
-            "item": "trainutilities:incomplete_prototype_door_sf",
-            "item": "trainutilities:incomplete_prototype_door_db"
+            "tag": "trainutilities:iptd"
           }
         ]
       }
