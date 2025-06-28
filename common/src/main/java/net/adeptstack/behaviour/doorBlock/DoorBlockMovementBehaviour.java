@@ -1,7 +1,7 @@
 package net.adeptstack.behaviour.doorBlock;
 
+import com.simibubi.create.api.behaviour.movement.MovementBehaviour;
 import com.simibubi.create.content.contraptions.Contraption;
-import com.simibubi.create.content.contraptions.behaviour.MovementBehaviour;
 import com.simibubi.create.content.contraptions.behaviour.MovementContext;
 import com.simibubi.create.content.contraptions.elevator.ElevatorColumn;
 import com.simibubi.create.content.contraptions.elevator.ElevatorContraption;
@@ -183,11 +183,6 @@ public class DoorBlockMovementBehaviour implements MovementBehaviour {
         Vec3 directionVec = Vec3.atLowerCornerOf(originalFacing.getNormal());
         directionVec = context.rotation.apply(directionVec);
         return Direction.getNearest(directionVec.x, directionVec.y, directionVec.z);
-    }
-
-    @Override
-    public boolean renderAsNormalBlockEntity() {
-        return true;
     }
 
     @Override

@@ -1,8 +1,8 @@
 package net.adeptstack.registry;
 
-import com.jozufozu.flywheel.core.PartialModel;
-import com.simibubi.create.foundation.utility.Couple;
+import dev.engine_room.flywheel.lib.model.baked.PartialModel;
 import net.adeptstack.Main;
+import net.createmod.catnip.data.Couple;
 import net.minecraft.resources.ResourceLocation;
 
 import java.util.HashMap;
@@ -27,7 +27,7 @@ public class ModPartialModels {
     }
 
     private static PartialModel block(String path) {
-        return new PartialModel(Main.asResource("block/" + path));
+        return PartialModel.of(Main.asResource("block/" + path));
     }
 
     public static void init() {

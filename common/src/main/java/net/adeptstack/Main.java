@@ -9,11 +9,14 @@ import dev.architectury.platform.Platform;
 import net.adeptstack.blocks.doors.slidingDoor.TrainSlidingDoorBlock;
 import net.adeptstack.network.ModNetwork;
 import net.adeptstack.registry.*;
+import net.createmod.catnip.lang.FontHelper;
 import net.fabricmc.api.EnvType;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.fml.loading.FMLEnvironment;
 import org.jetbrains.annotations.Nullable;
 
 public final class Main {
@@ -28,7 +31,7 @@ public final class Main {
         ModItems.register();
         ModSounds.SOUND_EVENTS.register();
         ModNetwork.init();
-        if (Platform.getEnv() == EnvType.CLIENT) {
+        if (FMLEnvironment.dist == Dist.CLIENT) {
             ModPartialModels.init();
         }
         ModTags.register();
@@ -52,7 +55,7 @@ public final class Main {
 
     static {
         REGISTRATE.setTooltipModifierFactory(item -> {
-            return new ItemDescription.Modifier(item, TooltipHelper.Palette.STANDARD_CREATE).andThen(TooltipModifier.mapNull(create(item)));
+            return new ItemDescription.Modifier(item, FontHelper.Palette.STANDARD_CREATE).andThen(TooltipModifier.mapNull(create(item)));
         });
     }
 }

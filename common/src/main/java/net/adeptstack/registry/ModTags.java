@@ -1,7 +1,7 @@
 package net.adeptstack.registry;
 
-import com.simibubi.create.foundation.utility.Lang;
 import net.adeptstack.Main;
+import net.createmod.catnip.lang.Lang;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
