@@ -13,8 +13,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 
-import java.util.function.BiConsumer;
-
 import static net.adeptstack.registry.ModTags.NameSpace.FRAMEDBLOCKS;
 import static net.adeptstack.registry.ModTags.NameSpace.MOD;
 

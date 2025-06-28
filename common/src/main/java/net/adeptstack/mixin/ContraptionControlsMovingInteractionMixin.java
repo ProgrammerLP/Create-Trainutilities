@@ -31,10 +31,7 @@ public class ContraptionControlsMovingInteractionMixin {
     private void send(AbstractContraptionEntity contraptionEntity, ItemStack filter, boolean disable) { throw new AssertionError(); }
 
     @Inject(method = "handlePlayerInteraction", remap = false, at = @At(value = "TAIL"), locals = LocalCapture.CAPTURE_FAILHARD)
-    private void customHandlePlayerInteraction(Player player, InteractionHand activeHand, BlockPos localPos,
-                                               AbstractContraptionEntity contraptionEntity, CallbackInfoReturnable<Boolean> cir,
-                                               Contraption contraption, MutablePair<StructureBlockInfo, MovementContext> actor,
-                                               MovementContext ctx, ItemStack filter, boolean disable) {
+    private void customHandlePlayerInteraction(Player player, InteractionHand activeHand, BlockPos localPos, AbstractContraptionEntity contraptionEntity, CallbackInfoReturnable<Boolean> cir, Contraption contraption, MutablePair<StructureBlockInfo, MovementContext> actor, MovementContext ctx, ItemStack filter, boolean disable) {
         if (contraptionEntity instanceof CarriageContraptionEntity cce && filter.is(ItemTags.DOORS)) {
             Carriage carriage = cce.getCarriage();
             Train train = carriage.train;
