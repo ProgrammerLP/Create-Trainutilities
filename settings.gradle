@@ -10,5 +10,5 @@ pluginManagement {
 rootProject.name = 'trainutilities'
 
 include 'common'
-include 'fabric'
+// include 'fabric'
 include 'forge'
