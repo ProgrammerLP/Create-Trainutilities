@@ -2,8 +2,7 @@ package net.adeptstack.blocks.doors.slidingDoor;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import com.simibubi.create.content.decoration.slidingDoor.SlidingDoorBlockEntity;
-import com.simibubi.create.content.decoration.slidingDoor.SlidingDoorRenderer;
+import com.simibubi.create.foundation.blockEntity.renderer.SafeBlockEntityRenderer;
 import dev.engine_room.flywheel.lib.model.baked.PartialModel;
 import net.adeptstack.registry.ModPartialModels;
 import net.createmod.catnip.data.Couple;
@@ -22,20 +21,17 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.DoorHingeSide;
 import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
 import net.minecraft.world.phys.Vec3;
+import net.minecraftforge.registries.ForgeRegistries;
 
-public class TrainSlidingDoorBlockRenderer extends SlidingDoorRenderer {
+public class TrainSlidingDoorBlockRenderer extends SafeBlockEntityRenderer<TrainSlidingDoorBlockEntity> {
 
-    public TrainSlidingDoorBlockRenderer(BlockEntityRendererProvider.Context context) {
-        super(context);
-    }
+    public TrainSlidingDoorBlockRenderer(BlockEntityRendererProvider.Context context) {}
 
     @Override
-    protected void renderSafe(SlidingDoorBlockEntity be, float partialTicks, PoseStack ms, MultiBufferSource buffer,
+    protected void renderSafe(TrainSlidingDoorBlockEntity be, float partialTicks, PoseStack ms, MultiBufferSource buffer,
                               int light, int overlay) {
-        TrainSlidingDoorBlockEntity be2 = (TrainSlidingDoorBlockEntity) be;
-
         BlockState blockState = be.getBlockState();
-        if (!be2.shouldRenderSpecial(blockState))
+        if (!be.shouldRenderSpecial(blockState))
             return;
 
         Direction facing = blockState.getValue(DoorBlock.FACING);
@@ -44,10 +40,10 @@ public class TrainSlidingDoorBlockRenderer extends SlidingDoorRenderer {
         if (blockState.getValue(DoorBlock.HINGE) == DoorHingeSide.LEFT)
             movementDirection = movementDirection.getOpposite();
 
-        float value = be2.animation.getValue(partialTicks);
+        float value = be.animation.getValue(partialTicks);
         float value2 = Mth.clamp(value * 10, 0, 1);
 
-        VertexConsumer vb = buffer.getBuffer(RenderType.translucent());
+        VertexConsumer vb = buffer.getBuffer(RenderType.cutout());
         Vec3 offset = Vec3.atLowerCornerOf(movementDirection.getNormal())
                 .scale(value * value * 13 / 16f)
                 .add(Vec3.atLowerCornerOf(facing.getNormal())
@@ -55,8 +51,7 @@ public class TrainSlidingDoorBlockRenderer extends SlidingDoorRenderer {
 
         if (((TrainSlidingDoorBlock) blockState.getBlock()).isFoldingDoor()) {
             Couple<PartialModel> partials =
-                    ModPartialModels.FOLDING_DOORS.get(BuiltInRegistries.BLOCK.getKey(blockState.getBlock()));
-                    //ModPartialModels.FOLDING_DOORS.get(blockState.getBlock().arch$registryName());
+                    ModPartialModels.FOLDING_DOORS.get(ForgeRegistries.BLOCKS.getKey(blockState.getBlock()));
 
             boolean flip = blockState.getValue(DoorBlock.HINGE) == DoorHingeSide.RIGHT;
             for (boolean left : Iterate.trueAndFalse) {
@@ -71,11 +66,11 @@ public class TrainSlidingDoorBlockRenderer extends SlidingDoorRenderer {
 
                 if (flip)
                     partial.translate(0, 0, 1);
-                partial.rotateY(91 * f * value * value);
+                partial.rotateYDegrees(91 * f * value * value);
 
                 if (!left)
                     partial.translate(0, 0, f / 2f)
-                            .rotateY(-181 * f * value * value);
+                            .rotateYDegrees(-181 * f * value * value);
 
                 if (flip)
                     partial.translate(0, 0, -1 / 2f);
