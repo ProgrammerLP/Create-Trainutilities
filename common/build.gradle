@@ -3,22 +3,14 @@ architectury {
 }
 
 dependencies {
-    // We depend on Fabric Loader here to use the Fabric @Environment annotations,
-    // which get remapped to the correct annotations on each platform.
-    // Do NOT use other classes from Fabric Loader.
+    neoForge "net.neoforged:neoforge:$rootProject.neoforge_version"
     modImplementation "net.fabricmc:fabric-loader:$rootProject.fabric_loader_version"
-    forge "net.minecraftforge:forge:$rootProject.forge_version"
 
-    // Architectury API. This is optional, and you can comment it out if you don't need it.
-    // modImplementation "dev.architectury:architectury:$rootProject.architectury_api_version"
-    // modCompileOnly("com.simibubi.create:create-fabric-${rootProject.minecraft_version}:${rootProject.create_fabric_version}")
-    modCompileOnly("dev.architectury:architectury-forge:${rootProject.architectury_api_version}")
+    modImplementation "dev.architectury:architectury-neoforge:$rootProject.architectury_api_version"
 
-    modImplementation("com.simibubi.create:create-${rootProject.minecraft_version}:${rootProject.create_forge_version}:slim") { transitive = false }
-    modImplementation("net.createmod.ponder:Ponder-Forge-${rootProject.minecraft_version}:${rootProject.ponder_forge_version}")
-    modCompileOnly("dev.engine-room.flywheel:flywheel-forge-api-${rootProject.minecraft_version}:${rootProject.flywheel_forge_version}")
-    modRuntimeOnly("dev.engine-room.flywheel:flywheel-forge-${rootProject.minecraft_version}:${rootProject.flywheel_forge_version}")
-    modImplementation("com.tterrag.registrate:Registrate:${rootProject.registrate_forge_version}")
-    compileOnly(annotationProcessor("io.github.llamalad7:mixinextras-common:0.4.1"))
-    implementation("io.github.llamalad7:mixinextras-forge:0.4.1")
+    implementation("com.simibubi.create:create-${minecraft_version}:${create_neoforge_version}:slim") { transitive = false }
+    implementation("net.createmod.ponder:Ponder-NeoForge-${minecraft_version}:${ponder_neoforge_version}")
+    compileOnly("dev.engine-room.flywheel:flywheel-neoforge-api-${minecraft_version}:${flywheel_neoforge_version}")
+    runtimeOnly("dev.engine-room.flywheel:flywheel-neoforge-${minecraft_version}:${flywheel_neoforge_version}")
+    implementation("com.tterrag.registrate:Registrate:${registrate_neoforge_version}")
 }
