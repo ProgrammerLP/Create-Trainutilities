@@ -1,4 +1,4 @@
-package net.adeptstack.forge;
+package net.adeptstack.neoforge;
 
 import dev.architectury.platform.forge.EventBuses;
 import net.minecraftforge.fml.common.Mod;

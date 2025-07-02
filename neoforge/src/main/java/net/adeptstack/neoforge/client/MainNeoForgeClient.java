@@ -1,4 +1,4 @@
-package net.adeptstack.forge.client;
+package net.adeptstack.neoforge.client;
 
 
 import dev.architectury.registry.client.rendering.RenderTypeRegistry;
@@ -8,11 +8,10 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 
-import static net.adeptstack.registry.ModBlocks.DOOR_RAILJET;
 import static net.adeptstack.registry.ModBlocks.FRAMELESS_GLASS;
 
 @Mod.EventBusSubscriber(modid = "trainutilities", value = Dist.CLIENT, bus = Mod.EventBusSubscriber.Bus.MOD)
-public class MainForgeClient {
+public class MainNeoForgeClient {
 
     @SubscribeEvent
     public static void onClientSetup(FMLClientSetupEvent event) {
