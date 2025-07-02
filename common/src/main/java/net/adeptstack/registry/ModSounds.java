@@ -77,6 +77,6 @@ public class ModSounds {
     public static final RegistrySupplier<SoundEvent> DOOR_CLASS_450_CLOSE = registerSoundEvents("door_class_450_close");
 
     private static RegistrySupplier<SoundEvent> registerSoundEvents(String name) {
-        return SOUND_EVENTS.register(new ResourceLocation(MOD_ID, name), () -> SoundEvent.createVariableRangeEvent(new ResourceLocation(MOD_ID, name)));
+        return SOUND_EVENTS.register(ResourceLocation.fromNamespaceAndPath(MOD_ID, name), () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath(MOD_ID, name)));
     }
 }

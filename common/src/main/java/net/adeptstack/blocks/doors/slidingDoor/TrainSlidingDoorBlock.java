@@ -62,9 +62,9 @@ public class TrainSlidingDoorBlock extends SlidingDoorBlock {
     }
 
     @Override
-    public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
+    public InteractionResult useWithoutItem(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, BlockHitResult pHit) {
         if (!pPlayer.isShiftKeyDown()) {
-            return super.use(pState, pLevel, pPos, pPlayer, pHand, pHit);
+            return super.useWithoutItem(pState, pLevel, pPos, pPlayer, pHit);
         } else {
             if (pLevel.isClientSide) {
                 ClientWrapper.openChangeDoorSoundScreen(pPos, pState);

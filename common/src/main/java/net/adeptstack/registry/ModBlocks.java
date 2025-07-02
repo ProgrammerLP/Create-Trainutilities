@@ -1,5 +1,6 @@
 package net.adeptstack.registry;
 
+import com.simibubi.create.AllBlocks;
 import com.simibubi.create.content.decoration.palettes.GlassPaneBlock;
 import com.tterrag.registrate.util.entry.BlockEntry;
 import net.adeptstack.blocks.doors.slidingDoor.TrainSlidingDoorBlock;
@@ -37,7 +38,7 @@ public class ModBlocks {
             TrainUtilitiesBuilderTransformers.LineBlock("budapest_block_black", MapColor.TERRACOTTA_BLACK);
 
     //glass
-    public static final BlockEntry<GlassBlock> FRAMELESS_GLASS =
+    public static final BlockEntry<Block> FRAMELESS_GLASS =
             TrainUtilitiesBuilderTransformers.GlassBlock("frameless_glass", MapColor.NONE);
 
     public static  final  BlockEntry<GlassPaneBlock> FRAMELESS_GLASS_PANE =

@@ -7,9 +7,10 @@ import net.minecraft.resources.ResourceLocation;
 
 import static net.adeptstack.Main.MOD_ID;
 
+@SuppressWarnings({"unused","removal"})
 public class ModNetwork {
 
-    public static final NetworkChannel CHANNEL = NetworkChannel.create(new ResourceLocation(MOD_ID, MOD_ID + "_network"));
+    public static final NetworkChannel CHANNEL = NetworkChannel.create(ResourceLocation.fromNamespaceAndPath(MOD_ID, MOD_ID + "_network"));
 
     public static void init() {
         CHANNEL.register(PlatformBlockPacket.class, PlatformBlockPacket::encode, PlatformBlockPacket::new, PlatformBlockPacket::apply);

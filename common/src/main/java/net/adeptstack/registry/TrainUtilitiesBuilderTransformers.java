@@ -84,9 +84,9 @@ public class TrainUtilitiesBuilderTransformers {
                 .register();
     }
 
-    public static BlockEntry<GlassBlock> GlassBlock(String id, MapColor color) {
+    public static BlockEntry<Block> GlassBlock(String id, MapColor color) {
         return REGISTRATE
-                .block(id, GlassBlock::new)
+                .block(id, Block::new)
                 .initialProperties(() -> Blocks.GLASS)
                 .properties(p -> p.sound(SoundType.GLASS).mapColor(color).noOcclusion().isViewBlocking((s, w, b) -> false))
                 ///.addLayer(() -> RenderType::translucent)
@@ -178,7 +178,7 @@ public class TrainUtilitiesBuilderTransformers {
     }
 
     public static BlockEntry<DoorBlock> DefaultMinecraftDoor(String type, MapColor colour) {
-        return REGISTRATE.block("door_" + type, p -> new DoorBlock(p, BlockSetType.SPRUCE))
+        return REGISTRATE.block("door_" + type, p -> new DoorBlock(BlockSetType.SPRUCE, p))
                 .initialProperties(AllBlocks.FRAMED_GLASS_DOOR)
                 .properties(p -> p.sound(SoundType.METAL).mapColor(colour))
                 .transform(TrainUtilitiesBuilderTransformers.defaultDoor(type))

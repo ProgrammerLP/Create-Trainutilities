@@ -19,7 +19,7 @@ public class PlatformBlockScreenBase extends Screen {
 
     public static final int NO_VARIANT_SELECTED = -1;
 
-    private static final ResourceLocation texture = new ResourceLocation(MOD_ID, "textures/gui/selection_screen.png");
+    private static final ResourceLocation texture = ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/selection_screen.png");
     private static final int TEXTURE_WIDTH = 256;
     private static final int TEXTURE_HEIGHT = 256;
     private static final int WINDOW_WIDTH = 218;
@@ -120,7 +120,7 @@ public class PlatformBlockScreenBase extends Screen {
 
     @Override
     public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTick) {
-        renderBackground(guiGraphics);
+        renderBackground(guiGraphics, mouseX, mouseY, partialTick);
         guiGraphics.blit(texture, guiLeft, guiTop, WINDOW_WIDTH, WINDOW_TOP_PART_HEIGHT, 0, 0, WINDOW_WIDTH, WINDOW_TOP_PART_HEIGHT, TEXTURE_WIDTH, TEXTURE_HEIGHT); // Window Top
         for (int i = 0; i < maxRows; i++) {
             guiGraphics.blit(texture, guiLeft, guiTop + WINDOW_TOP_PART_HEIGHT + i * BlockButton.DEFAULT_HEIGHT, WINDOW_WIDTH, BlockButton.DEFAULT_HEIGHT, 0, WINDOW_BUTTON_AREA_Y, WINDOW_WIDTH, BlockButton.DEFAULT_HEIGHT, TEXTURE_WIDTH, TEXTURE_HEIGHT); // Window Body

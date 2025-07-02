@@ -31,7 +31,7 @@ public class PlatformBlockDE extends PanelBlockBase {
     }
 
     @Override
-    public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
+    public InteractionResult useWithoutItem(BlockState state, Level level, BlockPos pos, Player player, BlockHitResult hit) {
         if (level.isClientSide) {
             ClientWrapper.openPlatformBlockDEScreen(pos, state);
         }

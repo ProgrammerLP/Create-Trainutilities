@@ -29,7 +29,7 @@ public class ClientWrapper {
                         PlatformBlockDE.SIGN_BLOCKS,
                         (variant) -> {
                             String name = TextureNames.GetDEPlatformBlockTextureName(variant);
-                            return new PlatformBlockDEPlacementScreen.TextureResult(new ResourceLocation(MOD_ID, "textures/block/platformblocks/" + name), 256, 256);
+                            return new PlatformBlockDEPlacementScreen.TextureResult(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/block/platformblocks/" + name), 256, 256);
                         }, (variant) -> {
                     ModNetwork.CHANNEL.sendToServer(new PlatformBlockPacket(pos, variant));
                         },
@@ -45,7 +45,7 @@ public class ClientWrapper {
                         PlatformBlockNL.SIGN_BLOCKS,
                         (variant) -> {
                             String name = TextureNames.GetNLPlatformBlockTextureName(variant);
-                            return new PlatformBlockNLPlacementScreen.TextureResult(new ResourceLocation(MOD_ID, "textures/block/nl_platformblocks/" + name), 256, 256);
+                            return new PlatformBlockNLPlacementScreen.TextureResult(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/block/nl_platformblocks/" + name), 256, 256);
                         }, (variant) -> {
                     ModNetwork.CHANNEL.sendToServer(new PlatformBlockPacket(pos, variant));
                         },
@@ -61,7 +61,7 @@ public class ClientWrapper {
                         PlatformBlockCH.SIGN_BLOCKS,
                         (variant) -> {
                             String name = TextureNames.GetCHPlatformBlockTextureName(variant);
-                            return new PlatformBlockCHPlacementScreen.TextureResult(new ResourceLocation(MOD_ID, "textures/block/ch_platformblocks/" + name), 256, 256);
+                            return new PlatformBlockCHPlacementScreen.TextureResult(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/block/ch_platformblocks/" + name), 256, 256);
                         }, (variant) -> {
                     ModNetwork.CHANNEL.sendToServer(new PlatformBlockPacket(pos, variant));
                         },
@@ -79,7 +79,7 @@ public class ClientWrapper {
                             TrainSlidingDoorBlock.DOOR_SOUND,
                             (variant) -> {
                                 String name = TextureNames.GetDoorTextureName(variant);
-                                return new ChangeDoorSoundScreen.TextureResult(new ResourceLocation(MOD_ID, "textures/item/" + name), 16, 16);
+                                return new ChangeDoorSoundScreen.TextureResult(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/item/" + name), 16, 16);
                             }, (variant) -> {
                         ModNetwork.CHANNEL.sendToServer(new ChangeDoorSoundPacket(pos, variant));
                     },
