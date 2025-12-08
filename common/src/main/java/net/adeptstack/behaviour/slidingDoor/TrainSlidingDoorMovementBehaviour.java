@@ -71,8 +71,7 @@ public class TrainSlidingDoorMovementBehaviour implements MovementBehaviour {
         int sound = TrainSlidingDoorBlockEntity.getDoorSoundValue(structureBlockInfo.state());
         tsdp = TrainUtilitiesBuilderTransformers.GetSlidingDoorProperties(sound);
 
-        Map<BlockPos, BlockEntity> tes = context.contraption.presentBlockEntities;
-        if (!(tes.get(context.localPos) instanceof TrainSlidingDoorBlockEntity sdbe))
+        if (!(context.contraption.getBlockEntityClientSide(context.localPos) instanceof TrainSlidingDoorBlockEntity sdbe))
             return;
         boolean wasSettled = sdbe.animation.settled();
         sdbe.animation.chase(open ? 1 : 0, tsdp.GetSpeed(), LerpedFloat.Chaser.LINEAR);
