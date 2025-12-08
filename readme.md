@@ -46,6 +46,7 @@ Mod that adds custom sliding doors with realistic opening & closing sounds and s
 - Spanish (by Timanfour)
 - Czech (by Panzimy)
 - Russian (by Best-Jaro)
+- French (by Alba0404)
 
 ## Important!
 You should always back up your world before installing a mod update to protect your world from damage.
