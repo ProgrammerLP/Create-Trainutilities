@@ -11,7 +11,7 @@
       "type": "create:deploying",
       "ingredients": [
         { "item": "trainutilities:incomplete_processing_unit" },
-        { "item": "create:electron_tube" }
+        { "item": "minecraft:redstone" }
       ],
       "results": [
         { "id": "trainutilities:incomplete_processing_unit" }
@@ -31,7 +31,7 @@
       "type": "create:deploying",
       "ingredients": [
         { "item": "trainutilities:incomplete_processing_unit" },
-        { "item": "create:electron_tube" }
+        { "item": "minecraft:redstone" }
       ],
       "results": [
         { "id": "trainutilities:incomplete_processing_unit" }
