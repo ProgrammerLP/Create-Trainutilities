@@ -11,7 +11,7 @@
       "type": "create:deploying",
       "ingredients": [
         { "item": "trainutilities:incomplete_processing_unit" },
-        { "item": "minecraft:redstone" }
+        { "item": "trainutilities:transistor" }
       ],
       "results": [
         { "id": "trainutilities:incomplete_processing_unit" }
@@ -21,7 +21,7 @@
       "type": "create:deploying",
       "ingredients": [
         { "item": "trainutilities:incomplete_processing_unit" },
-        { "item": "trainutilities:transistor" }
+        { "item": "minecraft:redstone" }
       ],
       "results": [
         { "id": "trainutilities:incomplete_processing_unit" }
