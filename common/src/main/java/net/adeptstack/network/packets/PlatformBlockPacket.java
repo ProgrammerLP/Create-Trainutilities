@@ -1,54 +1,51 @@
 package net.adeptstack.network.packets;
 
-import de.mrjulsen.mcdragonlib.net.BaseNetworkPacket;
-import dev.architectury.networking.NetworkManager;
+import de.mrjulsen.mcdragonlib.data.DLStatus;
+import de.mrjulsen.mcdragonlib.network.NetworkPacketContext;
+import de.mrjulsen.mcdragonlib.network.NetworkPacketData;
+import de.mrjulsen.mcdragonlib.util.NbtUtils;
 import net.adeptstack.blocks.panelBlocks.platformBlocks.PlatformBlockCH;
 import net.adeptstack.blocks.panelBlocks.platformBlocks.PlatformBlockDE;
 import net.adeptstack.blocks.panelBlocks.platformBlocks.PlatformBlockNL;
 import net.minecraft.core.BlockPos;
-import net.minecraft.network.FriendlyByteBuf;
-import net.minecraft.network.RegistryFriendlyByteBuf;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.level.block.state.BlockState;
 
-import java.util.function.Supplier;
-
-public class PlatformBlockPacket extends BaseNetworkPacket<PlatformBlockPacket> {
+public class PlatformBlockPacket extends NetworkPacketData {
 
     public BlockPos pos;
     public int signblock;
 
-    public PlatformBlockPacket () { }
-
-    public PlatformBlockPacket(FriendlyByteBuf buf) {
-        this(buf.readBlockPos(), buf.readInt());
+    public PlatformBlockPacket(DLStatus status) {
+        super(status);
     }
 
     public PlatformBlockPacket(BlockPos pos, int signblock) {
+        super(DLStatus.OK);
         this.pos = pos;
         this.signblock = signblock;
     }
 
     @Override
-    public void encode(PlatformBlockPacket packet, RegistryFriendlyByteBuf buf) {
-        buf.writeBlockPos(packet.pos);
-        buf.writeInt(packet.signblock);
+    protected void write(CompoundTag nbt) {
+        NbtUtils.putNbtPos(nbt, "pos", pos);
+        nbt.putInt("signblock", signblock);
     }
-
     @Override
-    public PlatformBlockPacket decode(RegistryFriendlyByteBuf buf) {
-        return new PlatformBlockPacket(buf.readBlockPos(), buf.readInt());
+    protected void read(CompoundTag nbt) {
+        this.pos = NbtUtils.getNbtBlockPos(nbt, "pos");
+        this.signblock = nbt.getInt("signblock");
     }
 
-    @Override
-    public void handle(PlatformBlockPacket packet, Supplier<NetworkManager.PacketContext> supplier) {
-        apply(packet, supplier);
+    public static void handle(PlatformBlockPacket packet, NetworkPacketContext context) {
+        apply(packet, context);
     }
 
 
-    public void apply(PlatformBlockPacket packet, Supplier<NetworkManager.PacketContext> contextSupplier) {
-        contextSupplier.get().queue(() -> {
-            BlockState state = contextSupplier.get().getPlayer().level().getBlockState(packet.pos);
-            if (signblock >= 0) {
+    public static void apply(PlatformBlockPacket packet, NetworkPacketContext context) {
+        context.queue(() -> {
+            BlockState state = context.getPlayer().level().getBlockState(packet.pos);
+            if (packet.signblock >= 0) {
                 if (state.getBlock() instanceof PlatformBlockNL) {
                     state = state.setValue(PlatformBlockNL.SIGN_BLOCKS, packet.signblock);
                 } else if (state.getBlock() instanceof PlatformBlockDE) {
@@ -57,7 +54,7 @@ public class PlatformBlockPacket extends BaseNetworkPacket<PlatformBlockPacket> 
                     state = state.setValue(PlatformBlockCH.SIGN_BLOCKS, packet.signblock);
                 }
             }
-            contextSupplier.get().getPlayer().level().setBlockAndUpdate(packet.pos, state);
+            context.getPlayer().level().setBlockAndUpdate(packet.pos, state);
         });
     }
 }

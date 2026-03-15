@@ -31,20 +31,20 @@ side = "BOTH"
 modId = "architectury"
 type = "required"
 versionRange = "[13.0.8,)"
-ordering = "AFTER"
+ordering = "BEFORE"
 side = "BOTH"
 
 [[dependencies.trainutilities]]
 modId = "dragonlib"
 type = "required"
-versionRange = "[1.21.1-2.2.24,)"
-ordering = "BEFORE"
+versionRange = "[beta-3.0.23,)"
+ordering = "AFTER"
 side = "BOTH"
 
 [[dependencies.trainutilities]]
 modId = "create"
 type = "required"
-versionRange = "[6.0.6,]"
+versionRange = "[6.0.7,]"
 ordering = "NONE"
 side = "BOTH"
 

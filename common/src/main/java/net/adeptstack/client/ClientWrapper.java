@@ -1,10 +1,11 @@
 package net.adeptstack.client;
 
-import de.mrjulsen.mcdragonlib.net.DLNetworkManager;
+import de.mrjulsen.mcdragonlib.network.NetworkDirection;
 import net.adeptstack.blocks.doors.slidingDoor.TrainSlidingDoorBlock;
 import net.adeptstack.blocks.panelBlocks.platformBlocks.PlatformBlockCH;
 import net.adeptstack.blocks.panelBlocks.platformBlocks.PlatformBlockDE;
 import net.adeptstack.blocks.panelBlocks.platformBlocks.PlatformBlockNL;
+import net.adeptstack.network.ModNetwork;
 import net.adeptstack.network.packets.ChangeDoorSoundPacket;
 import net.adeptstack.network.packets.PlatformBlockPacket;
 import net.adeptstack.ui.screens.ChangeDoorSoundScreen;
@@ -31,7 +32,7 @@ public class ClientWrapper {
                             String name = TextureNames.GetDEPlatformBlockTextureName(variant);
                             return new PlatformBlockDEPlacementScreen.TextureResult(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/block/platformblocks/" + name), 256, 256);
                         }, (variant) -> {
-                                DLNetworkManager.sendToServer(new PlatformBlockPacket(pos, variant));
+                                ModNetwork.PLATFORM_PACKET.send(NetworkDirection.toServer(), new PlatformBlockPacket(pos, variant));
                         },
                         "gui." + MOD_ID + ".selection_screen.blockplacementscreen_de", 1
                 )
@@ -48,7 +49,7 @@ public class ClientWrapper {
                             return new PlatformBlockNLPlacementScreen.TextureResult(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/block/nl_platformblocks/" + name), 256, 256);
                         }, (variant) -> {
                             if (pos != null) {
-                                DLNetworkManager.sendToServer(new PlatformBlockPacket(pos, variant));
+                                ModNetwork.PLATFORM_PACKET.send(NetworkDirection.toServer(), new PlatformBlockPacket(pos, variant));
                             }
                         },
                         "gui." + MOD_ID + ".selection_screen.blockplacementscreen_nl", 2
@@ -66,7 +67,7 @@ public class ClientWrapper {
                             return new PlatformBlockCHPlacementScreen.TextureResult(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/block/ch_platformblocks/" + name), 256, 256);
                         }, (variant) -> {
                             if (pos != null) {
-                                DLNetworkManager.sendToServer(new PlatformBlockPacket(pos, variant));
+                                ModNetwork.PLATFORM_PACKET.send(NetworkDirection.toServer(), new PlatformBlockPacket(pos, variant));
                             }
                         },
                     "gui." + MOD_ID + ".selection_screen.blockplacementscreen_ch", 3
@@ -85,7 +86,7 @@ public class ClientWrapper {
                                 String name = TextureNames.GetDoorTextureName(variant);
                                 return new ChangeDoorSoundScreen.TextureResult(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/item/" + name), 16, 16);
                             }, (variant) -> {
-                        DLNetworkManager.sendToServer(new ChangeDoorSoundPacket(pos, variant));
+                        ModNetwork.CHANGE_DOOR_SOUND_PACKET.send(NetworkDirection.toServer(), new ChangeDoorSoundPacket(pos, variant));
                     },
                             "gui." + MOD_ID + ".selection_screen.changeDoorSoundScreen"
                     )
