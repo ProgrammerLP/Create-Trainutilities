@@ -11,6 +11,7 @@ import com.simibubi.create.content.trains.entity.Carriage;
 import com.simibubi.create.content.trains.entity.CarriageContraptionEntity;
 import com.simibubi.create.content.trains.station.GlobalStation;
 import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import net.adeptstack.TrainUtilitiesPlatformSpecific;
 import net.adeptstack.blocks.doors.slidingDoor.TrainSlidingDoorBlock;
 import net.adeptstack.utils.TrainSlidingDoorProperties;
 import net.adeptstack.blocks.doors.slidingDoor.TrainSlidingDoorBlockEntity;
@@ -71,7 +72,7 @@ public class TrainSlidingDoorMovementBehaviour implements MovementBehaviour {
         int sound = TrainSlidingDoorBlockEntity.getDoorSoundValue(structureBlockInfo.state());
         tsdp = TrainUtilitiesBuilderTransformers.GetSlidingDoorProperties(sound);
 
-        if (!(context.contraption.getBlockEntityClientSide(context.localPos) instanceof TrainSlidingDoorBlockEntity sdbe))
+        if (!(TrainUtilitiesPlatformSpecific.getClientContraptionBlockEntity(context.contraption, context.localPos) instanceof TrainSlidingDoorBlockEntity sdbe))
             return;
         boolean wasSettled = sdbe.animation.settled();
         sdbe.animation.chase(open ? 1 : 0, tsdp.GetSpeed(), LerpedFloat.Chaser.LINEAR);
@@ -79,26 +80,22 @@ public class TrainSlidingDoorMovementBehaviour implements MovementBehaviour {
 
         if (TrainSlidingDoorBlock.isDoubleDoor(structureBlockInfo.state().getValue(TrainSlidingDoorBlock.HINGE), context.localPos, context.state.getValue(TrainSlidingDoorBlock.FACING), context)) {
             if (structureBlockInfo.state().getValue(TrainSlidingDoorBlock.HINGE) == DoorHingeSide.RIGHT) {
-                if (wasSettled && !sdbe.animation.settled() && !open && sound != 1) {
-                    context.world.playLocalSound(context.position.x, context.position.y, context.position.z,
-                            tsdp.GetClose(), SoundSource.BLOCKS, 1f, 1, false);
-                }
-
-                if (wasSettled && !sdbe.animation.settled() && open && sound != 1) {
-                    context.world.playLocalSound(context.position.x, context.position.y, context.position.z,
-                            tsdp.GetOpen(), SoundSource.BLOCKS, 1f, 1, false);
-                }
+                playSounds(context, open, sound, sdbe, wasSettled);
             }
         } else {
-            if (wasSettled && !sdbe.animation.settled() && !open && sound != 1) {
-                context.world.playLocalSound(context.position.x, context.position.y, context.position.z,
-                        tsdp.GetClose(), SoundSource.BLOCKS, 1f, 1, false);
-            }
+            playSounds(context, open, sound, sdbe, wasSettled);
+        }
+    }
 
-            if (wasSettled && !sdbe.animation.settled() && open && sound != 1) {
-                context.world.playLocalSound(context.position.x, context.position.y, context.position.z,
-                        tsdp.GetOpen(), SoundSource.BLOCKS, 1f, 1, false);
-            }
+    private void playSounds(MovementContext context, boolean open, int sound, TrainSlidingDoorBlockEntity sdbe, boolean wasSettled) {
+        if (wasSettled && !sdbe.animation.settled() && !open && sound != 1) {
+            context.world.playLocalSound(context.position.x, context.position.y, context.position.z,
+                    tsdp.GetClose(), SoundSource.BLOCKS, 1f, 1, false);
+        }
+
+        if (wasSettled && !sdbe.animation.settled() && open && sound != 1) {
+            context.world.playLocalSound(context.position.x, context.position.y, context.position.z,
+                    tsdp.GetOpen(), SoundSource.BLOCKS, 1f, 1, false);
         }
     }
 

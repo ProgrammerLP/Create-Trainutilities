@@ -15,13 +15,13 @@ import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
 import net.minecraft.core.Direction;
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
 import net.minecraft.world.level.block.DoorBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.DoorHingeSide;
 import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
 import net.minecraft.world.phys.Vec3;
-import net.minecraftforge.registries.ForgeRegistries;
 
 public class TrainSlidingDoorBlockRenderer extends SafeBlockEntityRenderer<TrainSlidingDoorBlockEntity> {
 
@@ -50,8 +50,9 @@ public class TrainSlidingDoorBlockRenderer extends SafeBlockEntityRenderer<Train
                         .scale(value2 * 1 / 32f));
 
         if (((TrainSlidingDoorBlock) blockState.getBlock()).isFoldingDoor()) {
+            ResourceLocation blockKey = BuiltInRegistries.BLOCK.getKey(blockState.getBlock());
             Couple<PartialModel> partials =
-                    ModPartialModels.FOLDING_DOORS.get(ForgeRegistries.BLOCKS.getKey(blockState.getBlock()));
+                    ModPartialModels.FOLDING_DOORS.get(blockKey);
 
             boolean flip = blockState.getValue(DoorBlock.HINGE) == DoorHingeSide.RIGHT;
             for (boolean left : Iterate.trueAndFalse) {
