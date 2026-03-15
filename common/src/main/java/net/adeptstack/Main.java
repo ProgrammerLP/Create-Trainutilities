@@ -15,8 +15,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
-import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.fml.loading.FMLEnvironment;
 import org.jetbrains.annotations.Nullable;
 
 public final class Main {
@@ -31,7 +29,7 @@ public final class Main {
         ModItems.register();
         ModSounds.SOUND_EVENTS.register();
         ModNetwork.init();
-        if (FMLEnvironment.dist == Dist.CLIENT) {
+        if (Platform.getEnv().equals(EnvType.CLIENT)) {
             ModPartialModels.init();
         }
         ModTags.register();
