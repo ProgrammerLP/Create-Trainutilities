@@ -20,7 +20,6 @@ public final class Main {
     public static final CreateRegistrate REGISTRATE = CreateRegistrate.create(MOD_ID);
 
     public static void init() {
-        // Write common init code here.
         ModBlockEntities.register();
         ModNetwork.networkInit();
         ModTabs.CREATIVE_MODE_TABS.register();
