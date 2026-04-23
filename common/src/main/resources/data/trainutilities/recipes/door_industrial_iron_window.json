@@ -1,15 +1,8 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-      "item": "trainutilities:door_industrial_iron"
-    },
-    {
-      "item": "create:framed_glass"
-    }
-  ],
-  "result": {
-    "item": "trainutilities:door_industrial_iron_window",
-    "count": 1
-  }
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "trainutilities:prototype_door_sf"
+  },
+  "result": "trainutilities:door_industrial_iron_window",
+  "count": 1
 }

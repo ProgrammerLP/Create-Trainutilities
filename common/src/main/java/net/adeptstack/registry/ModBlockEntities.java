@@ -1,8 +1,8 @@
 package net.adeptstack.registry;
 
 import com.tterrag.registrate.util.entry.BlockEntityEntry;
-import net.adeptstack.Blocks.Doors.SlidingDoor.TrainSlidingDoorBlockEntity;
-import net.adeptstack.Blocks.Doors.SlidingDoor.TrainSlidingDoorBlockRenderer;
+import net.adeptstack.blocks.doors.slidingDoor.TrainSlidingDoorBlockEntity;
+import net.adeptstack.blocks.doors.slidingDoor.TrainSlidingDoorBlockRenderer;
 
 import static net.adeptstack.Main.REGISTRATE;
 
@@ -21,7 +21,8 @@ public class ModBlockEntities {
                             ModBlocks.DOOR_WARSAW_TRAM, ModBlocks.DOOR_IRON_CLEAN, ModBlocks.DOOR_IRON_RUSTY,
                             ModBlocks.DOOR_INDUSTRIAL_IRON, ModBlocks.DOOR_INDUSTRIAL_IRON_WINDOW, ModBlocks.DOOR_RAILJET,
                             ModBlocks.DOOR_SBAHN_COLOGNE, ModBlocks.DOOR_SBAHN_VRR, ModBlocks.DOOR_TALENT1, ModBlocks.DOOR_TALENT2,
-                            ModBlocks.DOOR_TALENT3, ModBlocks.DOOR_CAF_URBOS_3, ModBlocks.DOOR_STRIPPED_SPRUCE)
+                            ModBlocks.DOOR_TALENT3, ModBlocks.DOOR_CAF_URBOS_3, ModBlocks.DOOR_STRIPPED_SPRUCE, ModBlocks.DOOR_1996_STOCK,
+                            ModBlocks.DOOR_CLASS_350, ModBlocks.DOOR_CLASS_390, ModBlocks.DOOR_CLASS_450)
                     .register();
 
     public static void register() {}

@@ -6,6 +6,8 @@
   "client": [
   ],
   "mixins": [
+    "ContraptionControlsMovingInteractionMixin",
+    "ContraptionAccessorMixin"
   ],
   "injectors": {
     "defaultRequire": 1

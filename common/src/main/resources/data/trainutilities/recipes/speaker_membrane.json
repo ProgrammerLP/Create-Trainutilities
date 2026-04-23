@@ -1,0 +1,10 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    { "item": "create:iron_sheet" },
+    { "item": "minecraft:black_wool" }
+  ],
+  "results": [
+    { "item": "trainutilities:speaker_membrane" }
+  ]
+}

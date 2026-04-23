@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "trainutilities:block/budapest_blocks/budapest_block_yellow"
+    },
+    "facing=east": {
+      "model": "trainutilities:block/budapest_blocks/budapest_block_yellow",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "trainutilities:block/budapest_blocks/budapest_block_yellow",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "trainutilities:block/budapest_blocks/budapest_block_yellow",
+      "y": 270
+    }
+  }
+}

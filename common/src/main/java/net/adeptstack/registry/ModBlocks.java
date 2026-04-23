@@ -1,12 +1,13 @@
 package net.adeptstack.registry;
 
+import com.simibubi.create.content.decoration.palettes.GlassPaneBlock;
 import com.tterrag.registrate.util.entry.BlockEntry;
-import net.adeptstack.Blocks.Doors.SlidingDoor.TrainSlidingDoorBlock;
-import net.adeptstack.Blocks.PanelBlocks.IsoWallBlock;
-import net.adeptstack.Blocks.PanelBlocks.PlatformBlocks.PlatformBlockCH;
-import net.adeptstack.Blocks.PanelBlocks.PlatformBlocks.PlatformBlockDE;
-import net.adeptstack.Blocks.PanelBlocks.PlatformBlocks.PlatformBlockNL;
-import net.adeptstack.Blocks.LineBlock;
+import net.adeptstack.blocks.doors.slidingDoor.TrainSlidingDoorBlock;
+import net.adeptstack.blocks.panelBlocks.IsoWallBlock;
+import net.adeptstack.blocks.panelBlocks.platformBlocks.PlatformBlockCH;
+import net.adeptstack.blocks.panelBlocks.platformBlocks.PlatformBlockDE;
+import net.adeptstack.blocks.panelBlocks.platformBlocks.PlatformBlockNL;
+import net.adeptstack.blocks.LineBlock;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.material.MapColor;
 
@@ -29,9 +30,18 @@ public class ModBlocks {
     public static final BlockEntry<Block> PKP_BLOCK_BLUE =
             TrainUtilitiesBuilderTransformers.DefaultBlock("pkp_block_blue", MapColor.TERRACOTTA_BLUE);
 
+    public static final BlockEntry<LineBlock> BUDAPEST_BLOCK_YELLOW =
+            TrainUtilitiesBuilderTransformers.LineBlock("budapest_block_yellow", MapColor.TERRACOTTA_YELLOW);
+
+    public static final BlockEntry<LineBlock> BUDAPEST_BLOCK_BLACK =
+            TrainUtilitiesBuilderTransformers.LineBlock("budapest_block_black", MapColor.TERRACOTTA_BLACK);
+
     //glass
     public static final BlockEntry<GlassBlock> FRAMELESS_GLASS =
             TrainUtilitiesBuilderTransformers.GlassBlock("frameless_glass", MapColor.NONE);
+
+    public static  final  BlockEntry<GlassPaneBlock> FRAMELESS_GLASS_PANE =
+            TrainUtilitiesBuilderTransformers.GlassPaneBlock("frameless_glass_pane", MapColor.NONE);
 
     //ic(e) line blocks
     public static final BlockEntry<LineBlock> TOP_REDLINE_BLOCK =
@@ -163,6 +173,18 @@ public class ModBlocks {
 
     public static final BlockEntry<TrainSlidingDoorBlock> DOOR_TALENT3 =
             TrainUtilitiesBuilderTransformers.TrainSlidingDoor("talent3", false, MapColor.TERRACOTTA_WHITE);
+
+    public static final BlockEntry<TrainSlidingDoorBlock> DOOR_CLASS_350 =
+            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("class_350", false, MapColor.CLAY);
+
+    public static final BlockEntry<TrainSlidingDoorBlock> DOOR_CLASS_390 =
+            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("class_390", false, MapColor.CLAY);
+
+    public static final BlockEntry<TrainSlidingDoorBlock> DOOR_CLASS_450 =
+            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("class_450", false, MapColor.CLAY);
+
+    public static final BlockEntry<TrainSlidingDoorBlock> DOOR_1996_STOCK =
+            TrainUtilitiesBuilderTransformers.TrainSlidingDoor("1996_stock", false, MapColor.COLOR_RED);
 
     //MC Doors
     public static final BlockEntry<DoorBlock> DOOR_CIS_AMENDORF_1 =

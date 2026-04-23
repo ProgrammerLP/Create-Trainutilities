@@ -36,6 +36,10 @@
     "trainutilities:door_talent2",
     "trainutilities:door_talent3",
     "trainutilities:door_caf_urbos_3",
-    "trainutilities:door_stripped_spruce"
+    "trainutilities:door_stripped_spruce",
+    "trainutilities:door_class_350",
+    "trainutilities:door_class_390",
+    "trainutilities:door_class_450",
+    "trainutilities:door_1996_stock"
   ]
 }

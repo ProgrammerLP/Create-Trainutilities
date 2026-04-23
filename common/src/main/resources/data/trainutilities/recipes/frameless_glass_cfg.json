@@ -1,12 +1,8 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-      "item": "create:framed_glass"
-    }
-  ],
-  "result": {
-    "item": "trainutilities:frameless_glass",
-    "count": 1
-  }
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "create:framed_glass"
+  },
+  "result": "trainutilities:frameless_glass",
+  "count": 1
 }

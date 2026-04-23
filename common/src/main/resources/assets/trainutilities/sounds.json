@@ -268,5 +268,113 @@
         "stream": true
       }
     ]
+  },
+  "door_subway_open": {
+    "subtitle": "sound.trainutilities.door_subway_open",
+    "sounds": [
+      {
+        "name": "trainutilities:door_subway_open",
+        "stream": true
+      }
+    ]
+  },
+  "door_subway_close": {
+    "subtitle": "sound.trainutilities.door_subway_close",
+    "sounds": [
+      {
+        "name": "trainutilities:door_subway_close",
+        "stream": true
+      }
+    ]
+  },
+  "door_ice_modern_open": {
+    "subtitle": "sound.trainutilities.door_ice_modern_open",
+    "sounds": [
+      {
+        "name": "trainutilities:door_ice_modern_open",
+        "stream": true
+      }
+    ]
+  },
+  "door_ice_modern_close": {
+    "subtitle": "sound.trainutilities.door_ice_modern_close",
+    "sounds": [
+      {
+        "name": "trainutilities:door_ice_modern_close",
+        "stream": true
+      }
+    ]
+  },
+  "door_1996_stock_open": {
+    "subtitle": "sound.trainutilities.door_1996_stock_open",
+    "sounds": [
+      {
+        "name": "trainutilities:door_1996_stock_open",
+        "stream": true
+      }
+    ]
+  },
+  "door_1996_stock_close": {
+    "subtitle": "sound.trainutilities.door_1996_stock_close",
+    "sounds": [
+      {
+        "name": "trainutilities:door_1996_stock_close",
+        "stream": true
+      }
+    ]
+  },
+  "door_class_350_open": {
+    "subtitle": "sound.trainutilities.door_class_350_open",
+    "sounds": [
+      {
+        "name": "trainutilities:door_class_350_open",
+        "stream": true
+      }
+    ]
+  },
+  "door_class_350_close": {
+    "subtitle": "sound.trainutilities.door_class_350_close",
+    "sounds": [
+      {
+        "name": "trainutilities:door_class_350_close",
+        "stream": true
+      }
+    ]
+  },
+  "door_class_390_open": {
+    "subtitle": "sound.trainutilities.door_class_390_open",
+    "sounds": [
+      {
+        "name": "trainutilities:door_class_390_open",
+        "stream": true
+      }
+    ]
+  },
+  "door_class_390_close": {
+    "subtitle": "sound.trainutilities.door_class_390_close",
+    "sounds": [
+      {
+        "name": "trainutilities:door_class_390_close",
+        "stream": true
+      }
+    ]
+  },
+  "door_class_450_open": {
+    "subtitle": "sound.trainutilities.door_class_450_open",
+    "sounds": [
+      {
+        "name": "trainutilities:door_class_450_open",
+        "stream": true
+      }
+    ]
+  },
+  "door_class_450_close": {
+    "subtitle": "sound.trainutilities.door_class_450_close",
+    "sounds": [
+      {
+        "name": "trainutilities:door_class_450_close",
+        "stream": true
+      }
+    ]
   }
 }

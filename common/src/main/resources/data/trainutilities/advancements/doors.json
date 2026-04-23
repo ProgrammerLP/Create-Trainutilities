@@ -14,14 +14,15 @@
     "show_toast": true,
     "announce_to_chat": true
   },
-  "parent": "create:conductor",
+  "parent": "trainutilities:door_ingrediants",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "tag": "trainutilities:doors"
+            "tag": "trainutilities:db_doors",
+            "tag": "trainutilities:sf_doors"
           }
         ]
       }

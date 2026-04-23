@@ -58,6 +58,24 @@ public class ModSounds {
     public static final RegistrySupplier<SoundEvent> DOOR_CAF_URBOS_3_OPEN = registerSoundEvents("door_caf_urbos_3_open");
     public static final RegistrySupplier<SoundEvent> DOOR_CAF_URBOS_3_CLOSE = registerSoundEvents("door_caf_urbos_3_close");
 
+    public static final RegistrySupplier<SoundEvent> DOOR_SUBWAY_OPEN = registerSoundEvents("door_subway_open");
+    public static final RegistrySupplier<SoundEvent> DOOR_SUBWAY_CLOSE = registerSoundEvents("door_subway_close");
+
+    public static final RegistrySupplier<SoundEvent> DOOR_ICE_MODERN_OPEN = registerSoundEvents("door_ice_modern_open");
+    public static final RegistrySupplier<SoundEvent> DOOR_ICE_MODERN_CLOSE = registerSoundEvents("door_ice_modern_close");
+
+    public static final RegistrySupplier<SoundEvent> DOOR_1996_STOCK_OPEN = registerSoundEvents("door_1996_stock_open");
+    public static final RegistrySupplier<SoundEvent> DOOR_1996_STOCK_CLOSE = registerSoundEvents("door_1996_stock_close");
+
+    public static final RegistrySupplier<SoundEvent> DOOR_CLASS_350_OPEN = registerSoundEvents("door_class_350_open");
+    public static final RegistrySupplier<SoundEvent> DOOR_CLASS_350_CLOSE = registerSoundEvents("door_class_350_close");
+
+    public static final RegistrySupplier<SoundEvent> DOOR_CLASS_390_OPEN = registerSoundEvents("door_class_390_open");
+    public static final RegistrySupplier<SoundEvent> DOOR_CLASS_390_CLOSE = registerSoundEvents("door_class_390_close");
+
+    public static final RegistrySupplier<SoundEvent> DOOR_CLASS_450_OPEN = registerSoundEvents("door_class_450_open");
+    public static final RegistrySupplier<SoundEvent> DOOR_CLASS_450_CLOSE = registerSoundEvents("door_class_450_close");
+
     private static RegistrySupplier<SoundEvent> registerSoundEvents(String name) {
         return SOUND_EVENTS.register(new ResourceLocation(MOD_ID, name), () -> SoundEvent.createVariableRangeEvent(new ResourceLocation(MOD_ID, name)));
     }

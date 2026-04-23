@@ -1,18 +1,8 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-      "item": "create:framed_glass_door"
-    },
-    {
-      "item": "trainutilities:bottom_redline_block"
-    },
-    {
-      "item": "minecraft:redstone"
-    }
-  ],
-  "result": {
-    "item": "trainutilities:door_ice_modern",
-    "count": 1
-  }
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "trainutilities:prototype_door_sf"
+  },
+  "result": "trainutilities:door_ice_modern",
+  "count": 1
 }

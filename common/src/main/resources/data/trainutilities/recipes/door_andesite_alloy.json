@@ -1,17 +1,8 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "##",
-    "##",
-    "##"
-  ],
-  "key": {
-    "#": {
-      "item": "create:andesite_alloy"
-    }
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "trainutilities:prototype_door_sf"
   },
-  "result": {
-    "item": "trainutilities:door_andesite_alloy",
-    "count": 1
-  }
+  "result": "trainutilities:door_andesite_alloy",
+  "count": 1
 }

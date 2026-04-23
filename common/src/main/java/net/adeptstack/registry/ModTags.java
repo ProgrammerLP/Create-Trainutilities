@@ -1,7 +1,7 @@
 package net.adeptstack.registry;
 
-import com.simibubi.create.foundation.utility.Lang;
 import net.adeptstack.Main;
+import net.createmod.catnip.lang.Lang;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -12,8 +12,6 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
-
-import java.util.function.BiConsumer;
 
 import static net.adeptstack.registry.ModTags.NameSpace.FRAMEDBLOCKS;
 import static net.adeptstack.registry.ModTags.NameSpace.MOD;
