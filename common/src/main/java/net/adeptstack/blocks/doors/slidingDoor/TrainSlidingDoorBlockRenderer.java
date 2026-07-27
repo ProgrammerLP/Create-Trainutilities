@@ -10,6 +10,7 @@ import net.createmod.catnip.data.Iterate;
 import net.createmod.catnip.math.AngleHelper;
 import net.createmod.catnip.render.CachedBuffers;
 import net.createmod.catnip.render.SuperByteBuffer;
+import net.minecraft.client.renderer.LevelRenderer;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
@@ -43,7 +44,7 @@ public class TrainSlidingDoorBlockRenderer extends SafeBlockEntityRenderer<Train
         float value = be.animation.getValue(partialTicks);
         float value2 = Mth.clamp(value * 10, 0, 1);
 
-        VertexConsumer vb = buffer.getBuffer(RenderType.cutoutMipped());
+        VertexConsumer vb = buffer.getBuffer(RenderType.translucent());
         Vec3 offset = Vec3.atLowerCornerOf(movementDirection.getNormal())
                 .scale(value * value * 13 / 16f)
                 .add(Vec3.atLowerCornerOf(facing.getNormal())
@@ -84,11 +85,17 @@ public class TrainSlidingDoorBlockRenderer extends SafeBlockEntityRenderer<Train
         }
 
         for (DoubleBlockHalf half : DoubleBlockHalf.values()) {
+            int currentLight = light;
+            if (half == DoubleBlockHalf.UPPER && be.getLevel() != null) {
+                currentLight = LevelRenderer.getLightColor(be.getLevel(), be.getBlockPos().above());
+            }
+
             CachedBuffers.block(blockState.setValue(DoorBlock.OPEN, false)
                             .setValue(DoorBlock.HALF, half))
                     .translate(0, half == DoubleBlockHalf.UPPER ? 1 - 1 / 512f : 0, 0)
                     .translate(offset)
-                    .light(light)
+                    .light(currentLight)
+                    .disableDiffuse()
                     .renderInto(ms, vb);
         }
 
