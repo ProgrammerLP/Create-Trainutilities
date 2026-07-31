@@ -40,3 +40,11 @@ mandatory=true
 versionRange="[0.5.1.f,]"
 ordering="NONE"
 side="BOTH"
+
+# Optional, enables the Steam 'n' Rails sliding door modes on TrainUtilities doors
+[[dependencies.trainutilities]]
+modId="railways"
+mandatory=false
+versionRange="[1.7.0,)"
+ordering="AFTER"
+side="BOTH"

@@ -3,6 +3,7 @@ package net.adeptstack.behaviour.slidingDoor;
 import com.simibubi.create.content.contraptions.Contraption;
 import com.simibubi.create.content.contraptions.behaviour.SimpleBlockMovingInteraction;
 import net.adeptstack.blocks.doors.slidingDoor.TrainSlidingDoorBlock;
+import net.adeptstack.compat.SteamNRailsCompat;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.sounds.SoundEvent;
@@ -20,6 +21,9 @@ public class TrainSlidingDoorMovingInteraction extends SimpleBlockMovingInteract
     @Override
     protected BlockState handle(Player player, Contraption contraption, BlockPos pos, BlockState currentState) {
         if (!(currentState.getBlock() instanceof DoorBlock))
+            return currentState;
+
+        if (isLockedForPlayer(player, contraption, pos, currentState))
             return currentState;
 
         boolean trainDoor = currentState.getBlock() instanceof TrainSlidingDoorBlock;
@@ -58,6 +62,23 @@ public class TrainSlidingDoorMovingInteraction extends SimpleBlockMovingInteract
         }
 
         return currentState;
+    }
+
+    /**
+     * Steam 'n' Rails: doors in special mode are meant to be driven by the station only, a player
+     * has to sneak to override them. The mode lives on the lower half of the door.
+     */
+    private boolean isLockedForPlayer(Player player, Contraption contraption, BlockPos pos, BlockState currentState) {
+        if (player == null || player.isShiftKeyDown())
+            return false;
+
+        boolean lower = currentState.getValue(DoorBlock.HALF) == DoubleBlockHalf.LOWER;
+        StructureTemplate.StructureBlockInfo lowerInfo = contraption.getBlocks()
+                .get(lower ? pos : pos.below());
+        if (lowerInfo == null)
+            return false;
+
+        return !SteamNRailsCompat.canOpenByHand(lowerInfo.nbt());
     }
 
     @Override

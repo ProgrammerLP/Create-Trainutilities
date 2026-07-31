@@ -49,6 +49,9 @@ dependencies {
 
     modImplementation("com.simibubi.create:create-fabric-${rootProject.minecraft_version}:${rootProject.create_fabric_version}")
 
+    // Optional: Create Steam 'n' Rails. Uncomment to have it in the dev runtime for testing.
+    // modRuntimeOnly("maven.modrinth:create-steam-n-rails:${rootProject.steam_n_rails_fabric_version}")
+
     common(project(path: ':common', configuration: 'namedElements')) { transitive false }
     shadowBundle project(path: ':common', configuration: 'transformProductionFabric')
 }

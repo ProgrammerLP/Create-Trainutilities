@@ -71,9 +71,6 @@ public class TrainSlidingDoorBlockEntity extends SlidingDoorBlockEntity {
         level.playSound(null, worldPosition, SoundEvents.IRON_DOOR_CLOSE, SoundSource.BLOCKS, .5f, 1);
     }
 
-    @Override
-    public void addBehaviours(List<BlockEntityBehaviour> behaviours) {}
-
     public static boolean isOpen(BlockState state) {
         return state.getOptionalValue(DoorBlock.OPEN)
                 .orElse(false);

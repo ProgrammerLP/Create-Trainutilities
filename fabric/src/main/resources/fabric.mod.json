@@ -36,6 +36,6 @@
     "fabric-api": "*"
   },
   "suggests": {
-    "another-mod": "*"
+    "railways": ">=1.7.0"
   }
 }

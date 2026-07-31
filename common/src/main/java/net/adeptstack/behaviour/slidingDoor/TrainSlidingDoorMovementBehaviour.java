@@ -12,6 +12,7 @@ import com.simibubi.create.content.trains.entity.CarriageContraptionEntity;
 import com.simibubi.create.content.trains.station.GlobalStation;
 import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
 import net.adeptstack.TrainUtilitiesPlatformSpecific;
+import net.adeptstack.compat.SteamNRailsCompat;
 import net.adeptstack.blocks.doors.slidingDoor.TrainSlidingDoorBlock;
 import net.adeptstack.utils.TrainSlidingDoorProperties;
 import net.adeptstack.blocks.doors.slidingDoor.TrainSlidingDoorBlockEntity;
@@ -167,6 +168,9 @@ public class TrainSlidingDoorMovementBehaviour implements MovementBehaviour {
     }
 
     protected boolean shouldUpdate(MovementContext context, boolean shouldOpen) {
+        // Steam 'n' Rails: doors in manual mode are never operated by station door controls
+        if (!SteamNRailsCompat.canOpenAutomatically(context.blockEntityData))
+            return false;
         if (context.firstMovement && shouldOpen)
             return false;
         if (!context.data.contains("Open")) {

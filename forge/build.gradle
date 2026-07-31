@@ -51,6 +51,9 @@ dependencies {
     modCompileOnly("dev.engine-room.flywheel:flywheel-forge-api-${rootProject.minecraft_version}:${rootProject.flywheel_forge_version}")
     modRuntimeOnly("dev.engine-room.flywheel:flywheel-forge-${rootProject.minecraft_version}:${rootProject.flywheel_forge_version}")
     modImplementation("com.tterrag.registrate:Registrate:${rootProject.registrate_forge_version}")
+    // Optional: Create Steam 'n' Rails. Uncomment to have it in the dev runtime for testing.
+    // modRuntimeOnly("maven.modrinth:create-steam-n-rails:${rootProject.steam_n_rails_forge_version}")
+
     compileOnly(annotationProcessor("io.github.llamalad7:mixinextras-common:0.4.1"))
     implementation("io.github.llamalad7:mixinextras-forge:0.4.1")
 
