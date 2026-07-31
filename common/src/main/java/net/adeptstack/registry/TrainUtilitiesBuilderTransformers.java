@@ -208,7 +208,7 @@ public class TrainUtilitiesBuilderTransformers {
         return REGISTRATE.block("door_" + type, p -> new TrainSlidingDoorBlock(p, GLASS_SET_TYPE.get(), folds, GetSlidingDoorDefaultSound(type)))
                 .initialProperties(AllBlocks.FRAMED_GLASS_DOOR)
                 .properties(p -> p.sound(SoundType.METAL).mapColor(colour))
-                .addLayer(() -> RenderType::translucent)
+                .addLayer(() -> RenderType::cutoutMipped)
                 .transform(TrainUtilitiesBuilderTransformers.slidingDoor(type))
                 .properties(BlockBehaviour.Properties::noOcclusion)
                 .register();
@@ -218,7 +218,7 @@ public class TrainUtilitiesBuilderTransformers {
         return REGISTRATE.block("door_" + type, p -> new TrainSlidingDoorBlock(p, GLASS_SET_TYPE.get(), folds, GetSlidingDoorDefaultSound(type)))
                 .initialProperties(AllBlocks.FRAMED_GLASS_DOOR)
                 .properties(p -> p.sound(SoundType.METAL).mapColor(colour))
-                .addLayer(() -> RenderType::translucent)
+                .addLayer(() -> RenderType::cutoutMipped)
                 .transform(TrainUtilitiesBuilderTransformers.slidingDoor(type))
                 .properties(BlockBehaviour.Properties::noOcclusion)
                 .register();
