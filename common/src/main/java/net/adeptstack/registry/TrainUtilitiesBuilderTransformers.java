@@ -224,7 +224,27 @@ public class TrainUtilitiesBuilderTransformers {
                 .register();
     }
 
+    /**
+     * Cache for {@link #GetSlidingDoorProperties(int)}. The properties are immutable, so every door
+     * of a sound variant can share one instance instead of building a new one every tick.
+     * Sized after the range of {@link TrainSlidingDoorBlock#DOOR_SOUND}.
+     */
+    private static final TrainSlidingDoorProperties[] SLIDING_DOOR_PROPERTIES =
+            new TrainSlidingDoorProperties[23];
+
     public static TrainSlidingDoorProperties GetSlidingDoorProperties(int variant) {
+        if (variant < 0 || variant >= SLIDING_DOOR_PROPERTIES.length)
+            return BuildSlidingDoorProperties(variant);
+
+        TrainSlidingDoorProperties cached = SLIDING_DOOR_PROPERTIES[variant];
+        if (cached == null) {
+            cached = BuildSlidingDoorProperties(variant);
+            SLIDING_DOOR_PROPERTIES[variant] = cached;
+        }
+        return cached;
+    }
+
+    private static TrainSlidingDoorProperties BuildSlidingDoorProperties(int variant) {
         if (variant == 2) {
             return new TrainSlidingDoorProperties(ModSounds.DOOR_ICE_OPEN.get(), ModSounds.DOOR_ICE_CLOSE.get(), .025f);
         }

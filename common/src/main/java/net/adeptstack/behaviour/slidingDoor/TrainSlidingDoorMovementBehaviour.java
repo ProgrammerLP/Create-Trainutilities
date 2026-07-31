@@ -38,7 +38,6 @@ import java.util.Map;
 
 public class TrainSlidingDoorMovementBehaviour implements MovementBehaviour {
 
-    TrainSlidingDoorProperties tsdp;
     String type;
 
     public TrainSlidingDoorMovementBehaviour(String type) {
@@ -70,25 +69,27 @@ public class TrainSlidingDoorMovementBehaviour implements MovementBehaviour {
             }
         }
 
-        int sound = TrainSlidingDoorBlockEntity.getDoorSoundValue(structureBlockInfo.state());
-        tsdp = TrainUtilitiesBuilderTransformers.GetSlidingDoorProperties(sound);
-
+        // everything below is animation and sound, so bail out before doing any of that work on a server
         if (!(TrainUtilitiesPlatformSpecific.getClientContraptionBlockEntity(context.contraption, context.localPos) instanceof TrainSlidingDoorBlockEntity sdbe))
             return;
+
+        int sound = TrainSlidingDoorBlockEntity.getDoorSoundValue(structureBlockInfo.state());
+        TrainSlidingDoorProperties tsdp = TrainUtilitiesBuilderTransformers.GetSlidingDoorProperties(sound);
+
         boolean wasSettled = sdbe.animation.settled();
         sdbe.animation.chase(open ? 1 : 0, tsdp.GetSpeed(), LerpedFloat.Chaser.LINEAR);
         sdbe.animation.tickChaser();
 
         if (TrainSlidingDoorBlock.isDoubleDoor(structureBlockInfo.state().getValue(TrainSlidingDoorBlock.HINGE), context.localPos, context.state.getValue(TrainSlidingDoorBlock.FACING), context)) {
             if (structureBlockInfo.state().getValue(TrainSlidingDoorBlock.HINGE) == DoorHingeSide.RIGHT) {
-                playSounds(context, open, sound, sdbe, wasSettled);
+                playSounds(context, open, sound, sdbe, wasSettled, tsdp);
             }
         } else {
-            playSounds(context, open, sound, sdbe, wasSettled);
+            playSounds(context, open, sound, sdbe, wasSettled, tsdp);
         }
     }
 
-    private void playSounds(MovementContext context, boolean open, int sound, TrainSlidingDoorBlockEntity sdbe, boolean wasSettled) {
+    private void playSounds(MovementContext context, boolean open, int sound, TrainSlidingDoorBlockEntity sdbe, boolean wasSettled, TrainSlidingDoorProperties tsdp) {
         if (wasSettled && !sdbe.animation.settled() && !open && sound != 1) {
             context.world.playLocalSound(context.position.x, context.position.y, context.position.z,
                     tsdp.GetClose(), SoundSource.BLOCKS, 1f, 1, false);
