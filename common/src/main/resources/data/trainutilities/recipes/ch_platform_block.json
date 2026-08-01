@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:iron_block"
-  },
-  "result": "trainutilities:ch_platform_block",
-  "count": 8
-}
