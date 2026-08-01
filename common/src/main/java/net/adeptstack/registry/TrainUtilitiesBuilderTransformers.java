@@ -47,7 +47,6 @@ public class TrainUtilitiesBuilderTransformers {
                 .loot((lr, block) -> lr.add(block, lr.createSingleItemTable(block)))
                 .item()
                 .tag(ModTags.AllItemTags.PLATFORM_BLOCKS.tag)
-                .tab(TRAINUTILS_TAB.getKey())
                 .build()
                 .register();
     }
@@ -63,7 +62,6 @@ public class TrainUtilitiesBuilderTransformers {
                 .loot((lr, block) -> lr.add(block, lr.createSingleItemTable(block)))
                 .item()
                 .tag(ModTags.AllItemTags.PLATFORM_BLOCKS.tag)
-                .tab(TRAINUTILS_TAB.getKey())
                 .build()
                 .register();
     }
@@ -79,7 +77,6 @@ public class TrainUtilitiesBuilderTransformers {
                 .loot((lr, block) -> lr.add(block, lr.createSingleItemTable(block)))
                 .item()
                 .tag(ModTags.AllItemTags.PLATFORM_BLOCKS.tag)
-                .tab(TRAINUTILS_TAB.getKey())
                 .build()
                 .register();
     }
@@ -137,7 +134,6 @@ public class TrainUtilitiesBuilderTransformers {
                 .transform(pickaxeOnly())
                 .loot((lr, block) -> lr.add(block, lr.createSingleItemTable(block)))
                 .item()
-                .tab(TRAINUTILS_TAB.getKey())
                 .build()
                 .register();
     }
