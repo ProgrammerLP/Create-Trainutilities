@@ -14,8 +14,12 @@
   "block.trainutilities.pkp_block_blue": "PKP Intercity Block Blue",
   "block.trainutilities.cis_amendorf_block_1": "CIS Amendorf Block (Type 1)",
   "block.trainutilities.cis_amendorf_block_2": "CIS Amendorf Block (Type 2)",
+
   "block.trainutilities.iso_wall_block": "Noise Isolation Wall",
+  "block.trainutilities.iso_wall_block.tooltip.summary": "Marked for removal (gets removed in v4). Use Create TrackSta instead.",
   "block.trainutilities.iso_wall_block_green": "Noise Isolation Wall (Green)",
+  "block.trainutilities.iso_wall_block_green.tooltip.summary": "Marked for removal (gets removed in v4). Use Create TrackSta instead.",
+
   "block.trainutilities.frameless_glass_pane": "Frameless Glass Pane",
   "block.trainutilities.budapest_block_black": "Budapest block black",
   "block.trainutilities.budapest_block_yellow": "Budapest block yellow",
@@ -180,8 +184,11 @@
   "block.trainutilities.door_1996_stock.tooltip.behaviour1": "Opens a menu to _change_ the _door sound_.",
 
   "block.trainutilities.de_platform_block": "German Platform Block",
+  "block.trainutilities.de_platform_block.tooltip.summary": "Marked for removal (gets removed in v4). Use Create TrackSta instead.",
   "block.trainutilities.nl_platform_block": "Dutch Platform Block",
+  "block.trainutilities.nl_platform_block.tooltip.summary": "Marked for removal (gets removed in v4). Use Create TrackSta instead.",
   "block.trainutilities.ch_platform_block": "Swiss Platform Block",
+  "block.trainutilities.ch_platform_block.tooltip.summary": "Marked for removal (gets removed in v4). Use Create TrackSta instead.",
 
   "item.trainutilities.processing_unit": "Processing Unit",
   "item.trainutilities.sound_unit": "Sound Unit",

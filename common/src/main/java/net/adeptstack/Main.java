@@ -4,10 +4,13 @@ import com.simibubi.create.foundation.data.CreateRegistrate;
 import com.simibubi.create.foundation.item.ItemDescription;
 import com.simibubi.create.foundation.item.KineticStats;
 import com.simibubi.create.foundation.item.TooltipModifier;
+import dev.architectury.event.events.common.PlayerEvent;
 import net.adeptstack.blocks.doors.slidingDoor.TrainSlidingDoorBlock;
 import net.adeptstack.network.ModNetwork;
 import net.adeptstack.registry.*;
 import net.createmod.catnip.lang.FontHelper;
+import net.minecraft.ChatFormatting;
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -30,6 +33,17 @@ public final class Main {
             ModPartialModels.init();
         }
         ModTags.register();
+
+        PlayerEvent.PLAYER_JOIN.register(player -> {
+            if (!player.level().isClientSide()) {
+                Component message = Component.literal("""
+                                ATTENTION (Create Train Utilities):\s
+                                Create Train Utilities will be renamed Create Train Doors in version 4.
+                                All platform blocks and noise isolation walls will be removed in v4. Use our new mod, “Create TrackSta,” to continue using these blocks!""")
+                        .withStyle(ChatFormatting.RED, ChatFormatting.BOLD);
+                player.sendSystemMessage(message);
+            }
+        });
     }
 
     public static ResourceLocation asResource(String path) {
