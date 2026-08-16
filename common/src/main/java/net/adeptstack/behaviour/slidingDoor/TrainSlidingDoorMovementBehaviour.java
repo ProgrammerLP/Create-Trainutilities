@@ -12,6 +12,7 @@ import com.simibubi.create.content.trains.entity.CarriageContraptionEntity;
 import com.simibubi.create.content.trains.station.GlobalStation;
 import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
 import net.adeptstack.blocks.doors.slidingDoor.TrainSlidingDoorBlock;
+import net.adeptstack.compat.SteamNRailsCompat;
 import net.adeptstack.utils.TrainSlidingDoorProperties;
 import net.adeptstack.blocks.doors.slidingDoor.TrainSlidingDoorBlockEntity;
 import net.adeptstack.registry.TrainUtilitiesBuilderTransformers;
@@ -36,7 +37,6 @@ import java.util.Map;
 
 public class TrainSlidingDoorMovementBehaviour implements MovementBehaviour {
 
-    TrainSlidingDoorProperties tsdp;
     String type;
 
     public TrainSlidingDoorMovementBehaviour(String type) {
@@ -68,11 +68,13 @@ public class TrainSlidingDoorMovementBehaviour implements MovementBehaviour {
             }
         }
 
-        int sound = TrainSlidingDoorBlockEntity.getDoorSoundValue(structureBlockInfo.state());
-        tsdp = TrainUtilitiesBuilderTransformers.GetSlidingDoorProperties(sound);
-
+        // everything below is animation and sound, so bail out before doing any of that work on a server
         if (!(context.contraption.getBlockEntityClientSide(context.localPos) instanceof TrainSlidingDoorBlockEntity sdbe))
             return;
+
+        int sound = TrainSlidingDoorBlockEntity.getDoorSoundValue(structureBlockInfo.state());
+        TrainSlidingDoorProperties tsdp = TrainUtilitiesBuilderTransformers.GetSlidingDoorProperties(sound);
+
         boolean wasSettled = sdbe.animation.settled();
         sdbe.animation.chase(open ? 1 : 0, tsdp.GetSpeed(), LerpedFloat.Chaser.LINEAR);
         sdbe.animation.tickChaser();
@@ -170,6 +172,9 @@ public class TrainSlidingDoorMovementBehaviour implements MovementBehaviour {
     }
 
     protected boolean shouldUpdate(MovementContext context, boolean shouldOpen) {
+        // Steam 'n' Rails: doors in manual mode are never operated by station door controls
+        if (!SteamNRailsCompat.canOpenAutomatically(context.blockEntityData))
+            return false;
         if (context.firstMovement && shouldOpen)
             return false;
         if (!context.data.contains("Open")) {

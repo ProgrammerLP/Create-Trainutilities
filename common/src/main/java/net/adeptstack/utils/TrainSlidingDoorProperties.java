@@ -1,13 +1,13 @@
 package net.adeptstack.utils;
 
 import net.minecraft.sounds.SoundEvent;
-import net.minecraft.sounds.SoundEvents;
 
 public class TrainSlidingDoorProperties {
 
-    SoundEvent open = SoundEvents.WAXED_SIGN_INTERACT_FAIL;
-    SoundEvent close = SoundEvents.WAXED_SIGN_INTERACT_FAIL;
-    float speed = .15f;
+    // immutable, instances are shared between all doors of the same sound variant
+    final SoundEvent open;
+    final SoundEvent close;
+    final float speed;
 
     public TrainSlidingDoorProperties(SoundEvent open, SoundEvent close, float speed) {
         this.open = open;
