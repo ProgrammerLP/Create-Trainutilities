@@ -14,4 +14,9 @@ dependencies {
     compileOnly("dev.engine-room.flywheel:flywheel-neoforge-api-${minecraft_version}:${flywheel_neoforge_version}")
     runtimeOnly("dev.engine-room.flywheel:flywheel-neoforge-${minecraft_version}:${flywheel_neoforge_version}")
     implementation("com.tterrag.registrate:Registrate:${registrate_neoforge_version}")
+
+    // Optional: Create Steam 'n' Rails, for its sliding door modes.
+    // Compile only, everything touching it is guarded by a mod loaded check.
+    // Not remapped (like Create above), the port ships named mappings which loom refuses to remap.
+    compileOnly("maven.modrinth:${rootProject.steam_n_rails_modrinth_slug}:${rootProject.steam_n_rails_neoforge_version}") { transitive = false }
 }

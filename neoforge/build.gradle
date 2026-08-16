@@ -44,6 +44,9 @@ dependencies {
     runtimeOnly("dev.engine-room.flywheel:flywheel-neoforge-${minecraft_version}:${flywheel_neoforge_version}")
     implementation("com.tterrag.registrate:Registrate:${registrate_neoforge_version}")
 
+    // Optional: Create Steam 'n' Rails. Uncomment to have it in the dev runtime for testing.
+    // modRuntimeOnly("maven.modrinth:${rootProject.steam_n_rails_modrinth_slug}:${rootProject.steam_n_rails_neoforge_version}")
+
     common(project(path: ':common', configuration: 'namedElements')) { transitive false }
     shadowBundle project(path: ':common', configuration: 'transformProductionNeoForge')
 }

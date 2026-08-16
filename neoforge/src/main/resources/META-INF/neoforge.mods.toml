@@ -48,5 +48,14 @@ versionRange = "[6.0.7,]"
 ordering = "NONE"
 side = "BOTH"
 
+# Optional, enables the Steam 'n' Rails sliding door modes on TrainUtilities doors.
+# Range kept wide on purpose: 1.21.1 is only served by the unofficial 0.x port for now.
+[[dependencies.trainutilities]]
+modId = "railways"
+type = "optional"
+versionRange = "[0.1.0,)"
+ordering = "AFTER"
+side = "BOTH"
+
 [[mixins]]
 config = "trainutilities.mixins.json"
