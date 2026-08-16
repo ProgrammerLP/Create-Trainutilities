@@ -19,7 +19,7 @@ public class ModTabs {
     public static final RegistrySupplier<CreativeModeTab> TRAINUTILS_TAB = CREATIVE_MODE_TABS.register(ResourceLocation.fromNamespaceAndPath(MOD_ID, "trainutils_tab"),
             () -> CreativeTabRegistry.create(
                     Component.translatable("itemGroup." + MOD_ID + ".trainutils_tab"), // Tab Name
-                    () -> new ItemStack(ModBlocks.DE_PLATFORM_BLOCK.asItem()) // Icon
+                    () -> new ItemStack(ModBlocks.BOTTOM_REDLINE_BLOCK.asItem()) // Icon
             ));
 
     public static final RegistrySupplier<CreativeModeTab> DOORS_TAB = CREATIVE_MODE_TABS.register(ResourceLocation.fromNamespaceAndPath(MOD_ID, "doors_tab"),
