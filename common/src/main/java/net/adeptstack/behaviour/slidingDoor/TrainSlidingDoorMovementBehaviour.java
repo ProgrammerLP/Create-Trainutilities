@@ -20,6 +20,7 @@ import net.adeptstack.registry.TrainUtilitiesBuilderTransformers;
 import net.createmod.catnip.animation.LerpedFloat;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.level.ServerLevel;
@@ -168,9 +169,23 @@ public class TrainSlidingDoorMovementBehaviour implements MovementBehaviour {
         }
     }
 
+    /**
+     * Steam 'n' Rails keeps the door mode on the lower half of the door only, but both halves
+     * tick as their own actor, so the upper one has to look the mode up on its partner.
+     */
+    private CompoundTag getDoorModeData(MovementContext context) {
+        if (!context.state.hasProperty(DoorBlock.HALF)
+                || context.state.getValue(DoorBlock.HALF) == DoubleBlockHalf.LOWER)
+            return context.blockEntityData;
+
+        StructureTemplate.StructureBlockInfo lowerInfo = context.contraption.getBlocks()
+                .get(context.localPos.below());
+        return lowerInfo == null ? null : lowerInfo.nbt();
+    }
+
     protected boolean shouldUpdate(MovementContext context, boolean shouldOpen) {
         // Steam 'n' Rails: doors in manual mode are never operated by station door controls
-        if (!SteamNRailsCompat.canOpenAutomatically(context.blockEntityData))
+        if (!SteamNRailsCompat.canOpenAutomatically(getDoorModeData(context)))
             return false;
         if (context.firstMovement && shouldOpen)
             return false;
