@@ -1,11 +1,27 @@
 {
   "parent": "create:display_board_0",
   "criteria": {
-    "0": {
+    "german": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [{
-          "tag": "trainutilities:platform_blocks"
+          "items": "trainutilities:de_platform_block"
+        }]
+      }
+    },
+    "dutch": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{
+          "items": "trainutilities:nl_platform_block"
+        }]
+      }
+    },
+    "swiss": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{
+          "items": "trainutilities:ch_platform_block"
         }]
       }
     }
@@ -28,7 +44,9 @@
   },
   "requirements": [
     [
-      "0"
+      "german",
+      "dutch",
+      "swiss"
     ]
   ]
 }

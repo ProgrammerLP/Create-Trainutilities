@@ -1,11 +1,35 @@
 {
-  "parent": "create:conducter",
+  "parent": "create:conductor",
   "criteria": {
-    "0": {
+    "processing_unit": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [{
-          "tag": "trainutilities:door_ingrediants"
+          "items": "trainutilities:processing_unit"
+        }]
+      }
+    },
+    "sound_unit": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{
+          "items": "trainutilities:sound_unit"
+        }]
+      }
+    },
+    "transistor": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{
+          "items": "trainutilities:transistor"
+        }]
+      }
+    },
+    "rubber_seal": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{
+          "items": "trainutilities:rubber_seal"
         }]
       }
     }
@@ -28,7 +52,10 @@
   },
   "requirements": [
     [
-      "0"
+      "processing_unit",
+      "sound_unit",
+      "transistor",
+      "rubber_seal"
     ]
   ]
 }
