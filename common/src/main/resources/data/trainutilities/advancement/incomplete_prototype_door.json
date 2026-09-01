@@ -1,11 +1,19 @@
 {
   "parent": "trainutilities:door_ingrediants",
   "criteria": {
-    "0": {
+    "sliding_door": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [{
-          "tag": "trainutilities:iptd"
+          "items": "trainutilities:incomplete_prototype_door_sf"
+        }]
+      }
+    },
+    "door": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{
+          "items": "trainutilities:incomplete_prototype_door_db"
         }]
       }
     }
@@ -29,7 +37,8 @@
   },
   "requirements": [
     [
-      "0"
+      "sliding_door",
+      "door"
     ]
   ]
 }

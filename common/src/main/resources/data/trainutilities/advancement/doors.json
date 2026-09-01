@@ -1,12 +1,19 @@
 {
   "parent": "trainutilities:door_ingrediants",
   "criteria": {
-    "0": {
+    "db_doors": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [{
-          "tag": "trainutilities:db_doors",
-          "tag": "trainutilities:sf_doors"
+          "items": "#trainutilities:db_doors"
+        }]
+      }
+    },
+    "sf_doors": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{
+          "items": "#trainutilities:sf_doors"
         }]
       }
     }
@@ -29,7 +36,8 @@
   },
   "requirements": [
     [
-      "0"
+      "db_doors",
+      "sf_doors"
     ]
   ]
 }
